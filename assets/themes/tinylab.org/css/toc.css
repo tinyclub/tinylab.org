@@ -48,10 +48,6 @@
     padding-left: 0;
 }
 
-::-webkit-scrollbar {
-    visibility: hidden;
-}
-
 @media (min-width: 1500px) {
     #toc_widget_container {
       max-height: 450px;
