@@ -64,3 +64,5 @@ tags:
 > There has been very little discussion of this patch set, as of this writing. Driver writers, perhaps, are still recovering from the holiday festivities. It is not too hard to imagine that there could be some discomfort about the extra overhead involved in tracking all of those allocations - especially since things do function normally almost all of the time. In the end, however, the promise of correct operation in a wider range of situations may be enough to motivate the inclusion of the new interface.
 
 截至本文发稿为止，对这个补丁集的讨论和关注还不多。程序员们应该刚休假回来还没完全恢复。不难想象，为了支持资源管理所引入的额外开销一定会让大家感到稍有不适 - 特别是对那些目前运行得还不错的系统。然而，我相信，假以时日，大家一定会接受这套会对系统的健壮性带来好处的机制和编程接口。
+
+[1]: http://tinylab.org
