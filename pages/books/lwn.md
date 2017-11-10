@@ -94,8 +94,8 @@ tags:
 |[Btrfs: Working with multiple devices](https://lwn.net/Articles/577961/)|tacinight|翻译中|
 |[Btrfs: Subvolumes and snapshots](https://lwn.net/Articles/579009/)|tacinight|翻译中|
 |[Btrfs: Send/receive and ioctl()](https://lwn.net/Articles/581558/)|tacinight|翻译中|
-|[CFS group scheduling](https://lwn.net/Articles/240474/)|?|翻译中|
-|[CFS bandwidth control](https://lwn.net/Articles/428230/)|?|翻译中|
+|[CFS group scheduling](https://lwn.net/Articles/240474/)|linuxkoala|翻译中|
+|[CFS bandwidth control](https://lwn.net/Articles/428230/)|linuxkoala|翻译中|
 |[The managed resource API](https://lwn.net/Articles/222860/)|unicornx|审核中|
 |[The pin control subsystem](https://lwn.net/Articles/468759/)|unicornx|翻译中|
 
