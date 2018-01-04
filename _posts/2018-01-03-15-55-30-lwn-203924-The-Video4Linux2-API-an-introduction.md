@@ -1,7 +1,7 @@
 ---
 layout: post
 author: 'Zhang Fan'
-title: "LWN 203924: V4L2接口介绍"
+title: "LWN 203924: V4L2 接口介绍"
 album: 'LWN 中文翻译'
 group: translation
 license: "cc-by-sa-4.0"
@@ -22,7 +22,7 @@ tags:
 
 > Your editor has recently had the opportunity to write a Linux driver for a camera device - the camera which will be packaged with the One Laptop Per Child system, in particular. This driver works with the internal kernel API designed for such purposes: the Video4Linux2 API. In the process of writing this code, your editor made the shocking discovery that, in fact, this API is not particularly well documented - though the user-space side is, instead, [quite well documented indeed](https://linuxtv.org/downloads/v4l-dvb-apis/). In an attempt to remedy the situation somewhat, LWN will, over the coming months, publish a series of articles describing how to write drivers for the V4L2 interface.
 
-笔者最近有幸有机会为一款儿童便携式电脑的摄像头模块编写驱动，这个驱动模块将会与 Linux 的 V4L2 内核接口进行协同工作。虽然[ V4L2 用户空间的文档](https://linuxtv.org/downloads/v4l-dvb-apis/)相对齐全，但是笔者在编写该模块驱动代码的时候，V4L2 内核接口文档并不十分齐全这种情况仍然让笔者感到震惊。 为了改变这种状况，LWN 将会在后续的几个月内，陆续发表一系列的文档来描述如何编写一个符合 V4L2 内核接口的驱动。
+笔者最近有幸为一款儿童教育电脑([OLPC](https://en.wikipedia.org/wiki/One_Laptop_per_Child),译者注 ) 的摄像头模块编写驱动，该驱动基于 V4L2 内核接口进行开发。在编写该驱动模块的过程中，笔者十分惊讶地发现，相对于 [V4L2 用户空间接口文档](https://linuxtv.org/downloads/v4l-dvb-apis/)的完备齐全，其提供的内核态接口文档要差很多。为了改变这种状况，LWN 将会在后续的几个月内，陆续发表一系列的文档来描述如何编写一个符合 V4L2 接口的内核态驱动。
 
 > V4L2 has a long history - the first gleam came into Bill Dirks's eye back around August of 1998. Development proceeded for years, and the V4L2 API was finally merged into the mainline in November, 2002, when [2.5.46](https://lwn.net/Articles/14568/) was released. To this day, however, quite a few Linux drivers do not support the newer API; the conversion process is an ongoing task. Meanwhile, the V4L2 API continues to evolve, with some major changes being made in 2.6.18. Applications which work with V4L2 remain relatively scarce.
 
@@ -30,11 +30,11 @@ V4L2 的发展有相当长的一段历史了 - 大约在 1998 年 8 月份，首
 
 > V4L2 is designed to support a wide variety of devices, only some of which are truly "video" in nature:
 
->	- The video capture interface grabs video data from a tuner or camera device. For many, video capture will be the primary application for V4L2. Since your editor's experience is strongest in this area, this series will tend to emphasize the capture API, but there is more to V4L2 than that.
->	- The video output interface allows applications to drive peripherals which can provide video images - perhaps in the form of a television signal - outside of the computer.
->	- A variant of the capture interface can be found in the video overlay interface, whose job is to facilitate the direct display of video data from a capture device. Video data moves directly from the capture device to the display, without passing through the system's CPU.
->	- The VBI interfaces provide access to data transmitted during the video blanking interval. There are two of them, the "raw" and "sliced" interfaces, which differ in the amount of processing of the VBI data performed in hardware.
->	- The radio interface provides access to audio streams from AM and FM tuner devices.
+>	- The **video capture interface** grabs video data from a tuner or camera device. For many, video capture will be the primary application for V4L2. Since your editor's experience is strongest in this area, this series will tend to emphasize the capture API, but there is more to V4L2 than that.
+>	- The **video output interface** allows applications to drive peripherals which can provide video images - perhaps in the form of a television signal - outside of the computer.
+>	- A variant of the capture interface can be found in the **video overlay interface**, whose job is to facilitate the direct display of video data from a capture device. Video data moves directly from the capture device to the display, without passing through the system's CPU.
+>	- The **VBI interfaces** provide access to data transmitted during the video blanking interval. There are two of them, the "raw" and "sliced" interfaces, which differ in the amount of processing of the VBI data performed in hardware.
+>	- The **radio interface** provides access to audio streams from AM and FM tuner devices.
 
 V4L2 被设计于支持尽可能多的设备，它们当中只有一部分是真正意义上的 “video” 设备：
 
@@ -59,24 +59,24 @@ V4L2 被设计于支持尽可能多的设备，它们当中只有一部分是真
 
 > Subsequent articles will appear every few weeks, and will be added to the list below:
 
->	- [Part 2: registration and open()](https://lwn.net/Articles/204545/)
->	- [Part 3: Basic ioctl() handling](https://lwn.net/Articles/206765/)
->	- [Part 4: Inputs and Outputs](http://lwn.net/Articles/213798/)
->	- [Part 5a: Colors and formats](http://lwn.net/Articles/218798/)
->	- [Part 5b: Format negotiation](https://lwn.net/Articles/227533/)
->	- [Part 6a: Basic frame I/O](https://lwn.net/Articles/235023/)
->	- [Part 6b: Streaming I/O](http://lwn.net/Articles/240667/)
->	- [Part 7: Controls](http://lwn.net/Articles/247126/)
+> - [Part 2: registration and open()](https://lwn.net/Articles/204545/)
+> - [Part 3: Basic ioctl() handling](https://lwn.net/Articles/206765/)
+> - [Part 4: Inputs and Outputs](http://lwn.net/Articles/213798/)
+> - [Part 5a: Colors and formats](http://lwn.net/Articles/218798/)
+> - [Part 5b: Format negotiation](https://lwn.net/Articles/227533/)
+> - [Part 6a: Basic frame I/O](https://lwn.net/Articles/235023/)
+> - [Part 6b: Streaming I/O](http://lwn.net/Articles/240667/)
+> - [Part 7: Controls](http://lwn.net/Articles/247126/)
 
 随后将会逐步发布剩余的文章，并添加到下面的列表中：
 
-- [Part 2: registration and open()](https://lwn.net/Articles/204545/)
-- [Part 3: Basic ioctl() handling](https://lwn.net/Articles/206765/)
-- [Part 4: Inputs and Outputs](http://lwn.net/Articles/213798/)
-- [Part 5a: Colors and formats](http://lwn.net/Articles/218798/)
-- [Part 5b: Format negotiation](https://lwn.net/Articles/227533/)
-- [Part 6a: Basic frame I/O](https://lwn.net/Articles/235023/)
-- [Part 6b: Streaming I/O](http://lwn.net/Articles/240667/)
-- [Part 7: Controls](http://lwn.net/Articles/247126/)
+- [Part 2: 设备注册与 open() 函数](https://lwn.net/Articles/204545/)
+- [Part 3: 基本的 ioctl() 函数接口操作](https://lwn.net/Articles/206765/)
+- [Part 4: 视频的输入与输出](http://lwn.net/Articles/213798/)
+- [Part 5a: 颜色空间与格式](http://lwn.net/Articles/218798/)
+- [Part 5b: 格式的协定](https://lwn.net/Articles/227533/)
+- [Part 6a: 基本的帧输入输出](https://lwn.net/Articles/235023/)
+- [Part 6b: 视频流的输入与输出](http://lwn.net/Articles/240667/)
+- [Part 7: V4L2 的控制](http://lwn.net/Articles/247126/)
 
 [1]: http://tinylab.org
