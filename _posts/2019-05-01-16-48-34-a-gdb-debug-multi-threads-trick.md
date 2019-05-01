@@ -8,20 +8,19 @@ draft: false
 # group: " 默认为 original，也可选 translation, news, resume or jobs, 详见 _data/groups.yml"
 license: "cc-by-sa-4.0"
 permalink: /the-first-post-slug/
-description: " 文章摘要 "
+description: " 多线程间通信环境下的gdb调试技巧 "
 plugin: mermaid
 category:
-  - category1
-  - category2
+  - C 语言
 tags:
-  - tag1
-  - tag2
+  - gdb
 ---
 
-> By Your Nick Name of [TinyLab.org][1]
+> Zhizhou Tian
 > May 01, 2019
-##### GDB调试多线程程序
-###### 基本步骤和说明
+
+### GDB调试多线程程序
+#### 基本步骤和说明
 gdb调试multi thread时会有些麻烦，因为没法将全部线程都停止下来，因此break会并不如想象的停止在指定的点上。
 而gdb手册里提到了一种小技巧，那就是在想要停止的地方添加如下代码：
 ```
@@ -45,7 +44,7 @@ while (hold) ;
 
 但如果我们想弄清楚virsh启动qemu的全过程的细节，即在virsh里敲入start xxx_domain，到exec qemu bin，这中间究竟发生了什么细节呢？这就必须要gdb调试了。可以想象，这过程中必定有大量的进程间通信（socket、pipe），这时就出现了文章开头说明的问题：当前thread将数据流发给了另外的thread，而另外的thread却没法跟踪并停止。
 
-###### 例子说明
+#### 例子说明
 1. 我们通过log大概知道了qemuProcessStart是启动的必经之路，因此在这个函数里添加while代码：
 ```
 int
@@ -96,7 +95,7 @@ root     16529     1  0 16:34 ?        00:00:00 /usr/local/sbin/libvirtd --liste
 
 通过这种办法，我们就可以得知整个过程了。以下是通过重复上述步骤获取到的知识。
 
-###### 子线程将cmd通过pipe传递给libvirtd主线程
+#### 子线程将cmd通过pipe传递给libvirtd主线程
 ```
 #0  virCommandHandshakeNotify (cmd=cmd@entry=0x7f6e4400fa40) at util/vircommand.c:2757
 #1  0x00007f6e5e7666cd in qemuProcessLaunch (conn=conn@entry=0x7f6e500009a0, driver=driver@entry=0x7f6e54000e80, vm=vm@entry=0x7f6e54012ec0,
@@ -115,7 +114,7 @@ root     16529     1  0 16:34 ?        00:00:00 /usr/local/sbin/libvirtd --liste
 2756 }
 ```
 
-###### 主线程执行virExec()的过程
+#### 主线程执行virExec()的过程
 - libvirtd收到cmd后，会执行virExec，
 - virExec()将会fork出子进程，子进程将会执行exec(qmeu-system-x86_64)
 ```
