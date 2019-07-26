@@ -2,6 +2,7 @@
 title: 好几张图看懂 Linux profiling 机制
 author: Chen Jie
 layout: post
+draft: false
 album: "Debugging+Tracing"
 permalink: /linux-profiling-methods-overview
 tags:
