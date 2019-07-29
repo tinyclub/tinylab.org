@@ -105,6 +105,14 @@ task :post do
     tagline = '# tagline: " 子标题，如果存在的话 "'
   end
   
+  # Build draft (publish or hide, true for hidden, false for publish)
+  if ENV["draft"]
+    draft = ENV["draft"]
+    draft = "draft: #{draft}"
+  else
+    draft = 'draft: true'
+  end
+
   # Build album (series)
   if ENV["album"]
     album = ENV["album"]
@@ -151,12 +159,13 @@ task :post do
     post.puts "layout: post"
     post.puts "#{author}"
     post.puts "title: \"#{title.gsub(/-/,' ')}\""
+    post.puts "#{draft}"
     post.puts "#{tagline}"
     post.puts "#{album}"
     post.puts "#{group}"
+    post.puts 'license: "cc-by-sa-4.0"'
     post.puts "#{permalink}"
     post.puts 'description: " 文章摘要 "'
-    post.puts 'plugin: mermaid'
     post.puts "category:#{category_list}"
     post.puts "tags:#{tag_list}"
     post.puts "---"
@@ -216,18 +225,6 @@ task :post do
     post.puts "![图片名](/images/weibo/tinylaborg.jpg '图片内容提示，可选')"
     post.puts ""
     post.puts "*注*：如果想规范图片大小，想增加额外的特性，可以用 html 的 `<img>` 标记。"
-    post.puts ""
-    post.puts "## Markdown 绘图"
-    post.puts ""
-    post.puts "下面仅介绍一个例子，详细用法请参考：[Mermaidjs](https://mermaidjs.github.io/)"
-    post.puts ""
-    post.puts "<div class='mermaid'>"
-    post.puts "graph TD;"
-    post.puts "    A-->B;"
-    post.puts "    A-->C;"
-    post.puts "    B-->D;"
-    post.puts "    C-->D;"
-    post.puts "</div>"
     post.puts ""
     post.puts "## 链接以及各类内容混排"
     post.puts ""
@@ -316,6 +313,7 @@ task :page do
     post.puts "layout: page"
     post.puts "author: #{CONFIG['author']}"
     post.puts "title: \"#{title}\""
+    post.puts 'draft: false'
     post.puts '# tagline: " subtitle "'
     post.puts '# album: " belongs to an page series"'
     post.puts '# group: " belongs to navigation or the others"'

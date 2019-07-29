@@ -69,24 +69,25 @@ Linux 0.11 很适合操作系统基本原理的学习，但是要搞嵌入式开
 
 未来的迭代还会继续，但是已经不妨碍我们尝鲜了，以 Ubuntu 和 Qemu 为例。
 
-其他 Linux 和 Mac OSX 系统请安装 [Docker CE](https://store.docker.com/search?type=edition&offering=community) 。
+其他 Linux, Mac OSX 和 Windows 10 系统请安装 [Docker CE](https://store.docker.com/search?type=edition&offering=community) 。
 
-Windows 系统，请先下载并安装 [Docker Toolbox](https://www.docker.com/docker-toolbox)。
+老版本的 Windows 系统，请先下载并安装 [Docker Toolbox](https://www.docker.com/docker-toolbox)。
 
 安装完 docker 后如果想免 `sudo` 使用 linux lab，请务必把用户加入到 docker 用户组并重启系统。
 
     $ sudo usermod -aG docker $USER
 
-由于 docker 镜像文件比较大，有 1G 左右，下载时请耐心等待。另外，为了提高下载速度，建议通过配置 docker 更换镜像库为本地区的，更换完记得重启 docker 服务。
+由于 docker 镜像文件比较大，有 1G 左右，下载时请耐心等待。另外，为了提高下载速度，建议通过配置 `registry-mirror` 更换镜像库为本地区的（以 ustc 为例），更换完记得重启 docker 服务。
 
-    $ grep registry-mirror /etc/default/docker
+    $ cat /etc/default/docker
     DOCKER_OPTS="$DOCKER_OPTS --registry-mirror=https://docker.mirrors.ustc.edu.cn"
     $ service docker restart
 
-如果 docker 默认的网络环境跟本地的局域网环境地址冲突，请通过如下方式更新 docker 网络环境，并重启 docker 服务。
+如果 docker 默认的网络环境跟本地的局域网环境地址冲突，请通过配置 `bip` 更新 docker 网络环境，并重启 docker 服务。
 
-    $ grep bip /etc/default/docker
+    $ cat /etc/default/docker
     DOCKER_OPTS="$DOCKER_OPTS --bip=10.66.0.10/16"
+
     $ service docker restart
 
 请务必注意，通过 Docker Toolbox 安装的 `default` 系统中默认的 `/root` 目录仅仅挂载在内存中，关闭系统后数据会丢失，请千万不要用它来保存实验数据。可以使用另外的目录来存放，比如 `/mnt/sda1`，它是在 Virtualbox 上外挂的一个虚拟磁盘镜像文件，默认有 17.9 G，足够存放常见的实验环境。
@@ -103,7 +104,7 @@ Windows 系统，请先下载并安装 [Docker Toolbox](https://www.docker.com/d
 
 ### 下载
 
-    $ git clone https://github.com/tinyclub/cloud-lab.git
+    $ git clone https://gitee.com/tinylab/cloud-lab.git
     $ cd cloud-lab && tools/docker/choose linux-lab
 
 
@@ -206,7 +207,7 @@ Windows 系统，请先下载并安装 [Docker Toolbox](https://www.docker.com/d
 [1]: http://oss.lzu.edu.cn
 [2]: http://tinylab.org/linux-0.11-lab
 [3]: http://elinux.org/Work_on_Tiny_Linux_Kernel
-[4]: https://github.com/tinyclub/linux-lab.git
+[4]: https://gitee.com/tinylab/linux-lab.git
 [5]: http://tinylab.org/linux-lab
 [6]: https://buildroot.org/
 [7]: http://wiki.qemu.org/Main_Page
@@ -214,5 +215,5 @@ Windows 系统，请先下载并安装 [Docker Toolbox](https://www.docker.com/d
 [9]: http://www.kernel.org
 [10]: http://www.oldlinux.org
 [11]: http://tinylab.org/tinylinux/
-[12]: https://github.com/tinyclub/linux-lab/blob/master/README.md
+[12]: https://gitee.com/tinylab/linux-lab/blob/master/README.md
 [30]: http://user-mode-linux.sourceforge.net/

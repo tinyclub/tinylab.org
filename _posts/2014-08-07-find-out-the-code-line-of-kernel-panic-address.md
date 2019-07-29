@@ -1,6 +1,7 @@
 ---
 title: 如何快速定位 Linux Panic 出错的代码行
 author: Wu Zhangjin
+album: "Debugging+Tracing"
 layout: post
 permalink: /find-out-the-code-line-of-kernel-panic-address/
 tags:
@@ -69,6 +70,8 @@ categories:
 
   如果要获取到足够多的调试信息，请根据需要打开如下选项：
 
+      CONFIG_DEBUG_KERNEL=y
+      CONFIG_DEBUG_INFO=y
       CONFIG_KALLSYMS=y
       CONFIG_KALLSYMS_ALL=y
       CONFIG_DEBUG_BUGVERBOSE=y
@@ -125,9 +128,9 @@ categories:
 
     * objdump
 
-      如果是情况一，直接用地址dump出来。咱们回头看一下Backtrace信息：`bdi_register+0xec/0x150`，这里的0xec是偏移，而0x150是该函数的大小。用objdump默认可以获取整个vmlinux的代码，但是咱们其实只获取一部分，这个可以通过`--start-address`和`--stop-address`来指定。另外`-d`可以汇编代码，`-S`则可以并入源代码。
+      如果是情况一，直接用地址dump出来。咱们回头看一下Backtrace信息：`bdi_register+0xec/0x150`，这里的0xec是偏移，而0x150是该函数的大小。用objdump默认可以获取整个vmlinux的代码，但是咱们其实只获取一部分，这个可以通过`--start-address`和`--stop-address`来指定。另外`-d`可以反汇编代码，`-S`则可以并入源代码，`-l`显示源代码文件和行号。
 
-          $ objdump -dS vmlinux_with_debug_info --start-address=0x0019594c --end-address=$((0x0019594c+0x150))
+          $ objdump -dlS vmlinux_with_debug_info --start-address=0x0019594c --stop-address=$((0x0019594c+0x150))
 
 
       如果是情况二，也可以跟addr2line一样先算出真实地址，然后再通过上面的方法导出。

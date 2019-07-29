@@ -136,17 +136,30 @@ blockquote p {
 
     overflow: hidden
 }
+
+div.weekly ul li a {
+	text-decoration: underline;
+}
+
+div.weekly ul li {
+    list-style-type: circle;
+    margin-left: -1em;
+    padding-left: 0;
+    padding-top: 1.16em;
+    font-size: 110%;
+    /*font-weight: bold;*/
+    /*color: #0066aa;*/
+}
+
 div.weekly blockquote {
-    margin-left: 2.4em;
+    margin-left: 1.3em;
 }
 div.weekly blockquote p {
     padding-left: 0;
     color: #53575f;
 }
 div.weekly p {
-    padding-left: 2em;
-    text-indent: 0;
-    color: #a6aaa9;
+    text-indent: 1.16em;
 }
 div.reward-button {
     font-size: 28px;
@@ -720,7 +733,7 @@ article img {
     margin-left: auto;
     margin-right: auto;
     padding: 0;
-    background-color: #fff;
+    background-color: transparent;
     border: 0 solid #b3b3b3
 }
 /*  Input  */
@@ -1019,10 +1032,11 @@ short_prev_next {
 }
 .inline li {
     float: left;
-    position: relative;
     margin-left: 10px;
+    position: relative;
     line-height: 30px
 }
+
 /*  Widgets  */
 
 #tag-cloud,
@@ -1137,7 +1151,7 @@ short_prev_next {
 
 .author-box-wrap {
     overflow: hidden;
-    display: none;
+    display: block;
     text-align: center;
 }
 .author-box-wrap .author-box-header {

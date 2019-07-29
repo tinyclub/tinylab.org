@@ -1,13 +1,29 @@
+{% if page.contact != false %}
+
+<br>
 <table>
-<tr><td style="text-align:center;">微信公众号</td><td width='150px'>{{ contact_info }}</td><td style="text-align:center;">新浪微博</td></tr>
+<tr><td style="text-align:center;width:30%">微信公众号</td><td style="text-align:center;color:red;width:40%;">{{ contact_info }}</td><td style="text-align:center;width: 30%">知识星球</td></tr>
 <tr>
-  <td style="text-align:center;">
-    <img src='/images/wechat/tinylab-org.jpg' width='120px' />
+  <td style="text-align:center; vertical-align: middle">
+    <img src='/images/wechat/tinylab-org.jpg' width='110px' style="margin-top: auto; margin-bottom: auto; max-width:100%;" />
   </td>
-  <td style="text-align:center;"><br/><br/><b>扫一扫<br/><br/>关注 @泰晓科技</b>
+  <td style="text-align:center; vertical-align: middle;"><strong>关注 @泰晓科技</strong><br/><br/>与数百位一线 Linux 工程师做朋友，您准备好了吗？
   </td>
-  <td>
-    <img src='/images/weibo/tinylaborg.jpg' width='120px' />
+  <td style="text-align:center; vertical-align: middle">
+    <img src='/images/xingqiu/tinylaborg.jpg' width='110px' style="margin-top: auto; margin-bottom: auto; max-width:100%;" />
+  </td>
+</tr>
+<tr>
+  <td style="text-align:center; vertical-align: middle">
+   分享 Linux 产品实战经验。
+  </td>
+  <td style="text-align:center; vertical-align: middle;">
+  </td>
+  <td style="text-align:center; vertical-align: middle;">
+   与业界 Linux 专家交流。
   </td>
   </tr>
 </table>
+<br>
+
+{% endif %}

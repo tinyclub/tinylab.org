@@ -1,18 +1,21 @@
 ---
 title: 二维码
+author: Wu Zhangjin
 tagline: 生成网址二维码，方便手机扫码访问
 layout: page
 permalink: /qrcode/
 update: 2016-03-02
 tags: 字符串,网址,二维码,生成器
 comments: false
+contact: false
+sponsor: true
 order: 500
 ---
 {% include JB/setup %}
 
 <div style="height:20px;"></div>
 
-<form id="qrcode-form" style="text-align:center;"><input id="qrcode-text" type="text" style="text-align:center;height:28px;width:268px" placeholder="请输入任意合法网址"></form>
+<form id="qrcode-form" style="text-align:center;"><input id="qrcode-text" type="text" style="text-align:center;height:28px;width:95%" placeholder="请输入任意合法网址"></form>
 
 <br/>
 <div style="text-align:center">

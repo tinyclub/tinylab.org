@@ -25,9 +25,6 @@ tags:
 
   * 使用文档：[README.md][2]
 
-  * 在线实验
-      * [泰晓实验云台](http://tinylab.cloud:6080/labs/)
-
   * 在线演示
       * 命令行
           * [Linux 快速上手](http://showterm.io/6fb264246580281d372c6)
@@ -40,26 +37,36 @@ tags:
           * [Linux 基本用法](http://showdesk.io/7977891c1d24e38dffbea1b8550ffbb8)
           * [Linux 进阶用法](https://v.qq.com/x/page/y0543o6zlh5.html)
           * [Uboot 基本用法](https://v.qq.com/x/page/l0549rgi54e.html)
+      * 其他
+          * [Linux Lab v0.1-rc1 的所有板子启动测试结果](http://showterm.io/8cd2babf19e0e4f90897e)
+          * [在 arm/vexpress-a9 上运行 Ubuntu 18.04 LTS](http://showterm.io/c351abb6b1967859b7061)
+          * [使用 riscv32/virt 和 riscv64/virt 开发板](http://showterm.io/37ce75e5f067be2cc017f)
+          * [一条命令测试和体验某个内核特性](http://showterm.io/7edd2e51e291eeca59018)
+          * [一条命令配置、编译和测试内核模块](http://showterm.io/26b78172aa926a316668d)
 
   * 代码仓库
+      * [https://gitee.com/tinylab/linux-lab.git][10]
       * [https://github.com/tinyclub/linux-lab.git][3]
 
   * 基本特性：
+      * 跨平台，支持 Linux, Windows 和 Mac OSX。
       * Qemu 支持的大量虚拟开发板，统统免费，免费，免费。
       * 基于 Docker，一键安装，几分钟内就可构建，节约生命，生命，生命。
       * 直接通过 Web 访问，非常便捷，便捷，便捷。
-      * 已内置支持 4 大架构：ARM, MIPS, PowerPC 和 X86。
+      * 已内置支持 5 大架构：ARM, MIPS, PowerPC, X86, Risc-V。
+      * 已内置支持 10 款开发板：i386+X86_64/PC, PowerPC/G3beige, MIPS/Malta, ARM/versatilepb, ARM/vexpress-a9, ARM64/Virt, ARM64/Raspi3, Riscv32+64/Virt 全部升级到了最新的 v5.1（其中 Riscv32/Virt 仅支持 V5.0）。
       * 已内置支持从 Ramfs, Harddisk, NFS rootfs 启动。
-      * 一键即可启动，支持串口和图形启动。
+      * 一键即可启动，支持 串口 和 图形 启动。
       * 已内建网络支持，可以直接 ping 到外网。
       * 已内建 Uboot 支持，可以直接启动 Uboot，并加载内核和文件系统。
-      * 预编译有 initrd 和内核镜像文件，可以快速体验实验效果。
+      * 预编译有 内核镜像、Rootfs、Qemu、Toolchain，可以快速体验实验效果。
       * 可灵活配置和扩展支持更多架构、虚拟开发板和内核版本。
-      * 未来计划支持 Android emulator，支持在线调试。。。
+      * 支持在线调试和自动化测试框架。
+      * 正在添加 树莓派raspi3 和 risc-v 支持。
 
   * 插件
-      * [RLK4.0](https://github.com/tinyclub/rlk4.0)：《奔跑吧Linux内核 4.0》一书课程实验
-      * [CSKY](https://github.com/tinyclub/csky)：中天微国产处理器 [C-SKY Linux](https://c-sky.github.io) 开发插件
+      * [RLK4.0](https://gitee.com/tinylab/rlk4.0)：《奔跑吧Linux内核 4.0》一书课程实验
+      * [CSKY](https://gitee.com/tinylab/csky)：中天微国产处理器 [C-SKY Linux](https://c-sky.github.io) 开发插件
 
 ## 相关文章
 
@@ -72,27 +79,27 @@ tags:
 
 ### 准备
 
-以 Ubuntu 和 Qemu 为例。其他 Linux 和 Mac OSX 系统请先安装 [Docker CE](https://store.docker.com/search?type=edition&offering=community)。Windows 系统，请先下载并安装 [Docker Toolbox](https://www.docker.com/docker-toolbox)。
+以 Ubuntu 和 Qemu 为例。其他 Linux, Mac OSX 和 Windows 10 系统请先安装 [Docker CE](https://store.docker.com/search?type=edition&offering=community)。老版本的 Windows 系统，请先下载并安装 [Docker Toolbox](https://www.docker.com/docker-toolbox)。
 
 安装完 docker 后如果想免 `sudo` 使用 linux lab，请务必把用户加入到 docker 用户组并重启系统。
 
     $ sudo usermod -aG docker $USER
 
-由于 docker 镜像文件比较大，有 1G 左右，下载时请耐心等待。另外，为了提高下载速度，建议通过配置 docker 更换镜像库为本地区的，更换完记得重启 docker 服务。
+由于 docker 镜像文件比较大，有 1G 左右，下载时请耐心等待。另外，为了提高下载速度，建议通过配置 `registry-mirror` 更换镜像库为本地区的（以 ustc 为例），更换完记得重启 docker 服务。
 
-    $ grep registry-mirror /etc/default/docker
+    $ cat /etc/default/docker
     DOCKER_OPTS="$DOCKER_OPTS --registry-mirror=https://docker.mirrors.ustc.edu.cn"
     $ service docker restart
 
-如果 docker 默认的网络环境跟本地的局域网环境地址冲突，请通过如下方式更新 docker 网络环境，并重启 docker 服务。
+如果 docker 默认的网络环境跟本地的局域网环境地址冲突，请通过配置 `bip` 更新 docker 网络环境，并重启 docker 服务。
 
-    $ grep bip /etc/default/docker
+    $ cat /etc/default/docker
     DOCKER_OPTS="$DOCKER_OPTS --bip=10.66.0.10/16"
     $ service docker restart
 
 如果上述改法不生效，请在类似 `/lib/systemd/system/docker.service` 这样的文件中修改后再重启 docker 服务。
 
-    $ grep dockerd /lib/systemd/system/docker.service
+    $ cat /lib/systemd/system/docker.service
     ExecStart=/usr/bin/dockerd -H fd:// --bip=10.66.0.10/16 --registry-mirror=https://docker.mirrors.ustc.edu.cn
     $ service docker restart
 
@@ -117,7 +124,7 @@ tags:
 
 ### 下载
 
-    $ git clone https://github.com/tinyclub/cloud-lab.git
+    $ git clone https://gitee.com/tinylab/cloud-lab.git
     $ cd cloud-lab && tools/docker/choose linux-lab
 
 ### 安装
@@ -216,8 +223,9 @@ tags:
 
 <iframe src="http://showdesk.io/7977891c1d24e38dffbea1b8550ffbb8/?f=1" width="100%" marginheight="0" marginwidth="0" frameborder="0" scrolling="no" border="0" allowfullscreen></iframe>
 
- [2]: https://github.com/tinyclub/linux-lab/blob/master/README.md
+ [2]: https://gitee.com/tinylab/linux-lab/blob/master/README.md
  [3]: https://github.com/tinyclub/linux-lab
+[10]: https://gitee.com/tinylab/linux-lab
  [4]: /take-5-minutes-to-build-linux-0-11-experiment-envrionment/
  [5]: /build-linux-0-11-lab-with-docker/
  [6]: http://tinylab.org/docker-qemu-linux-lab/

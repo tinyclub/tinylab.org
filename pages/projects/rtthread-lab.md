@@ -19,7 +19,6 @@ RT-Thread 是一套国产 IoT 操作系统。
 
 * [RT-Thread 首页](http://www.rt-thread.org/)
 * [RT-Thread Git 仓库](https://github.com/rt-thread/)
-* [在线实验 RT-Thread](http://tinylab.cloud:6080/labs/)
 
 为了降低 RT-Thread 的学习和开发门槛，我们为它开发了这套 RT-Thread Lab，它可以作为 [Cloud Lab](http://tinylab.org/cloud-lab) 的插件使用。
 
@@ -29,12 +28,14 @@ RT-Thread 是一套国产 IoT 操作系统。
 
 * [RT-Thread Lab 演示视频](http://showterm.io/942d1782b37d737b04856)
 
+另外，这套 Lab 不一定有时间及时更新，后续 RT-Thread 的版本更新请参考它的持续构建配置文件：[.travis.yml](https://github.com/RT-Thread/rt-thread/blob/master/.travis.yml)。
+
 ## 安装 Docker
 
 使用 RT-Thread Lab 之前，需要安装 Docker：
 
-* Linux and Mac OSX: [Docker CE](https://store.docker.com/search?type=edition&offering=community)
-* Windows: [Docker Toolbox](https://www.docker.com/docker-toolbox)
+* Linux, Mac OSX, Windows 10: [Docker CE](https://store.docker.com/search?type=edition&offering=community)
+* Old Windows: [Docker Toolbox](https://www.docker.com/docker-toolbox)
 
 注意事项：
 
@@ -98,6 +99,15 @@ RT-Thread 是一套国产 IoT 操作系统。
 ### 下载或更新 RT-Thread 源码
 
     $ make init
+
+### Checkout 验证过的版本
+
+  说明：新的版本可能要更新编译器或者调整 Makefile，具体请参考 README_zh.md 和 [RT-Thread ENV工具](https://www.rt-thread.org/page/download.html)。
+
+    $ pushd rt-thread
+    $ git checkout d629a3c87f
+    $ git clean -fdx
+    $ popd
 
 ### 配置 RT-Thread
 

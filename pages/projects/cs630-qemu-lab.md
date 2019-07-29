@@ -29,19 +29,18 @@ tags:
 * [命令行视频](http://showterm.io/547ccaae139df14c3deec)
 * [桌面演示视频](http://showdesk.io/1f06d49dfff081e9b54792436590d9f9/)
 
-## 在线实验
-
-* [泰晓实验云台](http://tinylab.cloud:6080/labs/)
-
 ## 实验代码
+
+  * 用法：[README.md](https://gitee.com/tinylab/cs630-qemu-lab/blob/master/README.md)
 
   * 仓库地址
 
-    [https://github.com/tinyclub/cs630-qemu-lab.git][3]
+      * [https://github.com/tinyclub/cs630-qemu-lab.git][3]
+      * [https://gitee.com/tinylab/cs630-qemu-lab.git][5]
 
   * 下载源码
 
-        $ git clone https://github.com/tinyclub/cs630-qemu-lab.git
+        $ git clone https://gitee.com/tinylab/cs630-qemu-lab.git
 
   * 安装 qemu 和编译环境（本地使用才需要，通过 Docker 使用不需要）
 
@@ -58,7 +57,7 @@ tags:
 
 [Cloud Lab](http://tinylab.org/how-to-deploy-cloud-labs/) 是泰晓科技开发的一套独立的虚拟实验环境，可快速构建和远程访问，方便企业和学校教学。
 
-下面以 Ubuntu 为例。其他 Linux 和 Mac OSX 系统请先安装 [Docker CE](https://store.docker.com/search?type=edition&offering=community)。Windows 系统，请先下载并安装 [Docker Toolbox](https://www.docker.com/docker-toolbox)。
+下面以 Ubuntu 为例。其他 Linux，Mac OSX 和 Windows 系统请先安装 [Docker CE](https://store.docker.com/search?type=edition&offering=community)。老版本的 Windows 系统，请先下载并安装 [Docker Toolbox](https://www.docker.com/docker-toolbox)。
 
 安装完 docker 后如果想免 `sudo` 使用 linux lab，请务必把用户加入到 docker 用户组并重启系统。
 
@@ -90,7 +89,7 @@ tags:
 
 ### 下载
 
-    $ git clone https://github.com/tinyclub/cloud-lab.git
+    $ git clone https://gitee.com/tinylab/cloud-lab.git
     $ cd cloud-lab && tools/docker/choose cs630-qemu-lab
 
 ### 安装
@@ -149,3 +148,4 @@ tags:
  [2]: http://wiki.qemu.org/Main_Page
  [3]: https://github.com/tinyclub/cs630-qemu-lab
  [4]: /wp-content/uploads/2014/03/cs630-qemu-pmrtc.png
+ [5]: https://gitee.com/tinylab/cs630-qemu-lab

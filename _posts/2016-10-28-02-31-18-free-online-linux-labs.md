@@ -56,7 +56,7 @@ tags:
 | [Markdown Lab ](/markdown-lab)    | tinylab/markdown-lab   | [showterm.io][6]           |
 |-----------------------------------|------------------------|----------------------------|
 
-所有实验环境可以通过 [Cloud-Lab][7] 管理，下面以 Ubuntu 为例。其他 Linux 和 Mac OSX 系统请先安装 [Docker CE](https://store.docker.com/search?type=edition&offering=community)。Windows 系统，请先下载并安装 [Docker Toolbox](https://www.docker.com/docker-toolbox)。使用之前，请阅读下 [Cloud-lab][7] 列出的注意事项。
+所有实验环境可以通过 [Cloud-Lab][7] 管理，下面以 Ubuntu 为例。其他 Linux, Mac OSX 和 Windows 10 系统请先安装 [Docker CE](https://store.docker.com/search?type=edition&offering=community)。老版本的 Windows 系统，请先下载并安装 [Docker Toolbox](https://www.docker.com/docker-toolbox)。使用之前，请阅读下 [Cloud-lab][7] 列出的注意事项。
 
 用法如下：
 
@@ -64,7 +64,7 @@ tags:
     $ cd /mnt/sda1
 
     // 下载 cloud-lab，主要是一系列管理实验环境的脚本
-    $ git clone https://github.com/tinyclub/cloud-lab.git
+    $ git clone https://gitee.com/tinylab/cloud-lab.git
     $ cd cloud-lab/
 
     // 查看现在已经支持的实验环境
@@ -108,8 +108,8 @@ tags:
 [4]: http://showterm.io/ffb67385a07fd3fcec182
 [5]: http://showterm.io/6fb264246580281d372c6
 [6]: http://showterm.io/1809186b57f904d51aeff
-[7]: http://github.com/tinyclub/cloud-lab.git
-[8]: http://linux-talents.tinylab.org
+[7]: http://gitee.com/tinylab/cloud-lab.git
+[8]: /talents
 [9]: http://weidian.com/?userid=335178200
 [10]: /books
 [11]: /projects

@@ -2,6 +2,7 @@
 layout: post
 author: 'Wu Zhangjin'
 title: "Ftrace 实现原理与开发实践"
+album: "Debugging+Tracing"
 group: original
 permalink: /ftrace-principle-and-practice/
 description: "对照 KFT，介绍 Ftrace 的核心原理，并根据产品实践经验介绍 Ftrace 使用实例。"
@@ -50,16 +51,16 @@ tags:
 
       $ echo 'main(){}' | \
       mipsel-linux-gnu-gcc -x c -S -o - - -pg | grep mcount
-	subu	$sp,$sp,8		# _mcount pops 2 words from  stack
-	jal	_mcount
+        subu	$sp,$sp,8		# _mcount pops 2 words from  stack
+        jal	_mcount
 
 * KFT: `gcc -finstrument-functions`
 
       $ echo 'main(){}' | \
       mipsel-linux-gnu-gcc -x c -S -o - - \
       -finstrument-functions | egrep "enter\)|exit\)"
-	lw	$25,%call16(__cyg_profile_func_enter)($28)
-	lw	$25,%call16(__cyg_profile_func_exit)($28)
+        lw	$25,%call16(__cyg_profile_func_enter)($28)
+        lw	$25,%call16(__cyg_profile_func_exit)($28)
 
 ### Dynamic function tracing
 
@@ -287,7 +288,6 @@ tags:
 * 基于 Docker/Qemu 的嵌入式 Linux 开发环境
 * 首页：<http://tinylab.org/linux-lab>
 * 仓库：<https://github.com/tinyclub/linux-lab>
-* 访问：<http://tinylab.cloud:6080/labs>
 * 特性
     * Docker 容器化
     * 可通过 Web 访问的 LXDE Desktop（基于noVNC）

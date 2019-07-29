@@ -9,18 +9,18 @@ markdown: kramdown
 # markdown: redcarpet
 # redcarpet:
 #  extensions: ["no_intra_emphasis", "autolink", "tables"]
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "TODO.md", "tools", "pdfs", "Dockerfile"]
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "TODO.md", "tools", "pdfs", "Dockerfile", "plan"]
 highlighter: rouge
 
 plugins: [jekyll-paginate]
-paginate: 10
+paginate: 50
 
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
 
 title : 泰晓科技
-tagline: 聚焦嵌入式 Linux - 追本溯源，见微知著！
+tagline: 聚焦 Linux - 追本溯源，见微知著！
 start: 2010
 
 production_url: http://tinylab.org

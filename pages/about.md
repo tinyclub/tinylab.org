@@ -1,5 +1,6 @@
 ---
 title: 关于
+author: Wu Zhangjin
 tagline: 欢迎联系、关注和打赏泰晓原创
 layout: page
 group: navigation
@@ -7,47 +8,69 @@ permalink: /about/
 order: 50
 ---
 
-泰晓科技 聚焦嵌入式 Linux，致力于推动业界创造更极致的嵌入式 Linux 产品。
-
-* 核心理念
-  * 追本溯源，见微知著
-  * 滴水穿石，持之以恒
-  * 坚持原创，注重实践
-  * 拥抱开源，开放分享
-
-* 主要方向
-  * 扎实学科基础，透视背后原理
-  * 在创作中思考，在项目中实验
-  * 探讨产品创意，聚焦系统优化
-  * 分享产品实践，优化产品体验
-
-* 主要内容
-  * [原创文章](/categories.html)
-  * [工作机会](/jobs)
-  * [开源项目](/projects)
-  * [开放书籍](/books)
-  * [泰晓沙龙](/tinysalon)
-
-* Logo 解读
-  * T: Tiny，微，见微知著
-  * T: Technology & Technique，崇尚科学，秉持匠心
-  * T: 一横为知识的广度，一竖为知识的深度
-
-我们会持续关注系统稳定性、功耗、性能、温控、实时性、安全、虚拟化、系统裁剪等核心技术，也会持续分析并分享嵌入式 Linux 相关的所有基础技术，并持续开展相关项目开发和基础课程建设。
-
-欢迎阅读 [Hello TinyLab / 泰晓科技](/hello-tinylab)，进一步了解本站的由来。
+泰晓科技 聚焦 Linux，致力于推动业界创造更极致的 Linux 产品。欢迎阅读 [Hello TinyLab / 泰晓科技](/hello-tinylab)，进一步了解本站的由来。
 
 如果您喜欢我们的文章或者赞赏我们的理念，欢迎通过下列方式联系、关注或打赏我们，也欢迎直接[投递原创稿件](/post)，感谢您的认可与支持！
 
 ## 联系
 
-* 微信（可通过管理员加专属微信群）：lzufalcon
-* 微博：[泰晓科技](http://weibo.com/tinylaborg)
-* 微信公众号：泰晓科技
+扫码加微信后可申请加入本站专属讨论群，该群已汇集数百位来自各企业的一线 Linux 工程师，气氛轻松活跃，交流专业透彻。
+
+![tinylab wechat](/images/wechat/tinylab.jpg)
 
 ## 关注
 
+欢迎订阅公众号，同时关注知识星球！
+
 {% include widgets/contact %}
+
+**公众号**：
+
+每天会推送 Linux 原创技术文章和资讯，周一到周五的文章推送计划为：
+
+* 周一
+  * [原创文章](/archive)：由读者投稿或编辑们撰写
+
+* 周二
+  * [LWN 翻译](/lwn)：按专题持续翻译 [LWN](http://lwn.net) 文章
+
+* 周三
+  * [专辑连载](/albums)：各类Linux/开源技术专题
+
+* 周四
+  * [产品实战](/albums#Debugging+Tracing)：Debugging,Tracing,Testing
+
+* 周五
+  * [业界资讯](/news)：Linux & 开源业界最新消息
+
+**知识星球**：
+
+星球不仅会更频繁的分享产品实战经验，也邀请了多位业界 Linux 技术专家，可以直接沟通交流。
+
+星球当前分享的主要内容类别：
+
+* Linux 项目
+  * 开发实录：Linux Lab, Linux 0.11 Lab 等[开源项目](/projects)跟踪，全网独家发布。
+
+* Linux 内核
+  * 理论分析+产品实战：包括源码分析、调试与跟踪、内核特性开发等，大部分内容仅发表在星球内。
+
+* LWN   翻译
+  * 国内独家 [LWN](http://lwn.net) 专题翻译：优先在星球发表，延后两周发布到网站和公众号。
+
+* Tips & Tricks
+  * 技巧速记：Git、Shell、Makefile、Docker 等 Linux Tools 日常深度用法和技巧。仅发表在星球内。
+
+* Linux 其他
+  * Linux 社区文化；Linux 业界前沿资讯；业界 Linux 专家持续入驻，可提问切磋，将规划线下交流。
+
+
+## 投稿
+
+请参考 [投稿须知](http://tinylab.org/post)，所有原创稿件一经采纳，即得相应酬费：
+
+* 首次发表原创文章：200 RMB。
+* 首次发表翻译文章：100 RMB。
 
 ## 打赏
 

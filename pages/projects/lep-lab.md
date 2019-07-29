@@ -19,7 +19,6 @@ LEP 是一个开源工具箱，可用于 Linux/Android 可视化分析。
 
 * [首页](http://www.linuxep.com/)
 * [Github](https://github.com/linuxep/)
-* [在线实验](http://tinylab.cloud:6080/labs/)
 
 为了降低 LEP 的学习和开发门槛，我们为 LEP 开发了这套 LEP Lab，它可以作为 [Cloud Lab](http://tinylab.org/cloud-lab) 的插件使用。
 
@@ -29,8 +28,8 @@ LEP 是一个开源工具箱，可用于 Linux/Android 可视化分析。
 
 使用 LEP Lab 之前，需要安装 Docker：
 
-* Linux and Mac OSX: [Docker CE](https://store.docker.com/search?type=edition&offering=community)
-* Windows: [Docker Toolbox](https://www.docker.com/docker-toolbox)
+* Linux, Mac OSX, Windows 10: [Docker CE](https://store.docker.com/search?type=edition&offering=community)
+* Old Windows: [Docker Toolbox](https://www.docker.com/docker-toolbox)
 
 注意事项：
 

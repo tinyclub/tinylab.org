@@ -80,6 +80,8 @@
         - name: 系统调用
         - name: 程序执行
         - name: 网络管理
+          categories:
+            - name: VPN
         - name: 多媒体管理
         - name: 电源管理
           categories:
@@ -167,6 +169,10 @@
             - name: Makefile
             - name: Gcc
             - name: 交叉编译
+        - name: 装载与链接
+          categories:
+            - name: Loader
+            - name: Linker
         - name: 调试和优化
           categories:
             - name: 串口
@@ -228,6 +234,7 @@
           categories:
             - name: 流量监控
         - name: 开发 Linux 应用
+        - name: 制作 Linux 启动盘
 
 - name: Android 开发
   categories:
@@ -378,7 +385,7 @@
   categories:
     - name: 泰晓沙龙
     - name: 泰晓福利
-    - name: 泰晓周报
+    - name: 泰晓资讯
     - name: 关于我们
 
 - name: 其他杂项

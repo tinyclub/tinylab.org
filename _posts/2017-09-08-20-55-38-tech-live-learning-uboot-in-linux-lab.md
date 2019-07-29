@@ -28,7 +28,7 @@ tags:
 ## 直播/回放
 
 > 回放地址：[如何用 Linux Lab 做 Uboot 实验](https://v.qq.com/x/page/l0549rgi54e.html)
-> 内容大纲：[Learning Uboot in Linux Lab](https://github.com/tinyclub/linux-lab/blob/master/doc/live/uboot.md)
+> 内容大纲：[Learning Uboot in Linux Lab](https://gitee.com/tinylab/linux-lab/blob/master/doc/live/uboot.md)
 > 直播时间：本周六(2017/9/9)下午2:00～3:00
 > 直播口号：跟上年轻人的脚步，用直播传播 Linux 知识。
 
@@ -48,14 +48,13 @@ tags:
 
 ## 致谢
 
-本次直播采用的直播平台和服务由 [三千氪][7] 赞助，本次直播采用的 [实验云台/Cloud Lab][8] 由 [青云QingCloud][9] 赞助服务器。
+本次直播采用的直播平台和服务由 [三千氪][7] 赞助，本次直播采用的 [实验云台/Cloud Lab](/cloud-lab)。
 
 [1]: http://tinylab.org
 [2]: https://v.qq.com/x/page/y0543o6zlh5.html
 [3]: http://www.denx.de/wiki/U-Boot/
 [4]: http://tinylab.org/linux-lab/
-[5]: https://github.com/tinyclub/linux-lab
+[5]: https://gitee.com/tinylab/linux-lab
 [6]: https://weidian.com/i/1937753839
 [7]: https://3qk.easyvaas.com/
-[8]: http://tinylab.cloud:6080
 [9]: https://www.qingcloud.com/

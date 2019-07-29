@@ -22,12 +22,13 @@ tags:
 
 ## 项目描述
 
-[泰晓实验云台][10] 项目致力于创建一套计算机课程的在线实验平台。
+泰晓实验云台 项目致力于创建一套计算机课程的在线实验平台。
 
   * 使用文档：[README.md][2]
-  * 在线实验：[泰晓实验云台][10]
   * 注册帐号：[泰晓开源小店][11]
-  * 代码仓库：[https://github.com/tinyclub/cloud-lab.git][3]
+  * 代码仓库：
+      * [https://gitee.com/tinylab/cloud-lab.git][8]
+      * [https://github.com/tinyclub/cloud-lab.git][3]
   * 基本特性：
       * 基于 Docker，一键安装，几分钟内就可构建，节约生命，生命，生命。
       * 通过 Docker CE 和 Docker Toolbox 支持所有 Linux，Windows，Mac OSX 平台
@@ -53,8 +54,8 @@ tags:
 
 Docker 是 Cloud Lab 的基础，需要先安装好，可参考：
 
-* Linux 和 Mac 系统：[Docker CE](https://store.docker.com/search?type=edition&offering=community)
-* Windows 系统：[Docker Toolbox](https://www.docker.com/docker-toolbox)
+* Linux, Mac, Windows 10 系统：[Docker CE](https://store.docker.com/search?type=edition&offering=community)
+* 老版本的 Windows 系统：[Docker Toolbox](https://www.docker.com/docker-toolbox)
 
 安装完 docker 后如果想免 `sudo` 使用 linux lab，请务必把用户加入到 docker 用户组并重启系统。
 
@@ -147,7 +148,7 @@ Windows 虽然也支持通过 Docker CE 直接安装 Docker，但是如果要使
 
 ## 下载 Cloud Lab
 
-    $ git clone https://github.com/tinyclub/cloud-lab.git
+    $ git clone https://gitee.com/tinylab/cloud-lab.git
     $ cd cloud-lab
 
 ## 下载 Lab
@@ -358,8 +359,6 @@ Cloud Lab 提供的 `Viewonly` 链接可以用于学生，该链接可以多人�
         tinylab/cs630-qemu-lab ...
         tinylab/cloud-ubuntu-dev ...
 
-    如果添加 Docker 镜像很通用，也可以直接往 [Cloud Ubuntu](https://github.com/tinyclub/cloud-ubuntu.git) 提交源码。
-
 * `docker/`
 
     该目录用于设置镜像名、配置资源、或者添加需要用到的设备等。镜像名命名规则为 `tinylab/<LAB_NAME>`，例如：`tinylab/linux-0.11-lab`。
@@ -389,7 +388,7 @@ Cloud Lab 提供的 `Viewonly` 链接可以用于学生，该链接可以多人�
 实验用到的源代码、文档和工具等可以创建一个 Git 仓库存放起来，甚至上传到 Github，然后可作为 git submodule 导入到 `labs/` 目录下。例如：
 
     $ cd labs/
-    $ git submodule add https://github.com/tinyclub/linux-0.11-lab.git
+    $ git submodule add https://gitee.com/tinylab/linux-0.11-lab.git
 
 ## 录制视频
 
@@ -403,17 +402,15 @@ Cloud Lab 支持自动录制实验过程。登陆进去之前，进行如下设�
 
 ## 获取帐号
 
-如果想快速体验，欢迎通过 [泰晓开源小店][11] 购买已经创建好的在线实验帐号。
-
 如果觉得该实验平台非常有用，欢迎扫下面的二维码赞助我们。
 
- [2]: https://github.com/tinyclub/cloud-lab/blob/master/README.md
+ [2]: https://gitee.com/tinylab/cloud-lab/blob/master/README.md
  [3]: https://github.com/tinyclub/cloud-lab
+ [8]: https://gitee.com/tinylab/cloud-lab
  [4]: /take-5-minutes-to-build-linux-0-11-experiment-envrionment/
  [5]: /build-linux-0-11-lab-with-docker/
  [6]: http://tinylab.org/docker-qemu-linux-lab/
  [7]: http://tinylab.org/using-linux-lab-to-do-embedded-linux-development/
-[10]: http://tinylab.cloud:6080/labs/
 [11]: http://weidian.com/?userid=335178200
 [12]: http://tinylab.org/how-to-deploy-cloud-labs/
 [13]: http://tinylab.org/showdesk-record-and-share-your-desktop/

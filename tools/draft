@@ -1,0 +1,56 @@
+#!/bin/bash
+#
+# draft -- hide, publish and list hiden posts
+#
+
+TOP_DIR=$(cd $(dirname $0) && pwd)
+
+draft_on="draft:.*true"
+draft_off="draft: false"
+
+# List all drafts
+grep -ur "$draft_on" $TOP_DIR/../{_posts,pages}/ | cut -d':' -f1 | egrep -v "/post|/draft" | xargs -I{} grep "^title:" {} | cut -d':' -f2- | cat -n
+total=`grep -ur "$draft_on" $TOP_DIR/../{_posts,pages}/ | wc -l | tr -d ' '`
+post=""
+if [ $total -gt 1 ]; then
+        # Select the one for publishing
+        post_num=0
+	read -p "Select(0~$total): " post_num
+	if [ -n "$post_num" ]; then
+           if [ $post_num -le $total -a $post_num -ge 1 ]; then
+		post=`grep -ur "$draft_on" $TOP_DIR/../{_posts,pages}/ | cut -d':' -f1 | egrep -v "/post|/draft" | head -$post_num | tail -1`
+           fi
+	fi
+else
+	post=`grep -ur "$draft_on" $TOP_DIR/../{_posts,pages}/ | cut -d':' -f1 | egrep -v "/post|/draft" | head -1`
+fi
+
+# Choose it?
+
+echo
+[ -z "$post" ] && echo "No draft selected or No draft exists" && exit
+title=`grep "^title:" $post | cut -d':' -f2-`
+echo "Selected: $title"
+echo
+
+egrep "^author|^permalink|^title|^album|^description" $post
+
+echo
+
+# Publish it or not, say Y for release it
+publish="N"
+read -p "Publish it? (Y/N) " publish
+[ "x$publish" != "xY" -a "x$publish" != "xy" ] && exit
+
+sed -i -e "s/$draft_on/$draft_off/g" $post
+
+publish_date=`date +%Y-%m-%d-%H-%M-%S`
+
+post_publish=`echo $post | sed -e "s/[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}-[0-9]\{2\}-[0-9]\{2\}-[0-9]\{2\}/$publish_date/g"`
+post_title=`basename $post_publish | sed -e "s/[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}-[0-9]\{2\}-[0-9]\{2\}-[0-9]\{2\}-//g" | sed -e "s/.md$//g"`
+
+git mv $post $post_publish
+
+git add $post_publish
+
+git commit -s $post $post_publish -m "post: publish $post_title"

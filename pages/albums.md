@@ -1,10 +1,11 @@
 ---
 layout: page
+author: Wu Zhangjin
 title: 专辑
 tagline: 展示成系列撰写的文章
 header: Post By Albums
 group: navigation
-order: 2
+order: 3
 permalink: /albums/
 comments: false
 ---
@@ -25,7 +26,7 @@ comments: false
 
   {% assign album_url = "" %}
   {% for page in site.pages %}
-    {% if page.path contains '/books/' and page.album %}
+    {% if page.album %}
       {% assign book_title = page.album | remove: " " | upcase %}
       {% assign album_title = album.name | remove: " " | upcase %}
       {% if book_title == album_title %}
@@ -39,6 +40,11 @@ comments: false
   <h3 id="{{ album.name | downcase | replace:' ','-' | replace:'/','-' }}-ref">{% if album_url != "" %}<a href="{{ album_url }}" title="该专辑已发布为GitBook，点击查看！">{{ album.name}}</a>{% else %}{{ album.name }}{% endif %} <sup>({{ album.items.size }})</sup></h3>
   <ul>
     {% for post in album.items %}
+
+    {% if post.draft and post.draft == true %}
+      {% continue %}
+    {% endif %}
+
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>

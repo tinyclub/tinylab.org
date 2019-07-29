@@ -1,6 +1,7 @@
 ---
 title: Linux 段错误详解
 author: Wu Zhangjin
+album: "Debugging+Tracing"
 layout: post
 permalink: /explore-linux-segmentation-fault/
 tags:
@@ -10,7 +11,7 @@ tags:
   - 段错误
   - Linux
 categories:
-  - Catchsegv
+  - catchsegv
   - 调试技巧
   - 稳定性
 ---

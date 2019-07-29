@@ -1,6 +1,7 @@
 ---
 title: 使用 JDB 调试 Android 应用程序
 author: Huang Tao
+album: "Debugging+Tracing"
 layout: post
 permalink: /use-jdb-to-debug-android-application/
 tags:
@@ -14,12 +15,6 @@ categories:
   - JDB
   - 调试技巧
 ---
-
-<!-- Title: Use JDB to debug Android Application -->
-
-<!-- Tags: JDB, Android, JDWP, ADB, Android Studio, ADT -->
-
-<!-- Cat:  Android -->
 
 > By Huang Tao of [TinyLab.org][1]
 > 2015/04/13

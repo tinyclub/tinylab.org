@@ -1,0 +1,196 @@
+
+{% if author_name == null or author_name == empty %}
+{% capture author_name %}{% if page.author %}{{ page.author }}{% else %}admin{% endif %}{% endcapture %}
+{% endif %}
+
+{% capture who %}{% if author_name == "admin" %}我们{% else %}作者{% endif %}{% endcapture %}
+
+<div class="author-box" id="author-box-{{ author_box_id }}" {{ author_box_visible }}>
+
+{% assign author = site.data.people[author_name] %}
+{% if author == null %} {% assign author = site.data.people["admin"] %} {% endif %}
+
+{% for contact in site.data.contacts %}
+  {% if page.url == "/authors.html" and (contact.name == "archive" or contact.name == "article") %}
+    {% continue %}
+  {% endif %}
+  {% if contact.name == "article" %}
+    {% continue %}
+  {% endif %}
+
+  {% capture url_type %}{{ contact.name }}{% endcapture %}
+  {% assign url_base = author[url_type] %}
+  {% assign tool = "" %}
+  {% assign money = "" %}
+
+  {% if contact.name == "sponsor" and author['sponsor'] %}
+  {% assign url_base = author[url_base] %}
+  {% capture tool %}{{ url_base | split: "-" | first }}{% endcapture %}
+  {% capture tool %}用{{ site.data.paytools[tool] }}扫码{% endcapture %}
+  {% assign pay_info = url_base | split: "-" %}
+  {% if pay_info[3] %}
+    {% capture money_info %}￥{{pay_info[3]}}元{% endcapture %}
+  {% endif %}
+  {% capture money %}{{ who }}{{ money_info }}{% endcapture %}
+  {% endif %}
+
+  {% if contact.name == "wechat" or contact.name == "weibo" %}
+  {% assign tool = "扫码关注" %}
+  {% endif %}
+  {% if contact.desc %}
+    {% assign desc = contact.desc %}
+  {% else %}
+    {% assign desc = author.name %}
+  {% endif %}
+
+  {% if contact.name == "archive" %}
+    {% if author_name == "admin" %}
+      {% assign url_base = site.JB.archive_path | prepend: site.production_url %}
+      {% assign desc = desc | prepend:" 篇" | prepend: site.posts.size | prepend:"查看本站 " %}
+    {% else %}
+      {% assign post_num = 0 %}
+      {% assign posts_by_author = site.posts | group_by:"author" | sort:"author" %}
+      {% for author in posts_by_author %}
+        {% if author.name == author_name %}
+          {% capture post_num %}{{ author.items.size }}{% endcapture %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+      {% assign desc = desc | prepend:" 篇" | prepend: post_num | prepend:"查看作者 " %}
+      {% assign author_ref = author_name | downcase | replace:' ','-' | append:"-ref" %}
+      {% capture url_base %}{{ site.JB.authors_path | prepend: site.production_url | append:"#" | append: author_ref }}{% endcapture %}
+    {% endif %}
+  {% endif %}
+
+  {% if contact.name == "article" %}
+    {% assign url_base = site.production_url | append: page.url %}
+    {% assign tool = "手机扫码阅读" %}
+  {% endif %}
+
+  {% if contact.name == "github" or contact.name == "site" %}
+    {% assign tool = "扫码访问" %}
+  {% endif %}
+  {% if author_name == "admin" and contact.name == "site" %}
+    {% assign desc = "本站" %}
+  {% endif %}
+
+  {% if url_base %}
+    {% assign url = "" %}
+    {% if contact.name != "wechat" and contact.name != "sponsor" and contact.name != "info" %}
+      {% assign raw_url = contact.url | append: url_base %}
+      {% capture url %}href="{{ raw_url }}" target="_blank"{% endcapture %}
+    {% endif %}
+    {% if contact.name == "wechat" %}
+      {% assign raw_url = url_base %}
+    {% endif %}
+
+    {% if contact.name == 'article' %}
+      {% assign url_base = "" %}
+    {% endif %}
+
+    {% assign more_info = "" %}
+    {% if contact.name != "archive" and contact.name != "sponsor" and contact.name != "info" %}
+      {% assign more_info = url_base | prepend:"：" %}
+    {% endif %}
+
+    {% if contact.name == "info" and author['nickname'] %}
+      {% assign more_info = author['nickname'] | prepend: " (" | append: ")" %}
+    {% endif %}
+
+    <a id="{{ contact.name | append: author_box_ref }}" {{ url }} class="tooltip author-{{ contact.name}}">
+      <i class="icon-fixed-width icon-{{ contact.icon }}"></i>
+      <span>
+        <strong>{{ tool }}{{ desc }}{{ more_info }}{{ money }}</strong>
+        <br/>
+        {% if contact.name == "info" %}<div class="author_info">{{ author.info | replace:"；","<br/>" | replace:";", "<br/>" }}</div>{% endif %}
+          {% if contact.name != "info" %}
+            {% capture qrcode %}{{ contact.name }}-qrcode{% endcapture %}
+            {% assign has_qrcode = author[qrcode] %}
+            <br/>
+            {% if has_qrcode %}
+              <div><img src="/images/{{ contact.name }}/{{ url_base }}.jpg"></div>
+            {% else %}
+              <div id="{{ qrcode | append:author_box_ref }}"></div>
+              <script async type="text/javascript">$(document).ready(function () { $('#{{ qrcode | append: author_box_ref }}').qrcode({ text: "{{ raw_url }}", width: 110, height: 110 }); });</script>
+            {% endif %}
+          {% endif %}
+      </span>
+    </a>
+  {% endif %}
+{% endfor %}
+</div>
+
+<div style="margin: 0 auto; border: 1px solid #dcdee0; padding: 10px; overflow:hidden; vertical-align: middle; display: table;">
+
+  {% assign avatar = author['avatar'] %}
+  {% assign wechat = author['wechat'] %}
+  {% assign github = author['github'] %}
+  {% assign weibo = author['weibo'] %}
+  {% assign email = author['email'] %}
+  {% assign wechat_qrcode = author['wechat-qrcode'] %}
+  {% assign photo = author['photo'] %}
+
+  {% assign avatar_pic = 'photo/empty_avatar' %}
+
+  {% if avatar == null or avatar == empty %}
+    {% if email %}
+      {% assign avatar = 'email' %}
+    {% endif %}
+    {% if weibo %}
+      {% assign avatar = 'weibo' %}
+    {% endif %}
+    {% if weichat %}
+      {% assign avatar = 'wechat' %}
+    {% endif %}
+    {% if github %}
+      {% assign avatar = 'github' %}
+    {% endif %}
+    {% if photo %}
+      {% assign avatar = 'photo' %}
+    {% endif %}
+    {% if wechat_qrcode %}
+      {% assign avatar = 'wechat-qrcode' %}
+    {% endif %}
+  {% endif %}
+
+  {% if avatar and wechat and wechat_qrcode and avatar == 'wechat-qrcode' %}
+       {% assign tool = "—— 扫码加作者微信" %}
+       {% assign avatar_pic = "wechat/" | append: wechat %}
+  {% endif %}
+  {% if avatar and photo and avatar == 'photo' %}
+       {% assign avatar_pic = "photo/" | append: photo %}
+  {% endif %}
+
+  <div id="author_avatar" style="padding-right: 20px; height: 100%; display: table-cell; vertical-align: middle;">
+  {% if avatar and wechat and avatar == 'wechat' %}
+     {% assign tool = "—— 扫码加作者微信" %}
+     {% assign qrcode_dynamic = wechat %}
+  {% endif %}
+  {% if avatar and weibo and avatar == 'weibo' %}
+     {% assign tool = "—— 扫码加作者微博" %}
+     {% assign qrcode_dynamic = "http://weibo.com/" | append: weibo %}
+  {% endif %}
+  {% if avatar and github and avatar == 'github' %}
+     {% assign tool = "—— 扫码访问作者Github" %}
+     {% assign qrcode_dynamic = "https://github.com/" | append: github %}
+  {% endif %}
+  {% if avatar and email and avatar == 'email' %}
+     {% assign tool = "—— 扫码给作者发邮件" %}
+     {% assign qrcode_dynamic = "mailto: " | append: email %}
+  {% endif %}
+
+  {% if avatar and qrcode_dynamic %}
+     <script async type="text/javascript"> $(document).ready(function () { $('#author_avatar').qrcode({ text: "{{ qrcode_dynamic }}", width: 110, height: 110 }); });</script>
+  {% else %}
+     <img style="max-height:110px; max-weight:110px" src="/images/{{ avatar_pic }}.jpg">
+  {% endif %}
+  </div>
+
+  <div style="text-align: left; vertical-align: middle; display: table-cell;">{% if author.info %}<strong>{{ author['name'] }} ({{ author['nickname'] }})</strong><br/><br/>{{ author.info }}<br/><br/>{% if tool %}{{ tool }}{% endif %}{% else %}作者还没自我介绍呢！{% endif %}</div>
+</div>
+
+{% assign author = null %}
+{% assign author_name = null %}
+{% assign author_box_visible = "" %}
+{% assign url = "" %}
+{% assign author_box_icon_id = "" %}

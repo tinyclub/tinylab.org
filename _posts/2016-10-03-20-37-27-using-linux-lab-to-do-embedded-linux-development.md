@@ -40,21 +40,21 @@ tags:
 
 ## 环境搭建
 
-下面以 Ubuntu 系统为例，其他 Linux 和 Mac OSX 系统请先安装 [Docker CE](https://store.docker.com/search?type=edition&offering=community)。Windows 系统，请先下载并安装 [Docker Toolbox](https://www.docker.com/docker-toolbox)。
+下面以 Ubuntu 系统为例，其他 Linux，Mac OSX 和 Windows 10 系统请先安装 [Docker CE](https://store.docker.com/search?type=edition&offering=community)。老版本的 Windows 系统，请先下载并安装 [Docker Toolbox](https://www.docker.com/docker-toolbox)。
 
 安装完 docker 后如果想免 `sudo` 使用 linux lab，请务必把用户加入到 docker 用户组并重启系统。
 
     $ sudo usermod -aG docker $USER
 
-由于 docker 镜像文件比较大，有 1G 左右，下载时请耐心等待。另外，为了提高下载速度，建议通过配置 docker 更换镜像库为本地区的，更换完记得重启 docker 服务。
+由于 docker 镜像文件比较大，有 1G 左右，下载时请耐心等待。另外，为了提高下载速度，建议通过配置 `registry-mirror` 更换镜像库为本地区的（以 ustc 为例），更换完记得重启 docker 服务。
 
-    $ grep registry-mirror /etc/default/docker
+    $ cat /etc/default/docker
     DOCKER_OPTS="$DOCKER_OPTS --registry-mirror=https://docker.mirrors.ustc.edu.cn"
     $ service docker restart
 
-如果 docker 默认的网络环境跟本地的局域网环境地址冲突，请通过如下方式更新 docker 网络环境，并重启 docker 服务。
+如果 docker 默认的网络环境跟本地的局域网环境地址冲突，请通过配置 `bip` 更新 docker 网络环境，并重启 docker 服务。
 
-    $ grep bip /etc/default/docker
+    $ cat /etc/default/docker
     DOCKER_OPTS="$DOCKER_OPTS --bip=10.66.0.10/16"
     $ service docker restart
 
@@ -70,7 +70,7 @@ tags:
 
 接下来，首先把 Linux Lab 下载下来：
 
-    $ git clone https://github.com/tinyclub/cloud-lab.git
+    $ git clone https://gitee.com/tinylab/cloud-lab.git
     $ cd cloud-lab && tools/docker/choose linux-lab
 
 由于 Linux Lab 把所有的环境 docker 容器化了，只需要一条命令即可构建，以 Ubuntu 为例：
@@ -117,9 +117,9 @@ tags:
 
 源码从如下镜像站获取：
 
-* u-boot: https://github.com/u-boot/u-boot.git
-* linux-stable: https://github.com/tinyclub/linux-stable.git
-* buildroot: https://github.com/buildroot/buildroot.git
+* u-boot: https://gitee.com/tinylab/u-boot.git
+* linux-stable: https://mirrors.tuna.tsinghua.edu.cn/git/linux-stable.git
+* buildroot: https://gitee.com/tinylab/buildroot.git
 
 说明：
 

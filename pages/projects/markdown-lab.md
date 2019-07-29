@@ -26,9 +26,10 @@ tags:
 该项目致力于快速构建一个基于 Docker 的 Markdown 文档编辑环境。
 
   * 使用文档：[README.md][2]
-  * 在线实验：<http://tinylab.cloud:6080/labs>
   * 在线演示：<http://showterm.io/1809186b57f904d51aeff>
-  * 代码仓库：[https://github.com/tinyclub/markdown-lab.git][3]
+  * 代码仓库：
+      * [https://gitee.com/tinylab/markdown-lab.git][10]
+      * [https://github.com/tinyclub/markdown-lab.git][3]
   * 基本特性：
       * 基于 Docker，一键安装，几分钟内就可构建，节约生命，生命，生命。
       * 直接通过 Web 访问，非常便捷，便捷，便捷。
@@ -42,8 +43,8 @@ tags:
 
 在实验之前，请先参考下面文档安装好 Docker。
 
-* Linux 和 Mac 系统：[Docker CE](https://store.docker.com/search?type=edition&offering=community)
-* Windows 系统：[Docker Toolbox](https://www.docker.com/docker-toolbox)
+* Linux, Mac OSX, Windows 10 系统：[Docker CE](https://store.docker.com/search?type=edition&offering=community)
+* 老版本 Windows 系统：[Docker Toolbox](https://www.docker.com/docker-toolbox)
 
 安装完 docker 后如果想免 `sudo` 使用 linux lab，请务必把用户加入到 docker 用户组并重启系统。
 
@@ -75,7 +76,7 @@ tags:
 
 ### 下载
 
-    $ git clone https://github.com/tinyclub/cloud-lab.git
+    $ git clone https://gitee.com/tinylab/cloud-lab.git
     $ cd cloud-lab/ && tools/docker/choose markdown-lab
 
 ### 安装
@@ -83,10 +84,6 @@ tags:
 Docker 安装：
 
     $ tools/docker/pull    # Pull from docker hub
-    or
-    $ tools/docker/build   # Build from source
-
-    
     $ tools/docker/run
 
 通过 Docker 安装后，上述命令或者 `tools/docker/vnc` 会打开一个 VNC 页面，从控制台日志中获取密码并登陆后，会看到桌面的 "Markdown Lab" 图标，点击后即可进入操作终端。
@@ -143,8 +140,9 @@ Docker 安装：
 
 ![Markdown Lab Demo](/wp-content/uploads/2016/08/30/markdown-lab-demo.jpg)
 
- [2]: https://github.com/tinyclub/markdown-lab/blob/master/README.md
+ [2]: https://gitee.com/tinylab/markdown-lab/blob/master/README.md
  [3]: https://github.com/tinyclub/markdown-lab
+[10]: https://gitee.com/tinylab/markdown-lab
  [4]: http://tinylab.org/use-markdown-to-write-document/
  [5]: http://tinylab.org/write-resume-with-markdown/
  [6]: http://tinylab.org/use-markdown-to-write-slides/
