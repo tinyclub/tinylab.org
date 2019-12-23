@@ -1,6 +1,6 @@
 ---
 layout: post
-author: 'Lotte'
+author: 'Bai Haowen'
 title: "一次性能 BUG 分析之旅：大量 D 进程卡在 shrink_inactive_list"
 draft: true
 # tagline: " 子标题，如果存在的话 "
@@ -19,7 +19,7 @@ tags:
   - memory reclaim
 ---
 
-> By Your Nick Name of [TinyLab.org][1]
+> By Lotte of [TinyLab.org][1]
 > Dec 23, 2019
 
 ## Description
