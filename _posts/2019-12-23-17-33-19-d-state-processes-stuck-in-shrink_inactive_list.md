@@ -136,12 +136,12 @@ D 进程就是被设置了 TASK_UNINTERRUPTIBLE 进程状态，不可中断的�
 
 所以初步定了两个方向，疑点：
 
-一是内存回收瓶颈，内存回收不及时，内存需求量巨大，而 LMK 没触发，内存有很多匿名页，都在回收和回写文件页等。
-二是 io 读写瓶颈，io 速率慢，某个时间段速率变慢，ufs 频率低，上层读写大量数据，io 占用率过高等。
+- 内存回收瓶颈，内存回收不及时，内存需求量巨大，而 LMK 没触发，内存有很多匿名页，都在回收和回写文件页等。
+- 是 io 读写瓶颈，io 速率慢，某个时间段速率变慢，ufs 频率低，上层读写大量数据，io 占用率过高等。
 
 需要澄清这些疑点。
 
-插播一些背景知识
+下面插播一些背景知识
 
 ## page cache
 
@@ -188,9 +188,10 @@ echo 1 > /sys/kernel/debug/tracing/tracing_on
 ![](/wp-content/uploads/2019/12/d_state_processes_stuck_in_shrink_inactive_list/memory_reclaim.png)
 
 <center>
-<img src=/wp-content/uploads/2019/12/d_state_processes_stuck_in_shrink_inactive_list/shrink_inactive_list.png width = "50%" height = "50%" />
+<img src=/wp-content/uploads/2019/12/d_state_processes_stuck_in_shrink_inactive_list/shrink_inactive_list.png width = "60%" height = "60%" />
 shrink_inactive_list
 </center>
+
 
 **收缩不活跃链表**
 
