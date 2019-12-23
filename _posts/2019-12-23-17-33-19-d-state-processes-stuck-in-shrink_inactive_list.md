@@ -538,6 +538,6 @@ ok，已经理清了前因后果。再退一步，试想下，假如上游没有
 
 
 <center>
-<img src=/wp-content/uploads/2019/12/D_state_processes_stuck_in_shrink_inactive_list/wechat-pay-lotte-money.jpg width = "10%" height = "10%" />
+<img src=/wp-content/uploads/2019/12/d_state_processes_stuck_in_shrink_inactive_list/wechat-pay-lotte-money.jpg width = "10%" height = "10%" />
 请作者吃根辣条
 </center>
