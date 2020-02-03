@@ -102,4 +102,3 @@ ABI问题可能最终会成为KRSI合并到内核的最大障碍，尽管这种�
 [6]: https://lwn.net/ml/linux-kernel/20191220154208.15895-1-kpsingh@chromium.org/
 [7]: http://man7.org/linux/man-pages/man2/bpf.2.html
 [8]: https://software.intel.com/security-software-guidance/api-app/sites/default/files/Intel_Mitigation_Overview_for_Potential_Side-Channel_Cache_Exploits_Linux_white_paper.pdf
-[9]: https://lwn.net/Articles/302245/
