@@ -8,7 +8,7 @@ album: 'LWN 中文翻译'
 group: translation
 license: "cc-by-sa-4.0"
 permalink: /lwn-808048/
-description: "LWN 中文翻译，KRSI——另一个基于BPF的安全模块"
+description: "LWN 中文翻译，KRSI —— 另一个基于BPF的安全模块"
 category:
   - 安全
   - LWN
@@ -23,7 +23,7 @@ tags:
 > 原文：[Moving interrupts to threads](https://lwn.net/Articles/808048/)
 > 原创：By Jonathan Corbet @ Dec. 27, 2019
 > 翻译：By [鲜卑拓跋枫](https://github.com/Murongfeng2018)
-> 校对：By [](https://github.com/)
+> 校对：By [Wen Yang](https://github.com/w-simon)
 
 > One of the first uses of the [BPF virtual machine](http://lwn.net/Articles/740157/) outside of networking was to implement access-control policies for the [seccomp()](http://man7.org/linux/man-pages/man2/seccomp.2.html) system call. Since then, though, the role of BPF in the security area has not changed much in the mainline kernel, even though BPF has evolved considerably from the "classic" variant still used with seccomp() to the "extended" BPF now supported by the kernel. That has not been for a lack of trying, though. The out-of-tree Landlock security module was [covered here](https://lwn.net/Articles/703876/) over three years ago. We also [looked at](https://lwn.net/Articles/798157/) the kernel runtime security instrumentation (KRSI) patch set in September. KP Singh has posted [a new KRSI series](https://lwn.net/ml/linux-kernel/20191220154208.15895-1-kpsingh@chromium.org/), so the time seems right for a closer look.
 
