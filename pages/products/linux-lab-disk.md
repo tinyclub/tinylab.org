@@ -139,6 +139,15 @@ PC 端可以直接访问 [泰晓科技开源小店](https://shop155917374.taobao
 
 下面会不断更新汇总用户可能会提出的问题：
 
+- 修改 U 盘盘符后导致系统无法启动
+    * 当前 Linux Lab Disk 不支持修改盘符、也禁止随意调整分区表等，否则系统可能无法启动
+    * 通常把盘符改回出厂名称（如 linux-lab-disk 或 pocket-linux）后应该就能恢复启动
+
+- 启动过程中出现 “Oh no! Something has gone wrong.”
+    * 出现该现象可能是系统出现了数据不一致，譬如，在拔掉 Linux Lab Disk 之前，没有正常关闭系统或者没有安全移除
+        * 正常操作是：先关闭系统，再安全移除，之后再拔掉 Linux Lab Disk
+    * 通常可以通过出厂恢复功能恢复系统，进入 Grub 菜单后，依次选择 `Factory Restore Setting -> Restore Factory System Only` 即可
+
 - 引导过程中出现：`security verification failed`, `Verification failed: (0x1A) Security Violation` 或类似错误？
     * 部分 Linux 发行版不支持 Security Boot，需要进入 BIOS 中的 Security 设置中，确保 `Security Boot` 处于 `Disabled` 状态。
 
