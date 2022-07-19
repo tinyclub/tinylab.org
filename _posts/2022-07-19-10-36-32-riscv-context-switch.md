@@ -210,9 +210,9 @@ static void set_mm_noasid(struct mm_struct *mm)
 
 ### RISC-V 的 ASID 机制
 
-在不带 ASID 的 `set_mm_noasid()` 中，我们在设置页表后，简单地把所有的 TLB 项全部清空了，这就会导致切换到新的线程后，在一开始取指、访存时，会出现大量的 TLB Miss 的情况，需要反复到内存中查找页表，导致性能降低。ASID 机制是为了缓解这个问题而诞生的。
+在不带 ASID 的 `set_mm_noasid()` 中，我们在设置页表后，简单地把所有的 TLB 项全部清空了，这就会导致切换到新的线程后，在一开始取址、访存时，会出现大量的 TLB Miss 的情况，需要反复到内存中查找页表，导致性能降低。ASID 机制是为了缓解这个问题而诞生的。
 
-ASID 的全称是 Address Space Identifier，总而言之，每个用户进程（即每个 `mm_struct`）拥有一个唯一的 ASID，用于在 TLB 中与其他进程的表项区隔开来。这样在 TLB 中可以同时存在多个进程的表项，在地址翻译时增加表项的 ASID 与当前运行进程的 ASID 的匹配。经过这种优化后，如果两个用户进程之间频繁切换时，不用每次都清空 TLB，导致后续大量 TLB Miss，提高了取指和访存效率。
+ASID 的全称是 Address Space Identifier，总而言之，每个用户进程（即每个 `mm_struct`）拥有一个唯一的 ASID，用于在 TLB 中与其他进程的表项区隔开来。这样在 TLB 中可以同时存在多个进程的表项，在地址翻译时增加表项的 ASID 与当前运行进程的 ASID 的匹配。经过这种优化后，如果两个用户进程之间频繁切换时，不用每次都清空 TLB，导致后续大量 TLB Miss，提高了取址和访存效率。
 
 当前运行进程的 ASID 和页表指针一样，都写在 `satp` CSR 中，下图分别是 RV32 和 RV64 下该 CSR 的值设计：
 
