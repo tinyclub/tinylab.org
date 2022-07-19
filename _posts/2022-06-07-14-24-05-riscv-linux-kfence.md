@@ -26,7 +26,7 @@ Kfence (Kernel Electric Fence) 是 Linux 内核引入的一种低开销的内存
 
 Kfence 的基本原理非常简单，它创建了自己的专有检测内存池 `kfence_pool`。在 `data page` 的两边加上了 `fence page` 电子栅栏，利用 MMU 的特性把 `fence page` 设置成不可访问。如果对 `data page` 的访问越过了 page 边界， 就会立刻触发异常。
 
-![](/wp-content/uploads/2022/03/riscv-linux/kfence/kfence_pool.png)
+![](/wp-content/uploads/2022/03/riscv-linux/images/kfence/kfence_pool.png)
 
 Kfence 的主要特点如下：
 
@@ -42,13 +42,13 @@ Kfence 把自己 hook 到 `slub/slab` 的 `malloc()/free()` 流程当中去。�
 - 1、默认每隔 100 ms，开放从 `kfence_pool` 内存池中分配一次数据。分配成功后会把 `kfence_allocation_gate` 加 1，阻止继续从 `kfence_pool` 的分配。`kfence_timer` 定时到期以后，又会重新开放一次分配。这相当于一种 `抽样法`。
 - 2、每次分配都会占用 `kfence_pool` 中的一个 `data page`，所以可分配的内存长度最大为 1 page。
 
-![](/wp-content/uploads/2022/03/riscv-linux/kfence/kfence_slub_hook.png)
+![](/wp-content/uploads/2022/03/riscv-linux/images/kfence/kfence_slub_hook.png)
 
 ### 1.2 out-of-bounds (over data page)
 
 从 `kfence_pool` 中成功分配一个内存对象 `obj`，不管 `obj` 的实际大小有多大，都会占据一个 `data page`。
 
-![](/wp-content/uploads/2022/03/riscv-linux/kfence/kfence_outbound_fence.png)
+![](/wp-content/uploads/2022/03/riscv-linux/images/kfence/kfence_outbound_fence.png)
 
 当原本访问 `obj` 的操作溢出到相邻的 `fence page` 时，会立即触发 CPU 异常，通过堆栈回溯揪出异常访问的元凶。
 
@@ -56,7 +56,7 @@ Kfence 把自己 hook 到 `slub/slab` 的 `malloc()/free()` 流程当中去。�
 
 大部分情况下 `obj` 是小于一个 page 的，对于 `data page` 剩余空间系统使用 `canary pattern` 进行填充。这种操作是为了检测超出了 `obj` 但还在 `data page` 范围内的溢出访问。
 
-![](/wp-content/uploads/2022/03/riscv-linux/kfence/kfence_outbound_canary.png)
+![](/wp-content/uploads/2022/03/riscv-linux/images/kfence/kfence_outbound_canary.png)
 
 这种类型的溢出是不能在溢出发生时立刻触发的，它只能在 `obj` free 时，通过检测 `canary pattern` 被破坏来检测到有 `canary` 区域的溢出访问。但是异常访问的元凶却不能直接抓出来。
 
@@ -64,7 +64,7 @@ Kfence 把自己 hook 到 `slub/slab` 的 `malloc()/free()` 流程当中去。�
 
 在 `obj` 被 free 以后，对应 `data page` 也会被设置成不可访问状态。
 
-![](/wp-content/uploads/2022/03/riscv-linux/kfence/kfence_use_afterfree.png)
+![](/wp-content/uploads/2022/03/riscv-linux/images/kfence/kfence_use_afterfree.png)
 
 这种状态下，如果有操作继续访问 `obj` 会立即触发 CPU 异常，通过堆栈回溯揪出异常访问的元凶。
 
