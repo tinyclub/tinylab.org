@@ -18,7 +18,7 @@ tags:
 ---
 
 > Author:  Jack Y. <eecsyty@outlook.com>
-> Date:    2022/05/01<br/>
+> Date:    2022/05/01
 > Revisor: Falcon <falcon@tinylab.org>
 > Project: [RISC-V Linux 内核剖析](https://gitee.com/tinylab/riscv-linux)
 
