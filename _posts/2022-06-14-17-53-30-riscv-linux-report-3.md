@@ -3,7 +3,7 @@ layout: post
 author: 'Wu Zhangjin'
 title: "RISC-V Linux 内核剖析活动进入第 2 阶段并开放实习与兼职岗位"
 draft: false
-top: true
+top: false
 license: "cc-by-nc-nd-4.0"
 permalink: /riscv-linux-report-3/
 description: "本文简单介绍了 RISC-V Linux 内核剖析活动第 2 阶段的目标与计划，该阶段开始开放招募实习生和兼职工程师。"
