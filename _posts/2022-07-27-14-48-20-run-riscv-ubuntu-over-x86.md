@@ -5,7 +5,7 @@ title: "5 秒内跨架构运行 RISC-V Ubuntu 22.04 + xfce4 桌面系统"
 draft: false
 album: 'RISC-V Linux'
 license: "cc-by-nc-nd-4.0"
-permalink: /riscv-jump-label-part2/
+permalink: /run-riscv-ubuntu-over-x86/
 description: "本文介绍并演示了如何在 X86_64 笔记本上运行 RISC-V 架构的 Ubuntu 22.04 + xfce4 桌面系统。"
 category:
   - 开源项目
