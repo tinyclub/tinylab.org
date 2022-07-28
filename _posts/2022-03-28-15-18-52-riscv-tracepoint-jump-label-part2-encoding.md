@@ -43,7 +43,7 @@ tags:
 
 从 [这里](https://riscv.org/technical/specifications/) 可以找到相应的手册，其中指令编码部分属于 [非特权 ISA 手册](https://github.com/riscv/riscv-isa-manual/releases/download/Ratified-IMAFDQC/riscv-spec-20191213.pdf)。
 
-需要注意的是，这个 Spec 文档并表示一成不变的，所以本文提到的页面甚至章节等都可能变动，本文以 riscv-spec-20191213.pdf 为准。
+需要注意的是，这个 Spec 文档并不是一成不变的，所以本文提到的页面甚至章节等都可能变动，本文以 riscv-spec-20191213.pdf 为准。
 
 ## 参考手册编码目标指令
 
@@ -75,7 +75,7 @@ tags:
     * 2.4 Integer Computational Instructions
         * Nop Instruction
 
-很详细的介绍了：
+很详细地介绍了：
 
 > The NOP instruction does not change any architecturally visible state, except
 > for advancing the pc and incrementing any applicable performance counters.
@@ -192,7 +192,7 @@ tags:
 * `offset[11]` 放到目标指令的第 20 位
 * `offset[12-19]` 放到目标指令的第 12-19 位
 
-需要先取出目标位再做相对移植，比如第 11 位要移到目标指令的第 20 位，相对移动 (20-11）。
+需要先取出目标位再做相对移位，比如第 11 位要移到目标指令的第 20 位，相对移位 (20-11）。
 
 好在 Linux 内核对于取出目标位提供了专门的宏，咱们先搬运一个试试：
 
