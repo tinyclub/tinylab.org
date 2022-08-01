@@ -151,16 +151,21 @@ PC 端可以直接访问 [泰晓科技开源小店](https://shop155917374.taobao
     * 出现该现象可能是系统出现了数据不一致，譬如，在拔掉 Linux Lab Disk 之前，没有正常关闭系统或者没有安全移除
         * 正常操作是：先关闭系统，再安全移除，之后再拔掉 Linux Lab Disk
     * 通常可以通过出厂恢复功能恢复系统，进入 Grub 菜单后，依次选择 `Factory Restore Setting -> Restore Factory System Only` 即可
+        * 为避免误进，该操作需要账号和密码，请联系售后咨询
 
 - 引导过程中出现：`security verification failed`, `Verification failed: (0x1A) Security Violation` 或类似错误？
     * 部分 Linux 发行版不支持 Security Boot，需要进入 BIOS 中的 Security 设置中，确保 `Security Boot` 处于 `Disabled` 状态。
 
 - 在 Linux 下通过 Virtualbox 并行启动时出现黑屏或者很慢？
     * 这种情况可能需要进入 BIOS 使能虚拟化技术相关选项，相关选项跟处理器型号有关；如果开启后还存在问题，可能是处理器并不支持虚拟化技术。
+    * 另外一种情况，请禁用 USB Suspend，可以在内核参数中传递 `usbcore.autosuspend=-1`：
+        * 在 `/etc/default/grub` 中的 `GRUB_CMDLINE_LINUX_DEFAULT` 中加入上述参数，并更新 Grub 配置：`sudo update-grub`
 
 - 在 Windows 下通过 Virtualbox 并行启动时出现黑屏或者很慢？
     * 第一种情况同上，可能也需要进入 BIOS 使能虚拟化技术相关选项。
     * 另外一种情况可能是您正在使用 hyper-v 或 wsl2，由于 hyper-v 或 wsl2 导致 Virtualbox 无法正常使用硬件虚拟化加速技术，所以此时需 [彻底关闭 hyperv 或 wsl2](https://zhuanlan.zhihu.com/p/468333378)。
+    * 第三种情况，请排查 USB Suspend 异常，可通过如下步骤禁用 `USB Selective Suspend`:
+        * `电源与睡眠设置 -> 编辑电源计划 -> 更改高级电源设置 -> USB设置 -> USB 选择性暂停设置 -> 使用电池&接通电源 -> 已禁用`。
 
 - 在 Windows 下无法通过 vmboot 切换到 Linux Lab Disk？
     * 可能是您的主机不兼容 vmboot 或者 vmboot 还未能支持您的主机，需要联系我们协助确认，请在某宝直接私信联系。
