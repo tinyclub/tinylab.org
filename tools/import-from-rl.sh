@@ -115,5 +115,9 @@ sed -i -e "s%](images/%](/$target_images%g" $_target_article
 echo "LOG: Fix up top information"
 sed -i -e "s%<br/>%%g" $_target_article
 
+echo "LOG: Remove original title"
+sed -i -e '/^# .*/d' $_target_article
+
+
 echo "LOG: Target article: $_target_article"
 echo "LOG: Target images: $_target_images"
