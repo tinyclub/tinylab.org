@@ -110,10 +110,10 @@ cat $article >> $_target_article
 
 echo "LOG: Copy images if there are"
 cp -r $rl_subimages $_target_images
-sed -i -e 's%](images/%](/$target_images%g' $_target_article
+sed -i -e "s%](images/%](/$target_images%g" $_target_article
 
 echo "LOG: Fix up top information"
-sed -i -e 's%<br/>%%g' $_target_article
+sed -i -e "s%<br/>%%g" $_target_article
 
 echo "LOG: Target article: $_target_article"
 echo "LOG: Target images: $_target_images"
