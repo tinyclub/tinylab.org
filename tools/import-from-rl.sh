@@ -108,9 +108,12 @@ EOF
 echo "LOG: Copy article from $rl_dir to $TOP_DIR/_posts/"
 cat $article >> $_target_article
 
-echo "LOG: Copy images if there are"
-cp -r $rl_subimages $_target_images
-sed -i -e "s%](images/%](/$target_images%g" $_target_article
+
+if [ -n "$subimages_dir" ]; then
+  echo "LOG: Copy images if there are"
+  cp -r $rl_subimages $_target_images
+  sed -i -e "s%](images/%](/$target_images%g" $_target_article
+fi
 
 echo "LOG: Fix up top information"
 sed -i -e "s%<br/>%%g" $_target_article
