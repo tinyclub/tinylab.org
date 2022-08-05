@@ -213,7 +213,7 @@ struct static_key {
 	  { .entries = (void *)JUMP_TYPE_FALSE } }
 ```
 
-考虑默认为 `false` 的情况，Static Key 被初始化为 `STATIC_KEY_INIT_FALSE`，`.eanbled` 为 0。
+考虑默认为 `false` 的情况，Static Key 被初始化为 `STATIC_KEY_INIT_FALSE`，`.enabled` 为 0。
 
 ### Jump Type 与 unlikely 实现：static_key_false()/static_key_true()
 
