@@ -48,7 +48,7 @@ echo $article
 orig_article=$(basename $article | sed -e "s/[0-9]*//")
 date_string=$(date +"%Y-%m-%d-%H-%M-%S")
 target_article=${date_string}${orig_article}
-subimages_dir=$(grep -m1 '](images/' $article | sed -e 's%.*](images/\([^/]*\)/.*%\1%')
+subimages_dir=$(egrep -m1 "\]\(./images/|\]\(/images/" $article | sed -e 's%.*](images/\([^/]*\)/.*%\1%' | sed -e 's%.*](./images/\([^/]*\)/.*%\1%')
 rl_subimages=$rl_images/$subimages_dir
 target_images=wp-content/uploads/2022/03/riscv-linux/images/
 
@@ -113,6 +113,7 @@ if [ -n "$subimages_dir" ]; then
   echo "LOG: Copy images if there are"
   cp -r $rl_subimages $_target_images
   sed -i -e "s%](images/%](/$target_images%g" $_target_article
+  sed -i -e "s%](./images/%](/$target_images%g" $_target_article
 fi
 
 echo "LOG: Fix up top information"
