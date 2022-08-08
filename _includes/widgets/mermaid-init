@@ -1,0 +1,15 @@
+<script>
+function init_mermaid() {
+  var config = {
+    startOnLoad: true,
+    theme: "forest",
+    logLevel: 0,
+    securityLevel: 'loose',
+    flowchart:{
+      useMaxWidth: true,
+      htmlLabels: true
+    }
+  };
+  mermaid.initialize(config);
+}
+</script>

@@ -153,7 +153,10 @@
   {% include widgets/code-prettify %}
   {% endif %}
 
-  {% if page.plugin %}<script src="{{ ASSET_PATH }}/js/{{ page.plugin }}{{ css_js_compress_tag }}.js"></script>{% endif %}
+  {% if page.plugin %}
+    {% include widgets/mermaid-init %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/9.1.4/mermaid.min.js" async onload='init_mermaid()'></script>
+  {% endif %}
 
   {% include widgets/mathjax %}
 

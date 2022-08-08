@@ -60,6 +60,11 @@ title="$(grep -m1 '^# ' $article | cut -d ' ' -f2-)"
 permalink="$(basename $article | sed -e 's/[0-9]*-//;s/.md$//')"
 desc="$title"
 
+# check mermaid
+if grep -q mermaid $article; then
+  plugin="mermaid"
+fi
+
 # structure, for desc edit
 pushd $rl_articles
 author="$(git log --pretty=short $(basename $article) | grep Author | tail -1 | cut -d ' ' -f2)"
@@ -91,6 +96,7 @@ layout: post
 author: '$_author'
 title: '$title'
 draft: false
+plugin: '$plugin'
 album: 'RISC-V Linux'
 license: 'cc-by-nc-nd-4.0'
 permalink: /$permalink/
@@ -122,6 +128,8 @@ sed -i -e "s%<br/>%%g" $_target_article
 echo "LOG: Remove original title"
 sed -i -e '/^# .*/d' $_target_article
 
+echo "LOG: Use jekyll plugin"
+sed -i -e '/``` *mermaid/,/```/{s/``` *mermaid$/<pre><div class="mermaid">/;s/```$/<\/div><\/pre>/;s/^ *//}' $_target_article
 
 echo "LOG: Target article: $_target_article"
 echo "LOG: Target images: $_target_images"
