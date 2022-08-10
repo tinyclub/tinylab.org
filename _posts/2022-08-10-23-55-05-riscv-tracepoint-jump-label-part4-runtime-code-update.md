@@ -5,7 +5,7 @@ title: 'RISC-V jump_label 详解，第 4 部分：运行时代码改写'
 draft: false
 album: 'RISC-V Linux'
 license: 'cc-by-nc-nd-4.0'
-permalink: /riscv-tracepoint-jump-label-part4-runtime-code-update/
+permalink: /riscv-jump-label-part4/
 description: 'RISC-V jump_label 详解，第 4 部分：运行时代码改写'
 category:
   - 开源项目
