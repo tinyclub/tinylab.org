@@ -6,7 +6,7 @@ draft: false
 plugin: ''
 album: 'RISC-V Linux'
 license: 'cc-by-nc-nd-4.0'
-permalink: /riscv-tracepoint-jump-label-part5-examples/
+permalink: /jump-label-part5/
 description: 'RISC-V jump_label 详解，第 5 部分：优化案例'
 category:
   - 开源项目
