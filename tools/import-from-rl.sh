@@ -48,7 +48,7 @@ echo $article
 orig_article=$(basename $article | sed -e "s/[0-9]*//")
 date_string=$(date +"%Y-%m-%d-%H-%M-%S")
 target_article=${date_string}${orig_article}
-subimages_dir=$(egrep -m1 "\]\(./images/|\]\(/images/" $article | sed -e 's%.*](images/\([^/]*\)/.*%\1%' | sed -e 's%.*](./images/\([^/]*\)/.*%\1%')
+subimages_dir=$(egrep -m1 "\]\(./images/|\]\(/images/|\]\(images/" $article | sed -e 's%.*](images/\([^/]*\)/.*%\1%' | sed -e 's%.*](./images/\([^/]*\)/.*%\1%' | sed -e 's%.*](images/\([^/]*\)/.*%\1%')
 rl_subimages=$rl_images/$subimages_dir
 target_images=wp-content/uploads/2022/03/riscv-linux/images/
 
