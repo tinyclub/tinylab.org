@@ -48,7 +48,8 @@ echo $article
 orig_article=$(basename $article | sed -e "s/[0-9]*//")
 date_string=$(date +"%Y-%m-%d-%H-%M-%S")
 target_article=${date_string}${orig_article}
-subimages_dir=$(egrep -m1 "\]\(./images/|\]\(/images/|\]\(images/" $article | sed -e 's%.*](images/\([^/]*\)/.*%\1%' | sed -e 's%.*](./images/\([^/]*\)/.*%\1%' | sed -e 's%.*](images/\([^/]*\)/.*%\1%')
+articles_path=https://gitee.com/tinylab/riscv-linux/blob/master/articles/
+subimages_dir=$(egrep -m1 "\]\(./images/|\]\(/images/|\]\(images/" $article | sed -e 's%.*](/images/\([^/]*\)/.*%\1%' | sed -e 's%.*](./images/\([^/]*\)/.*%\1%' | sed -e 's%.*](images/\([^/]*\)/.*%\1%')
 rl_subimages=$rl_images/$subimages_dir
 target_images=wp-content/uploads/2022/03/riscv-linux/images/
 
@@ -118,9 +119,12 @@ cat $article >> $_target_article
 if [ -n "$subimages_dir" ]; then
   echo "LOG: Copy images if there are"
   cp -r $rl_subimages $_target_images
+  sed -i -e "s%](/images/%](/$target_images%g" $_target_article
   sed -i -e "s%](images/%](/$target_images%g" $_target_article
   sed -i -e "s%](./images/%](/$target_images%g" $_target_article
 fi
+
+sed -i -e '/[^\!]\[[^(]*\]([^h#i].*)/{s%\([^\!][[^(]*](\)[\./]*%\1'$articles_path'%g}' $_target_article
 
 echo "LOG: Fix up top information"
 sed -i -e "s% *<br/>%%g" $_target_article

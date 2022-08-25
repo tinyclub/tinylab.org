@@ -45,7 +45,8 @@ echo $article
 orig_article=$(basename $article | sed -e "s/[0-9]*//")
 date_string=$(date +"%Y-%m-%d-%H-%M-%S")
 target_article=${date_string}${orig_article}
-subimages_dir=$(grep -m1 '](images/' $article | sed -e 's%.*](images/\([^/]*\)/.*%\1%')
+articles_path=https://gitee.com/tinylab/riscv-linux/blob/master/articles/
+subimages_dir=$(egrep -m1 "\]\(./images/|\]\(/images/|\]\(images/" $article | sed -e 's%.*](/images/\([^/]*\)/.*%\1%' | sed -e 's%.*](./images/\([^/]*\)/.*%\1%' | sed -e 's%.*](images/\([^/]*\)/.*%\1%')
 target_images=https://gitee.com/tinylab/riscv-linux/raw/master/articles/images/
 _target_article=$(mktemp -d)/$target_article
 
@@ -54,12 +55,46 @@ cat $article >> $_target_article
 
 if [ -n "$subimages_dir" ]; then
   echo "LOG: Copy images if there are"
+  sed -i -e "s%](/images/%]($target_images%g" $_target_article
   sed -i -e "s%](images/%]($target_images%g" $_target_article
+  sed -i -e "s%](./images/%]($target_images%g" $_target_article
 fi
+
+sed -i -e '/[^\!]\[[^(]*\]([^h#i].*)/{s%\([^\!][[^(]*](\)[\./]*%\1'$articles_path'%g}' $_target_article
+
+echo "LOG: Fix up top information"
+sed -i -e "s% *<br/>%%g" $_target_article
+
+echo "LOG: Strip ending whitespaces"
+sed -i -e "s%[[:space:]]*$%%g" $_target_article
 
 echo "LOG: Remove original title"
 sed -i -e '/^# .*/d' $_target_article
 
 echo "LOG: Gedit article: $_target_article"
+
+# Easier copy
+copy2clipboard ()
+{
+  [ -z "$1" ] && return 1
+
+  clip=""
+  for c in xsel xclip clip
+  do
+    which $c >/dev/null 2>&1 && clip=$c && break
+  done
+
+  case "$clip" in
+    xsel)  clip_cmd="$clip -b" ;;
+    xclip) clip_cmd="$clip -selection clipboard" ;;
+    clip)  clip_cmd="$clip" ;;
+    *)     echo "ERR: No clipboard command found" && return 1 ;;
+  esac
+
+  cat "$1" | eval "$clip_cmd"
+}
+
+# Copy to clipboard
+copy2clipboard $_target_article
 
 gedit $_target_article
