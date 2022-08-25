@@ -1,6 +1,6 @@
 ---
 layout: post
-author: ' Chen Chen '
+author: 'Chen Chen'
 title: 'RISC-V Syscall 系列1：什么是 Syscall ?'
 draft: false
 plugin: ''
@@ -19,7 +19,7 @@ tags:
 
 > Author:  envestcc <chen1233216@hotmail.com>
 > Date:    2022/06/14
-> Revisor: walimis、Falcon 
+> Revisor: walimis、Falcon
 > Project: [RISC-V Linux 内核剖析](https://gitee.com/tinylab/riscv-linux)
 > Sponsor: PLCT Lab, ISCAS
 
@@ -104,7 +104,7 @@ RISC-V 中通过 `ecall` 指令进行 Syscall 的调用。 `ecall` 指令会将 
 
 ```c
 #define __NR_write 64
-  
+
 #define __NR_exit 93
 ```
 
