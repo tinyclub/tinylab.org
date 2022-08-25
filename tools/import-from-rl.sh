@@ -67,10 +67,10 @@ fi
 
 # structure, for desc edit
 pushd $rl_articles
-author="$(git log --pretty=short $(basename $article) | grep Author | tail -1 | cut -d ' ' -f2)"
+author="$(git log --pretty=short $(basename $article) | grep Author | tail -1 | cut -d':' -f2 | cut -d '<' -f1)"
 popd
 
-_author="$(grep -m1 -ir $author _posts/ | tail -1 | cut -d ':' -f1 | xargs -i grep -m1 author {} | cut -d ':' -f2- | sed 's/^ *//g' | tr -d "'" | tr -d '"')"
+_author="$(grep -m1 -ir '$author' _posts/ | tail -1 | cut -d ':' -f1 | xargs -i grep -m1 author {} | cut -d ':' -f2- | sed 's/^ *//g' | tr -d "'" | tr -d '"')"
 
 # show them
 echo "LOG: Basic information"
