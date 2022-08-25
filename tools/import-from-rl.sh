@@ -67,7 +67,7 @@ fi
 
 # structure, for desc edit
 pushd $rl_articles
-author="$(git log --pretty=short $(basename $article) | grep Author | tail -1 | cut -d':' -f2 | cut -d '<' -f1)"
+author="$(git log --pretty=short $(basename $article) | grep Author | tail -1 | cut -d':' -f2 | cut -d '<' -f1 | sed -e 's/^ *//g;s/ *$//g')"
 popd
 
 _author="$(grep -m1 -ir '$author' _posts/ | tail -1 | cut -d ':' -f1 | xargs -i grep -m1 author {} | cut -d ':' -f2- | sed 's/^ *//g' | tr -d "'" | tr -d '"')"
@@ -123,7 +123,10 @@ if [ -n "$subimages_dir" ]; then
 fi
 
 echo "LOG: Fix up top information"
-sed -i -e "s%<br/>%%g" $_target_article
+sed -i -e "s% *<br/>%%g" $_target_article
+
+echo "LOG: Strip ending whitespaces"
+sed -i -e "s%[[:space:]]*$%%g" $_target_article
 
 echo "LOG: Remove original title"
 sed -i -e '/^# .*/d' $_target_article
