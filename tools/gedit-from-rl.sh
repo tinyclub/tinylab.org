@@ -20,7 +20,45 @@ rl_images=$rl_articles/images/
 
 # get target article
 article=$1
-[ -z "$article" ] && echo "Usage: $0 /path/to/article" && exit 1
+
+if [ -z "$article" ]; then
+  echo
+  echo "LOG: available articles"
+  echo
+
+  ls -1 $rl_articles | grep -v README.md | grep -n --color=auto .md
+
+  echo
+  read -p "LOG: Please choose one key? " key
+  echo
+
+  ls -1 $rl_articles | grep -v README.md | grep -n .md | grep --color=auto $key
+  if [ $? -ne 0 ]; then
+    echo
+    read -p "LOG: No one is found with key: '$key', please choose one of them by the number? " one
+    echo
+    ls -1 $rl_articles | grep -v README.md | grep --color=auto -n .md
+    echo
+  else
+    echo
+    read -p "LOG: Please choose one of above by the number? " one
+    echo
+  fi
+
+  ls -1 $rl_articles | grep -v README.md | grep -n .md | grep "^$one:"
+  if [ $? -ne 0 ]; then
+    echo "ERR: The number: $one may be invalid"
+    exit 1
+  else
+    choose="$(ls -1 $rl_articles | grep -v README.md | grep -n .md | grep "^$one:" | cut -d ':' -f2)"
+  fi
+
+  article=$rl_articles/$choose
+
+  echo "LOG: current selected article: $article"
+fi
+
+
 [ ! -f "$article" ] && echo "ERR: No such file: $article" && exit 1
 
 # update rl repo
@@ -41,7 +79,6 @@ if [ "$update" = "1" ]; then
 fi
 
 # get target article name
-echo $article
 orig_article=$(basename $article | sed -e "s/[0-9]*//")
 date_string=$(date +"%Y-%m-%d-%H-%M-%S")
 target_article=${date_string}${orig_article}

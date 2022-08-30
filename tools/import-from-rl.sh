@@ -20,10 +20,48 @@ rl_repo=https://gitee.com/tinylab/riscv-linux
 rl_dir=~/Develop/cloud-lab/labs/riscv-linux
 rl_articles=$rl_dir/articles
 rl_images=$rl_articles/images/
+site_url=https://tinylab.org
 
 # get target article
 article=$1
-[ -z "$article" ] && echo "Usage: $0 /path/to/article" && exit 1
+
+if [ -z "$article" ]; then
+  echo
+  echo "LOG: available articles"
+  echo
+
+  ls -1 $rl_articles | grep -v README.md | grep -n --color=auto .md
+
+  echo
+  read -p "LOG: Please choose one key? " key
+  echo
+
+  ls -1 $rl_articles | grep -v README.md | grep -n .md | grep --color=auto $key
+  if [ $? -ne 0 ]; then
+    echo
+    read -p "LOG: No one is found with key: '$key', please choose one of them by the number? " one
+    echo
+    ls -1 $rl_articles | grep -v README.md | grep --color=auto -n .md
+    echo
+  else
+    echo
+    read -p "LOG: Please choose one of above by the number? " one
+    echo
+  fi
+
+  ls -1 $rl_articles | grep -v README.md | grep -n .md | grep "^$one:"
+  if [ $? -ne 0 ]; then
+    echo "ERR: The number: $one may be invalid"
+    exit 1
+  else
+    choose="$(ls -1 $rl_articles | grep -v README.md | grep -n .md | grep "^$one:" | cut -d ':' -f2)"
+  fi
+
+  article=$rl_articles/$choose
+
+  echo "LOG: current selected article: $article"
+fi
+
 [ ! -f "$article" ] && echo "ERR: No such file: $article" && exit 1
 
 # update rl repo
@@ -59,6 +97,7 @@ _target_images=$TOP_DIR/$target_images
 # get top header info
 title="$(grep -m1 '^# ' $article | cut -d ' ' -f2-)"
 permalink="$(basename $article | sed -e 's/[0-9]*-//;s/.md$//')"
+full_permalink="${site_url}/${permalink}/"
 desc="$title"
 
 # check mermaid
@@ -141,3 +180,66 @@ sed -i -e '/``` *mermaid/,/```/{s/``` *mermaid$/<pre><div class="mermaid">/;s/``
 
 echo "LOG: Target article: $_target_article"
 echo "LOG: Target images: $_target_images"
+
+echo "LOG: Add files"
+
+git add $_target_article $_target_images
+
+echo "LOG: Commit files"
+
+git commit -s -m "add $permalink"
+
+echo "LOG: It is time to push this article and its images to remote repos"
+
+echo
+read -p "LOG: Are you ready to push? (y/n) " push
+echo
+
+if [ "$push" = "y" -o "$push" = "yes" ]; then
+  gitee_push="git push gitee:tinylab/tinylab.org"
+  github_push="git push github:tinyclub/tinylab.org"
+
+  for repo in "gitee github"
+  do
+    eval cmd=\${${repo}_push}
+    echo "LOG: Pushing to repo with: '$cmd'"
+    # eval $cmd
+    if [ $? -ne 0 ]; then
+      if [ "$repo" = "github" ]; then
+        echo "ERR: Please run '$cmd' again, otherwise, the permalink is invalid."
+      fi
+    else
+      echo "LOG: pushed to $repo"
+    fi
+  done
+
+fi
+
+# Easier copy
+copy2clipboard ()
+{
+  [ -z "$1" ] && return 1
+
+  clip=""
+  for c in xsel xclip clip
+  do
+    which $c >/dev/null 2>&1 && clip=$c && break
+  done
+
+  case "$clip" in
+    xsel)  clip_cmd="$clip -b" ;;
+    xclip) clip_cmd="$clip -selection clipboard" ;;
+    clip)  clip_cmd="$clip" ;;
+    *)     echo "ERR: No clipboard command found" && return 1 ;;
+  esac
+
+  echo "$1" | eval "$clip_cmd"
+}
+
+# Copy to clipboard
+copy2clipboard $full_permalink
+
+echo "LOG: Please use the following permalink"
+echo
+echo "$full_permalink"
+echo
