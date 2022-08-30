@@ -203,7 +203,7 @@ if [ "$push" = "y" -o "$push" = "yes" ]; then
   do
     eval cmd=\${${repo}_push}
     echo "LOG: Pushing to repo with: '$cmd'"
-    # eval $cmd
+    eval $cmd
     if [ $? -ne 0 ]; then
       if [ "$repo" = "github" ]; then
         echo "ERR: Please run '$cmd' again, otherwise, the permalink is invalid."
