@@ -189,6 +189,7 @@ echo "LOG: Commit files"
 
 git commit -s -m "add $permalink"
 
+echo
 echo "LOG: It is time to push this article and its images to remote repos"
 
 echo
@@ -203,13 +204,19 @@ if [ "$push" = "y" -o "$push" = "yes" ]; then
   do
     eval cmd=\${${repo}_push}
     echo "LOG: Pushing to repo with: '$cmd'"
+    echo
     eval $cmd
+    echo
     if [ $? -ne 0 ]; then
       if [ "$repo" = "github" ]; then
+        echo
         echo "ERR: Please run '$cmd' again, otherwise, the permalink is invalid."
+        echo
       fi
     else
+      echo
       echo "LOG: pushed to $repo"
+      echo
     fi
   done
 
