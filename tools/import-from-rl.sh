@@ -199,7 +199,7 @@ if [ "$push" = "y" -o "$push" = "yes" ]; then
   gitee_push="git push gitee:tinylab/tinylab.org"
   github_push="git push github:tinyclub/tinylab.org"
 
-  for repo in "gitee github"
+  for repo in gitee github
   do
     eval cmd=\${${repo}_push}
     echo "LOG: Pushing to repo with: '$cmd'"
