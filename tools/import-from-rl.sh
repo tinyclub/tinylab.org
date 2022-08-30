@@ -124,8 +124,8 @@ if [ -n "$subimages_dir" ]; then
   sed -i -e "s%](./images/%](/$target_images%g" $_target_article
 fi
 
-sed -i -e '/[^\!]\[[^(]*\]([^h#i].*)/{s%\([^\!][[^(]*](\)[\./]*%\1'$articles_path'%g}' $_target_article
-sed -i -e '/^\[[0-9]\{1,\}\]: [^h#i].*/{s%\(^\[[0-9]\{1,\}\]: \)[\./]*%\1'$articles_path'%g}' $_target_article
+sed -i -e '/[^\!]\[[^(]*\]([^h#].*)/{s%\([^\!][[^(]*](\)[\./]*%\1'$articles_path'%g}' $_target_article
+sed -i -e '/^\[[0-9]\{1,\}\]: [^h#].*/{s%\(^\[[0-9]\{1,\}\]: \)[\./]*%\1'$articles_path'%g}' $_target_article
 
 echo "LOG: Fix up top information"
 sed -i -e "s% *<br/>%%g" $_target_article
