@@ -32,7 +32,7 @@ if [ -z "$article" ]; then
   read -p "LOG: Please choose one key? " key
   echo
 
-  ls -1 $rl_articles | grep -v README.md | grep -n .md | grep --color=auto $key
+  ls -1 $rl_articles | grep -v README.md | grep -n .md | grep --color=auto "$key"
   if [ $? -ne 0 ]; then
     echo
     read -p "LOG: No one is found with key: '$key', please choose one of them by the number? " one
@@ -78,6 +78,11 @@ if [ "$update" = "1" ]; then
   popd
 fi
 
+# get top header info
+title="$(grep -m1 '^# ' $article | cut -d ' ' -f2-)"
+info="$(basename $article | sed -e 's/[0-9]*-//;s/.md$//g;s/-/ /g')"
+full_permalink="https://tinylab.org/$(basename $article | sed -e 's/[0-9]*-//;s/.md$//')"
+
 # get target article name
 orig_article=$(basename $article | sed -e "s/[0-9]*//")
 date_string=$(date +"%Y-%m-%d-%H-%M-%S")
@@ -102,14 +107,29 @@ sed -i -e '/[^\!]\[[^(]*\](.*\/articles\/images\/.*)/{s@/blob/@/raw/@g}' $_targe
 sed -i -e '/^\[[0-9]\{1,\}\]: [^h#].*/{s%\(^\[[0-9]\{1,\}\]: \)[\./]*%\1'$articles_path'%g}' $_target_article
 sed -i -e '/^\[[0-9]\{1,\}\]: .*\/articles\/images\/.*/{s@/blob/@/raw/@g}' $_target_article
 
-echo "LOG: Fix up top information"
-sed -i -e "s% *<br/>%%g" $_target_article
+# article ads
+article_ads="该活动统一采用泰晓社区自研 Linux Lab 开源实验环境，也可选用免装即插即跑 Linux Lab Disk (https://tinylab.org/linux-lab-disk)，某宝检索“泰晓 Linux”可找到。**Linux Lab v1.0 Inside —— 内核开发从未像今天这般简单！**"
+
+# article info
+[ -z "$key" ] && key="$(echo $info | sed -e 's/riscv/RISC-V/g;s/sbi/SBI/g;s/\(.*\)part.*/\1/g')"
+key="$(echo $key | sed -e 's/\([ ]\)*\([a-z\]\)\([^ ]*\)/\1\U\2\L\3/g')"
+article_info="本周继续连载 $key 系列文章，记得收藏分享+关注，写文章领补贴：gitee.com/tinylab/riscv-linux"
+
+#echo "LOG: Fix up top information"
+#sed -i -e "s% *<br/>%%g" $_target_article
 
 echo "LOG: Strip ending whitespaces"
 sed -i -e "s%[[:space:]]*$%%g" $_target_article
 
-echo "LOG: Remove original title"
-sed -i -e '/^# .*/d' $_target_article
+echo "LOG: Insert ads before the original title"
+sed -i -e "/^# /i$article_info" $_target_article
+sed -i -e '/^# /i\\n' $_target_article
+sed -i -e "/^# /i$article_ads" $_target_article
+sed -i -e '/^# /i\\n' $_target_article
+
+echo "LOG: Append permalink to the end of the file"
+echo >> $_target_article
+echo "**From**: <$full_permalink>" >> $_target_article
 
 echo "LOG: Gedit article: $_target_article"
 
@@ -137,4 +157,4 @@ copy2clipboard ()
 # Copy to clipboard
 copy2clipboard $_target_article
 
-gedit $_target_article
+gedit $_target_article &
