@@ -70,7 +70,7 @@ if [ ! -d $rl_dir ]; then
   popd
 fi
 
-update=$2
+[ -z "$update" ] && update=$2
 if [ "$update" = "1" ]; then
   pushd $rl_dir
   git checkout master
