@@ -115,6 +115,7 @@ article_ads="该活动统一采用泰晓社区自研 Linux Lab 开源实验环�
 key="$(echo $key | sed -e 's/\([ ]\)*\([a-z\]\)\([^ ]*\)/\1\U\2\L\3/g')"
 article_info="本周继续连载 $key 系列文章，记得收藏分享+关注，写文章领补贴：gitee.com/tinylab/riscv-linux"
 continue_info="左下角 **阅读原文** 可访问外链。都看到这里了，就随手在看+分享一下吧 ;-)"
+service_permalink="https://tinylab.org/ruma.tech"
 
 #echo "LOG: Fix up top information"
 #sed -i -e "s% *<br/>%%g" $_target_article
@@ -132,7 +133,9 @@ echo "LOG: Append permalink to the end of the file"
 echo >> $_target_article
 echo "<hr>" >> $_target_article
 echo >> $_target_article
-echo "**From**: <$full_permalink>" >> $_target_article
+echo "**首发地址**: <$full_permalink>" >> $_target_article
+echo >> $_target_article
+echo "**技术服务**：<$service_permalink>" >> $_target_article
 echo >> $_target_article
 echo "$continue_info" >> $_target_article
 
