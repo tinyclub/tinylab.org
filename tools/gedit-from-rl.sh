@@ -107,6 +107,10 @@ sed -i -e '/[^\!]\[[^(]*\](.*\/articles\/images\/.*)/{s@/blob/@/raw/@g}' $_targe
 sed -i -e '/^\[[0-9]\{1,\}\]: [^h#].*/{s%\(^\[[0-9]\{1,\}\]: \)[\./]*%\1'$articles_path'%g}' $_target_article
 sed -i -e '/^\[[0-9]\{1,\}\]: .*\/articles\/images\/.*/{s@/blob/@/raw/@g}' $_target_article
 
+# Remove mermaid pics and let the generate png come out
+sed -i -e '/^\s*```mermaid/,/^\s*```/d' $_target_article
+sed -i -e 's/（\[下载由 Mermaid 生成的 PNG 图片\]\[\(.*\)\]）/![此图由 Mermaid 生成][\1]/g' $_target_article
+
 # article ads
 article_ads="该活动统一采用泰晓社区自研 Linux Lab 开源实验环境，也可选用免装即插即跑 Linux Lab Disk (https://tinylab.org/linux-lab-disk)，某宝检索“泰晓 Linux”可找到。**Linux Lab v1.0 Inside —— 内核开发从未像今天这般简单！**"
 
