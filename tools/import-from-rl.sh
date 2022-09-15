@@ -175,7 +175,7 @@ echo "LOG: Strip ending whitespaces"
 sed -i -e "s%[[:space:]]*$%%g" $_target_article
 
 echo "LOG: Remove original title"
-sed -i -e '/^# .*/d' $_target_article
+sed -i -e '/^\s*```/,/^\s*```/!{/^# .*/d}' $_target_article
 
 echo "LOG: Use jekyll plugin"
 sed -i -e '/``` *mermaid/,/```/{s/``` *mermaid$/<pre><div class="mermaid">/;s/```$/<\/div><\/pre>/;s/^ *//}' $_target_article
