@@ -128,10 +128,12 @@ echo "LOG: Strip ending whitespaces"
 sed -i -e "s%[[:space:]]*$%%g" $_target_article
 
 echo "LOG: Insert ads before the original title"
-sed -i -e "/^\s*```/,/^\s*```/!{/^# /i$article_info}" $_target_article
-sed -i -e '/^\s*```/,/^\s*```/!{/^# /i\\n}' $_target_article
-sed -i -e "/^\s*```/,/^\s*```/!{/^# /i$article_ads}" $_target_article
-sed -i -e '/^\s*```/,/^\s*```/!{/^# /i\\n}' $_target_article
+top_title_line=$(grep -n -m1 '^# ' $_target_article | cut -d ':' -f1)
+
+sed -i -e ''${top_title_line}'i\\n' $_target_article
+sed -i -e "${top_title_line}i$article_ads" $_target_article
+sed -i -e ''${top_title_line}'i\\n' $_target_article
+sed -i -e "${top_title_line}i$article_info" $_target_article
 
 echo "LOG: Append permalink to the end of the file"
 echo >> $_target_article
