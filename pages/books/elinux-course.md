@@ -4,6 +4,7 @@ tagline: 基于 Linux Lab 的开放课程
 author: elinux 公开课设计团队
 layout: page
 album: '嵌入式 Linux 系统开发'
+toc: false
 update: 2017-12-11
 permalink: /elinux-course/
 description: 该项目旨在基于 Linux Lab 开发一门开放式的嵌入式 Linux 系统开发课程，通过 Linux Lab 会省去繁复的环境配置，从而让大家更专注于课程内容。

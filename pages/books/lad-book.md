@@ -4,6 +4,7 @@ tagline: 历史版本 Linux 内核的学习与分析报告
 author: Linux 考古队
 layout: page
 album: 'Linux 考古笔记'
+toc: false
 update: 2017-10-16
 permalink: /lad-book/
 description: 该项目志在共同学习和研究历史版本的 Linux 内核，输出学习笔记并汇总成册，结合动手实践，更好地学习操作系统原理。

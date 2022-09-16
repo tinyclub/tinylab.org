@@ -5,6 +5,7 @@ author: Wu Zhangjin
 layout: page
 album: '嵌入式 Linux 知识库'
 group: translation
+toc: false
 update: 2015-10-1
 permalink: /elinux/
 description: The GitBook of Embedded Linux Wiki (elinux.org)，中文翻译计划正在进行中。

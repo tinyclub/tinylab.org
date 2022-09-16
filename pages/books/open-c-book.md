@@ -6,6 +6,7 @@ layout: page
 album: 'C 语言编程透视'
 permalink: /open-c-book/
 description: 以实验的方式去探究类似 `Hello World` 这样的小程序在开发与执行过程中的微妙变化，一层层揭开 C 语言开发过程的神秘面纱，透视背后的秘密，不断享受醍醐灌顶的美妙。
+toc: false
 update: 2015-10-1
 categories:
   - 开源书籍

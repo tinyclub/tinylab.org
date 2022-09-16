@@ -7,6 +7,7 @@ album: 'Linux Doc 中文版'
 group: translation
 permalink: /linux-doc/
 description: Linux Documentation 中文翻译计划，该计划包括三阶段目标：第一阶段把原有的中文文档转成 Markdown 并导入；第二阶段翻译余下的部分；第三阶段，持续维护和更新
+toc: false
 update: 2015-10-1
 categories:
   - 开源书籍

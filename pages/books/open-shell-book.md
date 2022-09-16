@@ -5,6 +5,7 @@ author: Wu Zhangjin
 layout: page
 album: 'Shell 编程范例'
 permalink: /open-shell-book/
+toc: false
 update: 2015-10-1
 description: 不同于传统 Shell 书，本书未花大篇幅介绍 Shell 语法，而以面向“对象”的方式引入大量实例介绍 Shell 日常操作，“对象” 涵盖数值、逻辑值、字符串、文件、进程、文件系统等。这样有助于学以致用中加强兴趣。也可作为 Shell 编程索引，随时检索。
 categories:
