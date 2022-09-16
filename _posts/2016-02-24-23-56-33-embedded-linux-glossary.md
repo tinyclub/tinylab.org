@@ -22,12 +22,12 @@ tags:
 
 以下是特定技术领域的一些术语表：
 
--   [启动时间](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/Boot-up_Time_Definition_Of_Terms/Boot-up_Time_Definition_Of_Terms.html "Boot-up Time Definition Of Terms")
+-   [启动时间](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/Boot-up_Time_Definition_Of_Terms/Boot-up_Time_Definition_Of_Terms.html "Boot-up Time Definition Of Terms")
     - Linux 启动过程涉及的相关术语
--   [电源管理](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Glossary/Power_Management_Definition_Of_Terms/Power_Management_Definition_Of_Terms.html "Power Management Definition Of Terms")
+-   [电源管理](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Glossary/Power_Management_Definition_Of_Terms/Power_Management_Definition_Of_Terms.html "Power Management Definition Of Terms")
     - CELF 电源管理工作组术语定义
--   [实时性](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Glossary/Real_Time_Terms/Real_Time_Terms.html "Real Time Terms") - 系统实时性能相关术语
--   [安全](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Glossary/Security_Terms/Security_Terms.html "Security Terms") - Linux 安全及安全架构相关术语
+-   [实时性](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Glossary/Real_Time_Terms/Real_Time_Terms.html "Real Time Terms") - 系统实时性能相关术语
+-   [安全](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Glossary/Security_Terms/Security_Terms.html "Security Terms") - Linux 安全及安全架构相关术语
 
 <table>
 <thead>
@@ -75,7 +75,7 @@ tags:
 ## E
 
 **嵌入式 Linux 会议（ELC）**
-这是每年为嵌入式 Linux 开发者准备的主要技术会议之一。参考[事件](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Events/Events.html "Events") 一节可以看到历年事件的资料。
+这是每年为嵌入式 Linux 开发者准备的主要技术会议之一。参考[事件](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Events/Events.html "Events") 一节可以看到历年事件的资料。
 
 **嵌入式（Embedded）**
 “嵌入式”设备通常意味着该设备独立于其他附带的软硬件特性，具有固定的功能。该术语多少有些含糊不清，它是相对于通用功能而言的，意味着专用。需要提到的是，移动手机虽然现在支持各种通用程序和功能，但是也被当作嵌入式设备。典型的嵌入式 Linux 产品包括数字相机、路由器、电视机与机顶盒以及非消费类的嵌入式设备，像传感器、工控设备以及除桌面和服务器市场外所有运行 Linux的设备。详情请看[维基百科嵌入式入门指南](http://en.wikipedia.org/wiki/Embedded_system)。
@@ -99,8 +99,8 @@ IP 核是指芯片上某个执行不同功能的集成电路的一部分，IP �
 
 ## J
 
-[**JTAG**](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Glossary/JTAG/JTAG.html "JTAG")
-"Joint Test Action Group" 的缩写, JTAG 是一种调试接口，用于在嵌入式开发板上验证硬件和调试软件。 详见 [JTAG](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Glossary/JTAG/JTAG.html "JTAG")
+[**JTAG**](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Glossary/JTAG/JTAG.html "JTAG")
+"Joint Test Action Group" 的缩写, JTAG 是一种调试接口，用于在嵌入式开发板上验证硬件和调试软件。 详见 [JTAG](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Glossary/JTAG/JTAG.html "JTAG")
 
 ## K
 

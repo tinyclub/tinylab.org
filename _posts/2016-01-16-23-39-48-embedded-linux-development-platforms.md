@@ -22,19 +22,19 @@ tags:
 
 ## 最受欢迎的设备
 
--   [Via APC 8750](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/VIA_APC_8750/VIA_APC_8750.html "VIA APC 8750")
--   [Raspberry Pi](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/RaspberryPi/RaspberryPi.html "RaspberryPi") 来自树莓派基金会，采用来自博通的 BCM2835
+-   [Via APC 8750](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/VIA_APC_8750/VIA_APC_8750.html "VIA APC 8750")
+-   [Raspberry Pi](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/RaspberryPi/RaspberryPi.html "RaspberryPi") 来自树莓派基金会，采用来自博通的 BCM2835
 -   [CraneBoard](http://www.mistralsolutions.com/craneboard) 来自 Mistral Solutions，采用 TI 的 AM3517
 -   [AM/DM37x EVM](http://www.mistralsolutions.com/AM37x_EVM) 来自 Mistral Solutions，采用 TI 的 AM/DM35x 处理器
--   [BeagleBoard](http://tinylab.gitbooks.io/elinux/content/zh/hardware_pages/BeagleBoard/BeagleBoard.html "BeagleBoard") 采用 TI OMAP3(Cortex-A8)
--   [Devkit8000](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/Devkit8000/Devkit8000.html "Devkit8000") 采用 TI OMAP3530(Cortex-A8) 的开发板
+-   [BeagleBoard](https://tinylab-1.gitbook.io/elinux/content/zh/hardware_pages/BeagleBoard/BeagleBoard.html "BeagleBoard") 采用 TI OMAP3(Cortex-A8)
+-   [Devkit8000](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/Devkit8000/Devkit8000.html "Devkit8000") 采用 TI OMAP3530(Cortex-A8) 的开发板
 -   [Devkit8500D](http://www.armkits.com/product/devkit8500d.asp) 采用 TI DM3730 ARM Cortex-A8 的开发板
 -   [Devkit7000](http://www.armkits.com/product/devkit7000.asp) 采用三星S5PV210 ARM Cortex-A8 的开发板
--   [Hawkboard](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/Hawkboard/Hawkboard.html "Hawkboard") 采用 TI OMAP L138（ARM9 和 C674X 浮点 DSP）
--   [Hammer\_Board](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/Hammer_Board/Hammer_Board.md "Hammer Board") 采用三星基于 ARM9 的[S3C2410](../.././dev_portals/Development_Platforms/S3C2410/S3C2410.html "S3C2410")
--   [Jetson TK1](http://tinylab.gitbooks.io/elinux/content/zh/hardware_pages/Jetson_TK1/Jetson_TK1.md "Jetson TK1") NVIDIA Tegra K1 4 核 Cortex-A15 CPU + **192-core Kepler GPU** 移动超级计算机。用到 [U-Boot](../.././dev_portals/Development_Platforms/Tegra/Mainline_SW/U-Boot/Tegra/Mainline_SW/U-Boot.html "Tegra/Mainline SW/U-Boot") +  [Nouveau](http://nouveau.freedesktop.org/wiki/) 它是第一个[**100% 完全开源**](http://www.codethink.co.uk/2014/06/12/no-secret-sauce-just-open-source) 的采用 GPU 加速的 Linux 开发板
--   [LeopardBoard](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/LeopardBoard/LeopardBoard.html "LeopardBoard") 采用 TI TMS320DM355
--   [Opensourcemid](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Hardware_Hacking/Opensourcemid/Opensourcemid.html "Opensourcemid") K7 MID OMAP3530 平板，来自 [OpenSourceMID.org](http://www.opensourcemid.org)
+-   [Hawkboard](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/Hawkboard/Hawkboard.html "Hawkboard") 采用 TI OMAP L138（ARM9 和 C674X 浮点 DSP）
+-   [Hammer\_Board](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/Hammer_Board/Hammer_Board.md "Hammer Board") 采用三星基于 ARM9 的[S3C2410](../.././dev_portals/Development_Platforms/S3C2410/S3C2410.html "S3C2410")
+-   [Jetson TK1](https://tinylab-1.gitbook.io/elinux/content/zh/hardware_pages/Jetson_TK1/Jetson_TK1.md "Jetson TK1") NVIDIA Tegra K1 4 核 Cortex-A15 CPU + **192-core Kepler GPU** 移动超级计算机。用到 [U-Boot](../.././dev_portals/Development_Platforms/Tegra/Mainline_SW/U-Boot/Tegra/Mainline_SW/U-Boot.html "Tegra/Mainline SW/U-Boot") +  [Nouveau](http://nouveau.freedesktop.org/wiki/) 它是第一个[**100% 完全开源**](http://www.codethink.co.uk/2014/06/12/no-secret-sauce-just-open-source) 的采用 GPU 加速的 Linux 开发板
+-   [LeopardBoard](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/LeopardBoard/LeopardBoard.html "LeopardBoard") 采用 TI TMS320DM355
+-   [Opensourcemid](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Hardware_Hacking/Opensourcemid/Opensourcemid.html "Opensourcemid") K7 MID OMAP3530 平板，来自 [OpenSourceMID.org](http://www.opensourcemid.org)
 -   [OMAP3 EVM](http://www.mistralsolutions.com/products/omap_3evm.php) 来自 Mistral Solutions
 -   [Odroid](http://www.linuxfordevices.com/c/a/News/HardKernel-Odroid/##) 采用三星 S5PC100 (Cortex-A8) 的可编程（Hackable）的 Android 手持游戏设备
 -   [(beagle 的克隆)](http://www.tenettech.com/devkit_8000_evalaution_kit.html)
@@ -47,7 +47,7 @@ tags:
 -   [MYD-SAM9X5-V2](http://www.myirtech.com/list.asp?id=444) 由 MYIR 设计，采用 Atmel AT91SAM9G15/G25/G35/X25/X35 (ARM9)
 
 
-## [ARM](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/ARM_Processor/ARM_Processor.html "ARM Processor")
+## [ARM](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/ARM_Processor/ARM_Processor.html "ARM Processor")
 
 -   [Forlinx Embedded](http://www.forlinx.net) ARM 系列开发板
     -   [FL2440 采用三星 ARM9 S3C2440](http://www.forlinx.net/?p=28&a=view&r=52%7C)
@@ -63,40 +63,40 @@ tags:
 -   [GNUBLIN](http://www.gnublin.org) GNUBLIN 开发板
 -   [ARM cortex A8 board 1GHz 512M DDR3](http://www.quickembed.com/Tools/Shop/A8/201202/245.html)
     采用三星 S5PV210
--   [Devkit8000](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/Devkit8000/Devkit8000.html "Devkit8000") 采用 OMAP3530，来自 [Embest](http://www.armkits.com)
+-   [Devkit8000](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/Devkit8000/Devkit8000.html "Devkit8000") 采用 OMAP3530，来自 [Embest](http://www.armkits.com)
 -   [Devkit8500D](http://www.armkits.com/Product/devkit8500d.asp) 采用 TI DM3730
 -   [Devkit7000](http://www.armkits.com/product/devkit7000.asp) 采用三星 S5PV210
 -   [CraneBoard](http://www.mistralsolutions.com/craneboard) 来自 Mistral Solutions
--   [PandaBoard](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/PandaBoard/PandaBoard.html "PandaBoard")
+-   [PandaBoard](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/PandaBoard/PandaBoard.html "PandaBoard")
 -   [AM/DM37x EVM](http://www.mistralsolutions.com/AM37x_EVM) 来自 Mistral Solutions
 -   [Digi 入门套件](http://www.digi.com/products/embeddedsolutions/softwareservices/digiembeddedlinux.jsp)
--   [SheevaPlug](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/SheevaPlug/SheevaPlug.html "SheevaPlug")
+-   [SheevaPlug](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/SheevaPlug/SheevaPlug.html "SheevaPlug")
 -   [GuruPlug](http://hackaday.com/2010/02/08/guruplug-the-next-generation-of-sheevaplug/)
--   [ARM Integrator](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/ARM_Integrator_Info/ARM_Integrator_Info.html "ARM Integrator Info")
--   [OSK](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/OSK/OSK.html "OSK") - OMAP 入门套件
+-   [ARM Integrator](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/ARM_Integrator_Info/ARM_Integrator_Info.html "ARM Integrator Info")
+-   [OSK](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/OSK/OSK.html "OSK") - OMAP 入门套件
 -   GAO Engineering Inc. - [http://www.gaoengineering.com](http://www.gaoengineering.com)
--   [DaVinci](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/DaVinci/DaVinci.md "DaVinci") DVEVM 评估模块 - [http://www.spectrumdigital.com/](http://www.spectr.htmligital.com/)
--   [ITSY](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/ITSY/ITSY.html "ITSY")
--   [LART 项目](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/LART_Project/LART_Project.html "LART Project")
--   [Hammer\_Board](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/Hammer_Board/Hammer_Board.html "Hammer Board")
+-   [DaVinci](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/DaVinci/DaVinci.md "DaVinci") DVEVM 评估模块 - [http://www.spectrumdigital.com/](http://www.spectr.htmligital.com/)
+-   [ITSY](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/ITSY/ITSY.html "ITSY")
+-   [LART 项目](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/LART_Project/LART_Project.html "LART Project")
+-   [Hammer\_Board](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/Hammer_Board/Hammer_Board.html "Hammer Board")
 -   [Simtec Electronics](http://www.simtec.co.uk/)
 -   [AT91RM9200 开放评估板](http://wiki.emqbit.com/free-ecb-at91)
--   [BeagleBoard](http://tinylab.gitbooks.io/elinux/content/zh/hardware_pages/BeagleBoard/BeagleBoard.html "BeagleBoard")
+-   [BeagleBoard](https://tinylab-1.gitbook.io/elinux/content/zh/hardware_pages/BeagleBoard/BeagleBoard.html "BeagleBoard")
 -   [ODROID](http://eLinux.org/index.php?title=ODROID&action=edit&redlink=1 "ODROID (page does not exist)") 采用 Samsung Exynos 的[开发板和平板](http://www.hardkernel.com/)
--   [Balloonboard](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/Balloonboard/Balloonboard.html "Balloonboard")
+-   [Balloonboard](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/Balloonboard/Balloonboard.html "Balloonboard")
 -   [KB9202](http://www.kwikbyte.com/KB9202.html)
 -   Luminary Micro's **LM3S6965** 是款 ARM Cortex M3 MCU。有一个便宜的开发板，叫做**基于 LM3S6965 的以太网评估套件**，可以从 [Mouser](http://www.mouser.com/) 或者其他渠道买到，大约 69 美金。
--   [TechnologicSystems](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/TechnologicSystems/TechnologicSystems.html "TechnologicSystems")
+-   [TechnologicSystems](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/TechnologicSystems/TechnologicSystems.html "TechnologicSystems")
 -   [OMAP3 EVM from Mistral Solutions](http://www.mistralsolutions.com/products/omap_3evm.php)
--   [NaviEngine](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Hardware_Hacking/NaviEngine/NaviEngine.html "NaviEngine") 采用 NEC ARM11MPCore (4 x ARM11)
--   采用 Freescale i.MX 的 [Armadeus APF boards](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/Armadeus_APF_boards/Armadeus_APF_boards.html "Armadeus APF boards")
+-   [NaviEngine](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Hardware_Hacking/NaviEngine/NaviEngine.html "NaviEngine") 采用 NEC ARM11MPCore (4 x ARM11)
+-   采用 Freescale i.MX 的 [Armadeus APF boards](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/Armadeus_APF_boards/Armadeus_APF_boards.html "Armadeus APF boards")
 -   Zoom OMAP34x & 36x 开发套件 - [http://omapzoom.org](https://omapzoom.org/)
--   [Tegra2](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/Tegra2/Tegra2.html "Tegra2")
--   [Arm11 开发板](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/Arm11_development_board/Arm11_development_board.html "Arm11 development board")
+-   [Tegra2](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/Tegra2/Tegra2.html "Tegra2")
+-   [Arm11 开发板](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/Arm11_development_board/Arm11_development_board.html "Arm11 development board")
 -   [Snowball SDK & PDK (Dual Cortex A9 + Mali 400)](http://www.igloocommunity.org/)
--   [Raspberry Pi](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/RaspberryPi/RaspberryPi.htmlBoard "RaspberryPiBoard")
--   [Freescale IMX53QSB](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/Freescale_IMX53QSB/Freescale_IMX53QSB.html "Freescale IMX53QSB") [[1]](http://imxcommunity.org/group/imx53quickstartboard)
--   [Calao Atmel AT91 开发板](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/Calao_Atmel_AT91_development_board/Calao_Atmel_AT91_development_board.html "Calao Atmel AT91 development board") [[2]](http://www.calao-systems.com/articles.php?lng=fr&pg=5940)
+-   [Raspberry Pi](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/RaspberryPi/RaspberryPi.htmlBoard "RaspberryPiBoard")
+-   [Freescale IMX53QSB](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/Freescale_IMX53QSB/Freescale_IMX53QSB.html "Freescale IMX53QSB") [[1]](http://imxcommunity.org/group/imx53quickstartboard)
+-   [Calao Atmel AT91 开发板](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/Calao_Atmel_AT91_development_board/Calao_Atmel_AT91_development_board.html "Calao Atmel AT91 development board") [[2]](http://www.calao-systems.com/articles.php?lng=fr&pg=5940)
     -   USB A9260
     -   USB A9263
     -   USB A9G20
@@ -106,12 +106,12 @@ tags:
 -   友善之臂开发板:
     -   [Mini2440](http://www.hycshop.com/mini2440-c-1_7/) 采用 S3C2440 ARM9 的开发板
     -   [Tiny6410](http://www.hycshop.com/tiny6410-c-1_10/) 采用 S3C6410 ARM11 的开发板
--   [Basi and Dingo DaVinci dm365 开发板](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/Basi_and_Dingo_DaVinci_dm365_boards/Basi_and_Dingo_DaVinci_dm365_boards.html "Basi and Dingo DaVinci dm365 boards")
+-   [Basi and Dingo DaVinci dm365 开发板](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/Basi_and_Dingo_DaVinci_dm365_boards/Basi_and_Dingo_DaVinci_dm365_boards.html "Basi and Dingo DaVinci dm365 boards")
 -   [Gumstix Overo](http://gumstix.com)
--   [嵌入式开放模块化架构/EOMA-68](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/Embedded_Open_Modular_Architecture/EOMA-68/Embedded_Open_Modular_Architecture/EOMA-68.html "Embedded Open Modular Architecture/EOMA-68")
--   [一系列 OMAP 开发板](http://tinylab.gitbooks.io/elinux/content/zh/hardware_pages/BeagleBoard/BeagleBoard.html#Other_OMAP_boards "BeagleBoard")
--   [Dragonboard](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/Dragonboard/Dragonboard.html "Dragonboard")
--   [WandBoard](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/WandBoard/WandBoard.html "WandBoard")
+-   [嵌入式开放模块化架构/EOMA-68](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/Embedded_Open_Modular_Architecture/EOMA-68/Embedded_Open_Modular_Architecture/EOMA-68.html "Embedded Open Modular Architecture/EOMA-68")
+-   [一系列 OMAP 开发板](https://tinylab-1.gitbook.io/elinux/content/zh/hardware_pages/BeagleBoard/BeagleBoard.html#Other_OMAP_boards "BeagleBoard")
+-   [Dragonboard](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/Dragonboard/Dragonboard.html "Dragonboard")
+-   [WandBoard](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/WandBoard/WandBoard.html "WandBoard")
 -   [Colibri 评估板](https://www.toradex.com/products/carrier-boards/colibri-evaluation-carrier-board)（采用 Nvidia Tegra T20, T30 and Freescale iMX6, VF50, VF61，来自 Toradex Switzerland 和 Seattle，WA
 -   [Apalis 评估板](https://www.toradex.com/products/carrier-boards/apalis-evaluation-board)（采用 Nvidia Tegra T30 and Freescale iMX6，来自 Toradex Switzerland 和 Seattle，WA
 -   [Ixora Carrier 开发板](https://www.toradex.com/products/carrier-boards/ixora-carrier-board)（采用 Nvidia Tegra T30 and Freescale iMX6，来自 Toradex Switzerland 和 Seattle，WA
@@ -119,7 +119,7 @@ tags:
 -   [Iris Carrier 开发板](https://www.toradex.com/products/carrier-boards/iris-carrier-board)（采用 Nvidia Tegra T20 and T30, Freescale iMX6, VF50, VF61 和 Intel/Marvell PXA270, PXA310, PXA320，来自 Toradex Switzerland 和 Seattle, WA
 -   [Orchid Carrier 开发板](https://www.toradex.com/products/carrier-boards/orchid-carrier-board)（采用 Intel/Marvell PXA270, PXA310, PXA320, Nvidia Tegra T20 and T30 and Freescale iMX6, VF50, VF61，来自 Toradex Switzerland and Seattle, WA
 -   [PengPod](http://pengpod.com/)
--   [A13 OLinuXino-MICRO](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/A13_OLinuXino-MICRO/A13_OLinuXino-MICRO.html "A13 OLinuXino-MICRO") 全志 A13 开发板
+-   [A13 OLinuXino-MICRO](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/A13_OLinuXino-MICRO/A13_OLinuXino-MICRO.html "A13 OLinuXino-MICRO") 全志 A13 开发板
 -   [Boundary Devices i.MX6 开发板](http://boundarydevices.com/products/)
     -   [Nitrogen6x](http://boundarydevices.com/products/nitrogen6x-board-imx6-arm-cortex-a9-sbc/)
     -   [Nitrogen6 Lite](http://boundarydevices.com/products/nitrogen6_lite/)
@@ -146,12 +146,12 @@ tags:
 
 ## [AVR32](http://eLinux.org/Processors#AVR32 "Processors")
 
--   [ATNGW100](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/ATNGW100/ATNGW100.html "ATNGW100") - [网关套件](http://www.atmel.com/dyn/products/tools_card.asp?tool_id=4102)
+-   [ATNGW100](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/ATNGW100/ATNGW100.html "ATNGW100") - [网关套件](http://www.atmel.com/dyn/products/tools_card.asp?tool_id=4102)
 -   [AVR 开发套件板](http://www.quickembed.com/Tools/Shop/MCU/201004/89.html)
 -   [AVR JTAG 模拟器](http://www.quickembed.com/Tools/Shop/MCU/201002/70.html)
 
 
-## [Blackfin](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/Blackfin/Blackfin.html "Blackfin")
+## [Blackfin](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/Blackfin/Blackfin.html "Blackfin")
 
 -   [ADI Blackfin 开发板](http://www.quickembed.com/Tools/Shop/DSP/200907/36.html)
 -   [ADI 开发板](http://docs.blackfin.uclinux.org/doku.php?id=hw:boards)
@@ -164,9 +164,9 @@ tags:
 ## MIPS
 
 -   mips-1 小端 -
-    [Flameman/routerboard-rb532](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/Flameman/routerboard-rb532/Flameman/routerboard-rb532.html "Flameman/routerboard-rb532")
+    [Flameman/routerboard-rb532](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/Flameman/routerboard-rb532/Flameman/routerboard-rb532.html "Flameman/routerboard-rb532")
 -   [Ben 微型本](http://en.qi-hardware.com/wiki/Ben_NanoNote)
--   [MIPS Creator CI20](http://tinylab.gitbooks.io/elinux/content/zh/hardware_pages/MIPS_Creator_CI20/MIPS_Creator_CI20.html "MIPS Creator CI20") 开发板
+-   [MIPS Creator CI20](https://tinylab-1.gitbook.io/elinux/content/zh/hardware_pages/MIPS_Creator_CI20/MIPS_Creator_CI20.html "MIPS Creator CI20") 开发板
 -   [Opendreambox DVB/PVR 机顶盒家族](http://www.opendreambox.org)
 -   [MiniEMBWiFi](http://www.omnima.co.uk/store/catalog/MiniEMBWiFi-p-16180.html)
 
@@ -258,7 +258,7 @@ tags:
 
 ## i386 及其兼容平台
 
--   [CR48](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Hardware_Hacking/CR48/CR48.html "CR48") Google 上网本
+-   [CR48](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Hardware_Hacking/CR48/CR48.html "CR48") Google 上网本
 -   [Bifferboard](http://bifferos.co.uk/)
 
 
@@ -271,16 +271,16 @@ tags:
 -   [http://leaf.sourceforge.net/mod.php?mod=userpage&menu=908&page\_id=27](http://leaf.sourceforge.net/mod.php?mod=userpage&menu=908&page_id=27)
 -   [http://www.myirtech.com/](http://www.myirtech.com/)
 -   [http://www.1st-safety.com/arm/Tiny6410/](http://www.1st-safety.com/arm/Tiny6410/)
--   [StalkerBoard](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/StalkerBoard/StalkerBoard.html "StalkerBoard")
--   [SBC3530](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/SBC3530/SBC3530.html "SBC3530")
--   [SBC8100](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/SBC8100/SBC8100.html "SBC8100")
--   [SFFSDR](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/SFFSDR/SFFSDR.html "SFFSDR")
+-   [StalkerBoard](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/StalkerBoard/StalkerBoard.html "StalkerBoard")
+-   [SBC3530](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/SBC3530/SBC3530.html "SBC3530")
+-   [SBC8100](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/SBC8100/SBC8100.html "SBC8100")
+-   [SFFSDR](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/SFFSDR/SFFSDR.html "SFFSDR")
 -   [SOM1808](http://openembed.org/wiki/SOM1808)
--   [MINI2440v2\_developmentboard](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/MINI2440v2_developmentboard/MINI2440v2_developmentboard.html "MINI2440v2 developmentboard")
--   [Launchpad](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/Launchpad/Launchpad.html "Launchpad")
--   [Micro2440](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/Micro2440/Micro2440.html "Micro2440")
--   [Mini210](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/Mini210/Mini210.html "Mini210")
--   [Tiny210](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Development_Platforms/Tiny210/Tiny210.html "Tiny210")
+-   [MINI2440v2\_developmentboard](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/MINI2440v2_developmentboard/MINI2440v2_developmentboard.html "MINI2440v2 developmentboard")
+-   [Launchpad](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/Launchpad/Launchpad.html "Launchpad")
+-   [Micro2440](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/Micro2440/Micro2440.html "Micro2440")
+-   [Mini210](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/Mini210/Mini210.html "Mini210")
+-   [Tiny210](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Development_Platforms/Tiny210/Tiny210.html "Tiny210")
 
 
 [分类](http://eLinux.org/Special:Categories "Special:Categories"):

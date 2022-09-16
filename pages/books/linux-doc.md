@@ -17,12 +17,14 @@ tags:
   - 中文翻译
 ---
 
+**注意**：该项目不再更新和维护。
+
 ## 简介
 
 该项目致力于翻译 [Linux Documentation][1] 为中文版。
 
 * 在线阅读
-  * <https://gitbook.com/book/tinylab/linux-doc>
+  * <https://tinylab-1.gitbook.io/linux-doc>
 * 代码仓库
   * [https://github.com/tinyclub/linux-doc.git][2]
 * 项目首页
@@ -51,16 +53,20 @@ tags:
   * [开源书籍：C 语言编程透视][9]
   * [开源书籍：Shell 编程范例][10]
 
-
-
+<section id="home">
+  {% assign articles = site.posts %}
+  {% assign condition = 'album' %}
+  {% assign value = page.album %}
+  {% include widgets/articles %}
+</section>
 
  [1]: http://www.kernel.org/doc/Documentation
  [2]: https://github.com/tinyclub/linux-doc
  [3]: http://weibo.com/tinylaborg
  [4]: http://help.gitbook.com/format/markdown.html
  [5]: /docker-quick-start-docker-gitbook-writing-a-book/
- [6]: http://tinylab.gitbooks.io/linux-doc/content/zh-cn/doc/PLAN.html
- [7]: http://tinylab.gitbooks.io/linux-doc/content/zh-cn/doc/index.html
- [8]: https://gitbook.com/book/tinylab/elinux/
- [9]: https://gitbook.com/book/tinylab/cbook/
- [10]: https://gitbook.com/book/tinylab/shellbook/
+ [6]: https://tinylab-1.gitbook.io/linux-doc/content/zh-cn/doc/PLAN.html
+ [7]: https://tinylab-1.gitbook.io/linux-doc/content/zh-cn/doc/index.html
+ [8]: https://tinylab-1.gitbook.io/elinux/
+ [9]: https://tinylab-1.gitbook.io/cbook/
+ [10]: https://tinylab-1.gitbook.io/shellbook/

@@ -32,7 +32,7 @@ categories:
 
   * 项目首页：[open-shell-book][6]
   * 项目仓库：[https://github.com/tinyclub/open-shell-book.git][5]
-  * 在线阅读：<http://tinylab.gitbooks.io/shellbook>
+  * 在线阅读：<https://tinylab-1.gitbook.io/shellbook>
 
 ## 下载
 

@@ -56,7 +56,7 @@ tags:
 
 Ti AM18XX PRUSSv1
 
-[Ti\_AM33XX\_PRUSSv2](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Real_Time/Ti_AM33XX_PRUSSv2/Ti_AM33XX_PRUSSv2.html "Ti AM33XX PRUSSv2")
+[Ti\_AM33XX\_PRUSSv2](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Real_Time/Ti_AM33XX_PRUSSv2/Ti_AM33XX_PRUSSv2.html "Ti AM33XX PRUSSv2")
 
 Tools for PRUSS
 

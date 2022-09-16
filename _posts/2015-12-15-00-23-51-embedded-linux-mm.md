@@ -32,9 +32,9 @@ tags:
 
 分析系统内存使用量和剩余量比听起来更棘手。
 
-- 检测和分析系统内存的各种不同方法见：[运行时内存检测](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Memory_Management/Runtime_Memory_Measurement/Runtime_Memory_Measurement.html "Runtime Memory Measurement")。
-- 处理现有内存检测系统不足的一些技术见：[精确内存检测](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Memory_Management/Accurate_Memory_Measurement/Accurate_Memory_Measurement.html "Accurate Memory Measurement")。
-- 一些针对 ARM 架构的内存管理的信息见：[Tims 关于 ARM 架构内存分配的建议](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Memory_Management/Tims_Notes_on_ARM_memory_allocation/Tims_Notes_on_ARM_memory_allocation.html "Tims Notes on ARM memory allocation")。
+- 检测和分析系统内存的各种不同方法见：[运行时内存检测](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Memory_Management/Runtime_Memory_Measurement/Runtime_Memory_Measurement.html "Runtime Memory Measurement")。
+- 处理现有内存检测系统不足的一些技术见：[精确内存检测](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Memory_Management/Accurate_Memory_Measurement/Accurate_Memory_Measurement.html "Accurate Memory Measurement")。
+- 一些针对 ARM 架构的内存管理的信息见：[Tims 关于 ARM 架构内存分配的建议](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Memory_Management/Tims_Notes_on_ARM_memory_allocation/Tims_Notes_on_ARM_memory_allocation.html "Tims Notes on ARM memory allocation")。
 
 
 ### 巨页/大页/超级页
@@ -75,7 +75,7 @@ tags:
 
 关于 Linux 中 OOM Killer 的信息，可以查看：<http://linux-mm.org/OOM_Killer>
 
-部分 OOM 避免机制要靠内核对内存使用情况的精确检测。查看[精确内存检测](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Memory_Management/Accurate_Memory_Measurement/Accurate_Memory_Measurement.html "Accurate Memory Measurement") 可了解更多关于该领域的技术信息。
+部分 OOM 避免机制要靠内核对内存使用情况的精确检测。查看[精确内存检测](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Memory_Management/Accurate_Memory_Measurement/Accurate_Memory_Measurement.html "Accurate Memory Measurement") 可了解更多关于该领域的技术信息。
 
 下面是我了解的几种技术（这些需要进行更好的研究和文档化）：
 
@@ -124,7 +124,7 @@ tags:
 
 #### 基于 LSM 的低内存通知
 
-- Paul Mundt 为了 2.6.12 内核提交了补丁到 CELF，该补丁提供低内存通知给用户空间的功能。可查看[精确内存检测和诺基亚内存不足通知模块](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Memory_Management/Accurate_Memory_Measurement/Accurate_Memory_Measurement.html#Nokia_out-of-memory_notifier_module "Accurate Memory Measurement")了解更多信息。
+- Paul Mundt 为了 2.6.12 内核提交了补丁到 CELF，该补丁提供低内存通知给用户空间的功能。可查看[精确内存检测和诺基亚内存不足通知模块](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Memory_Management/Accurate_Memory_Measurement/Accurate_Memory_Measurement.html#Nokia_out-of-memory_notifier_module "Accurate Memory Measurement")了解更多信息。
     - 该模块基于一个 Linux 安全模块系统，但是那个系统被从新近内核中移除了。　
 
 
@@ -132,7 +132,7 @@ tags:
 
 这是一套机制（由 Sony and Panasonic 在 2.4 内核中建立原型），允许内核基于用户策略，为一个程序的不同段分配不同类型的内存。
 
-可查看[基于类型的内存分配](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Memory_Management/Memory_Type_Based_Allocation/Memory_Type_Based_Allocation.html "Memory Type Based Allocation")获取更多信息。
+可查看[基于类型的内存分配](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Memory_Management/Memory_Type_Based_Allocation/Memory_Type_Based_Allocation.html "Memory Type Based Allocation")获取更多信息。
 
 
 ## 附加资源/邮件列表

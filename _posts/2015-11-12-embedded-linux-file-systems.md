@@ -70,7 +70,7 @@ Linux 内核的 [Unsorted Block Images（未排序的块映像）](http://www.li
 
 ### AXFS
 
--   [AXFS](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/File_Systems/AXFS/AXFS.html "AXFS") - 高级就地执行（XIP）文件系统
+-   [AXFS](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/File_Systems/AXFS/AXFS.html "AXFS") - 高级就地执行（XIP）文件系统
     -   网站：[http://axfs.sourceforge.net/](http://axfs.sourceforge.net/)
     -   此文件系统是为 XIP 操作特别设计的，它使用双阶段的办法。第一阶段是把文件系统放在闪存上并运行它获取分析数据，并注明哪些页面有被用到。二阶段使用这些分析数据来构建一个文件系统。该文件系统把所有分析文件中记录的页面作为 XIP 数据，这些数据之后被加载到内存并被挂载（然后作为 XIP 执行）。也可能把 XIP 页面放到 NOR 闪存中并直接在上面执行。
 
@@ -86,12 +86,12 @@ Linux 内核的 [Unsorted Block Images（未排序的块映像）](http://www.li
 ### CramFS
 
 -   [CRAMFS](http://en.wikipedia.org/wiki/Cramfs) - Linux 的一个压缩的只读文件系统，CRAMFS 的最大尺寸是 256M。
-    -   "线性 Cramfs" 是指这样一种功能，即采用 Cramfs 文件系统，但是在线性块布局中使用非压缩文件。这个对于存储用于可就地执行的文件很有用。如果想了解更多线性 Cramfs 的信息，可以查看[应用程序就地执行（XIP）](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/Application_XIP/Application_XIP.html "Application XIP")一文。
+    -   "线性 Cramfs" 是指这样一种功能，即采用 Cramfs 文件系统，但是在线性块布局中使用非压缩文件。这个对于存储用于可就地执行的文件很有用。如果想了解更多线性 Cramfs 的信息，可以查看[应用程序就地执行（XIP）](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/Application_XIP/Application_XIP.html "Application XIP")一文。
 
 
 ### F2FS
 
--   [F2FS](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/File_Systems/F2FS/F2FS.html "F2FS")[（维基百科入口）](http://en.wikipedia.org/wiki/F2FS) 是 Linux 的一款闪存友好的文件系统，由三星开发。
+-   [F2FS](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/File_Systems/F2FS/F2FS.html "F2FS")[（维基百科入口）](http://en.wikipedia.org/wiki/F2FS) 是 Linux 的一款闪存友好的文件系统，由三星开发。
 
 
 ### InitRAMFS
@@ -120,7 +120,7 @@ LogFS 是一个可伸缩性的闪存文件系统，致力于在大多数使用�
 
 不幸地是，它貌似现在已经被遗弃了。
 
-可通过 [LogFS](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/File_Systems/LogFS/LogFS.html "LogFS") 查看更多细节。
+可通过 [LogFS](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/File_Systems/LogFS/LogFS.html "LogFS") 查看更多细节。
 
 
 
@@ -135,12 +135,12 @@ NFS 客户端可以被编译到内核中，然后内核就可以通过配置来�
 
 ### PRAMFS
 
--   [PRAMFS](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/File_Systems/Pram_Fs/Pram_Fs.html "Pram Fs") - 持久并且受保护的文件系统
+-   [PRAMFS](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/File_Systems/Pram_Fs/Pram_Fs.html "Pram Fs") - 持久并且受保护的文件系统
 
 
     PRAMFS 是一个全功能的可读/写文件系统，被设计于，可以与更快的 I/O 内存协同工作，并且如果使用非易失内存，那么文件系统就具有持久性。另外，它还支持就地执行（XIP）。
 
-    关于 PRAMFS 规范相关的信息，可以查看：[PRAMFS 规范](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/File_Systems/Pram_Fs/Pram_Fs.html_Specification "Pram Fs Specification")。
+    关于 PRAMFS 规范相关的信息，可以查看：[PRAMFS 规范](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/File_Systems/Pram_Fs/Pram_Fs.html_Specification "Pram Fs Specification")。
 
 
 ### Romfs
@@ -150,7 +150,7 @@ NFS 客户端可以被编译到内核中，然后内核就可以通过配置来�
 
 ### SquashFS
 
-[Squash Fs](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/File_Systems/Squash_Fs/Squash_Fs.html "Squash Fs") 是 Linux 的一个具有更高压缩比的可压缩只读文件系统。该文件系统相比 JFFS2 或者 CRAMFS 有更高压缩比。 在主线内核之外游离了很长一段时间后，Squashfs 最终被合并并发布在 [2.6.29 内核](http://kernelnewbies.org/LinuxChanges#head-5ca2504b2b4f4e6583f50dcdf23b2e75b383252f) 中。
+[Squash Fs](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/File_Systems/Squash_Fs/Squash_Fs.html "Squash Fs") 是 Linux 的一个具有更高压缩比的可压缩只读文件系统。该文件系统相比 JFFS2 或者 CRAMFS 有更高压缩比。 在主线内核之外游离了很长一段时间后，Squashfs 最终被合并并发布在 [2.6.29 内核](http://kernelnewbies.org/LinuxChanges#head-5ca2504b2b4f4e6583f50dcdf23b2e75b383252f) 中。
 
 在运行 `mksquashfs` 时，可以调节压缩比。`-b` 选项允许我们指定块大小。更小的块大小通常产生更小的压缩比，相应地，`-b` 设置越大，压缩比更高。但是，这里也有一个缺点，那就是数据以块的方式从磁盘读出来，所以如果使用 128k 大小的块，使用 4k 大小的内存页，然后压缩过的相当于 128k 的数据会从闪存读出来。因为 128k 需要 32 个内存页，这会导致一次性读取 32 页的内容到缓冲区中，即使当时只需要读 1 页内容。通常，另外 31 页也可能会被用到，但是如果用不到(but if not)，就会浪费掉读取和解压未用数据的时间，而且会让未用数据平白无故占用缓冲区（甚至系统还会为了给这 31 个页面预留空间而把其他用到的页面从缓冲区中踢出去），从而会降低资源利用率并影响性能。
 
@@ -178,11 +178,11 @@ NFS 客户端可以被编译到内核中，然后内核就可以通过配置来�
 
 ### UBIFS
 
-[UBIFS](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/File_Systems/UBIFS/UBIFS.html "UBIFS") 是构建在 [UBI](http://eLinux.org/File_Systems#UBI "File Systems") 之上的一个闪存文件系统。
+[UBIFS](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/File_Systems/UBIFS/UBIFS.html "UBIFS") 是构建在 [UBI](http://eLinux.org/File_Systems#UBI "File Systems") 之上的一个闪存文件系统。
 
 UBIFS 相比于 JFFS2 和 YAFFS，拥有更好的性能。
 
-可以通过 [UBIFS](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/File_Systems/UBIFS/UBIFS.html "UBIFS") 获取更多详细信息。
+可以通过 [UBIFS](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/File_Systems/UBIFS/UBIFS.html "UBIFS") 获取更多详细信息。
 
 
 ### YAFFS2
@@ -387,7 +387,7 @@ Linux 桌面上常用的一些基准测试工具有：
 
 2011 年时, CE Linux 论坛联合 Free Electrons，针对多个内核版本上的多种闪存文件系统做了系统性的测试。
 
-测试结果在 [Flash\_Filesystem\_Benchmarks](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/File_Systems/Flash_Filesystem_Benchmarks/Flash_Filesystem_Benchmarks.html "Flash Filesystem Benchmarks")。
+测试结果在 [Flash\_Filesystem\_Benchmarks](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/File_Systems/Flash_Filesystem_Benchmarks/Flash_Filesystem_Benchmarks.html "Flash Filesystem Benchmarks")。
 
 
 ## 其他项目

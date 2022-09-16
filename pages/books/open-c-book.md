@@ -121,6 +121,14 @@ tags:
 
 如果有时间和兴趣，欢迎参与，可以[联系我们][16]，也可以直接在 [TinyLab.org][17] 相关页面进行评论回复。
 
+<section id="home">
+  {% assign articles = site.posts %}
+  {% assign condition = 'album' %}
+  {% assign value = page.album %}
+  {% include widgets/articles %}
+</section>
+
+
  [1]: http://oss.lzu.edu.cn
  [2]: https://tinylab.gitbooks.io/shellbook
  [3]: /shell-programming-paradigm-of-process-operations/

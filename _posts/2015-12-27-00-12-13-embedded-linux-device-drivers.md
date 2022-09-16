@@ -54,4 +54,4 @@ tags:
 
 ## 资源
 
--   [设备树](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Device_Tree/Device_Tree.html "Device Tree") - 关于设备树的信息（越来越多地为新的嵌入式驱动程序所需要！）
+-   [设备树](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Device_Tree/Device_Tree.html "Device Tree") - 关于设备树的信息（越来越多地为新的嵌入式驱动程序所需要！）

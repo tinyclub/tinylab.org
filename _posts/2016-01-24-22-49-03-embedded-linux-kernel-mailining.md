@@ -37,7 +37,7 @@ Greg KH 曾做过一次伟大的演讲，主题是关于 Linux 社区是如何�
 
 更早的时候（2008 年），Andrew Morton 在一次演讲中谈到了往 Linux 内核贡献的原因，以及往内核社区贡献代码的最佳方法：
 
--   [kernel.org 开发和嵌入式世界](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Kernel_Mainlining/Session:kernel.org_development_and_the_embedded_world/Session:kernel.org_development_and_the_embedded_world.html "Session:kernel.org development and the embedded world")
+-   [kernel.org 开发和嵌入式世界](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Kernel_Mainlining/Session:kernel.org_development_and_the_embedded_world/Session:kernel.org_development_and_the_embedded_world.html "Session:kernel.org development and the embedded world")
     -   在 2008 年的这次开创性的演讲中，Andrew 勾勒出了嵌入式企业参与内核开发的情景。他讲解了整个开发流程，更为重要的是，他讲到了开发者们很期待的内容，即在一步步 Mainlining（往内核贡献补丁）的过程中，要做什么，不要做什么，以及如何组建团队，以便可以和内核社区高效地协同工作。
 
 
@@ -91,8 +91,8 @@ Greg KH 曾做过一次伟大的演讲，主题是关于 Linux 社区是如何�
 
 ## 具体项目
 
--   [CE 工作组设备 Mailining 项目](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Kernel_Mainlining/CE_Workgroup_Device_Mainlining_Project/CE_Workgroup_Device_Mainlining_Project.html "CE Workgroup Device Mainlining Project")
--   [高通 SOC Mainlining 的项目](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Kernel_Mainlining/Qualcomm_SOC_Mainlining_Project/Qualcomm_SOC_Mainlining_Project.html "Qualcomm SOC Mainlining Project")
+-   [CE 工作组设备 Mailining 项目](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Kernel_Mainlining/CE_Workgroup_Device_Mainlining_Project/CE_Workgroup_Device_Mainlining_Project.html "CE Workgroup Device Mainlining Project")
+-   [高通 SOC Mainlining 的项目](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Kernel_Mainlining/Qualcomm_SOC_Mainlining_Project/Qualcomm_SOC_Mainlining_Project.html "Qualcomm SOC Mainlining Project")
 -   [全志 Mainlining 的努力](http://linux-sunxi.org/Linux_mainlining_effort)
     -   这是一个相当好的网站，上面更新了已经合入各内核分支的补丁的状态，以及哪些些任务仍在进行中。
 
@@ -232,7 +232,7 @@ STEP ZERO: 公开你的代码。离开屋子。
 
 ## 克服 Mainlining 遇到的障碍
 
-Tim Bird 为 2014 年欧洲嵌入式 Linux 会议准备了一篇关于 [克服 Mainlining 障碍](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Kernel_Mainlining/Overcoming_Obstacles_to_Mainlining/Overcoming_Obstacles_to_Mainlining.html "Overcoming Obstacles to Mainlining") 的演讲。那篇文章里头有演讲信息和演讲稿的下载链接。
+Tim Bird 为 2014 年欧洲嵌入式 Linux 会议准备了一篇关于 [克服 Mainlining 障碍](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Kernel_Mainlining/Overcoming_Obstacles_to_Mainlining/Overcoming_Obstacles_to_Mainlining.html "Overcoming Obstacles to Mainlining") 的演讲。那篇文章里头有演讲信息和演讲稿的下载链接。
 
 
 [类别](http://eLinux.org/Special:Categories "Special:Categories"):

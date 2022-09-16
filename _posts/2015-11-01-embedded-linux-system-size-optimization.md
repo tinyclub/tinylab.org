@@ -32,13 +32,13 @@ tags:
 
 #### 配置选项
 
--   [内核尺寸优化指北](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/System_Size/Kernel_Size_Tuning_Guide/Kernel_Size_Tuning_Guide.html "Kernel Size Tuning Guide") -
+-   [内核尺寸优化指北](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/System_Size/Kernel_Size_Tuning_Guide/Kernel_Size_Tuning_Guide.html "Kernel Size Tuning Guide") -
     关于计算内核尺寸，配置内核来达到最小尺寸的文档
 
 
 #### Linux-tiny 补丁集
 
--   [Linux Tiny](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/System_Size/Linux_Tiny/Linux_Tiny.html "Linux Tiny") 是能够使 Linux 内核占用更小空间的补丁集。Linux-tiny 的长期目标是把这些补丁合入主线内核中。在过去的几年里，有几个补丁已经合入到主线内核，而且相关工作还在持续。
+-   [Linux Tiny](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/System_Size/Linux_Tiny/Linux_Tiny.html "Linux Tiny") 是能够使 Linux 内核占用更小空间的补丁集。Linux-tiny 的长期目标是把这些补丁合入主线内核中。在过去的几年里，有几个补丁已经合入到主线内核，而且相关工作还在持续。
 
 
 #### "dietnet"
@@ -69,7 +69,7 @@ Andi 指出这些补丁支持 3 个使用场景：
 
 另外一个选项，`-mregparm=3`，看上去是 X86 特有的，它告诉编译器对于函数的前 3 个参数，用寄存器存储。（by John Rigby）
 
-访问 [[1]](http://gcc.gnu.org/onlinedocs/gcc/Optimize-Options.html) 查阅所有可用的优化选项，访问 [编译器优化](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/System_Size/Compiler_Optimization/Compiler_Optimization.html "Compiler Optimization") 查阅更多关于优化选项效果的细节。
+访问 [[1]](http://gcc.gnu.org/onlinedocs/gcc/Optimize-Options.html) 查阅所有可用的优化选项，访问 [编译器优化](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/System_Size/Compiler_Optimization/Compiler_Optimization.html "Compiler Optimization") 查阅更多关于优化选项效果的细节。
 
 
 #### 垃圾回收补丁集
@@ -131,7 +131,7 @@ Andi 指出这些补丁支持 3 个使用场景：
 
 内核有一个配置选项，用来减少每一个进程的内核栈大小到 4K。内核栈大小默认是 8K（截止到 2011）。如果你有很多进程，使用 4K 的栈能够减少内核栈的使用。
 
-更多关于内核栈大小的信息： [小型内核栈](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/System_Size/Kernel_Small_Stacks/Kernel_Small_Stacks.html "Kernel Small Stacks")
+更多关于内核栈大小的信息： [小型内核栈](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/System_Size/Kernel_Small_Stacks/Kernel_Small_Stacks.html "Kernel Small Stacks")
 
 
 #### 自动裁剪
@@ -145,17 +145,17 @@ Andi 指出这些补丁支持 3 个使用场景：
 
 Tim 同时也在链接时重写和静态代码压缩技术方面发现了一些非常有趣的学术研究。（**注**：部分研究见 [Tiny Linux Kernel](http://elinux.org/Work_on_Tiny_Linux_Kernel)）Tim 在 2013 年 5 月在日本举行的 LinuxCon 会议上展示了他的工作。
 
-这次展示的一些提纲和完整的幻灯片可以这里找到 [系统尺寸自动缩减](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/System_Size/System_Size_Auto-Reduction/System_Size_Auto-Reduction.html "System Size Auto-Reduction")
+这次展示的一些提纲和完整的幻灯片可以这里找到 [系统尺寸自动缩减](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/System_Size/System_Size_Auto-Reduction/System_Size_Auto-Reduction.html "System Size Auto-Reduction")
 
 
 #### PRINTK 消息压缩
 
-在 2014 年，一个开放项目提议，[压缩的 printk 消息](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/System_Size/Compressed_printk_messages/Compressed_printk_messages.md "Compressed printk messages")，评估过这个技术。这个项目的结果可以在 [压缩的 printk 消息 - 结果](../.././dev_portals/System_Size/Compressed_printk_messages/Compressed_printk_messages.html_-_Results "Compressed printk messages - Results") 找到。
+在 2014 年，一个开放项目提议，[压缩的 printk 消息](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/System_Size/Compressed_printk_messages/Compressed_printk_messages.md "Compressed printk messages")，评估过这个技术。这个项目的结果可以在 [压缩的 printk 消息 - 结果](../.././dev_portals/System_Size/Compressed_printk_messages/Compressed_printk_messages.html_-_Results "Compressed printk messages - Results") 找到。
 
 
 #### 裁剪的一些想法和近期的工作
 
-一群开发者正持续致力于 Linux 内核大小裁剪的工作上（截止到 2014）。为方便后续内核裁剪工作，已经建立了一篇文章来分类近期工作和想法。该文章在：[内核大小裁剪工作](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/System_Size/Kernel_Size_Reduction_Work/Kernel_Size_Reduction_Work.html "Kernel Size Reduction Work")。
+一群开发者正持续致力于 Linux 内核大小裁剪的工作上（截止到 2014）。为方便后续内核裁剪工作，已经建立了一篇文章来分类近期工作和想法。该文章在：[内核大小裁剪工作](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/System_Size/Kernel_Size_Reduction_Work/Kernel_Size_Reduction_Work.html "Kernel Size Reduction Work")。
 
 
 ### 文件系统压缩
@@ -167,7 +167,7 @@ Tim 同时也在链接时重写和静态代码压缩技术方面发现了一些�
 
 要注意的是由于 Cramfs 和 Squashfs 只写一次（write-only-once）的天然特性，也能够用于 MTD 存储。
 
-访问 [文件系统](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/File_Systems/File_Systems.html "File Systems") 获取更多信息。
+访问 [文件系统](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/File_Systems/File_Systems.html "File Systems") 获取更多信息。
 
 
 ### 应用裁剪
@@ -269,21 +269,21 @@ MontaVista 释放过一个工具，用来优化库。这个工具扫描整个文
 
 通过在 FLASH 里执行内核，这有可能节省内存。
 
--   看 [内核 XIP](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/Kernel_XIP/Kernel_XIP.html "Kernel XIP")
+-   看 [内核 XIP](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/Kernel_XIP/Kernel_XIP.html "Kernel XIP")
 
 
 #### 应用 XIP
 
 通过在 FLASH 里执行应用程序，这有可能节省内存。
 
--   看 [应用 XIP](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/Application_XIP/Application_XIP.html "Application XIP")
+-   看 [应用 XIP](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/Application_XIP/Application_XIP.html "Application XIP")
 
 
 #### 原地数据读取 (DRIP)
 
 这有一个技术，用来在 FLASH 里保持数据，直到该数据需要更新，才复制到内存里来。
 
--   看 [Data Read In Place](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/System_Size/Data_Read_In_Place/Data_Read_In_Place.html "Data Read In Place")
+-   看 [Data Read In Place](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/System_Size/Data_Read_In_Place/Data_Read_In_Place.html "Data Read In Place")
 
 
 ## 尺寸测量的技术和相关工具
@@ -335,9 +335,9 @@ MontaVista 释放过一个工具，用来优化库。这个工具扫描整个文
 
 ### 怎样动态计算内存使用情况
 
-测量 Linux 下运行时内存使用情况，访问 [动态内存测量](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Memory_Management/Runtime_Memory_Measurement/Runtime_Memory_Measurement.html "Runtime Memory Measurement")
+测量 Linux 下运行时内存使用情况，访问 [动态内存测量](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Memory_Management/Runtime_Memory_Measurement/Runtime_Memory_Measurement.html "Runtime Memory Measurement")
 
-同时，要得到更精准的内存使用情况和相关补丁，请访问 [精准内存测量](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Memory_Management/Accurate_Memory_Measurement/Accurate_Memory_Measurement.html "Accurate Memory Measurement")
+同时，要得到更精准的内存使用情况和相关补丁，请访问 [精准内存测量](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Memory_Management/Accurate_Memory_Measurement/Accurate_Memory_Measurement.html "Accurate Memory Measurement")
 
 
 ### Linux 内核 从 2.4 到 2.6 的尺寸增加
@@ -345,9 +345,9 @@ MontaVista 释放过一个工具，用来优化库。这个工具扫描整个文
 Linux 内核从 2.4 到 2.6 版本之间，大小增加了 10% ~ 30%。论坛成员非常关注这种尺寸增长。
 
 访问 [Szwg Linux
-26Data](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/System_Size/Szwg_Linux_26Data/Szwg_Linux_26Data.html "Szwg Linux 26Data") 相关数据支持。
+26Data](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/System_Size/Szwg_Linux_26Data/Szwg_Linux_26Data.html "Szwg Linux 26Data") 相关数据支持。
 
--   [尺寸调整](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/System_Size/Size_Tunables/Size_Tunables.html "Size Tunables")
+-   [尺寸调整](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/System_Size/Size_Tunables/Size_Tunables.html "Size Tunables")
 
 
 ### GCC 代码大小基准测试

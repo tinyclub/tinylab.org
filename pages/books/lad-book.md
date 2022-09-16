@@ -23,7 +23,7 @@ tags:
 ## 简介
 
 -   [代码仓库](https://github.com/tinyclub/lad-book)
--   [在线阅读](http://tinylab.gitbooks.io/lad-book)
+-   [在线阅读](https://tinylab-1.gitbook.io/lad-book)
 -   [项目首页](https://tinylab.org/lad-book)
 
 ## 报名
@@ -57,6 +57,15 @@ tags:
 
 ## 更多
 
-* [C 语言编程透视](http://tinylab.gitbooks.io/cbook/)
-* [Shell 编程范例](http://tinylab.gitbooks.io/shellbook/)
-* [嵌入式 Linux 知识库(eLinux.org 中文版)](http://tinylab.gitbooks.io/elinux/)
+* [C 语言编程透视](https://tinylab-1.gitbook.io/cbook/)
+* [Shell 编程范例](https://tinylab-1.gitbook.io/shellbook/)
+* [嵌入式 Linux 知识库(eLinux.org 中文版)](https://tinylab-1.gitbook.io/elinux/)
+
+<hr>
+
+<section id="home">
+  {% assign articles = site.posts %}
+  {% assign condition = 'album' %}
+  {% assign value = page.album %}
+  {% include widgets/articles %}
+</section>

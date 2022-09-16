@@ -27,7 +27,7 @@ tags:
 
 本文有 Linux 下的音频、视频、图形系统相关的各类资源。
 
-关于图形系统部分，也可以通过阅读[用户接口](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Multimedia/User_Interfaces/User_Interfaces.html "User Interfaces")一节了解更多信息。
+关于图形系统部分，也可以通过阅读[用户接口](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Multimedia/User_Interfaces/User_Interfaces.html "User Interfaces")一节了解更多信息。
 
 
 ## CELF 2.0 AVG 规范
@@ -41,7 +41,7 @@ tags:
 
 请从 CELF 维基：[AVG 工作组](http://www.celinuxforum.org/CelfPubWiki/AudioVideoGraphicsWorkingGroup) 获取更多信息。
 
-也有一些 AVWG 相关的[但是过期了的文章](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Multimedia/Outdated_pages/Outdated_pages.html "Outdated pages")。
+也有一些 AVWG 相关的[但是过期了的文章](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Multimedia/Outdated_pages/Outdated_pages.html "Outdated pages")。
 
 
 ## DirectFB 研究
@@ -49,17 +49,17 @@ tags:
 
 ### 什么是 DirectFB，DirectFB 如何工作
 
-- [DirectFB](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Multimedia/DirectFB/DirectFB.html "DirectFB")
+- [DirectFB](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Multimedia/DirectFB/DirectFB.html "DirectFB")
 
 
 ### 嵌入式 Linux 平台上 DirectFB 示例实现
 
-- [移植 DirectFB](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Multimedia/Porting_DirectFB/Porting_DirectFB.html "Porting DirectFB")
+- [移植 DirectFB](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Multimedia/Porting_DirectFB/Porting_DirectFB.html "Porting DirectFB")
 
 
 ### 嵌入式 Linux 平台上一些 DirectFB 基准测试结果
 
-- [DirectFB 基准测试](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Multimedia/Benchmark_DirectFB/Benchmark_DirectFB.html "Benchmark DirectFB")
+- [DirectFB 基准测试](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Multimedia/Benchmark_DirectFB/Benchmark_DirectFB.html "Benchmark DirectFB")
 
 
 ## 相关项目
@@ -81,7 +81,7 @@ tags:
 
 -   [http://www.directfb.org/](http://www.directfb.org/)
 -   [http://www.directfb.org/documentation/DirectFB\_overview\_V0.2.pdf](http://www.directfb.org/documentation/DirectFB_overview_V0.2.pdf)
--   [DirectFB](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Multimedia/DirectFB/DirectFB.html "DirectFB")
+-   [DirectFB](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Multimedia/DirectFB/DirectFB.html "DirectFB")
 
 
 #### V4L2
@@ -93,7 +93,7 @@ tags:
 #### X11
 
 -   [http://www.x.org/](http://www.x.org/)
--   [X11](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Multimedia/X11/X11.html "X11")
+-   [X11](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Multimedia/X11/X11.html "X11")
 
 
 #### NanoX
@@ -122,7 +122,7 @@ tags:
 -   [http://clutter-project.org/](http://clutter-project.org/) 是构建在 OpenGL（或者 OpenGL-ES）与场景管理之上的一个面向对象的 3D 画板，它基于 GLib/GObject 并很好地匹配 GNOME 平台。很多强大的 Linux 手机在不久的将来，将转向采用基于 Clutter 的接口，像英特尔的 Moblin 平台，Ubuntu Touch 移动平台和 Maemo（译着注：实际上这三个平台两个已经死了，只有 Touch 半死不活，一个系统要真能在实际产品中占有一席之地，还真得是综合实力的考量！）。
 
 
-#### Enlightenment Foundation Libraries ([EFL](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Multimedia/EFL/EFL.html "EFL"))
+#### Enlightenment Foundation Libraries ([EFL](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Multimedia/EFL/EFL.html "EFL"))
 
 [The Enlightenment Foundation Libraries](http://www.enlightenment.org/) 包含 Evas，一个构建在 OpenGL/X11, XRender/X11, X11, FB, DirectFB, DirectDraw 等之上的面向对象的 2D 画板。它包括场景管理并且集成了 Ecore，能很好地与 EFL 组件，比如 Edje 匹配。它已经被用于一些媒体中心和 OpenMoko 手机上。
 
@@ -282,7 +282,7 @@ tags:
 
 #### UPnP
 
--   [UPnP](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Multimedia/UPnP/UPnP.html "UPnP")
+-   [UPnP](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Multimedia/UPnP/UPnP.html "UPnP")
 
 
 #### TV Anytime 论坛

@@ -88,7 +88,7 @@ __报名方式__：加微信 lzufalcon 并注明：参加泰晓沙龙第四期�
 [6]: http://oss.lzu.edu.cn
 [7]: http://www.remword.com/kps_result/all_whole_country.html
 [8]: /optimizing-embedded-systems-using-busybox/
-[9]: http://tinylab.gitbooks.io/cbook
-[10]: http://tinylab.gitbooks.io/shellbook
+[9]: https://tinylab-1.gitbook.io/cbook
+[10]: https://tinylab-1.gitbook.io/shellbook
 [12]: http://j.map.baidu.com/y8Da8
 [13]: http://wowotech.net/

@@ -43,7 +43,6 @@ tags:
 <section id="home">
   {% assign articles = site.posts %}
   {% assign condition = 'album' %}
-  {% assign value = 'RISC-V Linux' %}
+  {% assign value = page.album %}
   {% include widgets/articles %}
 </section>
-

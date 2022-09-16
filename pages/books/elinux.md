@@ -16,6 +16,8 @@ tags:
   - 中文翻译
 ---
 
+**注意**：该项目不再更新和维护。
+
 ## 简介
 
 [eLinux.org][1] 是 Linux 基金会下属 [Consumer Electronics Linux Forum][2] 维护的一个 Embedded Linux Wiki。该 Wiki 全面系统地梳理了嵌入式 Linux 方方面面的知识。
@@ -23,7 +25,7 @@ tags:
 该项目致力于翻译 [Embedded Linux Wiki][1] 为中文版。
 
 * 在线阅读
-  * <https://gitbook.com/book/tinylab/elinux>
+  * <https://tinylab-1.gitbook.io/elinux>
 * 代码仓库
   * [https://github.com/tinyclub/elinux.git][4]
 * 项目首页
@@ -69,7 +71,14 @@ tags:
   * [开源书籍：C 语言编程透视][14]
   * [开源书籍：Shell 编程范例][15]
 
+<hr>
 
+<section id="home">
+  {% assign articles = site.posts %}
+  {% assign condition = 'album' %}
+  {% assign value = page.album %}
+  {% include widgets/articles %}
+</section>
 
 
  [1]: http://elinux.org
@@ -78,11 +87,11 @@ tags:
  [5]: http://weibo.com/tinylaborg
  [6]: http://help.gitbook.com/format/markdown.html
  [7]: /docker-quick-start-docker-gitbook-writing-a-book/
- [8]: http://tinylab.gitbooks.io/elinux/content/zh/doc/PLAN.html
- [9]: http://tinylab.gitbooks.io/elinux/content/zh/doc/index.html
+ [8]: https://tinylab-1.gitbook.io/elinux/content/zh/doc/PLAN.html
+ [9]: https://tinylab-1.gitbook.io/elinux/content/zh/doc/index.html
  [10]: /start-posting-with-markdown/
  [11]: http://www.gitbook.com
  [12]: /elinux-org-translation-project/
- [13]: https://gitbook.com/book/tinylab/linux-doc/
- [14]: https://gitbook.com/book/tinylab/cbook/
- [15]: https://gitbook.com/book/tinylab/shellbook/
+ [13]: https://tinylab-1.gitbook.io/linux-doc/
+ [14]: https://tinylab-1.gitbook.io/cbook/
+ [15]: https://tinylab-1.gitbook.io/shellbook/

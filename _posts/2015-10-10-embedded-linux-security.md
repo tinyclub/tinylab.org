@@ -33,15 +33,15 @@ tags:
 
 ## 技术/项目主页
 
--   [硬件安全](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Security/Security_Hardware_Resources/Security_Hardware_Resources.html "Security Hardware Resources")
--   [引导程序安全](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Security/Bootloader_Security_Resources/Bootloader_Security_Resources.html "Bootloader Security Resources")
--   [强制访问控制方案比较](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Security/Mandatory_Access_Control_Comparison/Mandatory_Access_Control_Comparison.html "Mandatory Access Control Comparison")
+-   [硬件安全](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Security/Security_Hardware_Resources/Security_Hardware_Resources.html "Security Hardware Resources")
+-   [引导程序安全](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Security/Bootloader_Security_Resources/Bootloader_Security_Resources.html "Bootloader Security Resources")
+-   [强制访问控制方案比较](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Security/Mandatory_Access_Control_Comparison/Mandatory_Access_Control_Comparison.html "Mandatory Access Control Comparison")
 
 ## Linux Kernel 中的安全子系统
 
 ### SELinux
 
--   [SELinux](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Security/SELinux/SELinux.html "SELinux") - 这个组件主要用来实现一种 Linux 安全架构：[FLASK（The Flux Advanced Security Kernel）](http://www.cs.utah.edu/flux/fluke/html/flask.html)。
+-   [SELinux](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Security/SELinux/SELinux.html "SELinux") - 这个组件主要用来实现一种 Linux 安全架构：[FLASK（The Flux Advanced Security Kernel）](http://www.cs.utah.edu/flux/fluke/html/flask.html)。
     SELinux 主要起始于 NSA 在 2001 年内核峰会上演示给内核开发人员的一个内核补丁，来自这次报告的反馈促成了 LSM 这个项目。SELinux 项目已经帮助内核定义了大部分的 LSM 接口。
     -   OLS 2008 paper: [消费电子设备下的 SELinux](http://eLinux.org/images/8/88/Nakamura-reprint.pdf "Nakamura-reprint.pdf")
         Nakamura & Sameshima, 日立软件工程师.
@@ -49,7 +49,7 @@ tags:
 
 ### Tomoyo
 
--   [TOMOYO Linux](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Security/TomoyoLinux/TomoyoLinux.md "TomoyoLinux") 主要用来提升 Linux 自身的安全性，这个特性最初由[ NTT DATA CORPORATION, Japan](http://www.nttdata.co.jp/en/index.html)开发。 [TOMOYO Linux](../.././dev_portals/Security/TomoyoLinux/TomoyoLinux.md "TomoyoLinux") 是在 2005 年 11 月 11 日，以 GPL 许可证的形式开源的。 [TOMOYO Linux](../.././dev_portals/Security/TomoyoLinux/TomoyoLinux.html "TomoyoLinux") 是一种可以被称为安全操作系统的机制，与 SELinux 非常类似，这个机制可以把各类访问权限化整为零，从而做到更加细粒度的访问控制。
+-   [TOMOYO Linux](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Security/TomoyoLinux/TomoyoLinux.md "TomoyoLinux") 主要用来提升 Linux 自身的安全性，这个特性最初由[ NTT DATA CORPORATION, Japan](http://www.nttdata.co.jp/en/index.html)开发。 [TOMOYO Linux](../.././dev_portals/Security/TomoyoLinux/TomoyoLinux.md "TomoyoLinux") 是在 2005 年 11 月 11 日，以 GPL 许可证的形式开源的。 [TOMOYO Linux](../.././dev_portals/Security/TomoyoLinux/TomoyoLinux.html "TomoyoLinux") 是一种可以被称为安全操作系统的机制，与 SELinux 非常类似，这个机制可以把各类访问权限化整为零，从而做到更加细粒度的访问控制。
     -   [ELC 2007 presentation](http://eLinux.org/images/b/b5/Elc2007-presentation-20070418-for_linux.pdf "Elc2007-presentation-20070418-for linux.pdf")
     -   [OLS 2007 BoF slides](http://eLinux.org/images/e/eb/Ols2007-tomoyo-20070629.pdf "Ols2007-tomoyo-20070629.pdf")
 
@@ -209,13 +209,13 @@ RSBAC 框架建立在通用权限访问控制框架 (GFAC) 之上，该框架是
 -   [可信计算集群 (TCG)](https://www.trustedcomputinggroup.org/) - TCG 定义了一种基于硬件的安全架构
     （硬件为 Trust 的根基），这是在多种平台创建可信计算的一种经济有效的方案。更多的介绍信息请查看 Seiji
     Munetoh 与 Nicholas Szeto 的演示, TCGOverviewPDF, 这个演示是在
-     [Tech Conference 2005 Docs](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Security/Tech_Conference_2005Docs/Tech_Conference_2005Docs.html "Tech Conference 2005Docs")
-    页面上。可信平台模块（[TPM](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Security/Security_Hardware_Resources/Security_Hardware_Resources.html)）是绑定到平台的安全芯片和该架构的关键组件。
+     [Tech Conference 2005 Docs](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Security/Tech_Conference_2005Docs/Tech_Conference_2005Docs.html "Tech Conference 2005Docs")
+    页面上。可信平台模块（[TPM](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Security/Security_Hardware_Resources/Security_Hardware_Resources.html)）是绑定到平台的安全芯片和该架构的关键组件。
     TCG 拥有一个移动电话工作组，该工作组发布了一个用户用例文档，该文档可应用于许多通用消费电子设备（包括移动电话）-- [MPWG User Cases](https://www.trustedcomputinggroup.org/groups/mobile/MPWG_Use_Cases.pdf)
 
 #### 安全组件
 
--   [SELinux](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Security/SELinux/SELinux.html "SELinux") - 主要实现了 [FLASK](http://www.cs.utah.edu/flux/fluke/html/flask.html) 安全架构。
+-   [SELinux](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Security/SELinux/SELinux.html "SELinux") - 主要实现了 [FLASK](http://www.cs.utah.edu/flux/fluke/html/flask.html) 安全架构。
     SELinux 主要起始于 NSA 在 2001 年内核峰会期间演示给内核开发者的一个内核补丁，来自该报告的反馈促成了 LSM 项目。
     SELinux 项目已经定义了大量的 LSM 接口。
 
@@ -228,10 +228,10 @@ RSBAC 框架建立在通用权限访问控制框架 (GFAC) 之上，该框架是
     LIDS 有两个版本，1.2 和 2.2。LIDS 2.2 支持 2.6 内核，LIDS 1.2 支持 2.4 内核，并且它提供了新的功能，可信路径执行（Trusted PATH Execution，TPE）
     和可信域实施（Trusted Domain Enforcement，TDE）。这些对于创建沙盒非常有用。LIDS 以 GPL 方式发布。
 
--   [TOMOYO Linux](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Security/TomoyoLinux/TomoyoLinux.html "TomoyoLinux") 主要用来提高 Linux 自身的安全性，
+-   [TOMOYO Linux](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Security/TomoyoLinux/TomoyoLinux.html "TomoyoLinux") 主要用来提高 Linux 自身的安全性，
     该特性最初由 [NTT DATA CORPORATION, Japan](http://www.nttdata.co.jp/en/index.html) 开发。
-    [TOMOYO Linux](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Security/TomoyoLinux/TomoyoLinux.html "TomoyoLinux") 是在 2005 年 11 月 11 日，
-    以 GPL 许可证的形式开源的。[TOMOYO Linux](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Security/TomoyoLinux/TomoyoLinux.html "TomoyoLinux") 是一个被称为安全操作系统的机制，
+    [TOMOYO Linux](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Security/TomoyoLinux/TomoyoLinux.html "TomoyoLinux") 是在 2005 年 11 月 11 日，
+    以 GPL 许可证的形式开源的。[TOMOYO Linux](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Security/TomoyoLinux/TomoyoLinux.html "TomoyoLinux") 是一个被称为安全操作系统的机制，
     它与 SELinux 非常类似，通过把现有的访问权限化整为零，从而可以做到更细粒度的访问控制。
     -   [ELC2007 presentation](http://sourceforge.jp/projects/tomoyo/document/elc2007-presentation-20070418-for_linux.pdf/en/4/elc2007-presentation-20070418-for_linux.pdf)
     -   [OLS2007 BoF slides](http://sourceforge.jp/projects/tomoyo/document/ols2007-tomoyo-20070629.pdf/en/4/ols2007-tomoyo-20070629.pdf)
@@ -310,8 +310,8 @@ LOMAC 可以在系统启动以后通过简单地加载内核模块来加固当�
 #### 其他资源
 
 -   启动设备的安全性
-    -   [安全硬件相关资源](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Security/Security_Hardware_Resources/Security_Hardware_Resources.html "Security Hardware Resources")
-    -   Bootloader 安全相关的资源 -- [Bootloader 安全相关的资源](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Security/Bootloader_Security_Resources/Bootloader_Security_Resources.html "Bootloader Security Resources")
+    -   [安全硬件相关资源](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Security/Security_Hardware_Resources/Security_Hardware_Resources.html "Security Hardware Resources")
+    -   Bootloader 安全相关的资源 -- [Bootloader 安全相关的资源](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Security/Bootloader_Security_Resources/Bootloader_Security_Resources.html "Bootloader Security Resources")
 
 ##### 安全活动
 

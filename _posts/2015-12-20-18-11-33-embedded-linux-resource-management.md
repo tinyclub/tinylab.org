@@ -25,7 +25,7 @@ tags:
 -   [CKRM, 基于类别的的内核资源管理（注：一个类别是一组 Linux 任务）](http://ckrm.sourceforge.net)（[ckrm-tech](https://lists.sourceforge.net/lists/listinfo/ckrm-tech) 邮件列表 和 [邮件存档](http://sourceforge.net/mailarchive/forum.php?forum=ckrm-tech)）
 -   [UBC, OpenVZ User beancounters（OpenVZ 用户会计师）](http://wiki.openvz.org/Category:UBC)
 -   [OpenSourceMID.org](http://www.opensourcemid.org)
-    -   [Opensourcemid](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Hardware_Hacking/Opensourcemid/Opensourcemid.html "Opensourcemid")
+    -   [Opensourcemid](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Hardware_Hacking/Opensourcemid/Opensourcemid.html "Opensourcemid")
 
 
 ## CKRM/RG

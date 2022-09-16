@@ -200,7 +200,7 @@ tags:
 
 ### 看过来
 
--   [引导程序安全相关资源](http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Security/Bootloader_Security_Resources/Bootloader_Security_Resources.html "引导程序安全相关资源")
+-   [引导程序安全相关资源](https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Security/Bootloader_Security_Resources/Bootloader_Security_Resources.html "引导程序安全相关资源")
 
 
 [分类](http://eLinux.org/Special:Categories "Special:Categories"):

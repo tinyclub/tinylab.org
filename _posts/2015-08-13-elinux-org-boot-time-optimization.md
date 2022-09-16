@@ -346,58 +346,58 @@ systemd 是一个新的项目 (就当时 2010 年 5 月而言)，用于在 Linux
 
 
 
- [1]: http://tinylab.gitbooks.io/elinux
+ [1]: https://tinylab-1.gitbook.io/elinux
  [2]: http://eLinux.org/Boot_Time "http://eLinux.org/Boot_Time"
  [3]: https://github.com/lzufalcon
  [4]: https://github.com/ibrother
- [5]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/Bootup_Time_Working_Group/Bootup_Time_Working_Group.html "Bootup Time Working Group"
- [6]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/Boot-up_Time_Definition_Of_Terms/Boot-up_Time_Definition_Of_Terms.html "Boot-up Time Definition Of Terms"
- [7]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/Printk_Times/Printk_Times.html "Printk Times"
- [8]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/Kernel_Function_Trace/Kernel_Function_Trace.html "Kernel Function Trace"
- [9]: http://tinylab.gitbooks.io/elinux/content/zh/dbg_portal/kernel_trace_and_profile/Linux_Trace_Toolkit/Linux_Trace_Toolkit.html "Linux Trace Toolkit"
+ [5]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/Bootup_Time_Working_Group/Bootup_Time_Working_Group.html "Bootup Time Working Group"
+ [6]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/Boot-up_Time_Definition_Of_Terms/Boot-up_Time_Definition_Of_Terms.html "Boot-up Time Definition Of Terms"
+ [7]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/Printk_Times/Printk_Times.html "Printk Times"
+ [8]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/Kernel_Function_Trace/Kernel_Function_Trace.html "Kernel Function Trace"
+ [9]: https://tinylab-1.gitbook.io/elinux/content/zh/dbg_portal/kernel_trace_and_profile/Linux_Trace_Toolkit/Linux_Trace_Toolkit.html "Linux Trace Toolkit"
  [10]: http://oprofile.sourceforge.net/news/
- [11]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/Bootchart/Bootchart.html "Bootchart"
+ [11]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/Bootchart/Bootchart.html "Bootchart"
  [12]: http://people.redhat.com/berrange/systemtap/bootprobe/
- [13]: http://tinylab.gitbooks.io/elinux/content/zh/dbg_portal/kernel_trace_and_profile/System_Tap/System_Tap.html "System Tap"
- [14]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/Tims_Fastboot_Tools/Tims_Fastboot_Tools.html#grabserial "Tims Fastboot Tools"
- [15]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/Tims_Fastboot_Tools/Tims_Fastboot_Tools.html#Tim.27s_quick_and_dirty_process_trace "Tims Fastboot Tools"
+ [13]: https://tinylab-1.gitbook.io/elinux/content/zh/dbg_portal/kernel_trace_and_profile/System_Tap/System_Tap.html "System Tap"
+ [14]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/Tims_Fastboot_Tools/Tims_Fastboot_Tools.html#grabserial "Tims Fastboot Tools"
+ [15]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/Tims_Fastboot_Tools/Tims_Fastboot_Tools.html#Tim.27s_quick_and_dirty_process_trace "Tims Fastboot Tools"
  [16]: http://pengutronix.de/software/ptx_ts/index_en.html
- [17]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/Initcall_Debug/Initcall_Debug.html "Initcall Debug"
- [18]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/Kernel_Instrumentation/Kernel_Instrumentation.html "Kernel Instrumentation"
- [19]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/Kernel_XIP/Kernel_XIP.html "Kernel XIP"
- [20]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/DMA_Copy_Of_Kernel_On_Startup/DMA_Copy_Of_Kernel_On_Startup.html "DMA Copy Of Kernel On Startup"
- [21]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/Uncompressed_kernel/Uncompressed_kernel.html "Uncompressed kernel"
- [22]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/Fast_Kernel_Decompression/Fast_Kernel_Decompression.html "Fast Kernel Decompression"
- [23]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/Disable_Console/Disable_Console.html "Disable Console"
- [24]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/RTC_No_Sync/RTC_No_Sync.html "RTC No Sync"
- [25]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/Short_IDE_Delays/Short_IDE_Delays.html "Short IDE Delays"
- [26]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/Hardcode_kernel_module_info/Hardcode_kernel_module_info.html "Hardcode kernel module info"
- [27]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/IDE_No_Probe/IDE_No_Probe.html "IDE No Probe"
- [28]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/Preset_LPJ/Preset_LPJ.html "Preset LPJ"
- [29]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/Asynchronous_function_calls/Asynchronous_function_calls.html "Asynchronous function calls"
- [30]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/Threaded_Device_Probing/Threaded_Device_Probing.html "Threaded Device Probing"
- [31]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/Reordering_of_driver_initialization/Reordering_of_driver_initialization.html "Reordering of driver initialization"
- [32]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/Deferred_Initcalls/Deferred_Initcalls.html "Deferred Initcalls"
+ [17]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/Initcall_Debug/Initcall_Debug.html "Initcall Debug"
+ [18]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/Kernel_Instrumentation/Kernel_Instrumentation.html "Kernel Instrumentation"
+ [19]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/Kernel_XIP/Kernel_XIP.html "Kernel XIP"
+ [20]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/DMA_Copy_Of_Kernel_On_Startup/DMA_Copy_Of_Kernel_On_Startup.html "DMA Copy Of Kernel On Startup"
+ [21]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/Uncompressed_kernel/Uncompressed_kernel.html "Uncompressed kernel"
+ [22]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/Fast_Kernel_Decompression/Fast_Kernel_Decompression.html "Fast Kernel Decompression"
+ [23]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/Disable_Console/Disable_Console.html "Disable Console"
+ [24]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/RTC_No_Sync/RTC_No_Sync.html "RTC No Sync"
+ [25]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/Short_IDE_Delays/Short_IDE_Delays.html "Short IDE Delays"
+ [26]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/Hardcode_kernel_module_info/Hardcode_kernel_module_info.html "Hardcode kernel module info"
+ [27]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/IDE_No_Probe/IDE_No_Probe.html "IDE No Probe"
+ [28]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/Preset_LPJ/Preset_LPJ.html "Preset LPJ"
+ [29]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/Asynchronous_function_calls/Asynchronous_function_calls.html "Asynchronous function calls"
+ [30]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/Threaded_Device_Probing/Threaded_Device_Probing.html "Threaded Device Probing"
+ [31]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/Reordering_of_driver_initialization/Reordering_of_driver_initialization.html "Reordering of driver initialization"
+ [32]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/Deferred_Initcalls/Deferred_Initcalls.html "Deferred Initcalls"
  [33]: http://git.infradead.org/mtd-2.6.git?a=blob_plain;f=drivers/mtd/nand/nand_ecc.c;hb=HEAD
  [34]: http://git.infradead.org/mtd-2.6.git?a=blob_plain;f=Documentation/mtd/nand_ecc.txt;hb=HEAD
- [35]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/Filesystem_Information/Filesystem_Information.html "Filesystem Information"
- [36]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/File_Systems/File_Systems.html "File Systems"
- [37]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/Avoid_Initramfs/Avoid_Initramfs.html "Avoid Initramfs"
- [38]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/Ramdisks_demasked/Ramdisks_demasked.md "Ramdisks demasked"
- [39]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/Optimize_RC_Scripts/Optimize_RC_Scripts.html "Optimize RC Scripts"
- [40]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/Parallel_RC_Scripts/Parallel_RC_Scripts.html "Parallel RC Scripts"
- [41]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/Application_XIP/Application_XIP.html "Application XIP"
- [42]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/Pre_Linking/Pre_Linking.html "Pre Linking"
+ [35]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/Filesystem_Information/Filesystem_Information.html "Filesystem Information"
+ [36]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/File_Systems/File_Systems.html "File Systems"
+ [37]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/Avoid_Initramfs/Avoid_Initramfs.html "Avoid Initramfs"
+ [38]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/Ramdisks_demasked/Ramdisks_demasked.md "Ramdisks demasked"
+ [39]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/Optimize_RC_Scripts/Optimize_RC_Scripts.html "Optimize RC Scripts"
+ [40]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/Parallel_RC_Scripts/Parallel_RC_Scripts.html "Parallel RC Scripts"
+ [41]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/Application_XIP/Application_XIP.html "Application XIP"
+ [42]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/Pre_Linking/Pre_Linking.html "Pre Linking"
  [43]: http://sourceware.org/ml/binutils/2006-06/msg00418.html
- [44]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/Application_Init_Optimizations/Application_Init_Optimizations.html "Application Init Optimizations"
- [45]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/Include_modules_in_kernel_image/Include_modules_in_kernel_image.html "Include modules in kernel image"
+ [44]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/Application_Init_Optimizations/Application_Init_Optimizations.html "Application Init Optimizations"
+ [45]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/Include_modules_in_kernel_image/Include_modules_in_kernel_image.html "Include modules in kernel image"
  [46]: http://comments.gmane.org/gmane.linux.kernel.embedded/3508
  [47]: http://www.celinux.org/elc08_presentations/DDLink%20FunctionReorder%2008%2004.pdf
  [48]: http://eLinux.org/images/9/98/LinuxBootupTimeReduction4DSC.ppt "LinuxBootupTimeReduction4DSC.ppt"
  [49]: http://www.kernel.org/doc/ols/2006/ols2006v2-pages-239-248.pdf
- [50]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/Suspend_To_Disk_For_ARM/Suspend_To_Disk_For_ARM.html "Suspend To Disk For ARM"
+ [50]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/Suspend_To_Disk_For_ARM/Suspend_To_Disk_For_ARM.html "Suspend To Disk For ARM"
  [51]: http://elinux.org/images/3/37/Snapshot-boot-final.pdf
- [52]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/About_Compression/About_Compression.html "About Compression"
+ [52]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/About_Compression/About_Compression.html "About Compression"
  [53]: http://free-electrons.com/doc/training/boot-time/
  [54]: http://elinux.org/images/d/d1/Alexandre_Belloni_boottime_optimizations.pdf
  [55]: http://free-electrons.com/blog/elce-2012-videos/
@@ -407,7 +407,7 @@ systemd 是一个新的项目 (就当时 2010 年 5 月而言)，用于在 Linux
  [59]: http://eLinux.org/images/9/98/Tools-and-technique-for-reducing-bootup-time.ppt "Tools-and-technique-for-reducing-bootup-time.ppt"
  [60]: http://eLinux.org/images/4/40/Tools-and-technique-for-reducing-bootup-time.odp "Tools-and-technique-for-reducing-bootup-time.odp"
  [61]: http://eLinux.org/images/d/d2/Tools-and-technique-for-reducing-bootup-time.pdf "Tools-and-technique-for-reducing-bootup-time.pdf"
- [62]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/Tims_Fastboot_Tools/Tims_Fastboot_Tools.html "Tims Fastboot Tools"
+ [62]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/Tims_Fastboot_Tools/Tims_Fastboot_Tools.html "Tims Fastboot Tools"
  [63]: http://www.mvista.com/download/author.php?a=37
  [64]: http://www.mvista.com/download/power/Reducing-boot-time-techniques-for-fast-booting.pdf
  [65]: http://lwn.net/Articles/192082/
@@ -429,7 +429,7 @@ systemd 是一个新的项目 (就当时 2010 年 5 月而言)，用于在 Linux
  [81]: http://www.theinquirer.net/inquirer/news/1049451/linux-boots
  [82]: http://linux.die.net/man/8/init
  [83]: http://linux.die.net/man/5/inittab
- [84]: http://tinylab.gitbooks.io/elinux/content/zh/dev_portals/Boot_Time/BusyBox/BusyBox.html "BusyBox"
+ [84]: https://tinylab-1.gitbook.io/elinux/content/zh/dev_portals/Boot_Time/BusyBox/BusyBox.html "BusyBox"
  [85]: http://spblinux.de/2.0/doc/init.html
  [86]: http://busybox.net/~vda/init_vs_runsv.html
  [87]: http://eLinux.org/Android_Booting#.27init.27 "Android Booting"

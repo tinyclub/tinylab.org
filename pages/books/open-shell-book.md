@@ -52,5 +52,13 @@ tags:
 
 下载地址： <a href="https://legacy.gitbook.com/download/pdf/book/tinylab/shellbook" target="_blank">《Shell 编程范例》</a>.
 
+<section id="home">
+  {% assign articles = site.posts %}
+  {% assign condition = 'album' %}
+  {% assign value = page.album %}
+  {% include widgets/articles %}
+</section>
+
+
  [1]: /shell-programming-paradigm-series-index-review/
  [3]: /the-sequence-of-shell-programming-paradigm-free-book-plans/

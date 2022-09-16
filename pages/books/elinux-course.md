@@ -90,3 +90,10 @@ tags:
 
 - 《Building embedded linux system》
 - 《Embedded Linux Primer. 2nd Edition》
+
+<section id="home">
+  {% assign articles = site.posts %}
+  {% assign condition = 'album' %}
+  {% assign value = page.album %}
+  {% include widgets/articles %}
+</section>
