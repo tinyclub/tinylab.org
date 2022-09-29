@@ -36,7 +36,7 @@ if [ -z "$article" ]; then
   read -p "LOG: Please choose one key? " key
   echo
 
-  ls -1 $rl_articles | grep -v README.md | grep -n .md | grep --color=auto "$key"
+  ls -1 $rl_articles | grep -v README.md | grep -n .md | grep -i --color=auto "$key"
   if [ $? -ne 0 ]; then
     echo
     read -p "LOG: No one is found with key: '$key', please choose one of them by the number? " one
