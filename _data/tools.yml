@@ -78,3 +78,13 @@
   permalink: https://pixabay.com/
   description: Over 1 million+ high quality stock images and videos shared by our talented community.
   group: tools
+
+- title: DeepL 翻译器
+  permalink: https://www.deepl.com/translator
+  description: DeepL 的神经网络能够捕捉哪怕是最细微的差别，并在翻译中体现，这是不同于其他服务的地方。
+  group: tools
+
+- title: Compiler Explorer
+  permalink: https://godbolt.org/
+  description: 在线编译器，含各种架构，各种编译器
+  group: tools
