@@ -139,7 +139,7 @@ echo "LOG: Append permalink to the end of the file"
 echo >> $_target_article
 echo "<hr>" >> $_target_article
 echo >> $_target_article
-echo "**首发地址**： <$full_permalink><br/>" >> $_target_article
+echo "**首发地址**：<$full_permalink><br/>" >> $_target_article
 echo "**技术服务**：<$service_permalink>" >> $_target_article
 echo >> $_target_article
 echo "$continue_info" >> $_target_article
