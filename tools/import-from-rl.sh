@@ -198,7 +198,7 @@ echo
 read -p "LOG: Are you ready to push? (y/n) " push
 echo
 
-if [ "$push" = "y" -o "$push" = "yes" ]; then
+if [ "$push" = "y" -o "$push" = "yes" -o "$push" = "Y" -o "$push" = "YES" ]; then
   gitee_push="git push gitee:tinylab/tinylab.org"
   github_push="git push github:tinyclub/tinylab.org"
 
