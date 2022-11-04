@@ -1,6 +1,6 @@
 ---
 layout: post
-draft: true
+draft: false
 author: 'Wang Chen'
 title: "LWN 743946: Deadline 调度介绍的第二部分：细节和使用"
 album: 'LWN 中文翻译'
