@@ -23,8 +23,6 @@ tags:
 
 继上个月组织了第 1 期 Linux 直播后，我们又筹备了一期，后续希望这类 Linux 直播慢慢成为常态，成为泰晓科技原创分享的一种新形态。
 
-上次直播介绍了 [如何用 Linux Lab 做《奔跑吧 Linux 内核》一书的实验][2]。
-
 ## 直播/回放
 
 > 回放地址：[如何用 Linux Lab 做 Uboot 实验](https://v.qq.com/x/page/l0549rgi54e.html)

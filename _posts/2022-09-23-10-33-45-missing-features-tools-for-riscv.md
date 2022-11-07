@@ -244,7 +244,6 @@ RISC-V 架构下还是存在非常多的功能需要大家填坑，很多的功�
   -  [Re: Re: [PATCH v4 0/4] riscv, mm: detect svnapot CPU support at runtime - Qinglin Pan (kernel.org)][010]
   -  [邮件列表最新动态][013]
   -  [huge vmalloc mappings LWN.net][024]
-  -  [Linux 阅码场 - Linux 内核月报（2020 年 08 月）_linux 阅码场的技术博客_51CTO 博客][001]
 
 ## ioremap_prot(Kernel Feature)
 
