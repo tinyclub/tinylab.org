@@ -72,6 +72,8 @@ fi
 
 [ -z "$update" ] && update=$2
 if [ "$update" = "1" ]; then
+  git pull
+
   pushd $rl_dir
   git checkout master
   git pull
