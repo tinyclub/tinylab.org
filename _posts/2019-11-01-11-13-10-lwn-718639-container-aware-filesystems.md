@@ -1,6 +1,6 @@
 ---
 layout: post
-draft: true
+draft: false
 author: 'Shaojie Dong'
 title: "LWN 718639: 容器感知型文件系统"
 album: 'LWN 中文翻译'

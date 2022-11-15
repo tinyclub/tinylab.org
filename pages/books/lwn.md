@@ -31,6 +31,8 @@ tags:
 
 我们的中文翻译成果汇总如下。目前按内核子系统的功能特性分成如下 “**八**” 个大类，**点击下面相关图标** 可进入相关主题文章列表。
 
+我们也提供了以一个完整的页面形式列出所有翻译的文章列表，访问请点击 [**完整列表**][16]
+
 <table width="100%" height="100%" border="1" align="center" cellpadding="0" cellspacing="0">
 	<tr>
 		<td width="33.3%">
@@ -108,3 +110,4 @@ tags:
 [4]: https://en.wikipedia.org/wiki/LWN.net
 [14]: /lwn-translation
 [15]: /lwn-review
+[16]: /lwn-one-page

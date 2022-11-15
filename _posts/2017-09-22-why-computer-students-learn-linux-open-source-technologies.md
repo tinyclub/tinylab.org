@@ -299,7 +299,6 @@ Linux Lab Disk 使用示例图：
 
 * [Linux Lab](https://tinylab.org/linux-lab)：Linux 内核和嵌入式 Linux 实验环境
     * [Linux Lab 基本用法](http://showdesk.io/2017-03-11-14-16-15-linux-lab-usage-00-01-02/)
-    * [通过 Linux Lab 做《奔跑吧 Linux 内核》实验](https://v.qq.com/x/page/y0543o6zlh5.html)
     * [通过 Linux Lab 做 Uboot 实验](https://v.qq.com/x/page/l0549rgi54e.html)
 
 * 其他
