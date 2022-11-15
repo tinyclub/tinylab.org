@@ -129,7 +129,7 @@ grep "^##" $article
 echo
 
 # remove old drafts
-rm -f $TOP_DIR/_posts/*$orig_article
+git rm -f $TOP_DIR/_posts/*$orig_article
 
 echo "LOG: Generate top header"
 cat <<EOF > $_target_article
