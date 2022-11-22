@@ -81,7 +81,7 @@ if [ "$update" = "1" ]; then
 fi
 
 # get top header info
-title="$(grep -m1 '^# ' $article | cut -d ' ' -f2-)"
+title="$(grep -m1 '^# ' $article | cut -d ' ' -f2- | tr -d "'")"
 info="$(basename $article | sed -e 's/[0-9]*-//;s/.md$//g;s/-/ /g')"
 full_permalink="https://tinylab.org/$(basename $article | sed -e 's/[0-9]*-//;s/.md$//')"
 
