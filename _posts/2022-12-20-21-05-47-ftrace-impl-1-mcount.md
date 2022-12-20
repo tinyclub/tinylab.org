@@ -1,7 +1,7 @@
 ---
 layout: post
 author: 'song'
-title: 'ftrace 实现原理（1）- 函数跟踪'
+title: 'RISC-V Ftrace 实现原理（1）- 函数跟踪'
 draft: false
 plugin: ''
 album: 'RISC-V Linux'
