@@ -1,7 +1,7 @@
 ---
 layout: post
 author: 'Wu Zhangjin'
-title: "RISC-V Linux jump_label 详解，第 2 部分：指令编码"
+title: "RISC-V jump_label 详解，第 2 部分：指令编码"
 draft: false
 album: 'RISC-V Linux'
 license: "cc-by-nc-nd-4.0"
