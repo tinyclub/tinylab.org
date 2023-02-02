@@ -88,3 +88,8 @@
   permalink: https://godbolt.org/
   description: 在线编译器，含各种架构，各种编译器
   group: tools
+
+- title: 术语在线
+  permalink: https://www.termonline.cn/index
+  description: 术语在线—权威的术语知识服务平台
+  group: tools
