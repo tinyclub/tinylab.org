@@ -4,9 +4,10 @@
  {% for about in site.data.about %}
    <a href="{{ about.url }}" target="_blank" title="{{ about.title }}">{{ about.text }}</a> 
  {% endfor %}
-<br/><br/>
-&copy; {{ site.start }} ~ {{ site.time | date: '%Y' }} {{ site.title }} 
+<br/>
+&copy; {{ site.start }} ~ {{ site.time | date: '%Y' }} {{ site.title }}
+<br/>
  {% for footer in site.data.footer %}
-    | <a href="{{ footer.url }}" target="_blank" title="{{ footer.title }}">{{ footer.text }}</a>
+    <a href="{{ footer.url }}" target="_blank" title="{{ footer.title }}">{{ footer.text }}</a>
  {% endfor %}
 </p>
