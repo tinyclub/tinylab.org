@@ -25,7 +25,7 @@ tags:
 
 大家好，
 
-咱们在 3 月初正式启动了 [RISC-V Linux 内核兴趣小组](https://tinylab.org/riscv-linux-analyse/)，并于上上周组织了 [第一次技术直播分享](https://zhuanlan.zhihu.com/p/482851953)。活动从筹备到现在接近 3 周，现在刚好是月底，咱们做个简单的报告。
+咱们在 3 月初正式启动了 [RISC-V Linux 内核兴趣小组](https://tinylab.org/riscv-linux-analyse/)，并于上上周组织了第一次技术直播分享。活动从筹备到现在接近 3 周，现在刚好是月底，咱们做个简单的报告。
 
 首先，各项活动有条不紊地推进着：
 
@@ -54,7 +54,7 @@ tags:
 
 最后，欢迎大家踊跃报名或者推荐给周边感兴趣的同学，Welcome~
 
-任务列表一定有你感兴趣的哈，内容太多，请大家访问 [plan/README.md](https://link.zhihu.com/?target=https%3A//gitee.com/tinylab/riscv-linux/tree/master/plan) 哈。点击一下试试，觉得有兴趣就提交一个 PR，加上自己的 ID 就好。
+任务列表一定有你感兴趣的哈，内容太多，请大家访问 [plan/README.md](https://gitee.com/tinylab/riscv-linux/tree/master/plan) 哈。点击一下试试，觉得有兴趣就提交一个 PR，加上自己的 ID 就好。
 
 正式提交 PR 前建议看看上面的 **视频合集** 链接，有详细介绍与讨论分享活动参与方式等事项。现在确实太忙不能参与的话，也可以点个在看收藏起来哈。
 

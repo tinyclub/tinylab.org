@@ -55,7 +55,7 @@ Linux Lab 默认把 Linux 内核源码放置在 `src/linux-stable` 目录：
     $ make kernel-download
     $ cd src/linux-stable
 
-为了聚焦本次活动，基础环境的搭建部分将不再过多介绍，请参考 [相关手册](https://gitee.com/link?target=https%3A%2F%2Ftinylab.org%2Fpdfs%2Flinux-lab-v0.9-manual-zh.pdf)、[连载文章](https://www.zhihu.com/column/tinylab) 和 [演示视频](https://www.cctalk.com/m/group/88948325)。
+为了聚焦本次活动，基础环境的搭建部分将不再过多介绍，请参考 [相关手册](https://gitee.com/link?target=https%3A%2F%2Ftinylab.org%2Fpdfs%2Flinux-lab-v0.9-manual-zh.pdf) 和 [演示视频](https://www.cctalk.com/m/group/88948325)。
 
 ## arch/riscv 目录结构
 

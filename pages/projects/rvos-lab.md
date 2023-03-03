@@ -22,9 +22,8 @@ tags:
 
 该实验环境针对 RVOS 视频课程，相关案例可以直接在 [Linux Lab](/linux-lab) 或 [Linux Lab Disk](/linux-lab-disk) 下运行。
 
-* 课程：<https://zhuanlan.zhihu.com/p/477621099>
 * 仓库：<https://gitee.com/tinylab/rvos-lab>
-* 演示：<https://zhuanlan.zhihu.com/p/476219392>
+* 演示：<https://www.bilibili.com/video/BV1J5411S7cs/>
 
 该课程和原始案例均由 PLCT 实验室开发。
 

@@ -33,7 +33,6 @@ tags:
 本站将陆续输出该活动成果，相应的公众号、B站、知乎、泰晓学院、星球也将连载。其中星球用于速记活动过程中的各类资料和片段。
 
 * 公众号：泰晓科技
-* 知乎专栏：<https://zhihu.com/column/tinylab>
 * B 站频道：<https://space.bilibili.com/687228362>
 * 泰晓学院：<https://m.cctalk.com/inst/sh8qtdag>
 * 星球专栏：<https://t.zsxq.com/uB2vJyF>

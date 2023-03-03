@@ -81,30 +81,15 @@ tags:
 
   产品特性：
 
-  * [智能启动](https://zhuanlan.zhihu.com/p/469054673?)，开创了三种全新的智能化 “傻瓜式” 使用方式，可自动检测后并行启动、可免关机直接来回切换、还可以智能记忆自动启动。
-  * [相互套娃](https://zhuanlan.zhihu.com/p/470708832)，多支 Linux Lab Disk 可相互启动或来回切换，因此，可根据喜好同时使用多个不同的 Linux 系统发行版。
-  * [透明倍容](https://zhuanlan.zhihu.com/p/475302436)，透明提供接近翻倍的可用容量空间，“零成本”获得接近一倍的额外存储空间。
-  * [时区兼容](https://zhuanlan.zhihu.com/p/474956863)，自动兼容 Windows, MacOS 和 Linux 的时区设定，跟主系统来回任意切换后时间保持一致。
-  * [自动共享](https://zhuanlan.zhihu.com/p/473168592)，在 Windows 或 Linux 主系统下并行运行时，自动提供多种与主系统的文件与粘贴板共享方式。
-  * [零损编译](https://zhuanlan.zhihu.com/p/477047313)，支持“半内存”与“全内存”的编译方式，可实现磁盘“零”写，极大地提升磁盘寿命，并提升实验效率。
-  * [即时实验](https://zhuanlan.zhihu.com/p/486268711)，集成自研 Linux Lab，Linux 0.11 Lab 等实验环境，可在 1 分钟内开展 Linux 内核、嵌入式 Linux、Uboot、汇编、C、Python、数据库、网络等实验。
-  * [出厂恢复](https://zhuanlan.zhihu.com/p/532405357)，全系 6 大 Linux 发行版已全部支持出厂恢复功能，在 "rm -rf /" 后都能启动并恢复出厂系统，同时支持自动备份和急救模式，用起来更安心！
+  * 智能启动，开创了三种全新的智能化 “傻瓜式” 使用方式，可自动检测后并行启动、可免关机直接来回切换、还可以智能记忆自动启动。
+  * 相互套娃，多支 Linux Lab Disk 可相互启动或来回切换，因此，可根据喜好同时使用多个不同的 Linux 系统发行版。
+  * 透明倍容，透明提供接近翻倍的可用容量空间，“零成本”获得接近一倍的额外存储空间。
+  * 时区兼容，自动兼容 Windows, MacOS 和 Linux 的时区设定，跟主系统来回任意切换后时间保持一致。
+  * 自动共享，在 Windows 或 Linux 主系统下并行运行时，自动提供多种与主系统的文件与粘贴板共享方式。
+  * 零损编译，支持“半内存”与“全内存”的编译方式，可实现磁盘“零”写，极大地提升磁盘寿命，并提升实验效率。
+  * 即时实验，集成自研 Linux Lab，Linux 0.11 Lab 等实验环境，可在 1 分钟内开展 Linux 内核、嵌入式 Linux、Uboot、汇编、C、Python、数据库、网络等实验。
+  * 出厂恢复，全系 6 大 Linux 发行版已全部支持出厂恢复功能，在 "rm -rf /" 后都能启动并恢复出厂系统，同时支持自动备份和急救模式，用起来更安心！
 
-
-  功能连载（见 “[Linux知识星球](https://www.zhihu.com/column/tinylab)” 专栏，订阅可跟进后续更新）：
-
-  * [内核开发](https://zhuanlan.zhihu.com/p/471583241)，数分钟内开展最新 Linux 内核开发与测试
-  * [Uboot开发](https://zhuanlan.zhihu.com/p/475916603)，快速开展 Uboot 开发与测试
-  * [文件系统制作](https://zhuanlan.zhihu.com/p/476541502)，演示如何通过 Buildroot 极速构建嵌入式小型文件系统
-  * [RVOS 实验](https://zhuanlan.zhihu.com/p/476219392)，演示如何开展 RISC-V OS 课程实验，主要是 RISC-V 汇编与 OS 核心功能
-  * [GUI 实验](https://zhuanlan.zhihu.com/p/477621099)，演示如何开展嵌入式图形应用开发实验，本次实验用的是 GuiLite
-  * [C 语言入门实验](https://zhuanlan.zhihu.com/p/478136033)，演示如何在 Linux 下用 vim, gcc, make 做一个简单的 C 语言 Hello World 程序实验
-  * [汇编语言入门实验](https://zhuanlan.zhihu.com/p/479295461)，演示了如何开展32/64位 RISC-V、ARM、MIPS、X86 和 PowerPC 汇编语言实验
-  * [Shell 语言入门实验](https://zhuanlan.zhihu.com/p/480394038)，演示经典的 Hello World，包括执行方式、打印命令、退出码设置和简单参数传递。
-  * [数据库 SQL 入门实验](https://zhuanlan.zhihu.com/p/481035762)，演示了 sqlite3 的表创建、数据插入、select 与 update 语句及通过C语言访问数据库。
-  * [网络入门实验](https://zhuanlan.zhihu.com/p/481055861)，演示了 ip 和网关地址查看、静态&动态配置，NAT 与 网桥，ping, tcpdump 及 nmap。
-  * [用 Python 解个方程](https://zhuanlan.zhihu.com/p/481629409)，演示了如何安装 python 新模块并通过 SymPy 模块来演示如何解方程。
-  * [RISC-V Linux v5.17 内核实验](https://zhuanlan.zhihu.com/p/486268711)，演示了如何通过 Linux Lab Disk 开展 RISC-V 芯片 Linux v5.17 内核实验。
 
   购买地址：
 
@@ -135,7 +120,6 @@ tags:
 * Linux Lab 视频公开课
     * [CCTALK](https://www.cctalk.com/m/group/88948325)
     * [B 站](https://space.bilibili.com/687228362/channel/detail?cid=152574)
-    * [知乎](https://www.zhihu.com/people/wuzhangjin)
 * 采用 Linux Lab 作为实验环境的视频课程
     * [《360° 剖析 Linux ELF》](https://www.cctalk.com/m/group/88089283)
 

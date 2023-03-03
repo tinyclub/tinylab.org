@@ -22,8 +22,7 @@ tags:
 该实验环境主要用于嵌入式 Linux 系统的 GUI 开发，相关案例可以直接在 [Linux Lab](/linux-lab) 或 [Linux Lab Disk](/linux-lab-disk) 下运行。
 
 * 仓库：<https://gitee.com/tinylab/gui-lab>
-* 演示
-    * [GuiLite](https://zhuanlan.zhihu.com/p/477621099)
+* 演示：<https://www.bilibili.com/video/BV1854y1u7yp/>
 
 ## 用法
 

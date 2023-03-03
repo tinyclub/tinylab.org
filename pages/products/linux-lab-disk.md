@@ -59,22 +59,29 @@ Linux 即插即跑 Linux Lab Disk 动图：
 
 ## 产品特性
 
-* [智能启动](https://zhuanlan.zhihu.com/p/469054673?)，开创了 3 种全新的智能化 “傻瓜式” 使用方式，可自动检测后并行启动、可免关机直接来回切换、还可以智能记忆自动启动。
-    * [如何安装智能启动管理软件](https://zhuanlan.zhihu.com/p/514051955)
+* 智能启动，开创了 3 种全新的智能化 “傻瓜式” 使用方式，可自动检测后并行启动、可免关机直接来回切换、还可以智能记忆自动启动。
+    * 如何安装智能启动管理软件 vmboot
+        * [Windows 下安装方法](https://www.bilibili.com/video/BV1ZN411F7Sq/)
+        * [Linux 下安装方法](https://www.bilibili.com/video/BV1eX4y1D7oB)
+    * [用法一：智能记忆自动启动](https://www.bilibili.com/video/BV1bu411q7N9)
+    * [用法二：在 Windows 和其他 Linux 下自动检测后并行启动](https://www.bilibili.com/video/BV1iU4y1d7ev)
+    * [用法三：“免关机” 来回切换](https://www.bilibili.com/video/BV1b94y1Q7oD)
 
-* [相互套娃](https://zhuanlan.zhihu.com/p/470708832)，多支 Linux Lab Disk 可相互启动或来回切换，因此，可根据喜好同时使用多个不同的 Linux 系统发行版。
+* [相互套娃](https://www.bilibili.com/video/BV1LA4y1Q7i9)，多支 Linux Lab Disk 可相互启动或来回切换，因此，可根据喜好同时使用多个不同的 Linux 系统发行版。
 
-* [透明倍容](https://zhuanlan.zhihu.com/p/475302436)，透明提供接近翻倍的可用容量空间，“零成本”获得接近一倍的额外存储空间。
+* [透明倍容](https://www.bilibili.com/video/BV1Pi4y1D7Hu)，透明提供接近翻倍的可用容量空间，“零成本”获得接近一倍的额外存储空间。
 
-* [时区兼容](https://zhuanlan.zhihu.com/p/474956863)，自动兼容 Windows, MacOS 和 Linux 的时区设定，跟主系统来回任意切换后时间保持一致。
+* [时区兼容](https://www.bilibili.com/video/BV1SU4y127oa)，自动兼容 Windows, MacOS 和 Linux 的时区设定，跟主系统来回任意切换后时间保持一致。
 
-* [自动共享](https://zhuanlan.zhihu.com/p/473168592)，在 [Windows](https://zhuanlan.zhihu.com/p/473168592) 或 [Linux](https://zhuanlan.zhihu.com/p/473549422?) 主系统下并行运行时，自动提供多种与主系统的文件与粘贴板共享方式。
+* 自动共享，在 Windows 或 Linux 主系统下并行运行时，自动提供多种与主系统的文件与粘贴板共享方式。
+    * [在 Windows 下自动共享](https://www.bilibili.com/video/BV1Yt4y1p7x3)
+    * [在 Linux 下自动共享](https://www.bilibili.com/video/BV1Z34y1L7kt)
 
-* [零损编译](https://zhuanlan.zhihu.com/p/477047313)，支持“半内存”与“全内存”的编译方式，可实现磁盘“零”写，极大地提升磁盘寿命，并提升实验效率。
+* [零损编译](https://www.bilibili.com/video/BV18B4y1Q7RX)，支持“半内存”与“全内存”的编译方式，可实现磁盘“零”写，极大地提升磁盘寿命，并提升实验效率。
 
-* [即时实验](https://zhuanlan.zhihu.com/p/486268711)，集成自研 Linux Lab，Linux 0.11 Lab 等实验环境，可在 1 分钟内开展 Linux 内核、嵌入式 Linux、Uboot、汇编、C、Python、数据库、网络等实验。
+* [即时实验](https://www.bilibili.com/video/BV15t4y1h7Qp)，集成自研 Linux Lab，Linux 0.11 Lab 等实验环境，可在 1 分钟内开展 Linux 内核、嵌入式 Linux、Uboot、汇编、C、Python、数据库、网络等实验。
 
-* [出厂恢复](https://zhuanlan.zhihu.com/p/532405357)，全系 6 大 Linux 发行版已全部支持出厂恢复功能，在 "rm -rf /" 后都能启动并恢复出厂系统，同时支持自动备份和急救模式，用起来更安心！
+* [出厂恢复](https://www.bilibili.com/video/BV1Yv4y1g7fc)，全系 6 大 Linux 发行版已全部支持出厂恢复功能，在 "rm -rf /" 后都能启动并恢复出厂系统，同时支持自动备份和急救模式，用起来更安心！
 
 ## 可选容量
 
@@ -106,26 +113,25 @@ Linux 即插即跑 Linux Lab Disk 动图：
 
 ## 功能连载
 
-为了让客户能更好地发挥 Linux Lab Disk 的价值，我们正在连载 Linux Lab Disk 的各种用法，欢迎查阅 [Linux 知识星球](https://www.zhihu.com/column/tinylab) 知乎专栏。
+为了让客户能更好地发挥 Linux Lab Disk 的价值，我们正在连载 Linux Lab Disk 的各种用法，欢迎查阅 [泰晓 Linux 实验盘](https://space.bilibili.com/687228362/channel/collectiondetail?sid=558699) 视频合集。
 
 除了上述 “产品特性” 外，目前已经连载的部分内容如下：
 
-* [内核开发](https://zhuanlan.zhihu.com/p/471583241)，数分钟内开展最新 Linux 内核开发与测试
-* [Uboot开发](https://zhuanlan.zhihu.com/p/475916603)，快速开展 Uboot 开发与测试
-* [文件系统制作](https://zhuanlan.zhihu.com/p/476541502)，演示如何通过 Buildroot 极速构建嵌入式小型文件系统
-* [RVOS 实验](https://zhuanlan.zhihu.com/p/476219392)，演示如何开展 RISC-V OS 课程实验，主要是 RISC-V 汇编与 OS 核心功能
-* [GUI 实验](https://zhuanlan.zhihu.com/p/477621099)，演示如何开展嵌入式图形应用开发实验，本次实验用的是 GuiLite
-* [C 语言入门实验](https://zhuanlan.zhihu.com/p/478136033)，演示如何在 Linux 下用 vim, gcc, make 做一个简单的 C 语言 Hello World 程序实验
-* [汇编语言入门实验](https://zhuanlan.zhihu.com/p/479295461)，演示了如何开展32/64位 RISC-V、ARM、MIPS、X86 和 PowerPC 汇编语言实验
-* [Shell 语言入门实验](https://zhuanlan.zhihu.com/p/480394038)，演示经典的 Hello World，包括执行方式、打印命令、退出码设置和简单参数传递。
-* [数据库 SQL 入门实验](https://zhuanlan.zhihu.com/p/481035762)，演示了 sqlite3 的表创建、数据插入、select 与 update 语句及通过C语言访问数据库。
-* [网络入门实验](https://zhuanlan.zhihu.com/p/481055861)，演示了 ip 和网关地址查看、静态&动态配置，NAT 与 网桥，ping, tcpdump 及 nmap。
-* [用 Python 解个方程](https://zhuanlan.zhihu.com/p/481629409)，演示了如何安装 python 新模块并通过 SymPy 模块来演示如何解方程。
-* [RISC-V Linux v5.17 内核实验](https://zhuanlan.zhihu.com/p/486268711)，演示了如何通过 Linux Lab Disk 开展 RISC-V 芯片 Linux v5.17 内核实验。
+* [内核开发](https://www.bilibili.com/video/BV15t4y1h7Qp)，数分钟内开展最新 Linux 内核开发与测试
+* [Uboot开发](https://www.bilibili.com/video/BV1D34y1H7jX)，快速开展 Uboot 开发与测试
+* [文件系统制作](https://www.bilibili.com/video/BV1pf4y1o7F2)，演示如何通过 Buildroot 极速构建嵌入式小型文件系统
+* [RVOS 实验](https://www.bilibili.com/video/BV1J5411S7cs)，演示如何开展 RISC-V OS 课程实验，主要是 RISC-V 汇编与 OS 核心功能
+* [GUI 实验](https://www.bilibili.com/video/BV1854y1u7yp)，演示如何开展嵌入式图形应用开发实验，本次实验用的是 GuiLite
+* [C 语言入门实验](https://www.bilibili.com/video/BV1JZ4y1B7sP)，演示如何在 Linux 下用 vim, gcc, make 做一个简单的 C 语言 Hello World 程序实验
+* [汇编语言入门实验](https://www.bilibili.com/video/BV1fS4y1Y7AJ)，演示了如何开展32/64位 RISC-V、ARM、MIPS、X86 和 PowerPC 汇编语言实验
+* [Shell 语言入门实验](https://www.bilibili.com/video/BV1w34y1E7y1)，演示经典的 Hello World，包括执行方式、打印命令、退出码设置和简单参数传递。
+* [数据库 SQL 入门实验](https://www.bilibili.com/video/BV1s3411n7Pz)，演示了 sqlite3 的表创建、数据插入、select 与 update 语句及通过C语言访问数据库。
+* [网络入门实验](https://www.bilibili.com/video/BV1H44y1G7zt)，演示了 ip 和网关地址查看、静态&动态配置，NAT 与 网桥，ping, tcpdump 及 nmap。
+* [用 Python 解个方程](https://www.bilibili.com/video/BV1UY4y1q7tx)，演示了如何安装 python 新模块并通过 SymPy 模块来演示如何解方程。
+* [RISC-V Linux v5.17 内核实验](https://www.bilibili.com/video/BV1aU4y1d7zi)，演示了如何通过 Linux Lab Disk 开展 RISC-V 芯片 Linux v5.17 内核实验。
 
 更多内容正在陆续连载中：
 
-* 订阅 [泰晓科技 - Linux 知识星球 知乎专栏](https://www.zhihu.com/column/tinylab)
 * 订阅 [泰晓科技 - B 站视频](https://space.bilibili.com/687228362/channel/seriesdetail?sid=2095977)
 * 订阅 [泰晓学院 - Linux Lab 公开课](https://www.cctalk.com/m/program/1612665538389924)
 
@@ -170,7 +176,7 @@ PC 端可以直接访问 [泰晓科技开源小店](https://shop155917374.taobao
 
 - 在 Windows 下通过 Virtualbox 并行启动时出现黑屏或者很慢？
     * 第一种情况同上，可能也需要进入 BIOS 使能虚拟化技术相关选项。
-    * 另外一种情况可能是您正在使用 hyper-v 或 wsl2，由于 hyper-v 或 wsl2 导致 Virtualbox 无法正常使用硬件虚拟化加速技术，所以此时需 [彻底关闭 hyperv 或 wsl2](https://zhuanlan.zhihu.com/p/468333378)。
+    * 另外一种情况可能是您正在使用 hyper-v 或 wsl2，由于 hyper-v 或 wsl2 导致 Virtualbox 无法正常使用硬件虚拟化加速技术，所以此时需 [彻底关闭 hyperv 或 wsl2](https://www.jianshu.com/p/eef1aef63d54)。
     * 第三种情况，请排查 USB Suspend 异常，可通过如下步骤禁用 `USB Selective Suspend`:
         * `电源与睡眠设置 -> 编辑电源计划 -> 更改高级电源设置 ->`
             * `USB设置 -> USB 选择性暂停设置 -> 使用电池 和 接通电源 -> 已禁用`。
@@ -199,14 +205,14 @@ PC 端可以直接访问 [泰晓科技开源小店](https://shop155917374.taobao
 - 在 Windows 下，为什么只看到 10G/1G/256M？
     * Linux Lab Disk 和 Pocket Linux Disk 都是随身 Linux 系统盘，所采用的文件系统主要为 Linux 文件系统，这类文件系统在 Windows 下不能识别。
     * 为了方便访问数据，根据容量大小，会预留一定容量的 NTFS/exFat 分区，这类分区能在 Windows 下可以直接访问，可能是 10G/1G/256M 或者其他大小。
-    * 在 [智能启动](https://zhuanlan.zhihu.com/p/469054673?) 以后可以完整访问整个盘中的各个分区，包括 NTFS/exFAT 分区。
+    * 在智能启动以后可以完整访问整个盘中的各个分区，包括 NTFS/exFAT 分区。
 
 ### 发热情况
 
 - 在夏天使用金属固态 U 盘版本发热比较明显？
     * 固态 U 盘版本采用超高速主控，读写速度快而且比较稳定，供电需求也相对较高，用的元器件功率相对较大，所以发热的感觉会较为明显，尤其是夏天室外温度本身比较高的情况下。
     * 为了保护芯片的安全，需要把热量快速散出，所以固态 U 盘大多采用金属外壳，但是金属外壳用户感知到的温度会相对明显一些，相比较而言，如果采用塑料外壳，温度聚集在芯片内，会影响芯片的正常工作甚至会影响芯片的使用寿命。
-    * 如果使用时间较长，建议在风扇或者空调下使用，同时贴上随盘赠送的散热片；如果需要编译 Linux 内核等大型软件，建议开启 [零损编译](https://zhuanlan.zhihu.com/p/477047313)。
+    * 如果使用时间较长，建议在风扇或者空调下使用，同时贴上随盘赠送的散热片；如果需要编译 Linux 内核等大型软件，建议开启 [零损编译](https://www.bilibili.com/video/BV18B4y1Q7RX)。
     * 在长时间使用之后，请不要直接触碰，并放置在小孩接触不到的地方，等温度降低后再关机、安全移除并取出。
     * 如果希望有更好的温度体验并且同时有大容量的需求，大家可以考虑直接入手店里的 Mini 移动固态硬盘版本，散热面积更大，外壳温度更低，而且比传统的 2.5 寸盘更轻更小巧。
 

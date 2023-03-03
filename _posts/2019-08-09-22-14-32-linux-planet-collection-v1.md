@@ -261,13 +261,6 @@ tags:
 上面的部分主题已经发表在泰晓科技、知乎等平台上，未来计划比较系统地整理和归纳，持续发表在『Linux 知识星球』。比如：
 
 - [为什么计算机专业的学生要学习 Linux 开源技术？](https://tinylab.org/why-computer-students-learn-linux-open-source-technologies/)
-  - [知乎](https://www.zhihu.com/question/19934684/answer/43155800)，347 赞
-
-- [从事嵌入式行业的你，现在年薪多少，有什么经历想和大家分享？](https://www.zhihu.com/question/55453399/answer/144885919)，432 赞
-
-- [为什么手机核心数目提升得比计算机快?](https://www.zhihu.com/question/31022653/answer/51307328)，707 赞
-
-- [Android 手机是否会越用越卡？](https://www.zhihu.com/question/31212416/answer/51024984)，799 赞
 
 - [智能手机系统优化的演进与实践](https://tinylab.org/smartphone-sys-opt-evolution-and-practice/)，2015
 

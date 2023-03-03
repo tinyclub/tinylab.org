@@ -22,8 +22,6 @@ categories:
 
 ## 简介
 
-笔者前段时间在[知乎][3]回答了该问题，考虑到更多同学可能需要，这里再展开解释。
-
 简单来说，可以根据实时需求选择不同实时 Linux 方案，然后在选定方案上针对特定需求做进一步的优化。
 
 展开的话，
@@ -74,7 +72,6 @@ Linux 本身已经有硬实时的方案，比如来自风河的 RT Linux，或�
 
 
  [2]: https://tinylab.org
- [3]: http://www.zhihu.com/question/20610026
  [4]: /wp-content/uploads/2015/07/loongson-2f-preempt-rt-latency.gif
  [5]: https://www.osadl.org/Latency-plot-of-system-in-rack-2-slot.qa-latencyplot-r2s4.0.html?latencies=&showno=&slider=159
  [6]: https://www.osadl.org
