@@ -245,7 +245,7 @@ int copy_thread(unsigned long clone_flags, unsigned long usp, unsigned long arg,
 
 那内核是如何避免这种情况发生的呢？答案是通过模板建立内核线程，让 2 号线程代理。
 
-一般内核或驱动中创建内核线程会直接或间接调用 `kthread_create_on_node`（如 `kthraed_run`，`kthread_crate` 等宏均会扩展到 `kthread_create_on_node`）来创建内核线程，`kthread_create_on_node` 函数通过将待执行的内核线程信息加入 `kthread_create_list` 队列，委托 2 号进程代为建立。
+一般内核或驱动中创建内核线程会直接或间接调用 `kthread_create_on_node`（如 `kthread_run`，`kthread_crate` 等宏均会扩展到 `kthread_create_on_node`）来创建内核线程，`kthread_create_on_node` 函数通过将待执行的内核线程信息加入 `kthread_create_list` 队列，委托 2 号进程代为建立。
 
 和 1 号进程一样，2 号进程同样在 `rest_init` 函数中调用 `kernel_thread` 启动。
 
