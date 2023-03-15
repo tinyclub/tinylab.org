@@ -33,6 +33,9 @@ faytech has its roots in Germany. Arne Weber, the founding manager of faytech, s
 
 1. Develop and debug the embedded firmware of common display driver motherboard and common single chip microcomputer (Bluetooth, RFID, etc.)
 2. Design, transplantation, development and debugging of embedded Linux driver, Bootloader transplantation, Linux kernel tailoring and transplantation, Android system underlying driver software development and debugging of ARM motherboard software
+
+---
+
 1. 常用显示驱动主板及常用单片机（蓝牙，RFID 等）的嵌入式固件开发和调试
 2. 嵌入式 Linux 驱动设计、移植与开发调试，Bootloader 移植，Linux 内核裁剪与移植，Android 系统底层驱动软件开发等相关 ARM 主板软件开发和调试
 
@@ -48,6 +51,9 @@ faytech has its roots in Germany. Arne Weber, the founding manager of faytech, s
 8. Fluent in reading and writing English
 9. Capable of hardware design and development
 10. Have other software development ability, such as APP, HTML, etc
+
+---
+
 1. 熟悉 ARM/MIPS 等体系结构的嵌入式驱动开发和调试经验；
 2. 熟悉 GPIO/SPI/I2C/UART/CAN/RS485/RS232/USB/LVDS/EDP/MIPI 等常用外设协议，理解中断、时钟、DMA、MMU、Cache 等概念；
 3. 熟悉嵌入式 Linux 开发环境和工具；
@@ -64,6 +70,9 @@ faytech has its roots in Germany. Arne Weber, the founding manager of faytech, s
 1. Mar. 2023, full-time
 2. International office culture
 3. Salary：15K-25K
+
+---
+
 1.  2023 年 3 月，全职
 2. 国际化工作环境
 3. 薪资待遇 15K-25K
