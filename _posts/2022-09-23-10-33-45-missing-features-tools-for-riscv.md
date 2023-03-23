@@ -1,7 +1,7 @@
 ---
 layout: post
 author: 'unknown'
-title: 'RISC-V 缺失的 Linux 内核功能'
+title: 'RISC-V 缺失的 Linux 内核功能-Part1'
 draft: false
 plugin: ''
 album: 'RISC-V Linux'
