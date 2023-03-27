@@ -1,5 +1,5 @@
 ---
-title: 'Linux Lab Disk / Linux Lab 真盘'
+title: 'Linux Lab Disk / Linux Lab 真盘 / 泰晓 Linux 实验盘'
 tagline: '免安装即插即用的智能随身 Linux Lab 系统盘，可选 32G-2T，可选 Ubuntu,Deepin,Manjaro,Kali,Mint,Fedora 系统'
 author: Wu Zhangjin
 layout: page
@@ -61,7 +61,7 @@ Linux 即插即跑 Linux Lab Disk 动图：
 
 * 智能启动，开创了 3 种全新的智能化 “傻瓜式” 使用方式，可自动检测后并行启动、可免关机直接来回切换、还可以智能记忆自动启动。
     * 如何安装智能启动管理软件 vmboot
-        * [Windows 下安装方法](https://www.bilibili.com/video/BV1ZN411F7Sq/)
+        * [Windows 下安装方法](https://www.bilibili.com/video/BV1ZN411F7Sq/)，在开启 Hyper-V 或 WSL2 的情况下，建议使用 VMware，而不是 VirtualBox
         * [Linux 下安装方法](https://www.bilibili.com/video/BV1eX4y1D7oB)
     * [用法一：智能记忆自动启动](https://www.bilibili.com/video/BV1bu411q7N9)
     * [用法二：在 Windows 和其他 Linux 下自动检测后并行启动](https://www.bilibili.com/video/BV1iU4y1d7ev)
@@ -172,11 +172,17 @@ PC 端可以直接访问 [泰晓科技开源小店](https://shop155917374.taobao
     * 无论是 Linux Lab Disk 还是 Pocket Linux Disk，都设置了登陆密码，请注意查看随产品附带的说明书。
     * 切换 root 请用该命令：`sudo -s`，默认情况下密码跟登陆密码一致。
 
-### Virtualbox 引导
+### VMware 引导
 
-- 在 Windows 下通过 Virtualbox 并行启动时出现黑屏或者很慢？
+- 新版 Linux Lab Disk 已经支持 VMware 引导，已兼容 Hyper-V 和 WSL2
+    * 如果想在开启 Hyper-V 或 WSL2 的情况下通过 vmboot 引导 Linux Lab Disk，建议使用 VMware，而不是 VirtualBox，VirtualBox 目前对 Hyper-V 的兼容性还不太好
+
+### VirtualBox 引导
+
+- 在 Windows 下通过 VirtualBox 并行启动时出现黑屏或者很慢？
     * 第一种情况同上，可能也需要进入 BIOS 使能虚拟化技术相关选项。
-    * 另外一种情况可能是您正在使用 hyper-v 或 wsl2，由于 hyper-v 或 wsl2 导致 Virtualbox 无法正常使用硬件虚拟化加速技术，所以此时需 [彻底关闭 hyperv 或 wsl2](https://www.jianshu.com/p/eef1aef63d54)。
+    * 另外一种情况可能是您正在使用 Hyper-V 或 WSL2，由于 Hyper-V 或 WSL2 导致 VirtualBox 无法正常使用硬件虚拟化加速技术，所以此时需 [彻底关闭 hyperv 或 WSL2](https://www.jianshu.com/p/eef1aef63d54)。
+        * 如果想同时使用 Hyper-V 或 WSL2，请使用 VMware，而不是 VirtualBox，最新版的 Linux Lab Disk 已支持 VMware for Windows
     * 第三种情况，请排查 USB Suspend 异常，可通过如下步骤禁用 `USB Selective Suspend`:
         * `电源与睡眠设置 -> 编辑电源计划 -> 更改高级电源设置 ->`
             * `USB设置 -> USB 选择性暂停设置 -> 使用电池 和 接通电源 -> 已禁用`。
@@ -185,14 +191,14 @@ PC 端可以直接访问 [泰晓科技开源小店](https://shop155917374.taobao
             * `硬盘 -> 在此时间后关闭硬盘 -> 使用电池 和 接通电源 -> 0`。
         * 如果禁用后还不行，可能需要禁用系统休眠功能。
 
-- 在 Linux 下通过 Virtualbox 并行启动时出现黑屏或者很慢？
+- 在 Linux 下通过 VirtualBox 并行启动时出现黑屏或者很慢？
     * 这种情况可能需要进入 BIOS 使能虚拟化技术相关选项，相关选项跟处理器型号有关；如果开启后还存在问题，可能是处理器并不支持虚拟化技术。
     * 另外一种情况，请禁用 USB Suspend，可以在内核参数中传递 `usbcore.autosuspend=-1`：
         * 在 `/etc/default/grub` 中的 `GRUB_CMDLINE_LINUX_DEFAULT` 中加入上述参数，并更新 Grub 配置：`sudo update-grub`
 
 - 出现 `Failed to load VMMR0.r0 (VERR_SUPLIB_WORLD_WRITABLE)`  错误？
-    * 在 Windows 系统下，该错误可能是把 Virtualbox 直接安装在了某个盘的根目录下（例如：`D:`），Virtualbox 不能正确地新建子目录。需要用户创建一个子目录，并安装进去。也有其他用户反馈，路径必须是英文名，并且必须用管理员安装 Virtualbox。
-    * 在 Linux 系统下，`/usr` 等目录的权限异常可能会导致 Virtualbox 报告莫名奇妙的错误。这个错误可能需要去除 `/usr` 其他组的写权限：`chmod o-w /usr`。
+    * 在 Windows 系统下，该错误可能是把 VirtualBox 直接安装在了某个盘的根目录下（例如：`D:`），VirtualBox 不能正确地新建子目录。需要用户创建一个子目录，并安装进去。也有其他用户反馈，路径必须是英文名，并且必须用管理员安装 VirtualBox。
+    * 在 Linux 系统下，`/usr` 等目录的权限异常可能会导致 VirtualBox 报告莫名奇妙的错误。这个错误可能需要去除 `/usr` 其他组的写权限：`chmod o-w /usr`。
 
 - 出现 `dlopen("/usr/lib/virtualbox/VBoxRT.so",) failed: <NULL>` 错误？
     * 在 Linux 下，如果 `/usr/lib` 所属的用户不是 `root`，则会出现该错误，需要手动修复：`sudo chown root:root /usr/lib`，见 [Ticket #16759](https://www.virtualbox.org/ticket/16759?cversion=0)。这个原因可能是用 tar 命令解压了带有错误属性的压缩包到根目录所致，比如说在压缩之前，`usr/lib` 属于普通用户，类似这样：`tar xyz.tar.gz -C /` 解压到根目录以后，会把根目录下的原有目录属性篡改掉。
@@ -212,7 +218,8 @@ PC 端可以直接访问 [泰晓科技开源小店](https://shop155917374.taobao
 - 在夏天使用金属固态 U 盘版本发热比较明显？
     * 固态 U 盘版本采用超高速主控，读写速度快而且比较稳定，供电需求也相对较高，用的元器件功率相对较大，所以发热的感觉会较为明显，尤其是夏天室外温度本身比较高的情况下。
     * 为了保护芯片的安全，需要把热量快速散出，所以固态 U 盘大多采用金属外壳，但是金属外壳用户感知到的温度会相对明显一些，相比较而言，如果采用塑料外壳，温度聚集在芯片内，会影响芯片的正常工作甚至会影响芯片的使用寿命。
-    * 如果使用时间较长，建议在风扇或者空调下使用，同时贴上随盘赠送的散热片；如果需要编译 Linux 内核等大型软件，建议开启 [零损编译](https://www.bilibili.com/video/BV18B4y1Q7RX)。
+    * 如果使用时间较长，建议在风扇或者空调下使用，同时贴上随盘赠送的散热片
+    * 如果需要编译 Linux 内核等大型软件，建议开启 [零损编译](https://www.bilibili.com/video/BV18B4y1Q7RX)。
     * 在长时间使用之后，请不要直接触碰，并放置在小孩接触不到的地方，等温度降低后再关机、安全移除并取出。
     * 如果希望有更好的温度体验并且同时有大容量的需求，大家可以考虑直接入手店里的 Mini 移动固态硬盘版本，散热面积更大，外壳温度更低，而且比传统的 2.5 寸盘更轻更小巧。
 
