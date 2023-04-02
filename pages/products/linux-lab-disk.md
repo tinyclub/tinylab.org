@@ -61,7 +61,7 @@ Linux 即插即跑 Linux Lab Disk 动图：
 
 * 智能启动，开创了 3 种全新的智能化 “傻瓜式” 使用方式，可自动检测后并行启动、可免关机直接来回切换、还可以智能记忆自动启动。
     * 如何安装智能启动管理软件 vmboot
-        * [Windows 下安装方法](https://www.bilibili.com/video/BV1ZN411F7Sq/)，在开启 Hyper-V 或 WSL2 的情况下，建议使用 VMware，而不是 VirtualBox
+        * [Windows 下安装方法](https://www.bilibili.com/video/BV1ZN411F7Sq/)，在开启 Hyper-V 或 WSL2 的情况下，建议使用 VMware（16或以上），而不是 VirtualBox
         * [Linux 下安装方法](https://www.bilibili.com/video/BV1eX4y1D7oB)
     * [用法一：智能记忆自动启动](https://www.bilibili.com/video/BV1bu411q7N9)
     * [用法二：在 Windows 和其他 Linux 下自动检测后并行启动](https://www.bilibili.com/video/BV1iU4y1d7ev)
@@ -176,6 +176,7 @@ PC 端可以直接访问 [泰晓科技开源小店](https://shop155917374.taobao
 
 - 新版 Linux Lab Disk 已经支持 VMware 引导，已兼容 Hyper-V 和 WSL2
     * 如果想在开启 Hyper-V 或 WSL2 的情况下通过 vmboot 引导 Linux Lab Disk，建议使用 VMware，而不是 VirtualBox，VirtualBox 目前对 Hyper-V 的兼容性还不太好
+    * 当前验证的最低版本为 VMware Player 16，请确保升级到该版本或更新的版本
 
 ### VirtualBox 引导
 
