@@ -16,9 +16,24 @@
 
 TOP_DIR=$(cd $(dirname $0)/../ && pwd)
 
+echo "Available article types:"
+echo
+echo "  1. Articles"
+echo "  2. News"
+echo
+
+read -p "Please choose the article type? " article_type
+if [ "x$article_type" == "x1" ]; then
+  articles_dir=articles
+  README=$README
+else
+  articles_dir=news
+  README=XXXXXX.md
+fi
+
 rl_repo=https://gitee.com/tinylab/riscv-linux
 rl_dir=~/Develop/cloud-lab/labs/riscv-linux
-rl_articles=$rl_dir/articles
+rl_articles=$rl_dir/$articles_dir
 rl_images=$rl_articles/images/
 site_url=https://tinylab.org
 
@@ -30,18 +45,22 @@ if [ -z "$article" ]; then
   echo "LOG: available articles"
   echo
 
-  ls -1 $rl_articles | grep -v README.md | grep -n --color=auto .md
+  ls -1 $rl_articles | grep -v $README | grep -n --color=auto .md
 
   echo
   read -p "LOG: Please choose one key? " key
   echo
 
-  ls -1 $rl_articles | grep -v README.md | grep -n .md | grep -i --color=auto "$key"
+  if [ "x$article_type" == "x2" ]; then
+    [ -z "$key" ] && key=README
+  fi
+
+  ls -1 $rl_articles | grep -v $README | grep -n .md | grep -i --color=auto "$key"
   if [ $? -ne 0 ]; then
     echo
     read -p "LOG: No one is found with key: '$key', please choose one of them by the number? " one
     echo
-    ls -1 $rl_articles | grep -v README.md | grep --color=auto -n .md
+    ls -1 $rl_articles | grep -v $README | grep --color=auto -n .md
     echo
   else
     echo
@@ -49,12 +68,16 @@ if [ -z "$article" ]; then
     echo
   fi
 
-  ls -1 $rl_articles | grep -v README.md | grep -n .md | grep "^$one:"
+  if [ "x$article_type" == "x2" ]; then
+    [ -z "$one" ] && one=2
+  fi
+
+  ls -1 $rl_articles | grep -v $README | grep -n .md | grep "^$one:"
   if [ $? -ne 0 ]; then
     echo "ERR: The number: $one may be invalid"
     exit 1
   else
-    choose="$(ls -1 $rl_articles | grep -v README.md | grep -n .md | grep "^$one:" | cut -d ':' -f2)"
+    choose="$(ls -1 $rl_articles | grep -v $README | grep -n .md | grep "^$one:" | cut -d ':' -f2)"
   fi
 
   article=$rl_articles/$choose
@@ -102,6 +125,20 @@ permalink="$(basename $article | sed -e 's/[0-9]*-//;s/.md$//')"
 full_permalink="${site_url}/${permalink}/"
 desc="$title"
 
+if [ "x$article_type" == "x2" ]; then
+  latest_news="$(cat $article | grep "^##.*第.*期" | head -1)"
+  last_news="$(cat $article | grep "^##.*第.*期" | head -2 | tail -1)"
+
+  title_suffix="$(echo $latest_news | sed -e 's/.*： *//g')"
+  title_number="$(echo $title_suffix | tr -d -c '0-9' )"
+  title="$title：$title_suffix"
+
+  permalink=rvlwn-$title_number
+  full_permalink="${site_url}/${permalink}/"
+  _target_article=$TOP_DIR/_posts/${date_string}-rvlwn-$title_number
+  desc="$title"
+fi
+
 # check mermaid
 if grep -q mermaid $article; then
   plugin="mermaid"
@@ -125,7 +162,11 @@ echo
 
 echo "LOG: Contents"
 echo
-grep "^##" $article
+if [ "x$article_type" == "x1" ]; then
+  grep "^##" $article
+else
+  cat $article | sed -n -e "/$latest_news/,/$last_news/p" | grep -E -v "$last_news" | grep -E "^## |^### |^#### "
+fi
 echo
 
 # remove old drafts
@@ -154,33 +195,41 @@ tags:
 EOF
 
 echo "LOG: Copy article from $rl_dir to $TOP_DIR/_posts/"
-cat $article >> $_target_article
 
+if [ "x$article_type" == "x1" ]; then
 
-if [ -n "$subimages_dir" ]; then
-  echo "LOG: Copy images if there are"
-  cp -r $rl_subimages $_target_images
-  sed -i -e "s%](/images/%](/$target_images%g" $_target_article
-  sed -i -e "s%](images/%](/$target_images%g" $_target_article
-  sed -i -e "s%](./images/%](/$target_images%g" $_target_article
+  cat $article >> $_target_article
+
+  if [ -n "$subimages_dir" ]; then
+    echo "LOG: Copy images if there are"
+    cp -r $rl_subimages $_target_images
+    sed -i -e "s%](/images/%](/$target_images%g" $_target_article
+    sed -i -e "s%](images/%](/$target_images%g" $_target_article
+    sed -i -e "s%](./images/%](/$target_images%g" $_target_article
+  fi
+
+  sed -i -e '/[^\!]\[[^(]*\]([^h#].*)/{s%\([^\!][[^(]*](\)[\./]*%\1'$articles_path'%g}' $_target_article
+  sed -i -e '/[^\!]\[[^(]*\](.*\/articles\/images\/.*)/{s@/blob/@/raw/@g}' $_target_article
+  sed -i -e '/^\[[0-9]\{1,\}\]: [^h#].*/{s%\(^\[[0-9]\{1,\}\]: \)[\./]*%\1'$articles_path'%g}' $_target_article
+  sed -i -e '/^\[[0-9]\{1,\}\]: .*\/articles\/images\/.*/{s@/blob/@/raw/@g}' $_target_article
+
+  echo "LOG: Fix up top information"
+  sed -i -e "s% *<br/>%%g" $_target_article
+
+  echo "LOG: Strip ending whitespaces"
+  sed -i -e "s%[[:space:]]*$%%g" $_target_article
+
+  echo "LOG: Remove original title"
+  sed -i -e '/^\s*```/,/^\s*```/!{/^# .*/d}' $_target_article
+
+  echo "LOG: Use jekyll plugin"
+  sed -i -e '/``` *mermaid/,/```/{s/``` *mermaid$/<pre><div class="mermaid">/;s/```$/<\/div><\/pre>/;s/^ *//}' $_target_article
+else
+  cat $article | sed -n -e "/$latest_news/,/$last_news/p" | grep -v "$last_news" >> $_target_article
+
+  echo "LOG: Strip ending whitespaces"
+  sed -i -e "s%[[:space:]]*$%%g" $_target_article
 fi
-
-sed -i -e '/[^\!]\[[^(]*\]([^h#].*)/{s%\([^\!][[^(]*](\)[\./]*%\1'$articles_path'%g}' $_target_article
-sed -i -e '/[^\!]\[[^(]*\](.*\/articles\/images\/.*)/{s@/blob/@/raw/@g}' $_target_article
-sed -i -e '/^\[[0-9]\{1,\}\]: [^h#].*/{s%\(^\[[0-9]\{1,\}\]: \)[\./]*%\1'$articles_path'%g}' $_target_article
-sed -i -e '/^\[[0-9]\{1,\}\]: .*\/articles\/images\/.*/{s@/blob/@/raw/@g}' $_target_article
-
-echo "LOG: Fix up top information"
-sed -i -e "s% *<br/>%%g" $_target_article
-
-echo "LOG: Strip ending whitespaces"
-sed -i -e "s%[[:space:]]*$%%g" $_target_article
-
-echo "LOG: Remove original title"
-sed -i -e '/^\s*```/,/^\s*```/!{/^# .*/d}' $_target_article
-
-echo "LOG: Use jekyll plugin"
-sed -i -e '/``` *mermaid/,/```/{s/``` *mermaid$/<pre><div class="mermaid">/;s/```$/<\/div><\/pre>/;s/^ *//}' $_target_article
 
 echo "LOG: Target article: $_target_article"
 echo "LOG: Target images: $_target_images"
@@ -225,6 +274,8 @@ if [ "$push" = "y" -o "$push" = "yes" -o "$push" = "Y" -o "$push" = "YES" ]; the
   done
 
 fi
+
+[ "x$article_type" != "x1" ] && exit 0
 
 # Easier copy
 copy2clipboard ()
