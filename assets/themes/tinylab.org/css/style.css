@@ -1186,9 +1186,9 @@ short_prev_next {
 
 @media (max-width: 999px) {
     body {
-        -moz-transform: scale(1.0);
+        -moz-transform: scale(0.8);
         -moz-transform-origin: center top 0;
-        zoom: 1.0
+        zoom: 0.8
     }
     #top-wrap,
     #top-wrap-inner,
@@ -1229,7 +1229,7 @@ short_prev_next {
         display: none
     }
     #search-box {
-        margin-left: 22px
+        margin-left: 12px
     }
     #phone-navbar {
         z-index: 999999999;
@@ -1265,8 +1265,14 @@ short_prev_next {
         background: none
     }
     #main-inner {
-        padding: 20px;
+        padding: 10px;
         margin-left: 0;
+    }
+    .post-extra {
+	padding-left: 10px;
+    }
+    blockquote {
+	padding-left: 10px;
     }
     article header {
         white-space: nowrap
