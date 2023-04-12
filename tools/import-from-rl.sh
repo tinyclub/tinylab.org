@@ -26,9 +26,11 @@ read -p "Please choose the article type? " article_type
 if [ "x$article_type" == "x1" ]; then
   articles_dir=articles
   README=$README
+  layout=post
 else
   articles_dir=news
   README=XXXXXX.md
+  layout=weekly
 fi
 
 rl_repo=https://gitee.com/tinylab/riscv-linux
@@ -175,7 +177,7 @@ git rm -f $TOP_DIR/_posts/*$orig_article
 echo "LOG: Generate top header"
 cat <<EOF > $_target_article
 ---
-layout: post
+layout: $layout
 author: '$_author'
 title: '$title'
 draft: false
