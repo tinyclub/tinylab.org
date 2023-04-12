@@ -137,6 +137,10 @@ blockquote p {
     overflow: hidden
 }
 
+div.weekly p {
+    text-indent: 0;
+}
+
 div.reward-button {
     font-size: 28px;
     line-height: 58px;
