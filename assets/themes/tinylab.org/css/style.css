@@ -138,6 +138,8 @@ blockquote p {
 
 div.weekly p {
     text-indent: 0;
+    white-space: normal;
+    word-wrap: normal;
 }
 
 div.reward-button {
