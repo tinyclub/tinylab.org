@@ -165,7 +165,7 @@ echo
 if [ "x$article_type" == "x1" ]; then
   grep "^##" $article
 else
-  cat $article | sed -n -e "/$latest_news/,/$last_news/p" | grep -E -v "$last_news" | grep -E "^## |^### |^#### "
+  cat $article | sed -n -e "/$latest_news/,/$last_news/p" | grep -E -v "$latest_news|$last_news" | grep -E "^## |^### |^#### " | sed -e 's/^#//g'
 fi
 echo
 
@@ -225,7 +225,16 @@ if [ "x$article_type" == "x1" ]; then
   echo "LOG: Use jekyll plugin"
   sed -i -e '/``` *mermaid/,/```/{s/``` *mermaid$/<pre><div class="mermaid">/;s/```$/<\/div><\/pre>/;s/^ *//}' $_target_article
 else
-  cat $article | sed -n -e "/$latest_news/,/$last_news/p" | grep -v "$last_news" >> $_target_article
+  time_info="$(echo $latest_news | sed -e 's/：.*//g;s/^## //g')"
+
+cat <<EOF >> $_target_article
+> 整理时间：$time_info
+> 整理人员：晓依
+> 项目仓库：[RISC-V Linux 内核技术调研活动](https://gitee.com/tinylab/riscv-linux)
+> 赞助单位：中科院软件所 PLCT 实验室
+EOF
+
+  cat $article | sed -n -e "/$latest_news/,/$last_news/p" | grep -E -v "$latest_news|$last_news" | sed -e 's/^#//g' >> $_target_article
 
   echo "LOG: Strip ending whitespaces"
   sed -i -e "s%[[:space:]]*$%%g" $_target_article
