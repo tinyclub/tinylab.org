@@ -1,0 +1,1242 @@
+---
+layout: post
+author: '呀呀呀'
+title: 'RISC-V Linux 内核及周边技术动态：第 41 期'
+draft: false
+plugin: ''
+album: 'RISC-V Linux'
+license: 'cc-by-nc-nd-4.0'
+permalink: /rvlwn-41/
+description: 'RISC-V Linux 内核及周边技术动态：第 41 期'
+category:
+  - 开源项目
+  - Risc-V
+tags:
+  - Linux
+  - RISC-V
+---
+
+## 20230409：第 41 期
+
+### 内核动态
+
+#### RISC-V 架构支持
+
+**[v11: function_graph: Support recording and printing the return value of function](http://lore.kernel.org/linux-riscv/cover.1680954589.git.pengdonglin@sangfor.com.cn/)**
+
+> When using the function_graph tracer to analyze system call failures,
+> it can be time-consuming to analyze the trace logs and locate the kernel
+> function that first returns an error. This change aims to simplify the
+> process by recording the function return value to the 'retval' member of
+> 'ftrace_graph_ent' and printing it when outputing the trace log.
+>
+
+**[v1: Convert SiFive drivers from SOC_FOO dependencies to ARCH_FOO](http://lore.kernel.org/linux-riscv/20230406-undertake-stowing-50f45b90413a@spud/)**
+
+> RISC-V's SOC_FOO symbols for micro-archs are going away, and being
+> replaced with the more common ARCH_FOO pattern that is used by other
+> archs (and by vendors with a history outside of RISC-V).
+> I kicked the conversion off by converting the Microchip RISC-V bits to
+> use their replacement symbol, so here's round two: the various SiFive
+> drivers.
+>
+
+**[GIT PULL: RISC-V Devicetrees for v6.4](http://lore.kernel.org/linux-riscv/20230406-shank-impromptu-3d483bbc249f@spud/)**
+
+> Please pull some Devicetree updates for v6.4, mainly adding the base
+> level of support for the StarFive VisionFive v2.
+> I wanted to get an initial PR out before -rc6, but I may have another
+> PR adding some of the peripherals (pmu, mmc) for the StarFive stuff
+> that are already reviewed etc, but need a rebase on top of what
+> actually got applied. Is that okay, or will the end of next week be
+> too late for you?
+>
+
+**[GIT PULL: RISC-V SoC drivers for v6.4](http://lore.kernel.org/linux-riscv/20230406-islamist-mop-81d651b8830d@spud/)**
+
+> Please pull some updates for the "otherwise unloved" RISC-V SoC drivers
+> for v6.4! The bulk of this is my fixing my own driver, and there's a fix
+> in here to make sure that we don't hit randconfig build issues once !MMU
+> is enabled for 32-bit kernels.
+>
+
+**[v3: -next: support allocating crashkernel above 4G explicitly on riscv](http://lore.kernel.org/linux-riscv/20230406220206.3067006-1-chenjiahao16@huawei.com/)**
+
+> On riscv, the current crash kernel allocation logic is trying to
+> allocate within 32bit addressible memory region by default, if
+> failed, try to allocate without 4G restriction.
+>
+> In need of saving DMA zone memory while allocating a relatively large
+> crash kernel region, allocating the reserved memory top down in
+> high memory, without overlapping the DMA zone, is a mature solution.
+> Hence this patchset introduces the parameter option crashkernel=X,[high,low].
+>
+
+**[v1: Add JH7110 PCIe driver support](http://lore.kernel.org/linux-riscv/20230406111142.74410-1-minda.chen@starfivetech.com/)**
+
+> This patchset adds PCIe driver for the StarFive JH7110 SoC.
+> The patch has been tested on the VisionFive 2 board. The test
+> devices include M.2 NVMe SSD and Realtek 8169 Ethernet adapter.
+>
+
+**[v7: StarFive's SYSCON support](http://lore.kernel.org/linux-riscv/20230406103308.1280860-1-william.qiu@starfivetech.com/)**
+
+> This patchset adds initial rudimentary support for the StarFive
+> designware mobile storage host controller driver. And this driver will
+> be used in StarFive's VisionFive 2 board. The main purpose of adding
+> this driver is to accommodate the ultra-high speed mode of eMMC.
+>
+
+**[v4: Add JH7110 USB and USB PHY driver support](http://lore.kernel.org/linux-riscv/20230406015216.27034-1-minda.chen@starfivetech.com/)**
+
+> This patchset adds USB driver and USB PHY for the StarFive JH7110 SoC.
+> USB work mode is peripheral and using USB 2.0 PHY in VisionFive 2 board.
+> The patch has been tested on the VisionFive 2 board.
+>
+
+**[GIT PULL: Initial clk/reset support for JH7110 for v6.4](http://lore.kernel.org/linux-riscv/20230405-constant-dreamily-0128e071c665@spud/)**
+
+> Here's a PR for the StarFive JH7110 clk/reset bits since I'd like to
+> take the DT this cycle & depend on the binding headers.
+>
+> I've picked up R-B tags from Emil on all that patches, despite him being
+> listed as an author, as things have changed quite a lot since he was
+> involved in writing things many months ago.
+>
+
+**[v2: RISC-V: align ISA extension Kconfig help text with each other](http://lore.kernel.org/linux-riscv/20230405-pucker-cogwheel-3a999a94a2f2@wendy/)**
+
+> Other extensions only capitalise the first letter in the text visible
+> in Kconfig menus, and provide a short comment about the extension's
+> meaning. Do the same for Svnapot & Svpbmt.
+>
+> The precedent for capitalisation in the Kconfig text was set by Zicbom
+> & sorta followed for Zicboz. The RVI styling used for multi-letter
+> extensions only capitalises the first letter, so do the same here.
+> If nothing else, my OCD likes it when the extensions follow a consistent
+> pattern.
+>
+
+**[v1: riscv: Adjust dependencies of HAVE_DYNAMIC_FTRACE selection](http://lore.kernel.org/linux-riscv/20230404-riscv-dynamic-ftrace-checks-clang-v1-1-0ce296b7d423@kernel.org/)**
+
+> When building allmodconfig with clang and its integrated assembler and
+> linking with a version of GNU ld prior to 2.36, the following link error
+> occurs:
+>
+>   riscv64-linux-gnu-ld: .init.data has both ordered [`__patchable_function_entries' in init/main.o] and unordered [`.init_array.0' in kernel/trace/trace_benchmark.o] sections
+>   riscv64-linux-gnu-ld: final link failed: bad value
+>
+
+**[v4: Add basic ACPI support for RISC-V](http://lore.kernel.org/linux-riscv/20230404182037.863533-1-sunilvl@ventanamicro.com/)**
+
+> This patch series enables the basic ACPI infrastructure for RISC-V.
+> Supporting external interrupt controllers is in progress and hence it is
+> tested using poll based HVC SBI console and RAM disk.
+>
+> The first patch in this series is one of the patch from Jisheng's
+> series [1] which is not merged yet. This patch is required to support
+> ACPI since efi_init() which gets called before sbi_init() can enable
+> static branches and hits a panic.
+>
+
+**[v4: RISC-V KVM virtualize AIA CSRs](http://lore.kernel.org/linux-riscv/20230404153452.2405681-1-apatel@ventanamicro.com/)**
+
+> The RISC-V AIA specification is now frozen as-per the RISC-V international
+> process. The latest frozen specifcation can be found at:
+> https://github.com/riscv/riscv-aia/releases/download/1.0-RC3/riscv-interrupts-1.0-RC3.pdf
+>
+
+**[v5: irqchip/irq-sifive-plic: Add syscore callbacks for hibernation](http://lore.kernel.org/linux-riscv/20230404032908.89638-1-mason.huo@starfivetech.com/)**
+
+> The priority and enable registers of plic will be reset
+> during hibernation power cycle in poweroff mode,
+> add the syscore callbacks to save/restore those registers.
+>
+
+**[v5: RISC-V KVM ONE_REG interface for SBI](http://lore.kernel.org/linux-riscv/20230403121527.2286489-1-apatel@ventanamicro.com/)**
+
+> This series first does few cleanups/fixes (PATCH1 to PATCH5) and adds
+> ONE-REG interface for customizing the SBI interface visible to the
+> Guest/VM.
+>
+> The testing of this series has been done with KVMTOOL changes in
+> riscv_sbi_imp_v1 branch at:
+> https://github.com/avpatel/kvmtool.git
+>
+
+**[v1: riscv: entry: Save a0 prior syscall_enter_from_user_mode()](http://lore.kernel.org/linux-riscv/20230403065207.1070974-1-bjorn@kernel.org/)**
+
+> The RISC-V calling convention passes the first argument, and the
+> return value in the a0 register. For this reason, the a0 register
+> needs some extra care; When handling syscalls, the a0 register is
+> saved into regs->orig_a0, so a0 can be properly restored for,
+> e.g. interrupted syscalls.
+>
+
+**[v1: riscv: Add static call implementation](http://lore.kernel.org/linux-riscv/tencent_A8A256967B654625AEE1DB222514B0613B07@qq.com/)**
+
+> Add the riscv static call implementation. For each key, a permanent
+> trampoline is created which is the destination for all static calls
+> for the given key.
+>
+> The trampoline has a direct jump which gets patched by static_call_update()
+> when the destination function changes.
+>
+
+**[v1: RISC-V: KVM: Allow Zbb extension for Guest/VM](http://lore.kernel.org/linux-riscv/20230401112730.2105240-1-apatel@ventanamicro.com/)**
+
+> We extend the KVM ISA extension ONE_REG interface to allow KVM
+> user space to detect and enable Zbb extension for Guest/VM.
+>
+
+**[v7: Basic clock, reset & device tree support for StarFive JH7110 RISC-V SoC](http://lore.kernel.org/linux-riscv/20230401111934.130844-1-hal.feng@starfivetech.com/)**
+
+> This patch series adds basic clock, reset & DT support for StarFive
+> JH7110 SoC.
+>
+> @Stephen and @Conor, I have made this series start with the shared
+> dt-bindings, so it will be easier to merge.
+>
+
+**[v4: Use dma_default_coherent for devicetree default coherency](http://lore.kernel.org/linux-riscv/20230401091531.47412-1-jiaxun.yang@flygoat.com/)**
+
+> This series split out second half of my previous series
+> "v1: MIPS DMA coherence fixes".
+>
+> It intends to use dma_default_coherent to determine the default coherency of
+> devicetree probed devices instead of hardcoding it with Kconfig options.
+>
+
+#### 进程调度
+
+**[v4: sched: Avoid unnecessary migrations within SMT domains](http://lore.kernel.org/lkml/20230406203148.19182-1-ricardo.neri-calderon@linux.intel.com/)**
+
+> This is v4 of this series. Previous versions can be found here [1], [2],
+> and here [3]. To avoid duplication, I do not include the cover letter of
+> the original submission. You can read it in [1].
+>
+
+**[v1: sched: Consider CPU contention in frequency & load-balance busiest CPU selection](http://lore.kernel.org/lkml/20230406155030.1989554-1-dietmar.eggemann@arm.com/)**
+
+> This is the implementation of the idea to factor in root cfs_rq
+> runnable_avg as a way to consider CPU contention for CPU frequency and
+> `migrate_util` type load-balance busiest CPU selection.
+>
+
+**[v1: sched: rt: Simplify pick_task_rt()](http://lore.kernel.org/lkml/20230407192435.3390-1-kunyu@nfschina.com/)**
+
+> Remove useless intermediate variable "p" and its initialization.
+> Directly return the next RT scheduling task obtained from
+> _pick_next_task_rt().
+>
+
+**[v2: sched: rt: Simplify pick_next_rt_entity()](http://lore.kernel.org/lkml/20230407180952.2757-1-zeming@nfschina.com/)**
+
+> Remove useless intermediate variable "next" and its initialization.
+> Directly return the next RT scheduling entity obtained from
+> list_entry().
+>
+
+**[v1: sched/psi: set varaiable psi_cgroups_enabled storage-class-specifier to static](http://lore.kernel.org/lkml/20230405163602.1939400-1-trix@redhat.com/)**
+
+> smatch reports
+> kernel/sched/psi.c:143:1: warning: symbol
+>   'psi_cgroups_enabled' was not declared. Should it be static?
+>
+> This variable is only used in one file so should be static.
+>
+
+**[v1: sched: rt: Optimization function 'pick_next_rt_entity'](http://lore.kernel.org/lkml/20230405232900.4019-1-zeming@nfschina.com/)**
+
+> The moral of this function is to obtain the next RT scheduling entity
+> object,while 'list_entry' Implementation function of  'container_of'
+> returns the next RT scheduling entity object (no new code should be
+> added afterwards), directly returning 'list_entry' The execution result
+> is sufficient.
+>
+
+#### 内存管理
+
+**[v1: linux-next:&#160;delayacct: track delays from IRQ/SOFTIRQ](http://lore.kernel.org/linux-mm/202304081728353557233@zte.com.cn/)**
+
+> Delay accounting does not track the delay of IRQ/SOFTIRQ.  While
+> IRQ/SOFTIRQ could have obvious impact on some workloads productivity,
+> such as when workloads are running on system which is busy handling
+> network IRQ/SOFTIRQ.
+>
+
+**[v4: ACPI: APEI: handle synchronous exceptions with proper si_code](http://lore.kernel.org/linux-mm/20230408091359.31554-1-xueshuai@linux.alibaba.com/)**
+
+> changes since v3 by addressing comments from Xiaofei:
+> - do a force kill for abnormal memofy failure error such as invalid PA,
+> unexpected severity, OOM, etc
+> - pcik up tested-by tag from Ma Wupeng
+>
+
+**[v1: mm: introduce defer free for cma](http://lore.kernel.org/linux-mm/1680864131-4675-1-git-send-email-zhaoyang.huang@unisoc.com/)**
+
+> Continues page blocks are expensive for the system. Introducing defer free
+> mechanism to buffer some which make the allocation easier. The shrinker will
+> ensure the page block can be reclaimed when there is memory pressure.
+>
+
+**[v5: net-next: splice, net: Replace sendpage with sendmsg(MSG_SPLICE_PAGES), part 1](http://lore.kernel.org/linux-mm/20230406094245.3633290-1-dhowells@redhat.com/)**
+
+> Here's the first tranche of patches towards providing a MSG_SPLICE_PAGES
+> internal sendmsg flag that is intended to replace the ->sendpage() op with
+> calls to sendmsg().  MSG_SPLICE is a hint that tells the protocol that it
+> should splice the pages supplied if it can and copy them if not.
+>
+
+**[v1: memcg: Default value setting in memcg-v1](http://lore.kernel.org/linux-mm/20230406091450.167779-1-shaun.tancheff@gmail.com/)**
+
+> Setting min, low and high values with memcg-v1
+> provides bennefits for  users that are unable to update
+> to memcg-v2.
+>
+> Setting min, low and high can be set in memcg-v1
+> to apply enough memory pressure to effective throttle
+> filesystem I/O without hitting memcg oom.
+>
+
+**[v12: Implement IOCTL to get and optionally clear info about PTEs](http://lore.kernel.org/linux-mm/20230406074005.1784728-1-usama.anjum@collabora.com/)**
+
+> *Changes in v12*
+> - Update and other memory types to UFFD_FEATURE_WP_ASYNC
+> - Rebaase on top of next-20230406
+> - Review updates
+>
+
+**[v2: dma-buf/heaps: system_heap: Avoid DoS by limiting single allocations to half of all memory](http://lore.kernel.org/linux-mm/20230406000854.25764-1-jaewon31.kim@samsung.com/)**
+
+> Normal free:212600kB min:7664kB low:57100kB high:106536kB
+>   reserved_highatomic:4096KB active_anon:276kB inactive_anon:180kB
+>   active_file:1200kB inactive_file:0kB unevictable:2932kB
+>   writepending:0kB present:4109312kB managed:3689488kB mlocked:2932kB
+>   pagetables:13600kB bounce:0kB free_pcp:0kB local_pcp:0kB
+>   free_cma:200844kB
+> Out of memory and no killable processes...
+> Kernel panic - not syncing: System is deadlocked on memory
+>
+
+**[v2: kmod: simplify with a semaphore](http://lore.kernel.org/linux-mm/20230405203505.1343562-1-mcgrof@kernel.org/)**
+
+> I split the semaphore simplification work out from my first patch series [0]
+> because as although the changes came out of that effort, in the end this set
+> of patches are slightly orthogonal to the goal behind that series and this
+> ended up being mostly a cleanup with mild bike shedding exercise.
+>
+
+**[v5: Ignore non-LRU-based reclaim in memcg reclaim](http://lore.kernel.org/linux-mm/20230405185427.1246289-1-yosryahmed@google.com/)**
+
+> Upon running some proactive reclaim tests using memory.reclaim, we
+> noticed some tests flaking where writing to memory.reclaim would be
+> successful even though we did not reclaim the requested amount fully.
+> Looking further into it, I discovered that *sometimes* we over-report
+> the number of reclaimed pages in memcg reclaim.
+>
+
+**[v3: Expose GPU memory as coherently CPU accessible](http://lore.kernel.org/linux-mm/20230405180134.16932-1-ankita@nvidia.com/)**
+
+> NVIDIA's upcoming Grace Hopper Superchip provides a PCI-like device
+> for the on-chip GPU that is the logical OS representation of the
+> internal propritary cache coherent interconnect.
+>
+
+**[v1: net-next: net: sunhme: move asm includes to below linux includes](http://lore.kernel.org/linux-mm/20230405-sunhme-includes-fix-v1-1-bf17cc5de20d@kernel.org/)**
+
+> A recent rearrangement of includes has lead to a problem on m68k
+> as flagged by the kernel test robot.
+>
+> Resolve this by moving the block asm includes to below linux includes.
+> A side effect i that non-Sparc asm includes are now immediately
+> before Sparc asm includes, which seems nice.
+>
+
+**[v1: mm, page_alloc: use check_pages_enabled static key to check tail pages](http://lore.kernel.org/linux-mm/20230405142840.11068-1-vbabka@suse.cz/)**
+
+> Commit 700d2e9a36b9 ("mm, page_alloc: reduce page alloc/free sanity
+> checks") has introduced a new static key check_pages_enabled to control
+> when struct pages are sanity checked during allocation and freeing. Mel
+> Gorman suggested that free_tail_pages_check() could use this static key
+> as well, instead of relying on CONFIG_DEBUG_VM. That makes sense, so do
+> that. Also rename the function to free_tail_page_prepare() because it
+> works on a single tail page and has a struct page preparation component
+> as well as the optional checking component.
+> Also remove some unnecessary unlikely() within static_branch_unlikely()
+> statements that Mel pointed out for commit 700d2e9a36b9.
+>
+
+**[v1: memcg-v1: Enable setting memory min, low, high](http://lore.kernel.org/linux-mm/20230405110107.127156-1-shaun.tancheff@gmail.com/)**
+
+> For users that are unable to update to memcg-v2 this
+> provides a method where memcg-v1 can more effectively
+> apply enough memory pressure to effectively throttle
+> filesystem I/O or otherwise minimize being memcg oom
+> killed at the expense of reduced performance.
+>
+
+**[v2: module: avoid userspace pressure on unwanted allocations](http://lore.kernel.org/linux-mm/20230405022702.753323-1-mcgrof@kernel.org/)**
+
+> This v2 series follows up on the first iteration of these patches [0].
+> They have the following changes made:
+>
+>   o Rolled in fix for an kmemleak issue reported by Jim Cromie
+>   o Dropped from this series all the semaphore & and simplifications
+>     on kmod.c as that should just be sent as a separate bike-shedding
+>     opporunity patch series and it does not in any way address the
+>     the unwanted allocations.
+>   o The rest of the feedback was just from Greg KH and I've addressed
+>     all his feedback. I decided to do away with the debug.c as a
+>     separate file and leave the #ifdef CONFIG_MODULE_DEBUG eyesore
+>     at the end of main.c. I guess it's not so bad there.
+>   o *Tons* of fixes and enhancements to my counters, including tons
+>     of documentation to help ensure we don't loose track of some of
+>     the tribal knowledge and so to help ensure we have references to
+>     what our accounting looks like. Those large wasted virtual memory
+>     allocations on a simple qemu idle boring boot are simply rediculous, I
+>     am quite baffled we had not spotted this before, and so it all reveals
+>     we have quite a bit of optimizations left to do to make loading modules
+>     an even more smoother experience at bootup.
+>
+
+**[v2: regmap: Use mas_walk() instead of mas_find()](http://lore.kernel.org/linux-mm/20230403-regmap-maple-walk-fine-v2-1-c07371c8a867@kernel.org/)**
+
+> Liam recommends using mas_walk() instead of mas_find() for our use case so
+> let's do that, it avoids some minor overhead associated with being able to
+> restart the operation which we don't need since we do a simple search.
+>
+
+**[v1: memcg v1: provide read access to memory.pressure_level](http://lore.kernel.org/linux-mm/20230404105900.2005-1-flosch@nutanix.com/)**
+
+> This is all fine as long as the subscribing process runs as root and is
+> otherwise unconfined by further restrictions. However, if you add strict
+> access controls such as selinux, the permission bits will be enforced,
+> and opening memory.pressure_level for reading will fail, preventing the
+> process from subscribing, even as root.
+>
+
+**[v1: mm/madvise: Use vma_lookup() instead of find_vma()](http://lore.kernel.org/linux-mm/20230404094515.1883552-1-zhangpeng362@huawei.com/)**
+
+> Using vma_lookup() verifies the address is contained in the found vma.
+> This results in easier to read the code.
+>
+
+**[v1: m68k/mm: Use correct bit number in _PAGE_SWP_EXCLUSIVE comment](http://lore.kernel.org/linux-mm/20230404085636.121409-1-david@redhat.com/)**
+
+> As noticed by Geert, commit b5c88f21531c ("microblaze/mm: support
+> __HAVE_ARCH_PTE_SWP_EXCLUSIVE") modified m68k code by accident. While
+> replacing 0x080 by CF_PAGE_NOCACHE is correct, although it should have
+> been part of commit ed4154067a08 ("m68k/mm: support
+> __HAVE_ARCH_PTE_SWP_EXCLUSIVE"), replacing "bit 7" by "bit 24" in the
+> comment was wrong.
+>
+
+**[v2: LoongArch: Add kernel address sanitizer support](http://lore.kernel.org/linux-mm/20230404084148.744-1-zhangqing@loongson.cn/)**
+
+> Kernel Address Sanitizer (KASAN) is a dynamic memory safety error detector
+> designed to find out-of-bounds and use-after-free bugs, Generic KASAN is
+> supported on LoongArch now.
+>
+> 1/8 of kernel addresses reserved for shadow memory. But for LoongArch,
+> There are a lot of holes between different segments and valid address
+> space(256T available) is insufficient to map all these segments to kasan
+> shadow memory with the common formula provided by kasan core, saying
+> addr >> KASAN_SHADOW_SCALE_SHIFT) + KASAN_SHADOW_OFFSET
+>
+
+**[v1: mm: check mapping addr is correct when dump page](http://lore.kernel.org/linux-mm/1680587425-4683-1-git-send-email-Xiaosong.Ma@unisoc.com/)**
+
+> when we debug with slub_debug_on, the following backtraces show dump_page
+> will show wrong info when the bad page is non-NULL mapping and page->mapping
+> is 0x80000000000 so do virt_addr valid check is needed when dump mapping page.
+>
+
+**[v1: permit write-sealed memfd read-only shared mappings](http://lore.kernel.org/linux-mm/cover.1680560277.git.lstoakes@gmail.com/)**
+
+> This patch series is in two parts:-
+>
+> 1. Currently there are a number of places in the kernel where we assume
+>    VM_SHARED implies that a mapping is writable. Let's be slightly less
+>    strict and relax this restriction in the case that VM_MAYWRITE is not
+>    set.
+>
+
+**[v1: mm-unstable: cgroup: eliminate atomic rstat](http://lore.kernel.org/linux-mm/20230403220337.443510-1-yosryahmed@google.com/)**
+
+> A previous patch series ([1] currently in mm-unstable) changed most
+> atomic rstat flushing contexts to become non-atomic. This was done to
+> avoid an expensive operation that scales with # cgroups and # cpus to
+> happen with irqs disabled and scheduling not permitted. There were two
+> remaining atomic flushing contexts after that series. This series tries
+> to eliminate them as well, eliminating atomic rstat flushing completely.
+>
+
+**[v3: Split a folio to any lower order folios](http://lore.kernel.org/linux-mm/20230403201839.4097845-1-zi.yan@sent.com/)**
+
+> File folio supports any order and people would like to support flexible orders
+> for anonymous folio[1] too. Currently, split_huge_page() only splits a huge
+> page to order-0 pages, but splitting to orders higher than 0 is also useful.
+> This patchset adds support for splitting a huge page to any lower order pages
+> and uses it during file folio truncate operations.
+>
+
+**[v8: -next: Delay the initialization of zswap](http://lore.kernel.org/linux-mm/20230403121318.1876082-1-liushixin2@huawei.com/)**
+
+> In the initialization of zswap, about 18MB memory will be allocated for
+> zswap_pool. Since some users may not use zswap, the zswap_pool is wasted.
+> Save memory by delaying the initialization of zswap until enabled.
+>
+
+#### 文件系统
+
+**[v2: dax: enable dax fault handler to report VM_FAULT_HWPOISON](http://lore.kernel.org/linux-fsdevel/20230406230127.716716-1-jane.chu@oracle.com/)**
+
+> When dax fault handler fails to provision the fault page due to
+> hwpoison, it returns VM_FAULT_SIGBUS which lead to a sigbus delivered
+> to userspace with .si_code BUS_ADRERR.  Channel dax backend driver's
+> detection on hwpoison to the filesystem to provide the precise reason
+> for the fault.
+>
+
+**[v1: fsverity: reject FS_IOC_ENABLE_VERITY on mode 3 fds](http://lore.kernel.org/linux-fsdevel/20230406215106.235829-1-ebiggers@kernel.org/)**
+
+> Commit 56124d6c87fd ("fsverity: support enabling with tree block size <
+> PAGE_SIZE") changed FS_IOC_ENABLE_VERITY to use __kernel_read() to read
+> the file's data, instead of direct pagecache accesses.
+>
+
+**[v1: shmem: stable directory cookies](http://lore.kernel.org/linux-fsdevel/168080987776.946167.3501480439542616457.stgit@manet.1015granger.net/)**
+
+> The current cursor-based directory cookie mechanism doesn't work
+> when a tmpfs filesystem is exported via NFS. This is because NFS
+> clients do not open directories: each READDIR operation has to open
+> the directory on the server, read it, then close it. The cursor
+> state for that directory, being associated strictly with the opened
+> struct file, is then discarded.
+>
+
+**[v2: eventfd: use wait_event_interruptible_locked_irq() helper](http://lore.kernel.org/linux-fsdevel/tencent_F38839D00FE579A60A97BA24E86AF223DD05@qq.com/)**
+
+> wait_event_interruptible_locked_irq was introduced by commit 22c43c81a51e
+> ("wait_event_interruptible_locked() interface"), but older code such as
+> eventfd_{write,read} still uses the open code implementation.
+> Inspired by commit 8120a8aadb20
+> ("fs/timerfd.c: make use of wait_event_interruptible_locked_irq()"), this
+> patch replaces the open code implementation with a single macro call.
+>
+
+**[v1: fsverity: use shash API instead of ahash API](http://lore.kernel.org/linux-fsdevel/20230406003714.94580-1-ebiggers@kernel.org/)**
+
+> The "ahash" API, like the other scatterlist-based crypto APIs such as
+> "skcipher", comes with some well-known limitations.  First, it can't
+> easily be used with vmalloc addresses.  Second, the request struct can't
+> be allocated on the stack.  This adds complexity and a possible failure
+> point that needs to be worked around, e.g. using a mempool.
+>
+
+**[v3: blksnap - block devices snapshots module](http://lore.kernel.org/linux-fsdevel/20230404140835.25166-1-sergei.shtepa@veeam.com/)**
+
+> I am happy to offer a modified version of the Block Devices Snapshots
+> Module. It allows to create non-persistent snapshots of any block devices.
+> The main purpose of such snapshots is to provide backups of block devices.
+> See more in Documentation/block/blksnap.rst.
+>
+
+**[v1: exfat: add sysfs interface](http://lore.kernel.org/linux-fsdevel/20230405084635.74680-1-frank.li@vivo.com/)**
+
+> Add sysfs interface to configure exfat related parameters.
+>
+
+**[v1: fstests specific MAINTAINERS file](http://lore.kernel.org/linux-fsdevel/20230404171411.699655-1-zlang@kernel.org/)**
+
+> I think I might be mad to include that many mailing lists in this patchset...
+>
+> As I explained in v1: , fstests covers more and more fs testing
+> thing, so we always get help from fs specific mailing list, due to they
+> learn about their features and bugs more. Besides that, some folks help
+> to review patches (relevant with them) more often. So I'd like to bring
+> in the similar way of linux/MAINTAINERS, records fs relevant mailing lists,
+> reviewers or supporters (or call co-maintainers). To recognize the
+> can be added in CC list of a patch.
+>
+
+**[v1: Avoid the mmap lock for fault-around](http://lore.kernel.org/linux-fsdevel/20230404135850.3673404-1-willy@infradead.org/)**
+
+> The linux-next tree currently contains patches (mostly from Suren)
+> which handle some page faults without the protection of the mmap lock.
+> This patchset adds the ability to handle page faults on parts of files
+> which are already in the page cache without taking the mmap lock.
+>
+
+**[v2: fuse: API for Checkpoint/Restore](http://lore.kernel.org/linux-fsdevel/20230403144517.347517-1-aleksandr.mikhalitsyn@canonical.com/)**
+
+> The main problem for CRIU is that we have to restore mount namespaces and memory mappings before the process tree.
+> It means that when CRIU is performing mount of fuse filesystem it can't use the original FUSE daemon from the
+> restorable process tree, but instead use a "fake daemon".
+>
+
+**[v1: shmem: Add user and group quota support for tmpfs](http://lore.kernel.org/linux-fsdevel/20230403084759.884681-1-cem@kernel.org/)**
+
+> so I'm taking over his work from where he left it of. This series is virtually
+> done, and he had updated it with comments from the last version, but, I'm
+> initially posting it as a RFC because it's been a while since he posted the
+> last version.
+> Most of what I did here was rebase his last work on top of current Linus's tree.
+>
+
+**[v1: blk: optimization for classic polling](http://lore.kernel.org/linux-fsdevel/3578876466-3733-1-git-send-email-nj.shetty@samsung.com/)**
+
+> This removes the dependency on interrupts to wake up task. Set task
+> state as TASK_RUNNING, if need_resched() returns true,
+> while polling for IO completion.
+> Earlier, polling task used to sleep, relying on interrupt to wake it up.
+> This made some IO take very long when interrupt-coalescing is enabled in
+> NVMe.
+>
+
+#### 网络设备
+
+**[v7: bpf: XDP-hints: API change for RX-hash kfunc bpf_xdp_metadata_rx_hash](http://lore.kernel.org/netdev/168098183268.96582.7852359418481981062.stgit@firesoul/)**
+
+> Current API for bpf_xdp_metadata_rx_hash() returns the raw RSS hash value,
+> but doesn't provide information on the RSS hash type (part of 6.3-rc).
+>
+> This patchset proposal is to change the function call signature via adding
+> a pointer value argument for providing the RSS hash type.
+>
+> Patchset also disables all bpf_printk's from xdp_hw_metadata program
+> that we expect driver developers to use.
+>
+
+**[v1: nft: main: Error out when combining -i/--interactive and -f/--file](http://lore.kernel.org/netdev/20230408181818.72264-1-pablo@netfilter.org/)**
+
+> These two options are mutually exclusive, display error in that case:
+>
+>  # nft -i -f test.nft
+>  Error: -i/--interactive and -f/--file options cannot be combined
+>
+
+**[v2: Add missing DSA properties for marvell switches](http://lore.kernel.org/netdev/20230408152801.2336041-1-andrew@lunn.ch/)**
+
+> The DSA core has become more picky about DT properties. This patchset
+> add missing properties and removes some unused ones, for iMX boards.
+>
+> Once all the missing properties are added, it should be possible to
+> simply phylink and the mv88e6xxx driver.
+>
+
+**[v4: net-next: Support MACsec VLAN](http://lore.kernel.org/netdev/20230408105735.22935-1-ehakim@nvidia.com/)**
+
+> This patch series introduces support for hardware (HW) offload MACsec
+> devices with VLAN configuration. The patches address both scenarios
+> where the VLAN header is both the inner and outer header for MACsec.
+>
+
+**[v1: net: ipv6: Add Kconfig option to set default value of accept_dad](http://lore.kernel.org/netdev/3072adab06f9c5f45cc72d2068d1aed0100436ff.1680941918.git.josh@joshtriplett.org/)**
+
+> The kernel already supports disabling Duplicate Address Detection (DAD)
+> by setting net.ipv6.conf.$interface.accept_dad to 0. However, for
+> interfaces available at boot time, the kernel brings up the interface
+> and sets up the link-local address before processing sysctls set on the
+> kernel command line; thus, setting
+> sysctl.net.ipv6.conf.default.accept_dad=0 on the kernel command line
+> does not suffice to affect such interfaces.
+>
+
+**[v1: Alternative, restart tx after tx used bit read](http://lore.kernel.org/netdev/20230407213349.8013-1-ingo.rohloff@lauterbach.com/)**
+
+> I am developing on a ZynqMP (Ultrascale+) SoC from AMD/Xilinx.
+> I have seen the same issue before commit 4298388574dae6168 ("net: macb:
+> restart tx after tx used bit read")
+>
+
+**[v2: net: mana: Add support for jumbo frame](http://lore.kernel.org/netdev/1680901196-20643-1-git-send-email-haiyangz@microsoft.com/)**
+
+> The set adds support for jumbo frame,
+> with some optimization for the RX path.
+>
+
+**[v2: wifi: brcmfmac: add Cypress 43439 SDIO ids](http://lore.kernel.org/netdev/20230407203752.128539-1-marex@denx.de/)**
+
+> Add SDIO ids for use with the muRata 1YN (Cypress CYW43439).
+> The odd thing about this is that the previous 1YN populated
+> on M.2 card for evaluation purposes had BRCM SDIO vendor ID,
+> while the chip populated on real hardware has a Cypress one.
+> The device ID also differs between the two devices. But they
+> are both 43439 otherwise, so add the IDs for both.
+>
+
+**[v1: net-next: gve: Unify duplicate GQ min pkt desc size constants](http://lore.kernel.org/netdev/20230407184830.309398-1-shailend@google.com/)**
+
+> The two constants accomplish the same thing.
+>
+
+**[v4: net-next: ice: allow matching on meta data](http://lore.kernel.org/netdev/20230407165219.2737504-1-michal.swiatkowski@linux.intel.com/)**
+
+> This patchset is intended to improve the usability of the switchdev
+> slow path. Without matching on a meta data values slow path works
+> based on VF's MAC addresses. It causes a problem when the VF wants
+> to use more than one MAC address (e.g. when it is in trusted mode).
+>
+
+**[v1: regmap: allow upshifting register addresses before performing operations](http://lore.kernel.org/netdev/20230407152604.105467-1-maxime.chevallier@bootlin.com/)**
+
+> Similar to the existing reg_downshift mechanism, that is used to
+> translate register addresses on busses that have a smaller address
+> stride, it's also possible to want to upshift register addresses.
+>
+
+**[v1: ARM64: dts: marvell: cn9310: Add missing phy-mode](http://lore.kernel.org/netdev/20230407151839.2320596-1-andrew@lunn.ch/)**
+
+> The DSA framework has got more picky about always having a phy-mode
+> for the CPU port. The SoC Ethernet is being configured to
+> 10gbase-r. Set the switch phy-mode based on this. Additionally, the
+> SoC Ethernet is using in-band signalling to determine the link speed,
+> so add same parameter to the switch.
+>
+
+**[v1: net-next: tools: ynl: throw a more meaningful exception if family not supported](http://lore.kernel.org/netdev/20230407145609.297525-1-kuba@kernel.org/)**
+
+> cli.py currently throws a pure KeyError if kernel doesn't support
+> a netlink family. Users who did not write ynl (hah) may waste
+> their time investigating what's wrong with the Python code.
+>
+
+**[v1: net-next: ax25: exit linked-list searches earlier](http://lore.kernel.org/netdev/20230407142042.11901-1-peter@n8pjl.ca/)**
+
+> There's no need to loop until the end of the list if we have a result.
+>
+> Device callsigns are unique, so there can only be one dev returned from
+> ax25_addr_ax25dev(). If not, there would be inconsistencies based on
+> order of insertion, and refcount leaks.
+>
+> Same reasoning for ax25_get_route() as above.
+>
+
+**[v1: net-next: DSA trace events](http://lore.kernel.org/netdev/20230407141451.133048-1-vladimir.oltean@nxp.com/)**
+
+> These are useful to debug refcounting issues on CPU and DSA ports, where
+> entries may remain lingering, or may be removed too soon, depending on
+> bugs in higher layers of the network stack.
+>
+
+**[v3: bpf-next: Add FOU support for externally controlled ipip devices](http://lore.kernel.org/netdev/cover.1680874078.git.cehrig@cloudflare.com/)**
+
+> This patch set adds support for using FOU or GUE encapsulation with
+> an ipip device operating in collect-metadata mode and a set of kfuncs
+> for controlling encap parameters exposed to a BPF tc-hook.
+>
+
+**[v2: net-next: net: ethernet: mtk_eth_soc: use be32 type to store be32 values](http://lore.kernel.org/netdev/20230401-mtk_eth_soc-sparse-v2-1-963becba3cb7@kernel.org/)**
+
+> n_addr is used to store be32 values,
+> so a sparse-friendly array of be32 to store these values.
+>
+
+**[v1: net-next: net: davicom: Make davicom drivers not depends on DM9000](http://lore.kernel.org/netdev/20230407094930.2633137-1-weiyongjun@huaweicloud.com/)**
+
+> All davicom drivers build need CONFIG_DM9000 is set, but this dependence
+> is not correctly since dm9051 can be build as module without dm9000, switch
+> to using CONFIG_NET_VENDOR_DAVICOM instead.
+>
+
+**[v4: net-next: sfc: add vDPA support for EF100 devices](http://lore.kernel.org/netdev/20230407081021.30952-1-gautam.dawar@amd.com/)**
+
+> This series adds the vdpa support for EF100 devices.
+> For now, only a network class of vdpa device is supported and
+> they can be created only on a VF. Each EF100 VF can have one
+> of the three function personalities (EF100, vDPA & None) at
+> any time with EF100 being the default. A VF's function personality
+> is changed to vDPA while creating the vdpa device using vdpa tool.
+>
+
+**[v2: net-next: qlcnic: check pci_reset_function result](http://lore.kernel.org/netdev/20230407071849.309516-1-den-plotnikov@yandex-team.ru/)**
+
+> Static code analyzer complains to unchecked return value.
+> The result of pci_reset_function() is unchecked.
+> Despite, the issue is on the FLR supported code path and in that
+> case reset can be done with pcie_flr(), the patch uses less invasive
+> approach by adding the result check of pci_reset_function().
+>
+
+**[v1: net/sched: sch_qfq: prevent slab-out-of-bounds in qfq_activate_agg](http://lore.kernel.org/netdev/ZC+Kgc7feqYy%2FGdw@pr0lnx/)**
+
+> If the TCA_QFQ_LMAX value is not offered through nlattr, lmax is determined by the MTU value of the network device.
+> The MTU of the loopback device can be set up to 2^31-1.
+> As a result, it is possible to have an lmax value that exceeds QFQ_MIN_LMAX.
+>
+
+**[v4: net-next: net: lockless stop/wake combo macros](http://lore.kernel.org/netdev/20230407012536.273382-1-kuba@kernel.org/)**
+
+> A lot of drivers follow the same scheme to stop / start queues
+> without introducing locks between xmit and NAPI tx completions.
+> I'm guessing they all copy'n'paste each other's code.
+> The original code dates back all the way to e1000 and Linux 2.6.19.
+>
+
+**[v1: bpf-next: bpf: ensure all memory is initialized in bpf_get_current_comm](http://lore.kernel.org/netdev/20230407001808.1622968-1-brho@google.com/)**
+
+> BPF helpers that take an ARG_PTR_TO_UNINIT_MEM must ensure that all of
+> the memory is set, including beyond the end of the string.
+>
+
+**[v9: net-next: pds_core driver](http://lore.kernel.org/netdev/20230406234143.11318-1-shannon.nelson@amd.com/)**
+
+> This patchset implements a new driver for use with the AMD/Pensando
+> Distributed Services Card (DSC), intended to provide core configuration
+> services through the auxiliary_bus and through a couple of EXPORTed
+> functions for use initially in VFio and vDPA feature specific drivers.
+>
+
+**[v1: bpf-next: xsk: Elide base_addr comparison in xp_unaligned_validate_desc](http://lore.kernel.org/netdev/20230406212136.19716-1-kal.conley@dectris.com/)**
+
+> Remove redundant (base_addr >= pool->addrs_cnt) comparison from the
+> conditional.
+>
+> In particular, addr is computed as:
+>
+>     addr = base_addr + offset
+>
+> where base_addr and offset are stored as 48-bit and 16-bit unsigned
+> integers, respectively. The above sum cannot overflow u64 since
+> base_addr has a maximum value of 0x0000ffffffffffff and offset has a
+> maximum value of 0xffff (implying a maximum sum of 0x000100000000fffe).
+> Since overflow is impossible, it follows that addr >= base_addr.
+>
+
+**[v1: net-next: net: make SO_BUSY_POLL available to all users](http://lore.kernel.org/netdev/20230406194634.1804691-1-edumazet@google.com/)**
+
+> After commit 217f69743681 ("net: busy-poll: allow preemption
+> in sk_busy_loop()"), a thread willing to use busy polling
+> is not hurting other threads anymore in a non preempt kernel.
+>
+> I think it is safe to remove CAP_NET_ADMIN check.
+>
+
+**[[PATCH net-next RFC v4 0/5] net: Make MAC/PHY time stamping selectable](http://lore.kernel.org/netdev/20230406173308.401924-1-kory.maincent@bootlin.com/)**
+
+> Up until now, there was no way to let the user select the layer at
+> which time stamping occurs.  The stack assumed that PHY time stamping
+> is always preferred, but some MAC/PHY combinations were buggy.
+>
+> This series aims to allow the user to select the desired layer
+> administratively.
+>
+
+**[v1: net-next: net: stmmac: dwmac-anarion: address issues flagged by sparse](http://lore.kernel.org/netdev/20230406-dwmac-anarion-sparse-v1-0-b0c866c8be9d@kernel.org/)**
+
+> Two minor enhancements to dwmac-anarion to address issues flagged by
+> sparse.
+>
+> 1. Always return struct anarion_gmac * from anarion_config_dt()
+> 2. Add __iomem annotation to register base
+>
+> No functional change intended.
+> Compile tested only.
+>
+
+**[v1: io_uring: Pass whole sqe to commands](http://lore.kernel.org/netdev/20230406165705.3161734-1-leitao@debian.org/)**
+
+> Currently uring CMD operation relies on having large SQEs, but future
+> operations might want to use normal SQE.
+>
+> The io_uring_cmd currently only saves the payload (cmd) part of the SQE,
+> but, for commands that use normal SQE size, it might be necessary to
+> access the initial SQE fields outside of the payload/cmd block.  So,
+> saves the whole SQE other than just the pdu.
+>
+
+**[v1: bpf-next: net/smc: Introduce BPF injection capability](http://lore.kernel.org/netdev/1680795034-86384-1-git-send-email-alibuda@linux.alibaba.com/)**
+
+> This patches attempt to introduce BPF injection capability for SMC,
+> and add selftest to ensure code stability.
+>
+> As we all know that the SMC protocol is not suitable for all scenarios,
+> especially for short-lived. However, for most applications, they cannot
+> guarantee that there are no such scenarios at all. Therefore, apps
+> may need some specific strategies to decide shall we need to use SMC
+> or not, for example, apps can limit the scope of the SMC to a specific
+> IP address or port.
+>
+
+**[v1: add initial io_uring_cmd support for sockets](http://lore.kernel.org/netdev/20230406144330.1932798-1-leitao@debian.org/)**
+
+> This patchset creates the initial plumbing for a io_uring command for
+> sockets.
+>
+> For now, create two uring commands for sockets, SOCKET_URING_OP_SIOCOUTQ
+> and SOCKET_URING_OP_SIOCINQ. They are similar to ioctl operations
+> SIOCOUTQ and SIOCINQ. In fact, the code on the protocol side itself is
+> heavily based on the ioctl operations.
+>
+
+**[v1: next: wifi: mt76: Replace zero-length array with flexible-array member](http://lore.kernel.org/netdev/ZC7X7KCb+JEkPe5D@work/)**
+
+> Zero-length arrays are deprecated [1] and have to be replaced by C99
+> flexible-array members.
+>
+> This helps with the ongoing efforts to tighten the FORTIFY_SOURCE routines
+> on memcpy() and help to make progress towards globally enabling
+> -fstrict-flex-arrays=3 [2]
+>
+
+#### 安全增强
+
+**[v2: Tab P11 features](http://lore.kernel.org/linux-hardening/20230406-topic-lenovo_features-v2-0-625d7cb4a944@linaro.org/)**
+
+**[v2: fortify: Add KUnit tests for runtime overflows](http://lore.kernel.org/linux-hardening/20230407191904.gonna.522-kees@kernel.org/)**
+
+> This series adds KUnit tests for the CONFIG_FORTIFY_SOURCE behavior of the
+> standard C string functions, and for the strcat() family of functions,
+> as those were updated during refactoring. Finally, fortification error
+> messages are improved to give more context for the failure condition.
+>
+
+**[v1: next: s390/fcx: Replace zero-length array with flexible-array member](http://lore.kernel.org/linux-hardening/ZC7XT5prvoE4Yunm@work/)**
+
+> Zero-length arrays are deprecated [1] and have to be replaced by C99
+> flexible-array members.
+>
+> This helps with the ongoing efforts to tighten the FORTIFY_SOURCE routines
+> on memcpy() and help to make progress towards globally enabling
+> -fstrict-flex-arrays=3 [2]
+>
+
+**[v1: next: s390/diag: Replace zero-length array with flexible-array member](http://lore.kernel.org/linux-hardening/ZC7XGpUtVhqlRLhH@work/)**
+
+> Zero-length arrays are deprecated [1] and have to be replaced by C99
+> flexible-array members.
+>
+> This helps with the ongoing efforts to tighten the FORTIFY_SOURCE routines
+> on memcpy() and help to make progress towards globally enabling
+> -fstrict-flex-arrays=3 [2]
+>
+
+**[v2: ubsan: Tighten UBSAN_BOUNDS on GCC](http://lore.kernel.org/linux-hardening/20230405022356.gonna.338-kees@kernel.org/)**
+
+> The use of -fsanitize=bounds on GCC will ignore some trailing arrays,
+> leaving a gap in coverage. Switch to using -fsanitize=bounds-strict to
+> match Clang's stricter behavior.
+>
+
+#### 异步 IO
+
+**[v2: optimise resheduling due to deferred tw](http://lore.kernel.org/io-uring/cover.1680782016.git.asml.silence@gmail.com/)**
+
+> io_uring extensively uses task_work, but when a task is waiting
+> every new queued task_work batch will try to wake it up and so
+> cause lots of scheduling activity. This series optimises it,
+> specifically applied for rw completions and send-zc notifications
+> for now, and will helpful for further optimisations.
+>
+
+**[v1: ublk: read any SQE values upfront](http://lore.kernel.org/io-uring/4ea9c4da-5eb8-c9b1-46de-93697291baa5@kernel.dk/)**
+
+> Since SQE memory is shared with userspace, we should only be reading it
+> once. We cannot read it multiple times, particularly when it's read once
+> for validation and then read again for the actual use.
+>
+
+#### Rust For Linux
+
+**[v7: Rust pin-init API for pinned initialization of structs](http://lore.kernel.org/rust-for-linux/20230408122429.1103522-1-y86-dev@protonmail.com/)**
+
+> This is the seventh version of the pin-init API. See [1] for v6.
+>
+> The tree at [2] contains these patches applied on top of 6.3-rc1.
+> The Rust-doc documentation of the pin-init API can be found at [3].
+>
+> These patches are a long way coming, since I held a presentation on
+> safe pinned initialization at Kangrejos [4]. And my discovery of this
+> problem was almost a year ago [5].
+>
+
+**[v1: Initial Rust V4L2 support](http://lore.kernel.org/rust-for-linux/20230406215615.122099-1-daniel.almeida@collabora.com/)**
+
+> media subsystem.
+>
+> It adds just enough support to write a clone of the virtio-camera
+> prototype written by my colleague, Dmitry Osipenko, available at [0].
+>
+> Basically, there's support for video_device_register,
+> v4l2_device_register and for some ioctls in v4l2_ioctl_ops. There is
+> also some initial vb2 support, alongside some wrappers for some types
+> found in videodev2.h.
+>
+
+**[v1: v6.1: rust: types: add `Opaque::pin_init`](http://lore.kernel.org/rust-for-linux/20230406065546.787669-1-y86-dev@protonmail.com/)**
+
+> Add support for pin-init in combination with `Opaque<T>`, the `pin_init`
+> function initializes the contents via a user-supplied initializer for
+> `T`.
+>
+
+**[v2: rust: virtio: add virtio support](http://lore.kernel.org/rust-for-linux/20230405201416.395840-1-daniel.almeida@collabora.com/)**
+
+> This used to be a single patch, but I split it into two with the
+> addition of struct Scatterlist.
+>
+> Again a bit new with Rust submissions. I was told by Gary Guo to
+> rebase on top of rust-next, but it seems *very* behind?
+>
+
+#### BPF
+
+**[v2: bpf-next: Introduce BPF_MA_REUSE_AFTER_RCU_GP](http://lore.kernel.org/bpf/20230408141846.1878768-1-houtao@huaweicloud.com/)**
+
+> As discussed in v1, currently the freed objects in bpf memory allocator
+> may be reused immediately by the new allocation, it introduces
+> use-after-bpf-ma-free problem for non-preallocated hash map and makes
+> lookup procedure return incorrect result. The immediate reuse also makes
+> introducing new use case more difficult (e.g. qp-trie).
+>
+
+**[v1: bpf-next: selftests/bpf: Use PERF_COUNT_HW_CPU_CYCLES event for get_branch_snapshot](http://lore.kernel.org/bpf/20230407190130.2093736-1-song@kernel.org/)**
+
+> perf_event with type=PERF_TYPE_RAW and config=0x1b00 turned out to be not
+> reliable in ensuring LBR is active. Thus, test_progs:get_branch_snapshot is
+> not reliable in some systems. Replace it with PERF_COUNT_HW_CPU_CYCLES
+> event, which gives more consistent results.
+>
+
+**[v1: bpf-next: selftests/bpf: Prevent infinite loop in veristat when base file is too short](http://lore.kernel.org/bpf/20230407154125.896927-1-eddyz87@gmail.com/)**
+
+> The loop is caused by handle_comparison_mode() not checking if `base`
+> variable points to `fallback_stats` prior advancing joined results
+> using `base`.
+>
+
+**[v1: bpf-next: bpftool: set program type only if it differs from the desired one](http://lore.kernel.org/bpf/20230407081427.2621590-1-weiyongjun@huaweicloud.com/)**
+
+> After commit d6e6286a12e7 ("libbpf: disassociate section handler on explicit
+> bpf_program__set_type() call"), bpf_program__set_type() will force cleanup
+> the program's SEC() definition, this commit fixed the test helper but missed
+> the bpftool, which leads to bpftool prog autoattach broken as follows:
+>
+>   $ bpftool prog load spi-xfer-r1v1.o /sys/fs/bpf/test autoattach
+>   Program spi_xfer_r1v1 does not support autoattach, falling back to pinning
+>
+> This patch fix bpftool to set program type only if it differs.
+>
+
+**[v1: BPF: replace no-need function call with saved value](http://lore.kernel.org/bpf/20230407064837.32015-1-zhongjun@uniontech.com/)**
+
+> The var 'is_priv' is already there, needn't call bpf_capable()
+> again.
+> Applying this patch, to refine the codes making it robust and optimal.
+>
+
+**[v1: BPF: properly precedence of exclusive attr flags](http://lore.kernel.org/bpf/20230407054235.31726-1-zhongjun@uniontech.com/)**
+
+> BPF_F_STRICT_ALIGNMENT and BPF_F_ANY_ALIGNMENT are exclusive
+> flags. Intuitively the strict one should take higher precedence.
+> Applying this patch, make semantics of flags more properly.
+>
+
+**[v1: BPF: replace low-entropy member with macro](http://lore.kernel.org/bpf/20230407033418.2295-1-zhongjun@uniontech.com/)**
+
+> The member orig_idx is a low-entropy once-init invariable data
+> member. It can be replace by a series of macros.
+> Replace this member by macros can save memory and cpu-time.
+>
+
+**[v4: bpf-next: BPF verifier rotating log](http://lore.kernel.org/bpf/20230406234205.323208-1-andrii@kernel.org/)**
+
+> This patch set changes BPF verifier log behavior to behave as a rotating log,
+> by default. If user-supplied log buffer is big enough to contain entire
+> verifier log output, there is no effective difference. But where previously
+> user supplied too small log buffer and would get -ENOSPC error result and the
+> beginning part of the verifier log, now there will be no error and user will
+> get ending part of verifier log filling up user-supplied log buffer.  Which
+> is, in absolute majority of cases, is exactly what's useful, relevant, and
+> what users want and need, as the ending of the verifier log is containing
+> details of verifier failure and relevant state that got us to that failure. So
+> this rotating mode is made default, but for some niche advanced debugging
+> scenarios it's possible to request old behavior by specifying additional
+> BPF_LOG_FIXED (8) flag.
+>
+
+**[v2: bpf-next: bpf: Improve verifier for cond_op and spilled loop index variables](http://lore.kernel.org/bpf/20230406164450.1044952-1-yhs@fb.com/)**
+
+> LLVM commit [1] introduced hoistMinMax optimization like
+>   (i < VIRTIO_MAX_SGS) && (i < out_sgs)
+> to
+>   upper = MIN(VIRTIO_MAX_SGS, out_sgs)
+>   ... i < upper ...
+> and caused the verification failure. Commit [2] workarounded the issue by
+> adding some bpf assembly code to prohibit the above optimization.
+> This patch improved verifier such that verification can succeed without
+> the above workaround.
+>
+
+**[v4: bpf-next: xsk: Support UMEM chunk_size > PAGE_SIZE](http://lore.kernel.org/bpf/20230406131806.51332-1-kal.conley@dectris.com/)**
+
+> The main purpose of this patchset is to add AF_XDP support for UMEM
+> chunk sizes > PAGE_SIZE. This is enabled for UMEMs backed by HugeTLB
+> pages.
+>
+
+**[v1: powerpc/bpf: populate extable entries only during the last pass](http://lore.kernel.org/bpf/20230406073519.75059-1-hbathini@linux.ibm.com/)**
+
+> Since commit 85e031154c7c ("powerpc/bpf: Perform complete extra passes
+> to update addresses"), two additional passes are performed to avoid
+> space and CPU time wastage on powerpc. But these extra passes led to
+> WARN_ON_ONCE() hits in bpf_add_extable_entry(). Fix it by not adding
+> extable entries during the extra pass.
+>
+
+**[v1: BPF: make verifier 'misconfigured' errors more meaningful](http://lore.kernel.org/bpf/20230406014351.8984-1-zhongjun@uniontech.com/)**
+
+> There are too many so-called 'misconfigured' errors potentially
+> feed back to user-space, that make it very hard to judge on
+> a glance the reason a verification failure occurred.
+> This patch make those similar error outputs more sensitive and readible.
+>
+
+**[v1: Dynptr Verifier Adjustments](http://lore.kernel.org/bpf/20230406004018.1439952-1-drosen@google.com/)**
+
+> These patches relax a few verifier requirements around dynptrs.
+>
+> I was unable to test the patch in 0003 due to unrelated issues compiling the
+> bpf selftests, but did run an equivalent local test program.
+>
+
+**[v6: bpf-next: bpf: Support 64-bit pointers to kfuncs](http://lore.kernel.org/bpf/20230405213453.49756-1-iii@linux.ibm.com/)**
+
+> test_ksyms_module fails to emit a kfunc call targeting a module on
+> s390x, because the verifier stores the difference between kfunc
+> address and __bpf_call_base in bpf_insn.imm, which is s32, and modules
+> are roughly (1 << 42) bytes away from the kernel on s390x.
+>
+> Fix by keeping BTF id in bpf_insn.imm for BPF_PSEUDO_KFUNC_CALLs,
+> and storing the absolute address in bpf_kfunc_desc.
+>
+
+**[v2: bpf: selftests/bpf: Wait for receive in cg_storage_multi test](http://lore.kernel.org/bpf/20230405193354.1956209-1-zhuyifei@google.com/)**
+
+> In some cases the loopback latency might be large enough, causing
+> the assertion on invocations to be run before ingress prog getting
+> executed. The assertion would fail and the test would flake.
+>
+
+**[v6: Add ftrace direct call for arm64](http://lore.kernel.org/bpf/20230405180250.2046566-1-revest@chromium.org/)**
+
+> This series adds ftrace direct call support to arm64.
+> This makes BPF tracing programs (fentry/fexit/fmod_ret/lsm) work on arm64.
+>
+> It is meant to be taken by the arm64 tree but it depends on the
+> trace-direct-v6.3-rc3 tag of the linux-trace tree:
+>   git://git.kernel.org/pub/scm/linux/kernel/git/trace/linux-trace.git
+> That tag was created by Steven Rostedt so the arm64 tree can pull the prior work
+> this depends on. [1]
+>
+
+**[v1: bpf-next: bpf: add netfilter program type](http://lore.kernel.org/bpf/20230405161116.13565-1-fw@strlen.de/)**
+
+> Add minimal support to hook bpf programs to netfilter hooks, e.g.
+> PREROUTING or FORWARD.
+>
+> For this the most relevant parts for registering a netfilter
+> hook via the in-kernel api are exposed to userspace via bpf_link.
+>
+
+**[v3: bpf-next: bpftool: Add inline annotations when dumping program CFGs](http://lore.kernel.org/bpf/20230405132120.59886-1-quentin@isovalent.com/)**
+
+> This set contains some improvements for bpftool's "visual" program dump
+> option, which produces the control flow graph in a DOT format. The main
+> objective is to add support for inline annotations on such graphs, so that
+> we can have the C source code for the program showing up alongside the
+> instructions, when available. The last commits also make it possible to
+> display the line numbers or the bare opcodes in the graph, as supported by
+> regular program dumps.
+>
+
+**[v1: bpf-next: selftests: xsk: Disable IPv6 on VETH1](http://lore.kernel.org/bpf/20230405082905.6303-1-kal.conley@dectris.com/)**
+
+> This change fixes flakiness in the BIDIRECTIONAL test:
+>
+>     # [is_pkt_valid] expected length [60], got length [90]
+>     not ok 1 FAIL: SKB BUSY-POLL BIDIRECTIONAL
+>
+> When IPv6 is enabled, the interface will periodically send MLDv1 and
+> MLDv2 packets. These packets can cause the BIDIRECTIONAL test to fail
+> since it uses VETH0 for RX.
+>
+
+**[v1: bpf-next: Exceptions - 1/2](http://lore.kernel.org/bpf/20230405004239.1375399-1-memxor@gmail.com/)**
+
+> This series implements the bare minimum support for basic BPF
+> exceptions. This is a feature to allow programs to simply throw a
+> valueless exception within a BPF program to abort its execution.
+> Automatic cleanup of held resources and generation of landing pads to
+> unwind program state will be done in the part 2 set.
+>
+
+**[v1: bpf-next: bpf: Add a kfunc filter function to 'struct btf_kfunc_id_set'.](http://lore.kernel.org/bpf/20230404060959.2259448-1-martin.lau@linux.dev/)**
+
+> This set (https://lore.kernel.org/bpf/https://lore.kernel.org/bpf/500d452b-f9d5-d01f-d365-2949c4fd37ab@linux.dev/)
+> needs to limit bpf_sock_destroy kfunc to BPF_TRACE_ITER.
+> In the earlier reply, I thought of adding a BTF_KFUNC_HOOK_TRACING_ITER.
+>
+
+**[v1: bpf-next: bpf: Follow up to RCU enforcement in the verifier.](http://lore.kernel.org/bpf/20230404045029.82870-1-alexei.starovoitov@gmail.com/)**
+
+> The patch set is addressing a fallout from
+> commit 6fcd486b3a0a ("bpf: Refactor RCU enforcement in the verifier.")
+> It was too aggressive with PTR_UNTRUSTED marks.
+> Patches 1-6 are cleanup and adding verifier smartness to address real
+> use cases in bpf programs that broke with too aggressive PTR_UNTRUSTED.
+> The partial revert is done in patch 7 anyway.
+>
+
+### 周边技术动态
+
+#### Qemu
+
+**[v1: target/riscv: Mask the implicitly enabled extensions in isa_string based on priv version](http://lore.kernel.org/qemu-devel/20230407033014.40901-1-liweiwei@iscas.ac.cn/)**
+
+> Using implicitly enabled extensions such as Zca/Zcf/Zcd instead of their
+> super extensions can simplify the extension related check. However, they
+> may have higher priv version than their super extensions. So we should mask
+> them in the isa_string based on priv version to make them invisible to user
+> if the specified priv version is lower than their minimal priv version.
+>
+
+**[v4: hw/riscv: Add ACT related support](http://lore.kernel.org/qemu-devel/20230405095720.75848-1-liweiwei@iscas.ac.cn/)**
+
+> ACT tests play an important role in riscv tests. This patch tries to
+> add related support to run ACT tests.
+>
+> The port is available here:
+> https://github.com/plctlab/plct-qemu/tree/plct-act-upstream-v2
+>
+
+**[riscv: g_assert for NULL predicate?](http://lore.kernel.org/qemu-devel/e9de7676-b669-4f4e-e3e0-e57fb58b7bd7@intel.com/)**
+
+> Recent commit 0ee342256af92 switches to g_assert() for the predicate()
+> NULL check from returning RISCV_EXCP_ILLEGAL_INST. Qemu doesn't have
+> predicate() for un-allocated CSRs, then a buggy userspace application
+> reads CSR such as 0x4 causes qemu to exit, I don't think it's expected.
+>
+>   .global _start
+>
+>   .text
+>   _start:
+>       csrr t3, 0x4
+>
+
+#### U-Boot
+
+**[v1: riscv: Correct a comment in io.h](http://lore.kernel.org/u-boot/20230403033732.2812219-1-bmeng@tinylab.org/)**
+
+> Replace NDS32 with RISC-V in the comments.
+>
+
+**[v1: riscv: Add a 64-bit image type](http://lore.kernel.org/u-boot/20230402202813.2341959-1-sjg@chromium.org/)**
+
+> At present it is not possible to know whether an image can be booted by
+> a 32- or 64-bit bootloader. This means that U-Boot may attempt to boot
+> the wrong image. This may cause a crash which might be hard to debug.
+>
+
