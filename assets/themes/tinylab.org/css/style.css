@@ -138,7 +138,7 @@ blockquote p {
 }
 
 div.weekly ul li a {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 div.weekly ul li {
@@ -152,15 +152,16 @@ div.weekly ul li {
 }
 
 div.weekly blockquote {
-    margin-left: 1.3em;
+    margin-left: 0em;
+    padding: 0 1em;
+    color: #6a737d;
+    border-left: 0.25em solid #dfe2e5;
 }
-div.weekly blockquote p {
-    padding-left: 0;
-    color: #53575f;
-}
+
 div.weekly p {
-    text-indent: 1.16em;
+    text-indent: 0em;
 }
+
 div.reward-button {
     font-size: 28px;
     line-height: 58px;
@@ -194,15 +195,7 @@ mark {
     font-weight: 500
 }
 ahead {
-    padding: 1px;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-right: 5px;
-
-    border: 1px dotted #dcdee0;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
+    padding: 0px;
 }
 del {
     text-decoration: line-through
