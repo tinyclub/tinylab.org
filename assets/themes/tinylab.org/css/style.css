@@ -102,13 +102,13 @@ q:after {
     content: none
 }
 blockquote {
-    border-left: 2px dotted #dcdee0;
-    padding-left: 1.03em;
-    padding-right: 1.03em;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #666
+    padding: 0 1em;
+    padding-left: 1.03em;
+    color: #6a737d;
+    border-left: 2px solid #dfe2e5;
 }
 blockquote>:first-child {
     margin-top: 10px
@@ -135,31 +135,6 @@ blockquote p {
     /* ie */
 
     overflow: hidden
-}
-
-div.weekly ul li a {
-    text-decoration: underline;
-}
-
-div.weekly ul li {
-    list-style-type: circle;
-    margin-left: -1em;
-    padding-left: 0;
-    padding-top: 1.16em;
-    font-size: 110%;
-    /*font-weight: bold;*/
-    /*color: #0066aa;*/
-}
-
-div.weekly blockquote {
-    margin-left: 0em;
-    padding: 0 1em;
-    color: #6a737d;
-    border-left: 0.25em solid #dfe2e5;
-}
-
-div.weekly p {
-    text-indent: 0em;
 }
 
 div.reward-button {
