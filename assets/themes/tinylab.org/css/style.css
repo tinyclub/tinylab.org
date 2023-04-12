@@ -1188,9 +1188,9 @@ short_prev_next {
 
 @media (max-width: 999px) {
     body {
-        -moz-transform: scale(0.8);
+        -moz-transform: scale(0.9);
         -moz-transform-origin: center top 0;
-        zoom: 0.8
+        zoom: 0.9
     }
     #top-wrap,
     #top-wrap-inner,
