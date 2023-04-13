@@ -133,7 +133,7 @@ if [ "x$article_type" == "x2" ]; then
 
   title_suffix="$(echo $latest_news | sed -e 's/.*： *//g')"
   title_number="$(echo $title_suffix | tr -d -c '0-9' )"
-  title="$title：$title_suffix"
+  title="${title}${title_suffix}"
 
   permalink=rvlwn-$title_number
   full_permalink="${site_url}/${permalink}/"

@@ -1206,11 +1206,29 @@ short_prev_next {
         margin: 0 0 1em 1em
     }
     article header h1 {
-        font-size: 100%;
+        font-size: 105%;
         white-space: normal;
+    }
+    article header h2 {
+        font-size: 103%;
     }
     #home header h2 {
         white-space: normal;
+    }
+    article section h1 {
+        font-size: 105%
+    }
+    article section h2 {
+        font-size: 102%
+    }
+    article section h3 {
+        font-size: 99%
+    }
+    article section h4 {
+        font-size: 96%
+    }
+    article section h5 {
+        font-size: 93%
     }
     article header time {
         font-size: 60%;
