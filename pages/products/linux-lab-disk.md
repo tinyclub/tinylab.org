@@ -180,24 +180,30 @@ PC 端可以直接访问 [泰晓科技开源小店](https://shop155917374.taobao
     * 如果想在开启 Hyper-V 或 WSL2 的情况下通过 vmboot 引导 Linux Lab Disk，建议使用 VMware，而不是 VirtualBox，VirtualBox 目前对 Hyper-V 的兼容性还不太好
     * 当前验证的最低版本为 VMware Player 16，请确保升级到该版本或更新的版本
 
+- 在 Windows 下通过 VMware 并行启动时出现黑屏或者很慢？
+    * 第一种情况可能需要进入 BIOS 使能虚拟化技术相关选项，相关选项跟处理器型号有关。
+        * 如果开启后还存在问题，可能是处理器并不支持虚拟化技术。
+    * 第二种情况，请排查 USB Suspend 异常，可通过如下步骤禁用 `USB Selective Suspend`:
+        * `电源与睡眠设置 -> 编辑电源计划 -> 更改高级电源设置 ->`
+            * `USB设置 -> USB 选择性暂停设置 -> 使用电池 和 接通电源 -> 已禁用`。
+    * 第三种情况，请排查 “硬盘” 休眠异常，可通过如下步骤禁用硬盘休眠（Windows 11 用户注意检查该项）:
+        * `电源与睡眠设置 -> 编辑电源计划 -> 更改高级电源设置 ->`
+            * `硬盘 -> 在此时间后关闭硬盘 -> 使用电池 和 接通电源 -> 0`。
+        * 如果禁用后还不行，可能需要禁用系统休眠功能。
+    * 第四种情况，如果启动或者访问非常慢，请检查电池是否在充电状态，如果不在，请拔出并插入电源线，确保电池在充电状态。
+        * Windows 在纯电池供电状态下可能会降低某些外设的访问速度。
+
 ### VirtualBox 引导
 
 - [VirtualBox 下载地址](https://www.virtualbox.org/wiki/Downloads)
 
 - 在 Windows 下通过 VirtualBox 并行启动时出现黑屏或者很慢？
-    * 第一种情况同上，可能也需要进入 BIOS 使能虚拟化技术相关选项。
-    * 另外一种情况可能是您正在使用 Hyper-V 或 WSL2，由于 Hyper-V 或 WSL2 导致 VirtualBox 无法正常使用硬件虚拟化加速技术，所以此时需 [彻底关闭 hyperv 或 WSL2](https://www.jianshu.com/p/eef1aef63d54)。
+    * 一种情况可能是您正在使用 Hyper-V 或 WSL2，由于 Hyper-V 或 WSL2 导致 VirtualBox 无法正常使用硬件虚拟化加速技术，所以此时需 [彻底关闭 hyperv 或 WSL2](https://www.jianshu.com/p/eef1aef63d54)。
         * 如果想同时使用 Hyper-V 或 WSL2，请使用 VMware，而不是 VirtualBox，最新版的 Linux Lab Disk 已支持 VMware for Windows
-    * 第三种情况，请排查 USB Suspend 异常，可通过如下步骤禁用 `USB Selective Suspend`:
-        * `电源与睡眠设置 -> 编辑电源计划 -> 更改高级电源设置 ->`
-            * `USB设置 -> USB 选择性暂停设置 -> 使用电池 和 接通电源 -> 已禁用`。
-    * 第四种情况，请排查 “硬盘” 休眠异常，可通过如下步骤禁用硬盘休眠（Windows 11 用户注意检查该项）:
-        * `电源与睡眠设置 -> 编辑电源计划 -> 更改高级电源设置 ->`
-            * `硬盘 -> 在此时间后关闭硬盘 -> 使用电池 和 接通电源 -> 0`。
-        * 如果禁用后还不行，可能需要禁用系统休眠功能。
+    * 其他情况同 VMware，请看上一节
 
 - 在 Linux 下通过 VirtualBox 并行启动时出现黑屏或者很慢？
-    * 这种情况可能需要进入 BIOS 使能虚拟化技术相关选项，相关选项跟处理器型号有关；如果开启后还存在问题，可能是处理器并不支持虚拟化技术。
+    * 这种情况同上，可能也需要进入 BIOS 使能虚拟化技术相关选项。
     * 另外一种情况，请禁用 USB Suspend，可以在内核参数中传递 `usbcore.autosuspend=-1`：
         * 在 `/etc/default/grub` 中的 `GRUB_CMDLINE_LINUX_DEFAULT` 中加入上述参数，并更新 Grub 配置：`sudo update-grub`
 
