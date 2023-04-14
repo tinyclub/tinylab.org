@@ -73,7 +73,7 @@ Linux 本身已经有硬实时的方案，比如来自风河的 RT Linux，或�
  [4]: /wp-content/uploads/2015/07/loongson-2f-preempt-rt-latency.gif
  [5]: https://www.osadl.org/Latency-plot-of-system-in-rack-2-slot.qa-latencyplot-r2s4.0.html?latencies=&showno=&slider=159
  [6]: https://www.osadl.org
- [7]: http://www.docin.com/p-170582115.html
+ [7]: https://tinylab.org/wp-content/uploads/2015/11/linux-preempt-rt-research-and-practice.pdf
  [8]: http://lwn.net/images/conf/rtlws11/papers/proc/p14.pdf
  [9]: /tinydraw/
  [10]: http://weibo.com/tinylaborg
