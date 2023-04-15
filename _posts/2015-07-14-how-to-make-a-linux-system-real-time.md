@@ -44,13 +44,13 @@ Linux 本身已经有硬实时的方案，比如来自风河的 RT Linux，或�
 
 原图地址：[Latency plot of Loongson Real Time Linux system in OSADL][5]
 
-*注*：这个机器（龙芯 2F 盒子）是笔者的奥地利导师 09 年带到 [OSADL][6] 的，放在那里跑了几年，实时性一直都很稳定，笔者当时移植最早的一版是 `linux-2.6.26.8-rt16`，现在都支持：`Linux 3.12.24-rt38` 了。OSADL 也是当前 Preempt-RT 的官方维护机构。
+*注*：这个机器（龙芯 2F 盒子）是笔者的奥地利导师 09 年带到欧洲某实验室的，放在那里跑了几年，实时性一直都很稳定，笔者当时移植最早的一版是 `linux-2.6.26.8-rt16`，现在都支持：`Linux 3.12.24-rt38` 了。
 
 如果要求再低一些，用内核里头的其他抢占选项就可以。
 
-然后就是各种优化，包括驱动（irq, preempt disable), spin lock 等使用，中断函数线程化，mdelay 替换为 usleep_range() 等，详细的可以参考我几年前写的论文吧：[Research and Practice on Preempt-RT Patch of Linux][7] 和 [Porting RT-preempt to Loongson2F][8]。论文是 09 年底，10 年初写的，5 年间很多游离的 Patch 应该都已经进入了 Linux 主线，当然，还有更多新特性在持续开发和维护。
+然后就是各种优化，包括驱动（irq, preempt disable), spin lock 等使用，中断函数线程化，mdelay 优化等。
 
-优化时需要用到很多工具，比如 Ftrace, Perf, Cyclictest, [Oscilloscope][9] 等。
+优化时需要用到很多工具，比如 Ftrace, Perf, Cyclictest, Oscilloscope 等。
 
 需要提到的是，除了系统以外，硬件本身的低延迟设计、可靠性设计等也会严重影响系统的实时性，所以在选择方案时一定要兼顾考虑这部分，比如说 ARM Cortex A/R/M 三系中的 R 就是专为高端嵌入式实时系统设计的，比如说在中断行为方面做了优化。这里不做深度展开。
 
@@ -58,15 +58,8 @@ Linux 本身已经有硬实时的方案，比如来自风河的 RT Linux，或�
 
 ## 相关资料
 
-  * [OSADL 实时抢占内核补丁/工具下载地址][11]
   * [Linux 官方 Real Time Wiki][12]
   * [嵌入式 Linux Wiki 中的 Real Time 部分][13]
-  * [实时抢占补丁研究与实践][7]
-  * [Porting RT-preempt to Loongson2F][8]
-  * [Preempt RT 4 Loongson 项目首页][14]
-
-
-
 
 
  [2]: https://tinylab.org
