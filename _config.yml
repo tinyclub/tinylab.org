@@ -5,6 +5,9 @@ permalink: /:title/
 baseurl: /
 encoding: utf-8
 
+# Compile future articles, see https://jekyllrb.com/docs/configuration/options/
+future: true
+
 markdown: kramdown
 # markdown: redcarpet
 # redcarpet:
