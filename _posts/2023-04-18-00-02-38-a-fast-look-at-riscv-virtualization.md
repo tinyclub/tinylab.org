@@ -1,7 +1,7 @@
 ---
 layout: post
 author: 'Liu Zhao'
-title: '从嵌入式系统视角初次展望 RISC-V 虚拟化（A First Look at RISC-V Virtualization from an Embedded Systems Perspective）'
+title: '从嵌入式系统视角初次展望 RISC-V 虚拟化'
 draft: false
 plugin: ''
 album: 'RISC-V Linux'
