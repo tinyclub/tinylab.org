@@ -25,7 +25,7 @@ echo
 read -p "Please choose the article type? " article_type
 if [ "x$article_type" == "x1" ]; then
   articles_dir=articles
-  README=$README
+  README=README.md
   layout=post
 else
   articles_dir=news
