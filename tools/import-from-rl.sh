@@ -138,6 +138,7 @@ if [ "x$article_type" == "x2" ]; then
   permalink=rvlwn-$title_number
   full_permalink="${site_url}/${permalink}/"
   _target_article=$TOP_DIR/_posts/${date_string}-rvlwn-${title_number}.md
+  orig_article=$permalink.md
   desc="$title"
 fi
 
