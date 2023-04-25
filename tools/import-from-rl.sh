@@ -182,7 +182,12 @@ layout: $layout
 author: '$_author'
 title: '$title'
 draft: false
-plugin: '$plugin'
+EOF
+
+[ x"$articles_dir" = x"news" ] && echo "group: 'news'" >> $_target_article
+[ -n "$plugin" ] && echo "plugin: '$plugin'" >> $_target_article
+
+cat <<EOF >> $_target_article
 album: 'RISC-V Linux'
 license: 'cc-by-nc-nd-4.0'
 permalink: /$permalink/
