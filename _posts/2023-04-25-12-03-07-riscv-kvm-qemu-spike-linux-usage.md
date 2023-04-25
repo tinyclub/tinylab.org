@@ -1,6 +1,6 @@
 ---
 layout: post
-author: 'Liming Wang'
+author: 'XiaKai Pan'
 title: '用 QEMU/Spike+KVM 运行 Host/Guest Linux'
 draft: false
 plugin: ''
