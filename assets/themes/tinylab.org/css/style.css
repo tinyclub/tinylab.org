@@ -1203,7 +1203,7 @@ short_prev_next {
     }
     ul,
     ol {
-        margin: 0 0 1em 1em
+        margin: 0 0 1em 1.26em
     }
     article header h1 {
         font-size: 105%;
