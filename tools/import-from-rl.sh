@@ -239,7 +239,7 @@ cat <<EOF >> $_target_article
 > 时间：$time_info<br/>
 > 编辑：晓依<br/>
 > 仓库：[RISC-V Linux 内核技术调研活动](https://gitee.com/tinylab/riscv-linux)<br/>
-> 赞助：中科院软件所 PLCT 实验室
+> 赞助：PLCT Lab, ISCAS
 EOF
 
   cat $article | sed -n -e "/$latest_news/,/$last_news/p" | grep -E -v "$latest_news|$last_news" | sed -e 's/^#//g' >> $_target_article
