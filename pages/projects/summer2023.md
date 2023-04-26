@@ -317,3 +317,26 @@ Summer2023 项目开发周期为 3 个月，从 7 月 1 日到 09 月 30 日，�
     - tinyget: <https://gitee.com/tinylab/tinyget>
     - Tinylab.org: <https://gitee.com/tinylab/tinylab.org>
     - RISC-V Linux: <https://gitee.com/tinylab/riscv-linux>
+
+### 项目九
+
+1. 项目标题：为 Linux Lab 提供在线代码阅读支持
+2. 项目描述：本项目为 Linux Lab 内核编译系统添加一组选项，利用 LLVM 解析 Linux 源码并建立索引，精准追踪函数的跳转、符号的链接，并形成HTML前端页面，提供良好的阅读界面。
+3. 项目难度：进阶
+4. 项目社区导师：
+5. 导师联系方式：
+6. 项目产出要求：
+    - 可以对在不编译源码的情况下进行启发式索引
+    - 在编译源码后使用 `compile_commands.json` 进行精准索引
+    - 形成前端页面并集成进 Linux Lab
+    - 撰写使用文档以及开发手册
+7. 项目技术要求：
+    - Linux 基本操作
+    - 熟悉 Linux Lab 并在此基础上开发
+    - 熟悉 Makefile
+    - 熟悉 Bash Script 开发
+    - 熟悉 LLVM/Clang 环境配置
+    - 熟悉 Web 前端环境部署
+8. 相关的开源软件仓库列表：
+    - Cloud Lab: https://gitee.com/tinylab/cloud-lab
+    - Linux Lab: https://gitee.com/tinylab/linux-lab
