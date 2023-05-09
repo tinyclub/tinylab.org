@@ -1,7 +1,7 @@
 ---
 layout: post
 author: 'XiaKai Pan'
-title: '用 QEMU/Spike+KVM 运行 Host/Guest Linux'
+title: '用 QEMU/Spike+KVM 运行 RISC-V Host/Guest Linux'
 draft: false
 plugin: ''
 album: 'RISC-V Linux'
