@@ -1,6 +1,6 @@
 ---
 layout: post
-author: 'Liming Wang'
+author: 'XiaKai Pan'
 title: 'RISC-V 虚拟化模式切换简析'
 draft: false
 plugin: 'mermaid'
