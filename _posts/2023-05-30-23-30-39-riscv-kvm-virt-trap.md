@@ -1,6 +1,6 @@
 ---
 layout: post
-author: 'Liming Wang'
+author: 'XiaKai Pan'
 title: 'RISC-V 架构 H 扩展中的 Trap 处理'
 draft: false
 album: 'RISC-V Linux'
