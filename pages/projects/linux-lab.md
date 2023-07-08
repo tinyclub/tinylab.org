@@ -24,8 +24,8 @@ tags:
 该项目致力于快速构建一个基于 Qemu 的 Linux 内核开发环境。
 
   * 使用文档：[README_zh.md][2]
-      * [Linux Lab v1.0 中文手册](https://tinylab.org/pdfs/linux-lab-v1.0-manual-zh.pdf)
-      * [Linux Lab v1.0 英文手册](https://tinylab.org/pdfs/linux-lab-v1.0-manual-en.pdf)
+      * [Linux Lab v1.2 中文手册](https://tinylab.org/pdfs/linux-lab-v1.2-manual-zh.pdf)
+      * [Linux Lab v1.2 英文手册](https://tinylab.org/pdfs/linux-lab-v1.2-manual-en.pdf)
 
   * 视频教程
       * [Linux Lab 公开课](https://www.cctalk.com/m/group/88948325)
