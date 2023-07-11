@@ -1,12 +1,12 @@
 ---
 layout: post
 author: 'BossWangST'
-title: 'RISC-V 指令集'
+title: 'RISC-V CPU 设计（1）：RISC-V 指令集'
 draft: false
 album: 'RISC-V Linux'
 license: 'cc-by-nc-nd-4.0'
 permalink: /cpu-design-part1-riscv-instruction/
-description: 'RISC-V 指令集'
+description: 'RISC-V CPU 设计（1）：RISC-V 指令集'
 category:
   - 开源项目
   - Risc-V
