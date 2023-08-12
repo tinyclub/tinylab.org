@@ -91,7 +91,8 @@ date_string=$(date +"%Y-%m-%d-%H-%M-%S")
 target_article=${date_string}${orig_article}
 articles_path=https://gitee.com/tinylab/riscv-linux/blob/master/articles/
 subimages_dir=$(egrep -m1 "\]\(./images/|\]\(/images/|\]\(images/" $article | sed -e 's%.*](/images/\([^/]*\)/.*%\1%' | sed -e 's%.*](./images/\([^/]*\)/.*%\1%' | sed -e 's%.*](images/\([^/]*\)/.*%\1%')
-target_images=https://gitee.com/tinylab/riscv-linux/raw/master/articles/images/
+#target_images=https://gitee.com/tinylab/riscv-linux/raw/master/articles/images/
+target_images=https://tinylab.org/wp-content/uploads/2022/03/riscv-linux/images/
 _target_article=$(mktemp -d)/$target_article
 
 echo "LOG: Copy article from $rl_dir to $TOP_DIR/_posts/"
