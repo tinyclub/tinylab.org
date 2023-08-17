@@ -31,7 +31,7 @@ TinyLinux project was proposed by 'Zhangjin Wu' in 2010, it was firstly develope
 - Small GUI Program: < 1M
     - Status: 628K 3D Wave
 
-- Small Memory Cost: < 16M
+- Small Memory Cost: < 8M
 
 ## Proposal
 
