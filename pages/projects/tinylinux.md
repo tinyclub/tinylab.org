@@ -1,6 +1,6 @@
 ---
-title: 'TinyLinux: Linux 内核裁剪'
-tagline: '2010 年 eLinux.org 项目，含 GC Sections 等技术'
+title: 'TinyLinux: Linux 小型化项目'
+tagline: '由本站创始人发起于 2010 年的开源项目，已成功移植到 RISC-V 架构'
 author: Wu Zhangjin
 layout: page
 permalink: /tinylinux/
@@ -10,6 +10,7 @@ categories:
   - 开源项目
   - 系统裁剪
 tags:
+  - RISC-V
   - Linux
   - TinyLinux
   - 内核裁剪
@@ -17,7 +18,20 @@ tags:
 
 ## Introduction
 
-Plan to restart the whole project on Android emulator, see our previous work below:
+TinyLinux project was proposed by 'Zhangjin Wu' in 2010, it was firstly developed for MIPS architecture, currently, it is porting to RISC-V, the development is very active:
+
+## Targets & Status
+
+- Small Kernel Image: < 512K
+    - Status: 334k Kernel Image on RISC-V 64
+
+- Small Rootfs/Application: < 512K
+    - Status: 24K rootfs
+
+- Small GUI Program: < 1M
+    - Status: 628K 3D Wave
+
+- Small Memory Cost: < 16M
 
 ## Proposal
 
