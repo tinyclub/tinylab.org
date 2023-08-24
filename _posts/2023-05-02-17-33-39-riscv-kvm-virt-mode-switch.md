@@ -232,8 +232,8 @@ V=1 时，`vsstatus` 用于替代 `sstatus`，所以通常针对 `sstatus` 的�
 
 | 功能                                                                 | ISA 改动（相较于 S 扩展）                                                 |
 |----------------------------------------------------------------------|---------------------------------------------------------------------------|
-| 地址转换：GPA (guest physical address) $\to$ SA (supervisor address) | 用于支持 guest OS 运行在 VS-mode (Virtual Supervisor mode) 的指令以及 CSR |
-| hypervisor 运行                                                      | 用于控制地址转换新阶段的指令以及 CSR                                      |
+| 地址转换：GPA (guest physical address) $\to$ SA (supervisor address) | 用于控制地址转换新阶段的指令以及 CSR                                      |
+| hypervisor 运行                                                      | 用于支持 guest OS 运行在 VS-mode (Virtual Supervisor mode) 的指令以及 CSR |
 
 第三，可以运行在 S-mode 的 OS 均可以无需修改就可在 HS-mode 和 VS-mode 下运行。
 
