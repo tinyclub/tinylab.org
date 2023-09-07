@@ -1,6 +1,11 @@
 <div>
 
 {% if true %}
+<a style="line-height: 150%" title="泰晓社区正在开讲 RISC-V Linux 系统开发公开课" href="https://space.bilibili.com/687228362" target="_blank"><img src="/images/courses/riscv-linux-sys-course-v1.jpg" style="max-height:600px; max-width:90%" />
+<br/>还在观望？5 小时转进 RISC-V 世界</a>
+{% endif %}
+
+{% if false %}
 <a style="line-height: 150%" title="某宝检索 “泰晓 Linux”，免安装使用随身 Linux Lab，已支持 Ubuntu 20.04/22.04, Mint 21.04, Fedora 37, Deepin 20.8, Manjaro, Kali Linux 和 Ezgo 14，即插即用，高效率做 Linux 内核实验与开发，也可以当普通 Linux 系统使用" href="https://shop155917374.taobao.com/" target="_blank"><img src="/images/disks/linux-lab-disk-manjaro-linux-lab-v1.2.jpg" style="max-height:600px; max-width:90%" />
 <br/>泰晓 Linux 实验盘，不用安装，即插即跑</a>
 {% endif %}
