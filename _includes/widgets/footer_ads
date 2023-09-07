@@ -2,7 +2,7 @@
 <div id="footer_layer" style="text-align: center; max-width='100%';">
 
 {% if true %}
-<a title="" href="https://space.bilibili.com/687228362" target="_blank"><img src="/images/shop/tinylab.bili.jpg" width="450px">
+<a title="" href="https://space.bilibili.com/687228362" target="_blank"><img src="/images/shop/tinylab.bili.jpg" style="width:450px;max-width:100%">
 <br/>即插即跑，一分钟用上 Linux</a>
 </a>
 {% endif %}
