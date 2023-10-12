@@ -137,9 +137,13 @@ Linux 即插即跑 Linux Lab Disk 动图：
 
 ## 购买方式
 
-PC 端可以直接访问 [泰晓科技开源小店](https://shop155917374.taobao.com/) 选购。
+- PC 端可以直接访问 [泰晓科技开源小店](https://shop155917374.taobao.com/) 选购。
 
-**手机端可以直接在淘宝检索 “泰晓 Linux” 关键字选购。**
+- **手机端可以直接在淘宝检索 “泰晓 Linux” 关键字选购。**
+
+- **B 站用户可以进 [泰晓科技](https://space.bilibili.com/687228362) 账号的工房选购。**
+
+![即插即跑 Linux 系统](/images/shop/tinylab.bili.jpg)
 
 ## 常见问答/FAQs
 
