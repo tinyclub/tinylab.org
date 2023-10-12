@@ -120,7 +120,7 @@ article_ads="学习 RISC-V Linux，就用泰晓社区自研即插即跑 RISC-V L
 # article info
 [ -z "$key" ] && key="$(echo $info | sed -e 's/riscv/RISC-V/g;s/sbi/SBI/g;s/\(.*\)part.*/\1/g')"
 key="$(echo $key | tr '[A-Z]' '[a-z]' | sed -e 's/\([ ]\)*\([a-z\]\)\([^ ]*\)/\1\U\2\L\3/g')"
-article_info="本周继续连载 $key 系列文章，记得收藏分享+关注，写文章领补贴：gitee.com/tinylab/riscv-linux"
+article_info="本周继续连载 $key 系列文章，记得收藏分享+关注，合集：https://tinylab.org/riscv-linux"
 continue_info="左下角 **阅读原文** 可访问外链。都看到这里了，就随手在看+分享一下吧 ;-)"
 service_permalink="https://tinylab.org/ruma.tech"
 
