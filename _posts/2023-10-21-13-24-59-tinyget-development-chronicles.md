@@ -2,7 +2,7 @@
 layout: post
 author: '孔家东苑'
 title: "Tinyget 开发杂记"
-draft: true
+draft: false
 album: "Tinyget 开发记录"
 license: "cc-by-nc-nd-4.0"
 permalink: /tinyget-development-chronicles/
