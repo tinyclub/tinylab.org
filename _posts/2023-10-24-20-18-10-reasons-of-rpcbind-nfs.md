@@ -16,12 +16,12 @@ tags:
   - nfs
 ---
 
-> Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.2-rc2 - [tounix spaces toc codeblock codeinline]<br/>
-> Author:    kevin <1292311636@qq.com><br/>
-> Date:      2023/09/29<br/>
-> Revisor:   ForrestNiu <><br/>
-> Project:   [Linux Lab](https://gitee.com/tinylab/linux-lab)<br/>
-> Proposal:  [在新版 Manjaro 中确保 Linux Lab 正常启动 rpcbind 和 nfs 服务](https://gitee.com/tinylab/cloud-lab/issues/I79Q6V)<br/>
+> Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.2-rc2 - [tounix spaces toc codeblock codeinline]
+> Author:    kevin <1292311636@qq.com>
+> Date:      2023/09/29
+> Revisor:   ForrestNiu
+> Project:   [Linux Lab](https://gitee.com/tinylab/linux-lab)
+> Proposal:  [在新版 Manjaro 中确保 Linux Lab 正常启动 rpcbind 和 nfs 服务](https://gitee.com/tinylab/cloud-lab/issues/I79Q6V)
 
 
 ## 背景

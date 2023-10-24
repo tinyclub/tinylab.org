@@ -1,7 +1,7 @@
 ---
 layout: post
 author: 'wcwfta'
-title: '最新 Manjaro 下，rpcbind 和 nfs 服务启动失败的解决方案'
+title: '最新 Manjaro 下，rpcbind 和 nfs 服务启动失败问题的解决方案'
 draft: false
 license: 'cc-by-nc-nd-4.0'
 permalink: /solve-rpcbind-nfs/
@@ -15,12 +15,13 @@ tags:
   - rpcbind
   - nfs
 ---
-> Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.2-rc2 - [spaces toc codeblock codeinline refs pangu autocorrect]<br/>
-> Author:    kevin <1292311636@qq.com><br/>
-> Date:      2023/09/30<br/>
-> Revisor:   walimis <><br/>
-> Project:   [Linux Lab](https://gitee.com/tinylab/linux-lab)<br/>
-> Proposal:  [在新版 Manjaro 中确保 Linux Lab 正常启动 rpcbind 和 nfs 服务](https://gitee.com/tinylab/cloud-lab/issues/I79Q6V)<br/>
+
+> Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.2-rc2 - [spaces toc codeblock codeinline refs pangu autocorrect]
+> Author:    kevin <1292311636@qq.com>
+> Date:      2023/09/30
+> Revisor:   walimis
+> Project:   [Linux Lab](https://gitee.com/tinylab/linux-lab)
+> Proposal:  [在新版 Manjaro 中确保 Linux Lab 正常启动 rpcbind 和 nfs 服务](https://gitee.com/tinylab/cloud-lab/issues/I79Q6V)
 
 
 ## 前言
@@ -51,7 +52,7 @@ info_print "Wait for lab launching ..."
 通过这样的修改再次重启并且启动 Linux Lab 后，就发现使用 `ulimit -n` 指令后值不再是 1073741816，而是我们设定好的值，然后我们再次使用 serivec 来启动 `rpcbind` 并且尝试着启动 `nfs`，最终发现两个服务均可以启动起来。
 但是显然，这是一个 “治标不治本” 的问题，此时我们并没有对问题函数进行修改，而是试图修改系统的设定值来规避问题函数的处理。那么接下来我们就要尝试着对问题函数进行一定的修改了。
 
-## 尝试修改_rpc_dtablesize() 函数
+## 尝试修改 _rpc_dtablesize() 函数
 
 在第一篇的时候，曾分析并定位到了问题函数 `_rpc_dtablesize()`，它来自 [libtirpc](https://sourceforge.net/projects/libtirpc/) 库：
 
@@ -123,8 +124,8 @@ int _rpc_dtablesize(void)
 
 ## 参考资料
 
-- [https://www.bilibili.com/video/BV1jX4y1q7Tg/?spm_id_from=333.999.0.0&vd_source=98ca4c9a44f12a8822f1725a4e5bf880][001]
-- [http://git.linux-nfs.org/?p=steved/libtirpc.git;a=commit;h=99f943123d2832cdd0f77c989d82cc8cba26e90b][002]
+- [QEMU 陈年老 Bug 的分析、修复与 Patch 提交实战 - 吴老师&蒙老师][001]
+- [libtirpc 代码仓库][002]
 
 
 [001]: https://www.bilibili.com/video/BV1jX4y1q7Tg/?spm_id_from=333.999.0.0&vd_source=98ca4c9a44f12a8822f1725a4e5bf880
