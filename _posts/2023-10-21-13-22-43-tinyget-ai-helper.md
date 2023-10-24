@@ -3,12 +3,10 @@ layout: post
 author: '孔家东苑'
 title: "Tinyget 人工智能助手开发记录"
 draft: true
-
 album: "Tinyget 开发记录"
-
 license: "cc-by-nc-nd-4.0"
 permalink: /tinyget-ai-helper/
-description: " 探讨在 Tinyget 开发过程中引入大型语言模型的相关技术 "
+description: "探讨在 Tinyget 开发过程中引入大型语言模型的相关技术"
 category:
   - Linux
 tags:
@@ -34,11 +32,11 @@ tags:
 
 [Llama 2 - Meta AI][001]
 
-有优秀的研究者为它进行了量化裁剪，并使用 C++语言开发了可以运行于大多数平台的精简版本 llama.cpp：
+有优秀的研究者为它进行了量化裁剪，并使用 C++ 语言开发了可以运行于大多数平台的精简版本 llama.cpp：
 
 [ggerganov/llama.cpp: Port of Facebook's LLaMA model in C/C++ (github.com)][002]
 
-但是在当下的算力水平下，llama.cpp 的推理速度仍然堪忧，即便是只有 7B 规模的模型，在 M2 Macbook Pro 下，推理速度也不超过 20 token/s。而且考虑到使用 linux 的很多终端都算力较弱，因此最终舍弃了此方案，仍采用 OpenAI 的在线模型。
+但是在当下的算力水平下，llama.cpp 的推理速度仍然堪忧，即便是只有 7B 规模的模型，在 M2 Macbook Pro 下，推理速度也不超过 20 token/s。而且考虑到使用 Linux 的很多终端都算力较弱，因此最终舍弃了此方案，仍采用 OpenAI 的在线模型。
 
 ## 接口简介
 
@@ -69,28 +67,28 @@ def list_models(self) -> bool:
 
 ```json
 [{
-    “created”: 1649358449,
-    “id”: “babbage”,
-    “object”: “model”,
-    “owned_by”: “openai”,
-    “parent”: null,
-    “permission”: [
+    "created": 1649358449,
+    "id": "babbage",
+    "object": "model",
+    "owned_by": "openai",
+    "parent": null,
+    "permission": [
         {
-            “allow_create_engine”: false,
-            “allow_fine_tuning”: false,
-            “allow_logprobs”: true,
-            “allow_sampling”: true,
-            “allow_search_indices”: false,
-            “allow_view”: true,
-            “created”: 1669085501,
-            “group”: null,
-            “id”: “modelperm-49FUp5v084tBB49tC4z8LPH5”,
-            “is_blocking”: false,
-            “object”: “model_permission”,
-            “organization”: “*”
+            "allow_create_engine": false,
+            "allow_fine_tuning": false,
+            "allow_logprobs": true,
+            "allow_sampling": true,
+            "allow_search_indices": false,
+            "allow_view": true,
+            "created": 1669085501,
+            "group": null,
+            "id": "modelperm-49FUp5v084tBB49tC4z8LPH5",
+            "is_blocking": false,
+            "object": "model_permission",
+            "organization": "*"
         }
     ],
-    “root”: “babbage”
+    "root": "babbage"
 },]
 ```
 

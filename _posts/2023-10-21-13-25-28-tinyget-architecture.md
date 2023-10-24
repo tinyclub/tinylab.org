@@ -3,12 +3,10 @@ layout: post
 author: '孔家东苑'
 title: "Tinyget 架构简介"
 draft: true
-# tagline: " 子标题，如果存在的话 "
 album: "Tinyget 开发记录"
-# group: " 默认为 original，也可选 translation, news, resume or jobs, 详见_data/groups.yml"
 license: "cc-by-nc-nd-4.0"
 permalink: /tinyget-architecture/
-description: "  介绍了 Tinyget 的设计思路和系统架构 "
+description: "介绍了 Tinyget 的设计思路和系统架构"
 category:
   - Linux
 tags:
@@ -16,6 +14,7 @@ tags:
 ---
 
 ## 总体结构
+
 TinyGet 目录结构如下：
 
 ```bash
@@ -50,7 +49,7 @@ Tinyget 的整体结构如下：
 
 ## interact 包
 
-interact 包主要用于处理交互，process.py 用于处理与底层的交互，ai_helper.py 用于处理与 OpenAI 服务器的交互。ai_helper 在本系列其他文章中已经有介绍，在此不再赘述，重点介绍一下 process.py。
+interact 包主要用于处理交互，`process.py` 用于处理与底层的交互，`ai_helper.py` 用于处理与 OpenAI 服务器的交互。`ai_helper` 在本系列其他文章中已经有介绍，在此不再赘述，重点介绍一下 `process.py`。
 
 ```python
 def spawn(args: Union[List[str], str], envp: dict = {}):
