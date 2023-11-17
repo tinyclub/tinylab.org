@@ -151,10 +151,10 @@ Linux 即插即跑 Linux Lab Disk 动图：
 
 ### 系统启动
 
-- Windows 的 BitLocker 全盘加密功能与实验盘存在兼容性问题，使用实验盘前请禁用 BitLocker
+- 使用实验盘前建议禁用 Windows 的 BitLocker 功能，如果未启用的话，请忽略
     * BitLocker 全盘加密功能可能会导致系统缓慢等问题，不建议启动
-    * BitLocker 无法同老版本（<= v2.9）VMBoot 的免关机重启等功能一起使用，开启后可能会导致 Windows 系统无法启动
-    * 使用 BitLocker 全盘加密实验盘的分区会破坏实验盘的基本功能
+    * 如果使用的是 <=v2.9 版本的 VMBoot，BitLocker 可能会导致 Windows 系统无法启动；>=v3.0 版本的 VMBoot 已兼容 BitLocker
+    * 请务必不要使用 BitLocker 加密实验盘的任意分区，BitLocker 可能会彻底破坏实验盘的基本功能
 
 - 修改 U 盘盘符后导致系统无法启动
     * 当前 Linux Lab Disk 不支持修改盘符、也禁止随意调整分区表等，否则系统可能无法启动
