@@ -151,6 +151,11 @@ Linux 即插即跑 Linux Lab Disk 动图：
 
 ### 系统启动
 
+- Windows 的 BitLocker 全盘加密功能与实验盘存在兼容性问题，使用实验盘前请禁用 BitLocker
+    * BitLocker 全盘加密功能可能会导致系统缓慢等问题，不建议启动
+    * BitLocker 无法同老版本（<= v2.9）VMBoot 的免关机重启等功能一起使用，开启后可能会导致 Windows 系统无法启动
+    * 使用 BitLocker 全盘加密实验盘的分区会破坏实验盘的基本功能
+
 - 修改 U 盘盘符后导致系统无法启动
     * 当前 Linux Lab Disk 不支持修改盘符、也禁止随意调整分区表等，否则系统可能无法启动
     * 通常把盘符改回出厂名称（如 linux-lab-disk 或 pocket-linux）后应该就能恢复启动
