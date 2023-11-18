@@ -45,6 +45,7 @@ Linux Lab Disk 又名 Linux Lab 真盘或泰晓 Linux 实验盘，除了独创�
 
 - 泰晓 Linux 系统盘，不集成 Linux Lab 等实验环境，又名 Pocket Linux Disk
 - 泰晓 RISC-V 实验盘，集成 RISC-V Lab 等便利 RISC-V 实验的环境
+- 泰晓 X86 实验盘，便利 X86 实验的环境
 - 泰晓 ARM 实验盘，集成 ARM Lab 等便利 ARM 实验的环境
 - 泰晓 LoongArch 实验盘，便利国产龙芯 LoongArch 实验的环境
 
