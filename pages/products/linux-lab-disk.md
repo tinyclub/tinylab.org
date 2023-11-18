@@ -1,11 +1,11 @@
 ---
-title: 'Linux Lab Disk / Linux Lab 真盘 / 泰晓 Linux 实验盘'
-tagline: '免安装即插即用的智能随身 Linux Lab 系统盘，可选 32G-2T，可选 Ubuntu,Deepin,Manjaro,Kali,Mint,Fedora 系统'
+title: 'Linux Lab Disk / Linux Lab 真盘 / 泰晓 Linux 实验盘 / 泰晓 Linux 系统盘'
+tagline: '免安装即插即用的智能随身 Linux Lab 实验盘，可选 4G-4T，可选 Ubuntu,Deepin,Manjaro,Kali,Mint,Fedora 系统'
 author: Wu Zhangjin
 layout: page
 permalink: /linux-lab-disk/
-description: Linux Lab Disk 不同于普通随身 Linux 系统盘，业内开创了多项特性，包括智能启动、透明倍容、时区兼容、自动共享、零损编译等，Linux Lab Disk 还集成了 Linux Lab, Linux 0.11 Lab 等实验环境，可用于编程语言、操作系统等计算机课程实验。
-update: 2021-03-10
+description: Linux Lab Disk 不同于普通随身 Linux 系统盘，业内开创了多项特性，包括智能启动、透明倍容、时区兼容、自动共享、零损编译、出厂回复、备份还原等，Linux Lab Disk 还集成了 Linux Lab, Linux 0.11 Lab, RISC-V Lab, ARM Lab 等实验环境，可用于编程语言、操作系统等计算机课程实验。
+update: 2023-11-18
 categories:
   - 开源项目
   - Linux Lab
@@ -35,11 +35,20 @@ tags:
 
 ## 产品简介
 
-Linux Lab Disk 是由泰晓科技 Linux Lab 开源项目组研发的一种智能随身 Linux 系统盘，在原有随身 Linux 系统盘技术的基础上开创了多项特性，大大革新了用户使用体验。
+Linux Lab Disk 是由泰晓科技 Linux Lab 开源项目组研发的一种智能随身 Linux 实验盘，在原有随身 Linux 系统盘技术的基础上开创了多项特性，大大革新了用户使用体验。
 
-零基础用户可以免安装在 1 分钟内即插即用用上 Linux 系统直接开展 Linux 内核与嵌入式 Linux 系统等实验，也可以当普通 Linux 系统使用，比如用来上网、做练习、开发、测试与比赛等等。
+零基础用户可以免安装在 1 分钟内即插即跑用上 Linux 系统，直接开展 Linux 内核与嵌入式 Linux 系统等实验，也可以当普通 Linux 系统使用，比如用来上网、做练习、开发、测试与比赛等等。
 
-Linux Lab Disk 又名 Linux Lab 真盘，除了独创的多项特性，还集成了自研的 [Linux Lab](/linux-lab), [Linux 0.11 Lab](/linux-0.11-lab) 等实验环境。
+Linux Lab Disk 又名 Linux Lab 真盘或泰晓 Linux 实验盘，除了独创的多项特性，还集成了自研的 [Linux Lab](/linux-lab), [Linux 0.11 Lab](/linux-0.11-lab) 等实验环境。
+
+在 Linux Lab Disk 的基础上，泰晓社区又推出了：
+
+- 泰晓 Linux 系统盘，不集成 Linux Lab等实验环境
+- 泰晓 RISC-V 实验盘，集成 RISC-V Lab 等便利 RISC-V 实验的环境
+- 泰晓 ARM 实验盘，集成 ARM Lab 等便利 ARM 实验的环境
+- 泰晓 LoongArch 实验盘，便利国产龙芯 LoongArch 实验的环境
+
+在原有高速 U 盘和固态 U 盘版本的基础上，泰晓社区相继推出了移动硬盘版本和固态硬盘版本，覆盖了各种用户的需求，支持的容量已覆盖 4G - 4T。
 
 其中某个型号如下图：
 
@@ -79,17 +88,21 @@ Linux 即插即跑 Linux Lab Disk 动图：
 
 * [零损编译](https://www.bilibili.com/video/BV18B4y1Q7RX)，支持“半内存”与“全内存”的编译方式，可实现磁盘“零”写，极大地提升磁盘寿命，并提升实验效率。
 
-* [即时实验](https://www.bilibili.com/video/BV15t4y1h7Qp)，集成自研 Linux Lab，Linux 0.11 Lab 等实验环境，可在 1 分钟内开展 Linux 内核、嵌入式 Linux、Uboot、汇编、C、Python、数据库、网络等实验。
+* [即时实验](https://www.bilibili.com/video/BV15t4y1h7Qp)，集成自研 Linux Lab，Linux 0.11 Lab, RISC-V Lab, ARM Lab 等实验环境，可在 1 分钟内开展 Linux 内核、嵌入式 Linux、Uboot、汇编、C、Python、数据库、网络等实验。
 
 * [出厂恢复](https://www.bilibili.com/video/BV1Yv4y1g7fc)，全系 6 大 Linux 发行版已全部支持出厂恢复功能，在 "rm -rf /" 后都能启动并恢复出厂系统，同时支持自动备份和急救模式，用起来更安心！
 
 ## 可选容量
 
-当前支持 32G-2T，由于 Linux Lab Disk 支持透明倍容，预期可写入容量 2 倍左右的数据，实际写入量跟数据类型有关。
+当前支持 32G-4T，由于 Linux Lab Disk 支持透明倍容，预期可写入容量 2 倍左右的数据，实际写入量跟数据类型有关。
 
-如果想长期使用，建议至少选择 64G-128G 或以上的极速固态 U 盘或者移动硬盘版本。
+如果想长期使用，建议至少选择 64G-128G 或以上的极速固态 U 盘、移动硬盘或固态硬盘版本。
 
 如果想先体验一下，入个门，选个 32G 版本也够用。
+
+如果只是想入门 Linux 的使用，也可以选择泰晓 Linux 系统盘。
+
+如果想开展特定架构的实验，比较建议选特定的泰晓实验盘，比如泰晓 RISC-V 实验盘、泰晓 ARM 实验盘或泰晓 LoongArch 实验盘。默认的泰晓 Linux 实验盘仅集成了 arm/vexpress-a9, x86_64/pc, riscv64/virt 虚拟开发板。
 
 ## 可选系统
 
@@ -109,6 +122,7 @@ Linux 即插即跑 Linux Lab Disk 动图：
 * 用于 CTF 等各种 IT 比赛
 * 学习 Linux 内核与嵌入式 Linux 系统
 * 学习 Linux 0.11 等
+* 学习特定的处理器架构，比如 RISC-V, ARM
 * 学习中小学信息学课程
 
 ## 功能连载
@@ -132,7 +146,7 @@ Linux 即插即跑 Linux Lab Disk 动图：
 
 更多内容正在陆续连载中：
 
-* 订阅 [泰晓科技 - B 站视频](https://space.bilibili.com/687228362/channel/seriesdetail?sid=2095977)
+* 订阅 [泰晓科技 - B 站视频](https://space.bilibili.com/687228362/)
 * 订阅 [泰晓学院 - Linux Lab 公开课](https://www.cctalk.com/m/program/1612665538389924)
 
 ## 购买方式
@@ -153,7 +167,7 @@ Linux 即插即跑 Linux Lab Disk 动图：
 
 - 使用实验盘前建议禁用 Windows 的 BitLocker 功能，如果未启用的话，请忽略
     * BitLocker 全盘加密功能可能会导致系统缓慢等问题，不建议启动
-    * 如果使用的是 <=v2.9 版本的 VMBoot，BitLocker 可能会导致 Windows 系统无法启动；>=v3.0 版本的 VMBoot 已兼容 BitLocker
+    * 如果使用的是 <=v2.9 版本的 vmboot，BitLocker 可能会导致 Windows 系统无法启动；>=v3.0 版本的 vmboot 已兼容 BitLocker
     * 请务必不要使用 BitLocker 加密实验盘的任意分区，BitLocker 可能会彻底破坏实验盘的基本功能
 
 - 修改 U 盘盘符后导致系统无法启动
@@ -259,8 +273,9 @@ Linux 即插即跑 Linux Lab Disk 动图：
     * 另外，建议避免同时执行多个大型任务，比如后台下载大型文件，前台同时执行很复杂的操作，比如同时打开大量浏览器标签，不再使用的软件建议及时退出
 
 - 如何创建 swap 文件？
-    * 泰晓 Linux 实验盘默认未开启 swap 功能
+    * 为了提升磁盘寿命，尽可能地使用内存，泰晓 Linux 实验盘默认未开启 swap 功能
     * 如需开启，新版本可以直接执行 `sudo tinyswapon`，老版本用户可以咨询售后
+    * 在开启大型应用时，请按需开启 swap 功能
 
 ### 数据安全
 
