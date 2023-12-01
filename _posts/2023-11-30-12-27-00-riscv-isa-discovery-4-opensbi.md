@@ -15,11 +15,11 @@ tags:
   - RISC-V
 ---
 
-> Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.2-rc2 - [spaces quotes header comments urls]``
-> Author:    YJMSTR [jay1273062855@outlook.com](https://gitee.com/tinylab/riscv-linux/blob/master/articles/mailto:jay1273062855@outlook.com)``
-> Date:      2023/08/16``
-> Revisor:   Bin Meng, Falcon``
-> Project:   [RISC-V Linux 内核剖析](https://gitee.com/tinylab/riscv-linux)``
+> Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.2-rc2 - [spaces quotes header comments urls]
+> Author:    YJMSTR [jay1273062855@outlook.com](https://gitee.com/tinylab/riscv-linux/blob/master/articles/mailto:jay1273062855@outlook.com)
+> Date:      2023/08/16
+> Revisor:   Bin Meng, Falcon
+> Project:   [RISC-V Linux 内核剖析](https://gitee.com/tinylab/riscv-linux)
 > Sponsor:   PLCT Lab, ISCAS
 
 
