@@ -5,9 +5,14 @@
 <br/>还在观望？5 小时转进 RISC-V 世界</a>
 {% endif %}
 
-{% if true %}
+{% if false %}
 <a style="line-height: 150%" title="某宝检索 “泰晓 Linux”，免安装使用随身 Linux Lab，已支持 Ubuntu 20.04/22.04, Mint 21.04, Fedora 37, Deepin 20.8, Manjaro, Kali Linux 和 Ezgo 14，即插即用，高效率做 Linux 内核实验与开发，也可以当普通 Linux 系统使用" href="https://shop155917374.taobao.com/" target="_blank"><img src="/images/disks/linux-lab-disk-manjaro-linux-lab-v1.2.jpg" style="max-height:600px; max-width:90%" />
 <br/>泰晓实验盘已支持U盘/固态硬盘/移动硬盘</a>
+{% endif %}
+
+{% if true %}
+<a style="line-height: 150%" title="某宝检索 “泰晓 Linux”，免安装使用随身 Linux Lab，已支持 Ubuntu 20.04/22.04, Mint 21.04, Fedora 37, Deepin 20.8, Manjaro, Kali Linux 和 Ezgo 14，即插即用，高效率做 Linux 内核实验与开发，也可以当普通 Linux 系统使用" href="https://shop155917374.taobao.com/" target="_blank"><img src="/images/disks/linux-lab-disk-manjaro-linux-lab-v1.2.jpg" style="max-height:631px; max-width:90%" />
+<br/>泰晓Linux实验盘已支持6大发行版</a>
 {% endif %}
 
 {% if false %}
