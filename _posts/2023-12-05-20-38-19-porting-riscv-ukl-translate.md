@@ -224,7 +224,7 @@ UKL 基础模型确保应用程序和内核执行模型保持分离，并在两�
 
 Linux 内核 5.14 的 UKL 基本模型补丁的大小大约是 550 行，完整的 UKL 补丁（基础模型加上表 1 中提到的所有配置选项）是 1250 行。这些更改中的绝大多数都是特定于目标的，即在 x86 体系结构目录中。
 
-<div align=center><img src="images/porting-riscv-ukl/translate-table-1.PNG"></div>
+<div align=center><img src="/wp-content/uploads/2023/12/ukl/translate-table-1.PNG"></div>
 
 > UKL takes advantage of the existing kernel Kconfig and glibc build systems. These allow target-specific functionality to be introduced that doesn’t affect generic code or code for other targets. All code changes made in UKL base model and subsequent versions are wrapped in macros which can be turned on or off through kernel and glibc build time config options. All the changes required are compiled out when Linux and glibc are configured for a different target.
 
@@ -343,7 +343,7 @@ code paths that could be squashed for performance benefits(see fig. 5).
 表 2 将 UKL 补丁与 Kernel-Mode Linux (KML) 以及 2020 年 Linux Weekly News (LWN) 文章中描述的一些 Linux 特性进行了比较。相比之下，在最近的 Lupine 工作中使用的 KML 补丁，在内核模式下运行应用程序是 3177 LOC，这种复杂性导致补丁不被上游接受。相比之下，UKL 既提供了比 KML 更丰富的功能，又简单得多。这种简单性是由于引入 KML 以来的三个偶然变化。首先，UKL 利用了最近对 Linux 内核的修改，使得对汇编的修改干扰性大大降低。其次，UKL 只支持 x86-64，而 KML 是在需要支持 i386 的时候引入的。第三，UKL 不处理旧的硬件，比如必须由 KML 支持的 i8259 PIC。
 
 <div align=center>
-	<img src="images/porting-riscv-ukl/translate-table-2.PNG"/>
+	<img src="/wp-content/uploads/2023/12/ukl/translate-table-2.PNG"/>
 </div>
 
 ### 5.3 微基准测试（Microbenchmarks）
@@ -359,7 +359,7 @@ Unikernels 提供了显著减少应用程序和内核代码之间交互开销的
 图 1 比较了 Linux、UKL 的基本模型和 UKL_BYP 之间简单系统调用的开销。使用（稍作修改的 LEBench）微基准测试，用于测量 getppid()、read（）、write()、sendto() 和 recvfrom() 这些系统调用的基本延迟（都是 1 字节的有效负载）。
 
 <div align=center>
-	<img src="images/porting-riscv-ukl/translate-figure-1.PNG"/>
+	<img src="/wp-content/uploads/2023/12/ukl/translate-figure-1.PNG"/>
 </div>
 
 > We find that the advantage of the base model of UKL that essentially replacessyscall/sysretinstructionswithcall/ret is modest, i.e., less than 5%. However, the UKL BYP configuration that avoids expensive checks on transitions between application and kernel code can be up to 83% for a getppid; suggesting that optimizing the transition between application code may have a significant performance impact.
@@ -373,7 +373,7 @@ Unikernels 提供了显著减少应用程序和内核代码之间交互开销的
 图 2 对比了 Linux 与 UKL 和 UKL_BYP 在 read()、write()、sendto() 和 recvfrom() 方面的性能，我们使用 LEBench 微基准测试将有效载荷改变为 8KB 的数据。基线 UKL 再次显示在 Linux 上几乎没有改进，但是 UKL_BYP 显示出显著的持续改进。右纵轴也显示了 UKL_BYP 与 Linux 的比较百分比改善的下降趋势。随着在内核中花费的时间的增加，百分比增益减少。但是，即使对于高达 8KB 的有效负载，改进的百分比仍然很大，即在 11% 到 22% 之间。
 
 <div align=center>
-	<img src="images/porting-riscv-ukl/translate-figure-2.PNG"/>
+	<img src="/wp-content/uploads/2023/12/ukl/translate-figure-2.PNG"/>
 </div>
 
 > It is interesting to contrast our results with those from the recent Lupine work. Surprisingly they observed that just eliminating the system call overhead is significant (40%) for a null system call, but since they found that (like us) the improvement dropped to below 5% in most cases, they concluded that the benefit of co-locating the application and kernel is minimal. Our results suggest that the major performance gain comes not from eliminating the hardware cost but from eliminating all the checks on the transition between the application and kernel code and that reducing this overhead has a significant impact on even expensive system calls.
@@ -387,7 +387,7 @@ Unikernels 提供了显著减少应用程序和内核代码之间交互开销的
 图 3 比较了处理页面错误的三种不同方案，即 UKL_PF_DF、UKL_PF_SS 和 (UKL_RET_PF_DF)。对于 UKL_PF_DF，我们看到页面错误延迟比相比于 Linux 有将近 5% 的改进。UKL_PF_SS 也与前一种情况类似，这意味着在每个页面错误上进行堆栈切换的成本不会太高，而且在这两种情况下相对于 Linux 的大部分好处是由于在内核模式下处理页面错误并避免了环转换。(UKL_RET_PF_DF) 比普通 Linux 改进了 12.5% 以上。在所有这些情况下，由于处理更多页面错误所需的时间增加了，因此相对于普通 Linux 的改进也增加了，这就是为什么我们看到一个恒定百分比的改进。未修改的应用程序可以通过构建时 Linux 配置选项选择这些选项中的任何一个。
 
 <div align=center>
-	<img src="images/porting-riscv-ukl/translate-figure-3.PNG"/>
+	<img src="/wp-content/uploads/2023/12/ukl/translate-figure-3.PNG"/>
 </div>
 
 > We repeated this experiment for non-stack page faults, i.e., on mapped memory and got the same results.
@@ -411,18 +411,18 @@ Unikernels 提供了显著减少应用程序和内核代码之间交互开销的
 我们使用 Memtier 基准测试来测试 Redis。通过在 Memtier 基准测试中，我们创建 300 个客户端，每个客户端向服务器发送 10 万个请求。get 和 set 操作的比率为 1 比 10。我们在 Linux 上，分别开启 UKL_RET_BYP 和具有更深捷径的 UKL_RET_BYP 来运行 Redis。图 4 帮助我们可视化这些请求的延迟分布。
 
 <div align=center>
-	<img src="images/porting-riscv-ukl/translate-figure-4.PNG"/>
+	<img src="/wp-content/uploads/2023/12/ukl/translate-figure-4.PNG"/>
 </div>
 
 > To better understand where the time was being spent, we profiled Redis UKL with perf. Figure 5, which is part of the flame graph we generated, shows two clear opportunities for performance improvement. Blue arrows show how we could shorten the execution path by bypassing the entry and exit code for read and write system calls and invoke the underlying functionality directly. Figure 4 shows how Redis on UKL_RET shows improvement in average and 99th percentile tail latency when it bypasses the entry and exit code (UKL_RET_BYP). Table 3 shows that UKL_RET_BYP has 11% better tail latency and 12% better throughput.
 <div align=center>
-	<img src="images/porting-riscv-ukl/translate-table-3.PNG"/>
+	<img src="/wp-content/uploads/2023/12/ukl/translate-table-3.PNG"/>
 </div>
 
 为了更好地了解时间消耗在哪里，我们用 perf 对 Redis UKL 进行了分析。图 5 是我们生成的 flame graph 的一部分，它显示了两个明显的性能改进机会。蓝色箭头显示了我们如何通过绕过读写系统调用的入口和退出代码来缩短执行路径，并直接调用底层功能。图 4 显示了当 Redis 绕过进入和退出代码（UKL_RET_BYP）时，UKL_RET 上的平均和第 99 百分位尾部延迟是如何改善的。表 3 显示，UKL_RET_BYP 的尾部延迟提高了 11%，吞吐量提高了 12%。
 
 <div align=center>
-	<img src="images/porting-riscv-ukl/translate-figure-5.PNG"/>
+	<img src="/wp-content/uploads/2023/12/ukl/translate-figure-5.PNG"/>
 </div>
 
 > Looking at Figure 5 again, the green arrows show that read and write calls, after all the polymorphism, eventually translate into tcp_recvmsg and tcp_sendmsg respectively. To investigate any potential benefit of shortcutting deep into the kernel, we wrote some code in the kernel to interface read and write with tcp_recvmsg and tcp_sendmsg respectively. We then modified Redis (10 lines modified) to call our interface functions instead of read and write. Our results show (Figure 4) further improvement in average and 99th percentile tail latency i.e., UKL_RET_BYP (shortcut). Table 3 shows that UKL_RET_BYP (shortcut) has 22% better tail latency and 26% better throughput.
@@ -444,7 +444,7 @@ Lupine 在 Redis 上显示的结果略好于基线 Linux，但它是在轻量级
 Memcached 是一个严重依赖 pthread 库和 glibc 的内部同步机制的多线程工作负载。这是一个有趣的应用程序，因为 unikernels 通常不支持复杂的应用程序，像 EbbRT 这样的系统首先必须移植 Memcached。为了评估 Memcached，我们使用了 mutlate 基准测试。此基准测试使用多个客户机在服务器上生成固定的每秒查询数负载，然后测量延迟。我们在用户空间中与 Memcached UKL 在同一个节点上运行客户端，以消除任何网络延迟，并且我们将 Memcached 服务器和客户端固定在不同的核心上。我们使用 mutinate 来生成基于 Facebook 工作负载的查询。对于不同的 UKL 配置，我们测量了 Memecached 每秒可以处理多少查询，同时在 500 us 服务级别协议下保持 99% 的尾部延迟。图 6 显示了具有 UKL_RET 的 Memcached 执行类似于 Linux 上的 Memcached，例如，它们都在超过 500 个请求的阈值之前提供大约 73000 个查询。Memcached 上 UKL_RET_BYP 可以提供大约 77000 个查询而在 UKL_RET_BYP（快捷方式）上的 Memcached 在超过 500 us 阈值之前可以提供多达 79000 个查询（大约提高 8%）。
 
 <div align=center>
-	<img src="images/porting-riscv-ukl/translate-figure-6.PNG"/>
+	<img src="/wp-content/uploads/2023/12/ukl/translate-figure-6.PNG"/>
 </div>
 
 > This experiment also serves as a functionality and compatibility result; a comparatively large application with multiple threads etc. can run on UKL.
@@ -465,7 +465,7 @@ Secrecy 是一个多方计算框架，用于对私有数据进行安全分析。
 图 7 显示了三个系统的运行时间归一化为 Linux 的运行时间，误差条显示了每种配置的变异系数。与其他实验一样，UKL_BYP 配置在运行时显示出适度的改进。然而，当我们对 TCP 发送和接收函数使用更深的快捷方式时，我们看到了显著的（100x）运行时改进。
 
 <div align=center>
-	<img src="images/porting-riscv-ukl/translate-figure-7.PNG"/>
+	<img src="/wp-content/uploads/2023/12/ukl/translate-figure-7.PNG"/>
 </div>
 
 > The improvement of the shortcut system over the others was larger than anticipated, so we reran the experiments and achieved the same level of performance. To verify that the work was still happening, we collected a capture of all the inter-node traffic using Wireshark and verified that the same number of TCP packets traveled between nodes in all three system setups for a 100 row experiment.We also instrumented the send and receive paths in Secrecy to collect individual times for send and receive calls in each system for a 100 row run. The mean and standard deviation of send times for Linux were 2.23us and 1.14us, respectively, and the values for receive times on Linux were 1,100us and 3,300us, respectively. The shortcut showed send mean and standard deviation of 896ns and 1,755ns, which is a significant speed up, but the receive numbers were 638ns and 3,888ns.
