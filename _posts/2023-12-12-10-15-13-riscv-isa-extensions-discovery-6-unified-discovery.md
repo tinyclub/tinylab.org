@@ -1,7 +1,7 @@
 ---
 layout: post
 author: 'yjmstr'
-title: 'Unified Discovery 简介及其软硬件协作现状'
+title: 'RISC-V Unified Discovery 简介及其软硬件协作现状'
 draft: false
 album: 'RISC-V Linux'
 license: 'cc-by-nc-nd-4.0'
