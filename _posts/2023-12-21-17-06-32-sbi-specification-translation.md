@@ -1,12 +1,12 @@
 ---
 layout: post
 author: 'Groot'
-title: 'RISC-V SBI 翻译'
+title: 'RISC-V SBI 规范 2.0-rc1 中文翻译'
 draft: false
 album: 'RISC-V Linux'
 license: 'cc-by-nc-nd-4.0'
 permalink: /sbi-specification-translation/
-description: 'RISC-V SBI 翻译'
+description: 'RISC-V SBI 规范 2.0-rc1 中文翻译'
 category:
   - 开源项目
   - Risc-V
@@ -25,6 +25,7 @@ tags:
 > Acknowledgements: 山东大学 山东大学智能创新研究院 [RISC-V SBI-1.0.0 版本 中文][001]
 > Sponsor:          PLCT Lab, ISCAS
 
+**当前中文翻译基于 RISC-V SBI Spec 2.0-rc1，2.0 正式版预计很快会正式发布**：
 
 ## 前言
 
