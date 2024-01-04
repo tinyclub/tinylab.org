@@ -115,7 +115,7 @@ sed -i -e '/^\s*```mermaid/,/^\s*```/d' $_target_article
 sed -i -e 's/（\[下载由 Mermaid 生成的 PNG 图片\]\[\(.*\)\]）/![此图由 Mermaid 生成][\1]/g' $_target_article
 
 # article ads
-article_ads="学习 RISC-V Linux，就用泰晓社区自研 RISC-V 实验盘（https://tinylab.org/linux-lab-disk）和 RISC-V 实验箱（https://tinylab.org/tiny-riscv-box）！**"
+article_ads="**学习 RISC-V Linux，就用泰晓社区自研 RISC-V 实验盘（https://tinylab.org/linux-lab-disk）和 RISC-V 实验箱（https://tinylab.org/tiny-riscv-box）！**"
 
 # article info
 [ -z "$key" ] && key="$(echo $info | sed -e 's/riscv/RISC-V/g;s/sbi/SBI/g;s/\(.*\)part.*/\1/g')"
