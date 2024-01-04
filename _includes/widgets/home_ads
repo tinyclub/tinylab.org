@@ -1,7 +1,7 @@
 <div>
 
 {% if true %}
-<a style="line-height: 150%" title="泰晓社区于 2023 年 12 月 28 日发布了泰晓 RISC-V 实验箱，可即时开展 RISC-V Linux 系统开发实验，内置 RISC-V 实验盘、RISC-V 开发板以及近 20 个常见外设或配件！" href=""https://www.bilibili.com/video/BV15N4y1W7ES target="_blank"><img src="/images/box/tiny-riscv-box.jpg" style="max-height:600px; max-width:90%" />
+<a style="line-height: 150%" title="泰晓社区于 2023 年 12 月 28 日发布了泰晓 RISC-V 实验箱，可即时开展 RISC-V Linux 系统开发实验，内置 RISC-V 实验盘、RISC-V 开发板以及近 20 个常见外设或配件！" href="https://www.bilibili.com/video/BV15N4y1W7ES" target="_blank"><img src="/images/box/tiny-riscv-box.jpg" style="max-height:600px; max-width:90%" />
 <br/>泰晓 RISC-V 实验箱正式发布了</a>
 {% endif %}
 

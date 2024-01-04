@@ -17,8 +17,6 @@ tags:
 
 ## 产品简介
 
-![泰晓 RISC-V 实验箱 —— 箱体参考外观](/images/box/tiny-riscv-box.jpg)
-
 泰晓 RISC-V 实验箱由泰晓社区开发与设计，可以配合泰晓 RISC-V 课程使用：
 
 - [第 1 期 RISC-V Linux 系统开发公开课（完全发布）](https://space.bilibili.com/687228362/channel/collectiondetail?sid=1750690)
@@ -30,7 +28,14 @@ tags:
 - 精选 RISC-V 开发板
 - 各类外设，例如串口板、屏幕、摄像头、传感器、网卡、声卡等
 
-![泰晓 RISC-V 实验箱 —— 箱内集成外设，仅作参考，已收到的实物为准](/images/box/tiny-riscv-box.jpg)
+![泰晓 RISC-V 实验箱 —— 箱内集成外设，仅作参考，已收到的实物为准](/images/box/tiny-riscv-box-devices.jpg)
+
+## 演示视频
+
+- [泰晓 RISC-V 实验箱照片以及演示小视频](https://www.bilibili.com/video/BV15N4y1W7ES/)
+- [三分钟内快速上手体验泰晓 RISC-V 实验箱](https://www.bilibili.com/video/BV18c41187co/)
+
+更多视频和课程敬请期待……
 
 ## 产品特点
 
@@ -52,13 +57,6 @@ tags:
 - 学习方便
     - 提供配套视频课程
     - 提供专属技术交流群
-
-## 演示视频
-
-- [泰晓 RISC-V 实验箱照片以及演示小视频](https://www.bilibili.com/video/BV15N4y1W7ES/)
-- [三分钟内快速上手体验泰晓 RISC-V 实验箱](https://www.bilibili.com/video/BV18c41187co/)
-
-更多视频和课程敬请期待……
 
 ## 购买方式
 
