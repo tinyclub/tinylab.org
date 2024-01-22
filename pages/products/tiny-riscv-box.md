@@ -26,16 +26,26 @@ tags:
 
 - [泰晓 RISC-V 实验盘](https://tinylab.org/linux-lab-disk)
 - 精选 RISC-V 开发板
-- 各类外设，例如串口板、屏幕、摄像头、传感器、网卡、声卡等
+- 各类外设，例如串口板、屏幕、摄像头、传感器、网卡、声卡、按键、蜂鸣器、舵机、电机等，更多外设正在持续验证中……
 
-![泰晓 RISC-V 实验箱 —— 箱内集成外设，仅作参考，已收到的实物为准](/images/box/tiny-riscv-box-devices.jpg)
+![泰晓 RISC-V 实验箱 —— 箱内集成外设，仅作参考，以收到的实物为准](/images/box/tiny-riscv-box-devices.jpg)
+
+## 快速实验
+
+- 第一步：扫描随盘附带的实验盘使用说明书上的二维码，先启动实验盘中的实验环境
+
+- 第二步：点击桌面的 Linux Lab Shell，进入 Linux Lab 实验控制台
+
+- 第三步：查看文档 `boards/riscv64/tiny-riscv-box/bsp/README.md` 开展实验
+
+更多用法请参考下述演示视频和正在陆续连载的第 2 期 RISC-V Linux 系统开发公开课。
 
 ## 演示视频
 
 - [泰晓 RISC-V 实验箱照片以及演示小视频](https://www.bilibili.com/video/BV15N4y1W7ES/)
 - [三分钟内快速上手体验泰晓 RISC-V 实验箱](https://www.bilibili.com/video/BV18c41187co/)
 
-更多视频和课程敬请期待……
+更多视频会连载到 [第 2 期 RISC-V Linux 系统开发公开课](https://space.bilibili.com/687228362/channel/collectiondetail?sid=2021659) 合集中，敬请期待……
 
 ## 产品特点
 
