@@ -1,19 +1,36 @@
 
 <div id="footer_layer" style="text-align: center; max-width='100%';">
 
-{% if true %}
-<a title="" href="https://space.bilibili.com/687228362" target="_blank"><img src="/images/shop/tinylab.bili.jpg" style="width:450px;max-width:100%">
-<br/>即插即跑，一分钟用上 Linux</a>
+{% assign random = site.time | date: "%s%N" | modulo: 3 %}
+
+{% assign linux_disk = false %}
+{% assign contact_us = false %}
+{% assign elf_course = false %}
+
+{% if random == 0 %}
+{% assign linux_disk = true %}
+{% endif %}
+{% if random == 1 %}
+{% assign contact_us = true %}
+{% endif %}
+{% if random == 2 %}
+{% assign elf_course = true %}
+{% endif %}
+
+{% if linux_disk %}
+<a title="" href="https://www.bilibili.com/video/BV1Qg4y1Y7s3" target="_blank"><img src="/images/shop/tinylab.bili.jpg" style="width:450px;max-width:100%">
+<br/>即插即跑，一分钟用上Linux</a>
 </a>
 {% endif %}
 
-{% if false %}
-<a title="欢迎关注我们的公众号、QQ讨论群" href="https://tinylab.org/about" target="_blank"><img src="/images/contact/tinylab-wechat-qq.jpg" style="max-height:180px; max-width:100%">
+{% if contact_us %}
+<a title="欢迎关注我们的公众号，通过微信联系我们加入讨论群" href="https://tinylab.org/about" target="_blank"><img src="/images/contact/tinylab-wechat-qq.jpg" style="max-height:180px; max-width:100%">
+<br/>关注我们，一起学习研究Linux</a>
 {% endif %}
 
-{% if false %}
+{% if elf_course %}
 <a title="Linux 程序员基本素养必修课，由泰晓科技技术社区创始人主讲" href="https://www.cctalk.com/m/group/88089283" target="_blank"><img src="/images/courses/360-elf.jpg" style="max-height:250px; max-width:100%">
-<br/>订课就送 Linux 知识星球会员</a>
+<br/>理解ELF，C语言进阶必备</a>
 </a>
 {% endif %}
 
