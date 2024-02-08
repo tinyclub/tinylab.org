@@ -202,7 +202,7 @@ Linux 即插即跑 Linux Lab Disk 动图：
 
 - 新版 Linux Lab Disk 已经支持 VMware 引导，已兼容 Hyper-V 和 WSL2
     * 如果想在开启 Hyper-V 或 WSL2 的情况下通过 vmboot 引导 Linux Lab Disk，建议使用 VMware，而不是 VirtualBox，VirtualBox 目前对 Hyper-V 的兼容性还不太好
-    * 当前验证的最低版本为 VMware Player 16，请确保升级到该版本或更新的版本
+    * 当前验证的最低版本为 VMware Player 17，请确保升级到该版本或更新的版本
 
 - 在 Windows 下通过 VMware 并行启动时出现黑屏或者很慢？
     * 第一种情况可能需要进入 BIOS 使能虚拟化技术相关选项，相关选项跟处理器型号有关。
@@ -243,6 +243,15 @@ Linux 即插即跑 Linux Lab Disk 动图：
 
 - 出现 `dlopen("/usr/lib/virtualbox/VBoxRT.so",) failed: <NULL>` 错误？
     * 在 Linux 下，如果 `/usr/lib` 所属的用户不是 `root`，则会出现该错误，需要手动修复：`sudo chown root:root /usr/lib`，见 [Ticket #16759](https://www.virtualbox.org/ticket/16759?cversion=0)。这个原因可能是用 tar 命令解压了带有错误属性的压缩包到根目录所致，比如说在压缩之前，`usr/lib` 属于普通用户，类似这样：`tar xyz.tar.gz -C /` 解压到根目录以后，会把根目录下的原有目录属性篡改掉。
+
+### 文件共享
+
+- 在 Windows 下通过虚拟机引导后，默认会在主系统的桌面创建一个 vmshare 共享目录，该目录在虚拟机中名为 `vmshare-guest`
+    * 如需禁止共享，可以通过 `右键 -> 属性 -> 常规 -> 隐藏` 隐藏 vmshare 目录
+    * 如果不想在桌面看到该隐藏的目录，可以通过文件管理器，进入 `桌面` 目录，然后在菜单中找到 `查看`，点开后把 `隐藏的项目` 前面的勾选去掉
+
+- 在 Linux 下则可以通过，考虑到实验盘本身既可以被其他实验盘引导，也可以引导其他实验盘，所以作为主系统时，共享目录名称为 `vmshare-host` 而不是 `vmshare`
+    * 暂时不支持禁止共享
 
 ### Windows 相关
 
@@ -285,6 +294,26 @@ Linux 即插即跑 Linux Lab Disk 动图：
 - 如何确保更安全地使用？
     * 为了确保数据安全和系统安全，首先强烈建议把关键数据及时提交到 Github 或 Gitee 等代码仓库中；另外，建议开启 timeshift 并配置好自己希望的备份周期。
     * 为了确保数据的一致性和系统的安全，在拔除之前，请及时保存正在编辑的数据，并正常关闭系统或电脑，在并行启动时还需安全移除所有分区，之后再拔除设备。
+
+### 系统急救
+
+- 提前备份或用完即弃
+    * 如果是极速固态版本，建议通过系统自带的 `timeshift` 软件配置好自动备份
+    * 如果是低速小容量版本，建议优先使用 `Volatile Boot Setting` 模式，“用完即弃”，所有改动用完自动丢弃，不写入 U 盘
+        * **注意：**该模式下关机或重启后会自动恢复使用前的状态
+
+- 如果系统无法正常启动了
+    * 首先请想办法进入 Grub 引导菜单
+    * 接着尝试用 `Emergency Rescue Setting` 挂载一些重要分区并备份一些关键数据
+    * 如果没有重要数据，可以直接进入 `Factory Restore Setting` 模式，尝试按需恢复出厂系统
+
+- 如果系统无法正常引导了，即无法进入引导菜单后
+    * 可以尝试进入 Grub 命令行（在引导菜单按下字母 `c` ）或者等待看到自动进入 `grub> ` 或 `grub rescue> ` 命令行界面
+    * 接着可尝试执行如下命令引导急救与工厂设定菜单，其中的 `hd0` 和 `<first one>` 需正确配置
+
+```
+configfile (hd0,gpt5)/timeshift-btrfs/snapshots/<first one>/@/boot/grub/grub-fallback.cfg
+```
 
 ### 上网联网
 
