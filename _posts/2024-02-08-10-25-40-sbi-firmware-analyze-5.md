@@ -26,7 +26,7 @@ tags:
 
 ## 前言
 
-因为怕读者一次性读完可能较难消化，所以前一篇文章并没有完全的分析完 coldboot 的全部流程。在这篇文章中我们将继续之前的探索，将 coldboot 的全部流程讲解完毕，结束对 OpenSBI 固件代码的分析。
+因为怕读者一次性读完可能较难消化，所以前一篇文章并没有完全分析完 coldboot 的全部流程。在这篇文章中我们将继续之前的探索，将 coldboot 的全部流程讲解完毕，结束对 OpenSBI 固件代码的分析。
 
 这篇文章同上一篇文章一样，暂不将全部代码放在文章中，读者需要自行使用编辑器/IDE 查看代码。
 
@@ -89,8 +89,8 @@ tags:
 
 1. 如果是冷启动（cold_boot 为 true），则进行初始化操作，否则执行后续的热启动操作。
 2. 冷启动时，函数分配了一些内存空间来存储 TLB 管理相关的数据结构，包括 `tlb_sync`、`tlb_q` 和 `tlb_mem`。
-3. `tlb_sync_off`、`tlb_fifo_off` 和 `tlb_fifo_mem_off` 是在 `Scratch Memory` 中的偏移量，用于保存这些据结构的地址。如果内存分配失败，则释放之前已分配的内存并返回错误码 `SBI_ENOMEM`。
-4. 函数还创建了一个 IPI 事件（`Interrupt Processing Interface`）并保存其句柄到 `tlb_event`，这个事用于处理 TLB 刷新。
+3. `tlb_sync_off`、`tlb_fifo_off` 和 `tlb_fifo_mem_off` 是在 `Scratch Memory` 中的偏移量，用于保存这些数据结构的地址。如果内存分配失败，则释放之前已分配的内存并返回错误码 `SBI_ENOMEM`。
+4. 函数还创建了一个 IPI 事件（`Interrupt Processing Interface`）并保存其句柄到 `tlb_event`，这个是用于处理 TLB 刷新。
 5. 函数从平台获取 TLB 刷新的限制值，并保存到 `tlb_range_flush_limit` 中。
 6. 对于热启动，函数会检查之前分配的内存和事件是否存在，如果不存在，则返回错误码 `SBI_ENOMEM` 或 `SBI_ENOSPC`。
 7. 最后，函数对初始化后的数据结构进行了一些设置和初始化操作，确保 TLB 管理模块正常运行。
