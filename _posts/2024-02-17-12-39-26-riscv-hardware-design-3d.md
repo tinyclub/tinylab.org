@@ -268,15 +268,15 @@ tags:
 
 - 爆炸图：
 
-![爆炸图](/wp-content/uploads/2022/03/riscv-linux/https://tinylab.org/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/tinylab-d1s-a0-0.jpg)
+![爆炸图](/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/tinylab-d1s-a0-0.jpg)
 
 - 外壳上 尺寸图：
 
-![外壳上 尺寸图](/wp-content/uploads/2022/03/riscv-linux/https://tinylab.org/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/tinylab-d1s-a0-1.jpg)
+![外壳上 尺寸图](/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/tinylab-d1s-a0-1.jpg)
 
 - 外壳下 尺寸图：
 
-![外壳下 尺寸图](/wp-content/uploads/2022/03/riscv-linux/https://tinylab.org/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/tinylab-d1s-a0-2.jpg)
+![外壳下 尺寸图](/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/tinylab-d1s-a0-2.jpg)
 
 - 渲染图：
 
