@@ -46,13 +46,13 @@ tags:
 
 咱们这个项目是通过嘉立创 EDA 来设计 PCB 的，需要先通过嘉立创 EDA 中打开 PCB，并点击导出 STEP 类型的 PCB + 元件模型的 3D 文件。
 
-<img src="images/riscv-hardware-design-3d/image-20221021160118140.png" alt="嘉立创 EDA 截图 1" style="zoom:33%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/image-20221021160118140.png" alt="嘉立创 EDA 截图 1" style="zoom:33%;" />
 
-<img src="images/riscv-hardware-design-3d/image-20221021160217444.png" alt="嘉立创 EDA 截图 2" style="zoom: 50%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/image-20221021160217444.png" alt="嘉立创 EDA 截图 2" style="zoom: 50%;" />
 
 之后导入至 funsion 库中。
 
-<img src="images/riscv-hardware-design-3d/image-20221022191408462.png" alt="Fusion 360 上传界面" style="zoom: 25%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/image-20221022191408462.png" alt="Fusion 360 上传界面" style="zoom: 25%;" />
 
 ## 3D 外壳设计过程
 
@@ -66,23 +66,23 @@ tags:
 
 选中 3D 的 PCB 模型，创建一个草图，以该草图为基准构建外壳。
 
-<img src="images/riscv-hardware-design-3d/image-20221022192212234.png" alt="Fusion 360 创建草图" style="zoom:33%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/image-20221022192212234.png" alt="Fusion 360 创建草图" style="zoom:33%;" />
 
 进入草图编辑模式后，可以看到工具栏中有许多工具可以画出新的形状来编辑草图。
 
 我们可以在绘制草图时候，可以绘制一些辅助图形来定位。
 
-<img src="images/riscv-hardware-design-3d/image-20221102151218211.png" alt="Fusion 360 草图工具" style="zoom: 50%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/image-20221102151218211.png" alt="Fusion 360 草图工具" style="zoom: 50%;" />
 
-<img src="images/riscv-hardware-design-3d/image-20221022192318903.png" alt="设计 1" style="zoom: 25%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/image-20221022192318903.png" alt="设计 1" style="zoom: 25%;" />
 
 在该基础上画一个矩形，边与 PCB 之间预留 1 - 3 mm，因为 PCB 加工和分板会有误差，3D 结构受温度影响也会有形变。并删除除了用于固定的孔外的所有孔。
 
-<img src="images/riscv-hardware-design-3d/image-20221022195106000.png" alt="设计 2" style="zoom:25%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/image-20221022195106000.png" alt="设计 2" style="zoom:25%;" />
 
 得到如下草图：
 
-<img src="images/riscv-hardware-design-3d/image-20221022201305778.png" alt="设计 3" style="zoom:33%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/image-20221022201305778.png" alt="设计 3" style="zoom:33%;" />
 
 ### 创建实体
 
@@ -90,57 +90,57 @@ tags:
 
 拉伸平面，取消选中孔。
 
-<img src="images/riscv-hardware-design-3d/image-20221022202559949.png" alt="设计 4" style="zoom: 25%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/image-20221022202559949.png" alt="设计 4" style="zoom: 25%;" />
 
-<img src="images/riscv-hardware-design-3d/image-20221022202700558.png" alt="设计 5" style="zoom:25%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/image-20221022202700558.png" alt="设计 5" style="zoom:25%;" />
 
 对上表面进行外侧抽壳，这样可以留下边缘，空出内部的空间。
 
-<img src="images/riscv-hardware-design-3d/image-20221022202835002.png" alt="设计 6" style="zoom:25%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/image-20221022202835002.png" alt="设计 6" style="zoom:25%;" />
 
-<img src="images/riscv-hardware-design-3d/image-20221022202900576.png" alt="设计 7" style="zoom:25%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/image-20221022202900576.png" alt="设计 7" style="zoom:25%;" />
 
 然后我们需要三个支柱来支撑 PCB，存放螺丝。这一步骤看起来比较复杂，可以参考 [这个视频][005]。
 
 对草图进行拉伸，这次保留孔。
 
-<img src="images/riscv-hardware-design-3d/image-20221022203428362.png" alt="设计 8" style="zoom: 25%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/image-20221022203428362.png" alt="设计 8" style="zoom: 25%;" />
 
 再对新拉伸出的立方体进行向内抽壳。
 
-<img src="images/riscv-hardware-design-3d/image-20221022203801101.png" alt="设计 9" style="zoom:25%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/image-20221022203801101.png" alt="设计 9" style="zoom:25%;" />
 
 降低四周多余的边，调整支柱的高度。
 
-<img src="images/riscv-hardware-design-3d/image-20221022204208048.png" alt="设计 10" style="zoom:25%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/image-20221022204208048.png" alt="设计 10" style="zoom:25%;" />
 
-<img src="images/riscv-hardware-design-3d/image-20221022204342578.png" alt="设计 11" style="zoom: 33%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/image-20221022204342578.png" alt="设计 11" style="zoom: 33%;" />
 
 打孔，增加螺纹。
 
 注意：螺纹需要实体化，否则最后由 Fusion 360 导出的模型是没有螺纹的。
 
-<img src="images/riscv-hardware-design-3d/image-20221022210157418.png" alt="设计 12" style="zoom: 25%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/image-20221022210157418.png" alt="设计 12" style="zoom: 25%;" />
 
 把刚刚创建的两个实体转换为零部件，并合并。
 
-<img src="images/riscv-hardware-design-3d/image-20221022212029506.png" alt="设计 13" style="zoom: 33%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/image-20221022212029506.png" alt="设计 13" style="zoom: 33%;" />
 
 使用装配中的联接，对齐两个外壳和 PCB 的孔，两个模型会自动连接在一起。
 
-<img src="images/riscv-hardware-design-3d/image-20221022212831284.png" alt="设计 14" style="zoom:33%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/image-20221022212831284.png" alt="设计 14" style="zoom:33%;" />
 
 用同样的合并办法，封住盒子上方。
 
-<img src="images/riscv-hardware-design-3d/image-20221022215349922.png" alt="设计 15" style="zoom: 25%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/image-20221022215349922.png" alt="设计 15" style="zoom: 25%;" />
 
 因为 PCB 有两个突出的面，所以只能从中间切开。
 
 在中心处创建一个面片，使用面片作为切割工具切开上下外壳。
 
-<img src="images/riscv-hardware-design-3d/image-20221022220159506.png" alt="设计 16" style="zoom: 25%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/image-20221022220159506.png" alt="设计 16" style="zoom: 25%;" />
 
-<img src="images/riscv-hardware-design-3d/image-20221022220533521.png" alt="设计 17" style="zoom:25%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/image-20221022220533521.png" alt="设计 17" style="zoom:25%;" />
 
 ### 为接口预留孔
 
@@ -148,23 +148,23 @@ tags:
 
 可以使用草图的投影功能准确的找到预留孔的位置和大小。
 
-<img src="images/riscv-hardware-design-3d/image-20221102152253173.png" alt="设计 18" style="zoom:33%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/image-20221102152253173.png" alt="设计 18" style="zoom:33%;" />
 
 可以得到如下的结果。
 
-<img src="images/riscv-hardware-design-3d/image-20221022222958010.png" alt="设计 19" style="zoom:33%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/image-20221022222958010.png" alt="设计 19" style="zoom:33%;" />
 
 这里同样要留出冗余量。需要注意的是这里的接口无法体现出线材外部包裹的大小，冗余量很难确定，需要和 PCB 设计人员沟通 PCB 的组装要求，或者由 PCB 设计人员自行确定。
 
-<img src="images/riscv-hardware-design-3d/image-20221022223306977.png" alt="设计 20" style="zoom:25%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/image-20221022223306977.png" alt="设计 20" style="zoom:25%;" />
 
 我们由此画出了接口大小的草图。草图不仅可以新建形状，也可以通过剪切来调整现有的形状。
 
-<img src="images/riscv-hardware-design-3d/image-20221022235110469.png" alt="设计 21" style="zoom:33%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/image-20221022235110469.png" alt="设计 21" style="zoom:33%;" />
 
 如上图中，我们使用这个圆对现有的上下外壳进行剪切，这样就得到了圆孔。
 
-<img src="images/riscv-hardware-design-3d/image-20221023100439256.png" alt="设计 22" style="zoom:33%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/image-20221023100439256.png" alt="设计 22" style="zoom:33%;" />
 
 ### 上下外壳的固定
 
@@ -186,7 +186,7 @@ tags:
 
 螺丝孔的具体位置就直接选取了中点。中点可以使用辅助线的方式画出草图。
 
-<img src="images/riscv-hardware-design-3d/image-20221023100324573.png" alt="辅助线" style="zoom: 50%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/image-20221023100324573.png" alt="辅助线" style="zoom: 50%;" />
 
 螺丝，即紧固件，有很多种类别，可以根据各类别的优缺点进行选择。参考资料有：
 
@@ -196,11 +196,11 @@ tags:
 
 螺丝孔使用沉头孔或者倒角孔，以免组装完成后螺丝突出。
 
-<img src="images/riscv-hardware-design-3d/image-20221102153634720.png" alt="Fusion 360 孔 面板" style="zoom: 33%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/image-20221102153634720.png" alt="Fusion 360 孔 面板" style="zoom: 33%;" />
 
 需要先 [查询][008] 对应的螺丝是否有货，再打孔。
 
-<img src="images/riscv-hardware-design-3d/image-20221102153449776.png" style="zoom:33%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/image-20221102153449776.png" style="zoom:33%;" />
 
 在这次设计中，我们使用了 [这款][009] 螺丝。
 
@@ -210,7 +210,7 @@ tags:
 
 我们可以创建一些同高度的实体来辅助支撑 PCB。
 
-<img src="images/riscv-hardware-design-3d/image-20221102154334498.png" style="zoom: 50%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/image-20221102154334498.png" style="zoom: 50%;" />
 
 同样也是先画出草图，再拉伸出实体。
 
@@ -224,13 +224,13 @@ tags:
 
 参考三维猴的 [技术要求][011]，我们需要导出规定的格式。
 
-<img src="images/riscv-hardware-design-3d/sanweihou-spec.png" alt="三维猴技术要求" style="zoom: 67%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/sanweihou-spec.png" alt="三维猴技术要求" style="zoom: 67%;" />
 
 三维猴规定了误差和公差，使用的例子是 SOLIDWORKS 2021。我们可以使用 Fusion 360 完成同样的操作。
 
 选择要导出的零部件，点击另存为网格。
 
-<img src="images/riscv-hardware-design-3d/image-20221102155537466.png" alt="Fusion 导出 STL" style="zoom:33%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/image-20221102155537466.png" alt="Fusion 导出 STL" style="zoom:33%;" />
 
 参考 [资料][002] 得知，曲向偏差对应的是 SOLIDWORKS 2021 中的误差，法向偏差对应的是公差。
 
@@ -242,7 +242,7 @@ tags:
 
 在这次验证性的生产中，我们选用 `LEDO 6060-光敏树脂（进口）` 材料，因为该材料相比同类型材料热变形温度更高，更耐热。不同的材料在参数上会有区别，可以在制造商网站上查询。
 
-<img src="images/riscv-hardware-design-3d/image-20221103213132666.png" alt="LEDO 6060-光敏树脂（进口）详细参数" style="zoom: 33%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/image-20221103213132666.png" alt="LEDO 6060-光敏树脂（进口）详细参数" style="zoom: 33%;" />
 
 3D 打印后还可能会进行打磨表面等操作。
 
@@ -256,7 +256,7 @@ tags:
 
 最后设计出的 3D 外壳效果如图：
 
-<img src="images/riscv-hardware-design-3d/image-20221103211422923.png" alt="最终效果图" style="zoom:50%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/image-20221103211422923.png" alt="最终效果图" style="zoom:50%;" />
 
 ### 爆炸图、尺寸图和渲染图
 
@@ -264,23 +264,23 @@ tags:
 
 在 Fusion 360 中，可以通过更改工作空间来完成这些图。
 
-<img src="images/riscv-hardware-design-3d/image-20221103212702841.png" alt="Fusion 工作空间" style="zoom:33%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/image-20221103212702841.png" alt="Fusion 工作空间" style="zoom:33%;" />
 
 - 爆炸图：
 
-![爆炸图](/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/tinylab-d1s-a0-0.jpg)
+![爆炸图](/wp-content/uploads/2022/03/riscv-linux/https://tinylab.org/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/tinylab-d1s-a0-0.jpg)
 
 - 外壳上 尺寸图：
 
-![外壳上 尺寸图](/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/tinylab-d1s-a0-1.jpg)
+![外壳上 尺寸图](/wp-content/uploads/2022/03/riscv-linux/https://tinylab.org/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/tinylab-d1s-a0-1.jpg)
 
 - 外壳下 尺寸图：
 
-![外壳下 尺寸图](/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/tinylab-d1s-a0-2.jpg)
+![外壳下 尺寸图](/wp-content/uploads/2022/03/riscv-linux/https://tinylab.org/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/tinylab-d1s-a0-2.jpg)
 
 - 渲染图：
 
-<img src="images/riscv-hardware-design-3d/tinylab-d1s-rendering.png" alt="渲染图" style="zoom:50%;" />
+<img src="/wp-content/uploads/2022/03/riscv-linux/images/riscv-hardware-design-3d/tinylab-d1s-rendering.png" alt="渲染图" style="zoom:50%;" />
 
 ## 总结
 
