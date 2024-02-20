@@ -244,6 +244,11 @@ Linux 即插即跑 Linux Lab Disk 动图：
 - 出现 `dlopen("/usr/lib/virtualbox/VBoxRT.so",) failed: <NULL>` 错误？
     * 在 Linux 下，如果 `/usr/lib` 所属的用户不是 `root`，则会出现该错误，需要手动修复：`sudo chown root:root /usr/lib`，见 [Ticket #16759](https://www.virtualbox.org/ticket/16759?cversion=0)。这个原因可能是用 tar 命令解压了带有错误属性的压缩包到根目录所致，比如说在压缩之前，`usr/lib` 属于普通用户，类似这样：`tar xyz.tar.gz -C /` 解压到根目录以后，会把根目录下的原有目录属性篡改掉。
 
+- 添加 USB 支持
+    * 如需在 VirtualBox 下访问 USB，需安装插件：VirtualBox Extension Pack，可从 [下载页](https://www.virtualbox.org/wiki/Downloads) 下载并安装
+    * 安装方法：打开 VirtualBox，进入顶栏菜单：`管理->工具->扩展包管理器->安装->刚下载的包->完成安装`
+    * 虚拟机配置：选中某个虚拟机，选择“设置”，选中“USB设备”，勾选“USB控制器”，选择 USB 控制器版本，建议 2.0/3.0，之后“确定”保存
+
 ### 文件共享
 
 - 在 Windows 下通过虚拟机引导后，默认会在主系统的桌面创建一个 vmshare 共享目录，该目录在虚拟机中名为 `vmshare-guest`
