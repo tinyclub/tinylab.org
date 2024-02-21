@@ -1,7 +1,7 @@
 ---
 layout: post
 author: '谭源'
-title: 'RISV-V 硬件产品开发 - 外壳设计'
+title: 'RISC-V 硬件产品开发 - 外壳设计'
 draft: false
 album: 'RISC-V Linux'
 license: 'cc-by-nc-nd-4.0'
