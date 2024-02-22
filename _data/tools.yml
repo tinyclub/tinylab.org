@@ -4,29 +4,14 @@
   description: 方便手机快速共享资源
   group: tools
 
-- title: 桌面秀
-  permalink: http://showdesk.io
-  description: 轻松录制，即时分享
-  group: tools
-
-- title: 终端秀
-  permalink: http://showterm.io
-  description: 轻松录制，即时分享
-  group: tools
-
 - title: 在线代码编译器
   permalink: http://ideone.com
   description: Learn how to code
   group: tools
 
-- title: 在线 Python 混淆
-  permalink: http://pyobf.herokuapp.com/
-  description: 方便对 Python 代码做简单的加密处理
-  group: tools
-
-- title: 在线 JS 混淆
-  permalink: https://js.willin.vip/ 
-  description: 方便对 Javascript 代码做简单的加密处理
+- title: Compiler Explorer
+  permalink: https://godbolt.org/
+  description: 在线编译器，含各种架构，各种编译器
   group: tools
 
 - title: 在线绘制流程图
@@ -54,12 +39,7 @@
   description: a free service that checks the syntax of Atom or RSS feeds.
   group: tools
 
-- title: 在线 Markdown 转换工具（1)
-  permalink: http://md.aclickall.com/
-  description: 支持把 Markdown 转换为公众号支持的格式，比 Markdown Here 要友好
-  group: tools
-
-- title: 在线 Markdown 转换工具（2)
+- title: 在线 Markdown 转换工具
   permalink: https://mdnice.com/
   description: 支持自定义样式的 Markdown 编辑器，支持微信公众号、知乎、开源中国、稀土掘金、博客园和 CSDN 等平台
   group: tools
@@ -84,12 +64,12 @@
   description: DeepL 的神经网络能够捕捉哪怕是最细微的差别，并在翻译中体现，这是不同于其他服务的地方。
   group: tools
 
-- title: Compiler Explorer
-  permalink: https://godbolt.org/
-  description: 在线编译器，含各种架构，各种编译器
-  group: tools
-
 - title: 术语在线
   permalink: https://www.termonline.cn/index
   description: 术语在线—权威的术语知识服务平台
+  group: tools
+
+- title: TTSMAKER
+  permalink: https://ttsmaker.cn/
+  description: 在线配音工具
   group: tools
