@@ -73,3 +73,8 @@
   permalink: https://ttsmaker.cn/
   description: 在线配音工具
   group: tools
+
+- title: Cursor ide
+  permalink: https://cursor.sh
+  description: 基于 vscode 和 GPT 的 IDE，每个月支持 50 次免费 GPT4 和 200 次免费 GPT3.5
+  group: tools
