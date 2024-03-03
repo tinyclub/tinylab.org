@@ -19,7 +19,7 @@
 
 {% if linux_disk %}
 <a title="" href="https://www.bilibili.com/video/BV1Qg4y1Y7s3" target="_blank"><img src="/images/shop/tinylab.bili.jpg" style="width:450px;max-width:100%">
-<br/>即插即跑，一分钟用上Linux</a>
+<br/>9.9￥把随身Linux带回家</a>
 </a>
 {% endif %}
 
@@ -30,7 +30,7 @@
 
 {% if elf_course %}
 <a title="Linux 程序员基本素养必修课，由泰晓科技技术社区创始人主讲" href="https://www.cctalk.com/m/group/88089283" target="_blank"><img src="/images/courses/360-elf.jpg" style="max-height:250px; max-width:100%">
-<br/>理解ELF，C语言进阶必备</a>
+<br/>理解ELF，完成Linux程序员基本素养训练</a>
 </a>
 {% endif %}
 

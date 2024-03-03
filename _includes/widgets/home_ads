@@ -30,32 +30,32 @@
 
 {% if rv_box %}
 <a style="line-height: 150%" title="可即时开展 RISC-V Linux 系统开发实验，内置 RISC-V 实验盘、RISC-V 开发板及近 ~20 个常见外设或配件！" href="https://www.bilibili.com/video/BV15N4y1W7ES" target="_blank"><img src="/images/box/tiny-riscv-box.jpg" style="max-height:600px; max-width:95%" />
-<br/>泰晓实验箱：上手简单，配公开课</a>
+<br/>泰晓RISC-V实验箱，不会吃灰，开箱即用</a>
 {% endif %}
 
 {% if rv_course_1 %}
 <a style="line-height: 150%" title="泰晓社区第一期 RISC-V Linux 系统开发公开课已全部上传" href="https://tinylab.org/5h-rv-linux/" target="_blank"><img src="/images/courses/riscv-linux-sys-course-v1.jpg" style="max-height:600px; max-width:90%" />
-<br/>还在观望？5小时公开课转进RISC-V</a>
+<br/>还在观望？5小时公开课转进RISC-V架构</a>
 {% endif %}
 
 {% if rv_course_2 %}
 <a style="line-height: 150%" title="泰晓社区第二期 RISC-V Linux 系统开发公开课正在连载中，业内首个基于 RISC-V 真实硬件的嵌入式 Linux 系统开发公开课" href="https://www.bilibili.com/video/BV1Qa4y117zn/" target="_blank"><img src="/images/courses/riscv-linux-sys-course-v2.jpg" style="max-height:600px; max-width:90%" />
-<br/>基于实验箱的RISC-V Linux公开课</a>
+<br/>基于泰晓RISC-V实验箱的Linux公开课</a>
 {% endif %}
 
 {% if disk_lab %}
 <a style="line-height: 150%" title="支持 32G-4T，某宝检索 “泰晓 Linux”，即插即跑 Linux Lab，已支持 Ubuntu, Mint, Fedora, Deepin, Manjaro, Kali，高效做 Linux 内核实验与开发，也可以当普通 Linux 系统使用" href="https://shop155917374.taobao.com/" target="_blank"><img src="/images/disks/linux-lab-disk-manjaro-linux-lab-v1.2.jpg" style="max-height:600px; max-width:90%" />
-<br/>泰晓实验盘：U盘/移动硬盘/固态硬盘</a>
+<br/>泰晓Linux实验盘，即刻上手内核与嵌入式开发</a>
 {% endif %}
 
 {% if disk_sys %}
 <a style="line-height: 150%" title="支持 4GB-2T，泰晓定制版 Mint 最快 ~10s 能启动，2.3GB 存下 5.2 GB 数据，透明倍容直接追加一倍容量，还能随时恢复出厂系统！" href="https://www.bilibili.com/video/BV1Qg4y1Y7s3" target="_blank"><img src="/images/disks/customized-mint-system.jpg" style="max-height:600px; max-width:90%" />
-<br/>泰晓系统盘：更快更轻量</a>
+<br/>泰晓Linux系统盘，即插即跑，低至9.9￥</a>
 {% endif %}
 
 {% if xingqiu_vip %}
 <a style="line-height: 150%" title="Linux 知识星球为泰晓科技 VIP 版知识频道，1000+知识点，500+位同学等你来！" href="https://t.zsxq.com/uB2vJyF" target="_blank"><img src="/images/xingqiu/planet-collection.jpg" style="max-height:600px; max-width:90%" />
-<br/>Linux知识星球：1000+知识点，500+用户</a>
+<br/>泰晓Linux知识星球：1300+知识点，520+用户</a>
 {% endif %}
 
 
