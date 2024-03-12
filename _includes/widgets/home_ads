@@ -44,12 +44,12 @@
 {% endif %}
 
 {% if disk_lab %}
-<a style="line-height: 150%" title="支持 32G-4T，某宝检索 “泰晓 Linux”，即插即跑 Linux Lab，已支持 Ubuntu, Mint, Fedora, Deepin, Manjaro, Kali，高效做 Linux 内核实验与开发，也可以当普通 Linux 系统使用" href="https://shop155917374.taobao.com/" target="_blank"><img src="/images/disks/linux-lab-disk-manjaro-linux-lab-v1.2.jpg" style="max-height:600px; max-width:90%" />
+<a style="line-height: 150%" title="支持 32GB-4TB，某宝检索 “泰晓 Linux” 或者 B 站搜索 “泰晓科技” 工房，即插即跑 Linux Lab，已支持 Ubuntu, Mint, Fedora, Deepin, Manjaro, Kali，高效做 Linux 内核实验与开发，也可以当普通 Linux 系统使用" href="https://shop155917374.taobao.com/" target="_blank"><img src="/images/disks/linux-lab-disk-manjaro-linux-lab-v1.2.jpg" style="max-height:600px; max-width:90%" />
 <br/>泰晓Linux实验盘，即刻上手内核与嵌入式开发</a>
 {% endif %}
 
 {% if disk_sys %}
-<a style="line-height: 150%" title="支持 4GB-2T，泰晓定制版 Mint 最快 ~10s 能启动，2.3GB 存下 5.2 GB 数据，透明倍容直接追加一倍容量，还能随时恢复出厂系统！" href="https://www.bilibili.com/video/BV1Qg4y1Y7s3" target="_blank"><img src="/images/disks/customized-mint-system.jpg" style="max-height:600px; max-width:90%" />
+<a style="line-height: 150%" title="支持 2GB-2TB，泰晓定制版 Mint 最快 ~10s 能启动，2.3GB 存下 5.2 GB 数据，透明倍容直接追加一倍容量，还能随时恢复出厂系统！" href="https://www.bilibili.com/video/BV1Qg4y1Y7s3" target="_blank"><img src="/images/disks/customized-mint-system.jpg" style="max-height:600px; max-width:90%" />
 <br/>泰晓Linux系统盘，即插即跑，低至9.9￥</a>
 {% endif %}
 
