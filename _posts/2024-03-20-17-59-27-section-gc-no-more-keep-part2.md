@@ -35,7 +35,7 @@ tags:
 
 前面几篇文章介绍了 Section GC 的使用方法和原理，以及 Linux 内核中的 Section GC 失败问题。
 
-要彻底解决这个问题，我们需要让 `.pushsection` 能够正确的建立引用关系，避免强制保留的使用，以杜绝依赖反转。
+要彻底解决这个问题，我们需要让 `.pushsection` 能够正确地建立引用关系，避免强制保留的使用，以杜绝依赖反转。
 
 经过翻阅文档和社区的讨论，我们总结了两种能够手动建立引用关系的方法。
 
@@ -199,7 +199,7 @@ int __attribute__((section(".text.fun1,\"axG\",@progbits,\"MyGroup\" #")))fun1()
 Warning: section .text.main already has a group (GroupName)
 ```
 
-内核社区是不接受有警告的代码存在的，而且链接器并未提供选项来关闭这个警告，所有这个方案虽然能解决问题，但并不能合入主线。
+内核社区是不接受有警告的代码存在的，而且链接器并未提供选项来关闭这个警告，所以这个方案虽然能解决问题，但并不能合入主线。
 
 ### SHF_LINK_ORDER
 
