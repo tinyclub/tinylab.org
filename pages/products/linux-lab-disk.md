@@ -1,6 +1,6 @@
 ---
 title: 'Linux Lab Disk / Linux Lab 真盘 / 泰晓 Linux 实验盘 / 泰晓 Linux 系统盘'
-tagline: '免安装即插即用的智能随身 Linux Lab 实验盘，可选 4G-4T，可选 Ubuntu,Deepin,Manjaro,Kali,Mint,Fedora 系统'
+tagline: '免安装即插即用的智能随身 Linux Lab 实验盘/系统盘，可选 512MB-4TB，可选 Mint, Ubuntu, Deepin, Manjaro, Kali, Fedora 系统'
 author: Wu Zhangjin
 layout: page
 permalink: /linux-lab-disk/
@@ -49,7 +49,7 @@ Linux Lab Disk 又名 Linux Lab 真盘或泰晓 Linux 实验盘，除了独创�
 - 泰晓 ARM 实验盘，集成 ARM Lab 等便利 ARM 实验的环境
 - 泰晓 LoongArch 实验盘，便利国产龙芯 LoongArch 实验的环境
 
-在原有高速 U 盘和固态 U 盘版本的基础上，泰晓社区相继推出了移动硬盘版本和固态硬盘（含 NVME / SATA）版本，覆盖了各种用户的需求，支持的容量已覆盖 4G - 4T。
+在原有高速 U 盘和固态 U 盘版本的基础上，泰晓社区相继推出了移动硬盘版本和固态硬盘（含 NVME / SATA）版本，覆盖了各种用户的需求，支持的容量已覆盖 512MB - 4TB。
 
 其中某个型号如下图：
 
