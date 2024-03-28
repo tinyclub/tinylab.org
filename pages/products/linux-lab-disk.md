@@ -10,16 +10,16 @@ categories:
   - 开源项目
   - Linux Lab
 tags:
-  - 实验环境
-  - 嵌入式
-  - 智能
-  - vmboot
-  - 随身系统盘
-  - Linux系统盘
-  - 随身Linux
-  - 泰晓
   - 实验盘
+  - 实验环境
+  - 随身系统盘
   - 随身Linux
+  - Linux to go
+  - Pocket Linux
+  - 口袋Linux
+  - 系统u盘
+  - Linux系统盘
+  - 泰晓
   - Ubuntu
   - Deepin
   - Manjaro
@@ -27,10 +27,14 @@ tags:
   - Mint
   - Fedora
   - Ubuntu 22.04
+  - 嵌入式
+  - 智能
+  - vmboot
   - 即插即跑
   - 智能启动
   - 透明倍容
   - 出厂恢复
+  - 备份还原
 ---
 
 ## 产品简介
