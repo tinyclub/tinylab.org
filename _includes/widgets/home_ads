@@ -30,7 +30,7 @@
 
 {% if rv_box %}
 <a style="line-height: 150%" title="可即时开展 RISC-V Linux 系统开发实验，内置 RISC-V 实验盘、RISC-V 开发板及近 ~20 个常见外设或配件！" href="https://www.bilibili.com/video/BV15N4y1W7ES" target="_blank"><img src="/images/box/tiny-riscv-box.jpg" style="max-height:600px; max-width:95%" />
-<br/>泰晓RISC-V实验箱，不会吃灰，开箱即用</a>
+<br/>泰晓RISC-V实验箱，转战RISC-V，开箱即用</a>
 {% endif %}
 
 {% if rv_course_1 %}
