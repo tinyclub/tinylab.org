@@ -123,7 +123,7 @@ _target_images=$TOP_DIR/$target_images
 
 # get top header info
 title="$(grep -m1 '^# ' $article | cut -d ' ' -f2- | tr -d "'")"
-permalink="$(basename $article | sed -e 's/[0-9]*-//;s/.md$//')"
+permalink="$(basename $article | sed -e 's/[0-9]*[-_]//;s/.md$//')"
 full_permalink="${site_url}/${permalink}/"
 desc="$title"
 
