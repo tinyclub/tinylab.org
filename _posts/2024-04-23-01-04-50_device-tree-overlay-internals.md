@@ -5,7 +5,7 @@ title: '设备树 overlay 机制深入拆解'
 draft: false
 album: 'RISC-V Linux'
 license: 'cc-by-nc-nd-4.0'
-permalink: /20230804_devicetree-overlay-internals/
+permalink: /devicetree-overlay-internals/
 description: '设备树 overlay 机制深入拆解'
 category:
   - 开源项目
