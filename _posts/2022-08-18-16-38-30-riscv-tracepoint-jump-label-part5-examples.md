@@ -14,6 +14,8 @@ category:
 tags:
   - Linux
   - RISC-V
+  - Jump Label
+  - Static Branch
 ---
 
 > Author:  Falcon <falcon@tinylab.org>

@@ -13,6 +13,8 @@ category:
 tags:
   - Linux
   - RISC-V
+  - OpenSBI
+  - 固件分析
 ---
 
 > Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.2-rc1 - [urls refs]

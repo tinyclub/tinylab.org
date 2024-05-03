@@ -13,6 +13,7 @@ category:
 tags:
   - Linux
   - RISC-V
+  - 最小配置
 ---
 
 > Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.2-rc1 - [codeinline refs pangu]

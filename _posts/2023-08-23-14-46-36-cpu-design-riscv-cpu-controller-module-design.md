@@ -13,6 +13,8 @@ category:
 tags:
   - Linux
   - RISC-V
+  - CPU 设计
+  - 指令集
 ---
 
 > Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.1-rc3 - [spaces newline header]

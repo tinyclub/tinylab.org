@@ -13,6 +13,9 @@ category:
 tags:
   - Linux
   - RISC-V
+  - QEMU
+  - 指令集扩展
+  - 检测方式
 ---
 
 > Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.2-rc2 - [pangu autocorrect epw]

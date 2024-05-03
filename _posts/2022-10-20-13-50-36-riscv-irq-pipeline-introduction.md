@@ -14,6 +14,7 @@ category:
 tags:
   - Linux
   - RISC-V
+  - 异常处理
 ---
 
 > Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.1-rc3 - [spaces tables pangu]

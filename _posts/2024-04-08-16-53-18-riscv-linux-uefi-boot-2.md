@@ -13,6 +13,7 @@ category:
 tags:
   - Linux
   - RISC-V
+  - UEFI
 ---
 
 > Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.1 - [spaces header toc codeinline pangu epw]

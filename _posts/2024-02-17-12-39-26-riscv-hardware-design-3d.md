@@ -13,6 +13,7 @@ category:
 tags:
   - Linux
   - RISC-V
+  - 外壳设计
 ---
 
 > Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.1 - [spaces toc urls pangu]

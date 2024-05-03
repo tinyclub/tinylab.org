@@ -14,6 +14,9 @@ category:
 tags:
   - Linux
   - RISC-V
+  - KVM
+  - kvmtool
+  - 内存虚拟化
 ---
 
 > Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.1 - [spaces images urls]

@@ -14,6 +14,7 @@ category:
 tags:
   - Linux
   - RISC-V
+  - 虚拟化
 ---
 
 > Corrector:  [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.1-rc3 - [epw]

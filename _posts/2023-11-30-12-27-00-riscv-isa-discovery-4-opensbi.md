@@ -13,6 +13,9 @@ category:
 tags:
   - Linux
   - RISC-V
+  - OpenSBI
+  - 指令集扩展
+  - 检测方式
 ---
 
 > Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.2-rc2 - [spaces quotes header comments urls]

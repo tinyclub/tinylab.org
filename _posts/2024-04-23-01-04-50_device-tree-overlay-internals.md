@@ -13,6 +13,8 @@ category:
 tags:
   - Linux
   - RISC-V
+  - 设备树
+  - overlay
 ---
 
 > Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.2-rc2 - [spaces tables]

@@ -15,6 +15,8 @@ tags:
   - Linux
   - RISC-V
   - KVM
+  - 虚拟化
+  - 用户态程序
 ---
 
 > Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.1-rc3 - [codeinline images urls]

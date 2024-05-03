@@ -13,6 +13,9 @@ category:
 tags:
   - Linux
   - RISC-V
+  - GCC
+  - 指令集扩展
+  - 检测方式
 ---
 
 > Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.2-rc1 - [codeinline urls refs]

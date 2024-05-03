@@ -13,6 +13,7 @@ category:
 tags:
   - Linux
   - RISC-V
+  - Unified Discovery
 ---
 
 > Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.2-rc2 - [spaces quotes comments tables urls epw]

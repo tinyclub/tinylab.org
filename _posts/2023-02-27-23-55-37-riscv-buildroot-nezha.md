@@ -14,6 +14,8 @@ category:
 tags:
   - Linux
   - RISC-V
+  - Buildroot
+  - QEMU
 ---
 
 > Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.1 - [codeblock pangu]

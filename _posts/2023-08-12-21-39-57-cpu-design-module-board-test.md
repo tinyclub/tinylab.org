@@ -13,6 +13,9 @@ category:
 tags:
   - Linux
   - RISC-V
+  - CPU 设计
+  - 软件仿真
+  - 下板调试
 ---
 
 > Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.1-rc3 - [header]

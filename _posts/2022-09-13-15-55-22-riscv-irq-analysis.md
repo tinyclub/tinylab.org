@@ -14,6 +14,7 @@ category:
 tags:
   - Linux
   - RISC-V
+  - 中断
 ---
 
 > Author:  通天塔 985400330@qq.com
@@ -29,7 +30,7 @@ tags:
 
 ## RISC-V 中断硬件实现
 
-### CM32M433R  MCU实现
+### CM32M433R MCU 实现
 
 参考手册：[Nuclei_N级别指令架构手册](https://www.rvmcu.com/quickstart-show-id-1.html#38)
 

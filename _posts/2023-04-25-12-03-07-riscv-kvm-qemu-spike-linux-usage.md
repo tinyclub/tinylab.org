@@ -14,6 +14,8 @@ category:
 tags:
   - Linux
   - RISC-V
+  - Spike
+  - KVM
 ---
 
 > Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.1 - [header]

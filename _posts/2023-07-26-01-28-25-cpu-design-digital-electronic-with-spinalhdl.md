@@ -13,6 +13,10 @@ category:
 tags:
   - Linux
   - RISC-V
+  - CPU 设计
+  - 数电
+  - Scala
+  - SpinalHDL
 ---
 
 > Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.1-rc3 - [epw]

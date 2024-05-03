@@ -1,6 +1,6 @@
 ---
 layout: post
-author: 'ysyx_22040406-张炀杰'
+author: 'ysyx'
 title: 'QEMU 启动方式分析（2）: QEMU virt 平台下通过 OpenSBI + U-Boot 引导 RISCV64 Linux Kernel'
 draft: false
 plugin: ''
@@ -14,6 +14,11 @@ category:
 tags:
   - Linux
   - RISC-V
+  - QEMU
+  - 启动方式
+  - OpenSBI
+  - U-Boot
+  - Linux Kernel
 ---
 
 > Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.1-rc3 - [quotes header codeblock codeinline]

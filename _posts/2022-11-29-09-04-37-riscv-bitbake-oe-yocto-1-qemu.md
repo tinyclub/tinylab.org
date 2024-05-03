@@ -14,6 +14,8 @@ category:
 tags:
   - Linux
   - RISC-V
+  - Bitbake
+  - OpenEmbedded
 ---
 
 > Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.1-rc3 - [pangu autocorrect]

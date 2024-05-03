@@ -14,6 +14,7 @@ category:
 tags:
   - Linux
   - RISC-V
+  - Ftrace
 ---
 
 > Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.1-rc3 - [comments codeblock codeinline epw]

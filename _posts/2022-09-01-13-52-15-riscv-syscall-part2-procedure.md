@@ -14,6 +14,7 @@ category:
 tags:
   - Linux
   - RISC-V
+  - Syscall
 ---
 
 > Author:  envestcc <chen1233216@hotmail.com>

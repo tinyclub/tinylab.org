@@ -14,6 +14,12 @@ category:
 tags:
   - Linux
   - RISC-V
+  - KMSAN
+  - optprobes
+  - queued-spinlocks
+  - user-ret-profiler
+  - virt-cpuacct
+  - membarrier-sync-core
 ---
 
 > Author:  牛工 - 通天塔 985400330@qq.com

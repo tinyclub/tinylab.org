@@ -14,6 +14,7 @@ category:
 tags:
   - Linux
   - RISC-V
+  - vDSO
 ---
 
 > Author:  envestcc <chen1233216@hotmail.com>

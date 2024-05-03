@@ -13,6 +13,7 @@ category:
 tags:
   - Linux
   - RISC-V
+  - Section GC
 ---
 
 > Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.2-rc2 - [spaces toc urls]

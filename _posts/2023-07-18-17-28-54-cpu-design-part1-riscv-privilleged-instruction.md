@@ -13,6 +13,8 @@ category:
 tags:
   - Linux
   - RISC-V
+  - CPU 设计
+  - 指令集
 ---
 
 > Author:  Fajie.WangNiXi <YuHaoW1226@163.com>

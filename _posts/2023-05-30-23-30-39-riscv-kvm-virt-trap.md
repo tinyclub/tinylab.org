@@ -13,6 +13,8 @@ category:
 tags:
   - Linux
   - RISC-V
+  - 虚拟化
+  - H 扩展
 ---
 
 > Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.1-rc3 - [spaces header]

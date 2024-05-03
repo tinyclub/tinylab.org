@@ -14,6 +14,8 @@ category:
 tags:
   - Linux
   - RISC-V
+  - 邮件列表
+  - 社区协作
 ---
 
 > Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.1 - [codeblock autocorrect]

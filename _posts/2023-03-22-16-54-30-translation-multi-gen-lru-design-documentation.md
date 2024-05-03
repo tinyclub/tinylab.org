@@ -14,6 +14,7 @@ category:
 tags:
   - Linux
   - RISC-V
+  - MGLRU
 ---
 
 > Corrector:  [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.1 - [spaces header codeinline]

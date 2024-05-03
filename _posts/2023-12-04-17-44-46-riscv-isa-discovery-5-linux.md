@@ -13,6 +13,8 @@ category:
 tags:
   - Linux
   - RISC-V
+  - 指令集扩展
+  - 检测方式
 ---
 
 > Author:    YJMSTR [jay1273062855@outlook.com](https://gitee.com/tinylab/riscv-linux/blob/master/articles/mailto:jay1273062855@outlook.com)

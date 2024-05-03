@@ -13,6 +13,7 @@ category:
 tags:
   - Linux
   - RISC-V
+  - SBI
 ---
 
 > Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.2-rc1 - [spaces tables autocorrect]

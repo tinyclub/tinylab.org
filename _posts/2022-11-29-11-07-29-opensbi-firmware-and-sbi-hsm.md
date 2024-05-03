@@ -14,6 +14,8 @@ category:
 tags:
   - Linux
   - RISC-V
+  - OpenSBI
+  - HSM 扩展
 ---
 
 > Corrector:   [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.1 - [pangu epw]

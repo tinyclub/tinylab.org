@@ -13,6 +13,8 @@ category:
 tags:
   - Linux
   - RISC-V
+  - Jump Label
+  - 运行时代码改写
 ---
 
 > Author:  Falcon <falcon@tinylab.org>

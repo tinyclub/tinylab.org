@@ -13,6 +13,8 @@ category:
 tags:
   - Linux
   - RISC-V
+  - x86
+  - UnikernelLinux
 ---
 
 > Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.2-rc1 - [codeblock codeinline refs pangu autocorrect epw]

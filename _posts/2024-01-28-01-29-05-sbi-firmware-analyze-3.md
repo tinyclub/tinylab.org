@@ -13,6 +13,9 @@ category:
 tags:
   - Linux
   - RISC-V
+  - OpenSBI
+  - 固件分析
+  - sbi_init.c
 ---
 
 > Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.2-rc1 - [spaces comments refs pangu]

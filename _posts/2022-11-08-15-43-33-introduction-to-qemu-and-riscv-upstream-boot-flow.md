@@ -1,6 +1,6 @@
 ---
 layout: post
-author: 'ysyx_22040406-张炀杰'
+author: 'ysyx'
 title: 'QEMU 启动方式分析（1）：QEMU 及 RISC-V 启动流程简介'
 draft: false
 plugin: ''
@@ -14,6 +14,7 @@ category:
 tags:
   - Linux
   - RISC-V
+  - 启动流程
 ---
 
 > Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.1-rc3 - [epw]
