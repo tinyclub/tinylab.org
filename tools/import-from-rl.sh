@@ -248,6 +248,10 @@ EOF
   sed -i -e "s%[[:space:]]*$%%g" $_target_article
 fi
 
+echo "LOG: Editing article, mainly please change the tags"
+
+vim $_target_article
+
 echo "LOG: Target article: $_target_article"
 echo "LOG: Target images: $_target_images"
 
