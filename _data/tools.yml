@@ -49,6 +49,11 @@
   description: 通过 Mermaid 画流程图、甘特图、类型图、序列图等
   group: tools
 
+- title: Excalidraw 手绘工具
+  permalink: https://excalidraw.com/
+  description: 一款手绘风格的绘图工具，非常适合绘制课程报告或者PPT内的示意图。
+  group: tools
+
 - title: 泼辣有图 —— 开源摄影
   permalink: http://www.polayoutu.com/collections
   description: 为世界提供免费美丽图像
