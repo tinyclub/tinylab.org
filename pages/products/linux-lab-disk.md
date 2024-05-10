@@ -47,6 +47,7 @@ Linux Lab Disk 又名 Linux Lab 真盘或泰晓 Linux 实验盘，除了独创�
 
 在 Linux Lab Disk 的基础上，泰晓社区又推出了：
 
+- 儿童益智版 Linux 系统盘，集成数十款教育类或益智游戏类开源软件，适合中小学生
 - 泰晓 Linux 系统盘，不集成 Linux Lab 等实验环境，又名 Pocket Linux Disk
 - 泰晓 RISC-V 实验盘，集成 RISC-V Lab 等便利 RISC-V 实验的环境
 - 泰晓 X86 实验盘，便利 X86 实验的环境

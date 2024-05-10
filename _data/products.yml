@@ -1,17 +1,22 @@
 
 - title: 泰晓 RISC-V 实验箱 —— 配套公开课，集成 RISC-V 开发板、实验盘和各类外设
   permalink: https://www.bilibili.com/video/BV15N4y1W7ES/
-  description: 即时开展 RISC-V 架构的 Linux 内核、嵌入式 Linux 与驱动开发相关实验。
+  description: 即时开展 RISC-V 架构的 Linux 内核、嵌入式 Linux 与驱动开发相关实验，可在 B 站 “泰晓科技” 工房内选购。
   group: products
 
 - title: Pocket Linux 系统盘 —— 免安装、即插即用 Linux 系统盘，已支持 Ubuntu,Deepin,Manjaro,Kali,Mint,Fedora
   permalink: https://www.bilibili.com/video/BV1Qg4y1Y7s3
-  description: 可以在 64 位 X86 台式机、笔记本、macBook 上即插即用，能安装常见交流、影音、办公与开发软件，可以作为独立系统使用，也可以作为双系统使用，等。某宝检索 “泰晓 Linux” 即可。
+  description: 可以在 64 位 X86 台式机、笔记本、macBook 上即插即用，能安装常见交流、影音、办公与开发软件，可以作为独立系统使用，也可以作为双系统使用。可在 B 站 “泰晓科技” 工房内选购。
   group: products
 
-- title: Linux Lab 真盘 —— 免安装、即插即用 Linux 内核与系统实验盘，已支持 Ubuntu,Deepin,Manjaro,Kali,Mint,Fedora
+- title: 儿童益智版 Linux 系统盘 —— 免安装、即插即用 Linux 系统盘，集成数十款教育类或益智游戏类开源软件，既可打字编程，也能学习数理化
+  permalink: https://www.bilibili.com/video/BV1sm421u729
+  description: 可以在 64 位 X86 台式机、笔记本、macBook 上即插即用，已集成数十款教育类或益智游戏类开源软件。可在 B 站 “泰晓科技” 工房内选购。
+  group: products
+
+- title: 泰晓 Linux 实验盘 —— 免安装、即插即用 Linux 内核与系统实验盘，已支持 Ubuntu,Deepin,Manjaro,Kali,Mint,Fedora
   permalink: /linux-lab-disk
-  description: 可以在 64 位 X86 台式机、笔记本、macBook 上即插即用，可以作为独立系统使用，也可以作为双系统使用，可用于学习汇编、C语言、Shell、Uboot、Linx 0.11、RVOS、Linux内核与嵌入式 Linux 系统等。某宝检索 “泰晓 Linux” 即可。
+  description: 可以在 64 位 X86 台式机、笔记本、macBook 上即插即用，可以作为独立系统使用，也可以作为双系统使用，可用于学习汇编、C语言、Shell、Uboot、Linx 0.11、RVOS、Linux内核与嵌入式 Linux 系统等。可在 B 站 “泰晓科技” 工房内选购。
   group: products
 
 - title: 《360° 剖析 Linux ELF》视频课程 —— Linux 程序员基本素养训练课
