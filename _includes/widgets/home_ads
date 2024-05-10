@@ -1,6 +1,6 @@
 <div>
 
-{% assign random = site.time | date: "%s%N" | modulo: 6 %}
+{% assign random = site.time | date: "%s%N" | modulo: 7 %}
 
 {% assign rv_box = false %}
 {% assign rv_course_1 = false %}
@@ -59,7 +59,7 @@
 
 {% if disk_pupil %}
 <a style="line-height: 150%" title="支持 2GB-128GB，即插即跑，集成数十款益智类开源软件，规划了 100 期教学视频！" href="https://www.bilibili.com/video/BV1sm421u729" target="_blank"><img src="/images/disks/pupil-linux-disk.jpg" style="max-height:600px; max-width:90%" />
-<br/>儿童益智版 Linux 系统，打字编程还可学数理化</a>
+<br/>儿童益智版 Linux 系统，可打字编程还能学数理化</a>
 {% endif %}
 
 
