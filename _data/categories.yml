@@ -437,6 +437,7 @@
 
 - name: 泰晓科技
   categories:
+    - name: 泰晓产品
     - name: 泰晓沙龙
     - name: 泰晓福利
     - name: 泰晓资讯
