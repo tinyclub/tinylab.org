@@ -7,6 +7,7 @@
 {% assign rv_course_2 = false %}
 {% assign disk_lab = false %}
 {% assign disk_sys = false %}
+{% assign disk_pupil = false %}
 {% assign xingqiu_vip = false %}
 
 {% if random == 0 %}
@@ -25,6 +26,9 @@
 {% assign disk_sys = true %}
 {% endif %}
 {% if random == 5 %}
+{% assign disk_pupil = true %}
+{% endif %}
+{% if random == 6 %}
 {% assign xingqiu_vip = true %}
 {% endif %}
 
@@ -52,6 +56,12 @@
 <a style="line-height: 150%" title="支持 512MB-2TB，泰晓定制版 Mint 最快 ~10s 能启动，2.3GB 存下 5.2 GB 数据，透明倍容直接追加一倍容量，还能随时恢复出厂系统！" href="https://www.bilibili.com/video/BV1Qg4y1Y7s3" target="_blank"><img src="/images/disks/customized-mint-system.jpg" style="max-height:600px; max-width:90%" />
 <br/>泰晓Linux系统盘，即插即跑，低至9.9￥</a>
 {% endif %}
+
+{% if disk_pupil %}
+<a style="line-height: 150%" title="支持 2GB-128GB，即插即跑，集成数十款益智类开源软件，规划了 100 期教学视频！" href="https://www.bilibili.com/video/BV1sm421u729" target="_blank"><img src="/images/disks/pupil-linux-disk.jpg" style="max-height:600px; max-width:90%" />
+<br/>儿童益智版 Linux 系统，打字编程还可学数理化</a>
+{% endif %}
+
 
 {% if xingqiu_vip %}
 <a style="line-height: 150%" title="Linux 知识星球为泰晓科技 VIP 版知识频道，1000+知识点，500+位同学等你来！" href="https://t.zsxq.com/uB2vJyF" target="_blank"><img src="/images/xingqiu/planet-collection.jpg" style="max-height:600px; max-width:90%" />
