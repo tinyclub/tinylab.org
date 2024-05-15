@@ -172,6 +172,14 @@ Linux 即插即跑 Linux Lab Disk 动图：
 
 ### 系统启动
 
+- 引导菜单说明
+
+```
+Volatile Boot Setting    <-- 内存模式，重启后会掉电
+Factory Restore Setting  <-- 出厂恢复模式
+Emergency Rescue Setting <-- 急救模式
+```
+
 - 使用实验盘前建议禁用 Windows 的 BitLocker 功能，如果未启用的话，请忽略
     * BitLocker 全盘加密功能可能会导致系统缓慢等问题，不建议启动
     * 如果使用的是 <=v2.9 版本的 vmboot，BitLocker 可能会导致 Windows 系统无法启动；>=v3.0 版本的 vmboot 已兼容 BitLocker
@@ -195,6 +203,20 @@ Linux 即插即跑 Linux Lab Disk 动图：
 - 桌面图标不见了或者桌面图标显示异常？
     * 如果刚切换到了中文语言，可能是桌面路径发生了变化，此时退回英文桌面并再次切换到中文桌面，但是切换时请选择保留原来的桌面路径。
     * 如果未切换过语言，可能是插件配置问题。如果在 Gnome 桌面下，可以用 `tweaks` 或 `gnome-shell-extension-prefs` 重新设置 Desktop Icons 或 Desktop Icons NG (DING) 插件。
+
+### 中文支持
+
+- 切换默认语言为中文
+
+```
+sudo apt update -y
+sudo apt install -y locales
+# 配置过程中，依次选择 zh_CN.UTF-8
+sudo dpkg-reconfigure locales
+```
+
+- 切换中英文输入法
+    * 按下 `CTRL+Space`
 
 ### 登陆账号
 
