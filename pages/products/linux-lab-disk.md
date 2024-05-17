@@ -206,7 +206,10 @@ Emergency Rescue Setting <-- 急救模式
 
 ### 中文支持
 
-- 切换默认语言为中文
+- 切换显示界面的语言为中文
+    * 新版儿童 Linux 系统盘支持快捷切换
+        * `Applications -> Settings -> Language Switching`
+    * 老版本需要手动设置
 
 ```
 sudo apt update -y
