@@ -363,10 +363,15 @@ configfile (hd0,gpt5)/timeshift-btrfs/snapshots/<first one>/@/boot/grub/grub-fal
 
 ### 上网联网
 
-- 出现无法正常上网的情况，怎么办？
+- 独立启动出现无法正常上网的情况，怎么办？
     * 先通过系统的右上角或者右下角的网络设置，配置好无线热点等接入设备，如果无法选择联网设备，则说明可能缺失相应的驱动，可以通过并行启动安装一下，无线设备型号可以通过 Windows 查看
     * 打开命令行，检查 `ping 8.8.8.8` 能否工作，如果可以工作说明网络是通的，如果不能工作，说明驱动或联网设备没有配置好
     * 如果能 ping 通 8.8.8.8 还是不能访问网页，则可能是运营商的域名解析服务异常，可以在 `/etc/resolv.conf` 中追加一行 `nameserver 8.8.8.8` 来解决；为了防止网络服务更新该文件，可以用 `chattr +i /etc/resolv.conf` 锁定
+
+
+- 虚拟机启动出现无法正常上网的情况，怎么办？
+    * 这种情况通常是虚拟机的 DHCP 和 NAT 服务没有启动，请通过 Windows 的服务管理入口找到 VMware 或 VirtualBox 相关的 DHCP 和 NAT 服务，开启它们并把启动类型调整为“自动”。
+        * 例如，Vmware 的相关服务为：VMnetDHCP, VMware NAT Service
 
 ### 升级更新
 
