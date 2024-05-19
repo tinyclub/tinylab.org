@@ -206,15 +206,16 @@ Emergency Rescue Setting <-- 急救模式
 
 ### 中文支持
 
-- 切换显示界面的语言为中文
+- 切换显示界面的语言为中文或英文
     * 新版儿童 Linux 系统盘支持快捷切换
-        * `Applications -> Settings -> Language Switching`
+        * 英文界面：`Applications -> Settings -> Language Switching`
+        * 中文界面：`Applications -> 设置 -> 切换语言`
     * 老版本需要手动设置
 
 ```
 sudo apt update -y
 sudo apt install -y locales
-# 配置过程中，依次选择 zh_CN.UTF-8
+# 配置过程中，依次选择 zh_CN.UTF-8，并按 Tab 键选择 OK 确认
 sudo dpkg-reconfigure locales
 ```
 
@@ -222,6 +223,13 @@ sudo dpkg-reconfigure locales
     * 按下 `CTRL+Space`
 
 ### 登陆账号
+
+- 免密登陆或自动登陆
+    * 在新版儿童 Linux 系统中可以快捷开启或取消自动登陆
+        * 英文界面：`Applications -> Settings -> Autologin Switching`
+        * 中文界面：`Applications -> 设置 -> 切换自动登陆`
+    * 在老版本中可以直接删除密码：`sudo passwd -d 用户名`
+        * 例如：`sudo passwd -d mint`
 
 - 解锁以后如何登陆，如何切换到 root 用户？
     * 无论是 Linux Lab Disk 还是 Pocket Linux Disk，都设置了登陆密码，请注意查看随产品附带的说明书。
