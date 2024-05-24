@@ -21,6 +21,7 @@ tags:
 
 - [第 1 期 RISC-V Linux 系统开发公开课（完全发布）](https://space.bilibili.com/687228362/channel/collectiondetail?sid=1750690)
 - [第 2 期 RISC-V Linux 系统开发公开课（陆续连载中……）](https://space.bilibili.com/687228362/channel/collectiondetail?sid=2021659)
+- [泰晓 RISC-V 实验箱（合集，陆续更新）](https://space.bilibili.com/687228362/channel/collectiondetail?sid=2464425)
 
 该实验箱由以下部分构成：
 
@@ -45,7 +46,7 @@ tags:
 - [泰晓 RISC-V 实验箱照片以及演示小视频](https://www.bilibili.com/video/BV15N4y1W7ES/)
 - [三分钟内快速上手体验泰晓 RISC-V 实验箱](https://www.bilibili.com/video/BV18c41187co/)
 
-更多视频会连载到 [第 2 期 RISC-V Linux 系统开发公开课](https://space.bilibili.com/687228362/channel/collectiondetail?sid=2021659) 合集中，敬请期待……
+更多视频会连载到 [第 2 期 RISC-V Linux 系统开发公开课](https://space.bilibili.com/687228362/channel/collectiondetail?sid=2021659) 和 [泰晓 RISC-V 实验箱（合集，陆续更新）](https://space.bilibili.com/687228362/channel/collectiondetail?sid=2464425) 合集中，敬请期待……
 
 ## 产品特点
 
