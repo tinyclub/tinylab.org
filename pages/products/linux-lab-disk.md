@@ -309,6 +309,10 @@ sudo dpkg-reconfigure locales
 
 ### Windows 相关
 
+- 在 Windows 下常见命令如 timeout 无法执行导致无法正确安装和运行 vmboot
+    * 通常可能是 PATH 环境变量设置错误，请把 `C:\Windows\System32` 加入 PATH 环境变量。
+    * 设置步骤：我的电脑 -> 属性 -> 高级系统设置 -> 系统属性 -> 高级 -> 环境变量 -> Path -> 编辑 -> 新建 -> `C:\Windows\System32`。
+
 - 在 Windows 下无法通过 vmboot 切换到 Linux Lab Disk？
     * 可能是您的主机不兼容 vmboot 或者 vmboot 还未能支持您的主机，需要联系我们协助确认，请联系售后。
 
