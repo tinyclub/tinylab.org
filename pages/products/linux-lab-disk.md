@@ -48,12 +48,13 @@ Linux Lab Disk 又名 Linux Lab 真盘或泰晓 Linux 实验盘，除了独创�
 
 在 Linux Lab Disk 的基础上，泰晓社区又推出了：
 
-- 儿童益智版 Linux 系统盘，既可打字编程学习数理化，还能下棋研究数独提升智力，适合中小学生
-- 泰晓 Linux 系统盘，不集成 Linux Lab 等实验环境，又名 Pocket Linux Disk
-- 泰晓 RISC-V 实验盘，集成 RISC-V Lab 等便利 RISC-V 实验的环境
-- 泰晓 X86 实验盘，便利 X86 实验的环境
-- 泰晓 ARM 实验盘，集成 ARM Lab 等便利 ARM 实验的环境
-- 泰晓 LoongArch 实验盘，便利国产龙芯 LoongArch 实验的环境
+- [儿童益智版 Linux 系统盘](https://gf.bilibili.com/item/detail/1106699021)，既可打字编程学习数理化，还能下棋研究数独提升智力，适合中小学生
+- [泰晓 Linux 系统盘](https://gf.bilibili.com/item/detail/1104824021)，不集成 Linux Lab 等实验环境，又名 Pocket Linux Disk
+- [泰晓 Linux 实验盘](https://gf.bilibili.com/item/detail/1105063021)，集成 Linux Lab，默认版内置 ARM/X86/RISC-V 开发环境
+    - [泰晓 RISC-V 实验盘](https://gf.bilibili.com/item/detail/1103923021)，集成 RISC-V Lab 等便利 RISC-V 实验的环境
+    - 泰晓 X86 实验盘，便利 X86 实验的环境
+    - 泰晓 ARM 实验盘，集成 ARM Lab 等便利 ARM 实验的环境
+    - 泰晓 LoongArch 实验盘，便利国产龙芯 LoongArch 实验的环境
 
 在原有高速 U 盘和固态 U 盘版本的基础上，泰晓社区相继推出了移动硬盘版本和固态硬盘（含 NVME / SATA）版本，覆盖了各种用户的需求，支持的容量已覆盖 512MB - 4TB。
 
