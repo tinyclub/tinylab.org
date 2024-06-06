@@ -3,7 +3,6 @@ title: '开源之夏 - Summer 2024'
 tagline: '“开源软件供应链点亮计划——暑期2024”项目提案'
 author: Wu Zhangjin
 draft: false
-top: true
 layout: page
 permalink: /summer2024/
 description: 国内第 5 届开源之夏，泰晓科技技术社区踊跃参与，携 7 个项目参加，欢迎大家报名。
