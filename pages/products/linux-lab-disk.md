@@ -3,6 +3,7 @@ title: 'Linux Lab Disk / Linux Lab 真盘 / 泰晓 Linux 实验盘 / 泰晓 Linu
 tagline: '免安装即插即用的智能随身 Linux Lab 实验盘/系统盘，可选 512MB-4TB，可选 Mint, Ubuntu, Deepin, Manjaro, Kali, Fedora 系统'
 author: Wu Zhangjin
 layout: page
+top: true
 permalink: /linux-lab-disk/
 description: Linux Lab Disk 不同于普通随身 Linux 系统盘，业内开创了多项特性，包括智能启动、透明倍容、时区兼容、自动共享、零损编译、出厂回复、备份还原等，Linux Lab Disk 还集成了 Linux Lab, Linux 0.11 Lab, RISC-V Lab, ARM Lab 等实验环境，可用于编程语言、操作系统等计算机课程实验。
 update: 2023-11-18

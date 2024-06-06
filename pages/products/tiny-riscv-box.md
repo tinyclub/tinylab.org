@@ -1,6 +1,7 @@
 ---
 title: '泰晓 RISC-V 实验箱'
 tagline: '由泰晓社区开发与设计，可以配合泰晓 RISC-V 课程使用'
+top: true
 author: Wu Zhangjin
 layout: page
 permalink: /tiny-riscv-box/
@@ -20,7 +21,8 @@ tags:
 泰晓 RISC-V 实验箱由泰晓社区开发与设计，可以配合泰晓 RISC-V 课程使用：
 
 - [第 1 期 RISC-V Linux 系统开发公开课（完全发布）](https://space.bilibili.com/687228362/channel/collectiondetail?sid=1750690)
-- [第 2 期 RISC-V Linux 系统开发公开课（陆续连载中……）](https://space.bilibili.com/687228362/channel/collectiondetail?sid=2021659)
+- [第 2 期 RISC-V Linux 系统开发公开课（连载中）](https://space.bilibili.com/687228362/channel/collectiondetail?sid=2021659)
+- [第 3 期 RISC-V Linux 系统开发公开课（开发中）](https://space.bilibili.com/687228362/channel/collectiondetail?sid=3128538)
 - [泰晓 RISC-V 实验箱（合集，陆续更新）](https://space.bilibili.com/687228362/channel/collectiondetail?sid=2464425)
 
 该实验箱由以下部分构成：
@@ -75,7 +77,7 @@ tags:
 
 - **B 站用户可以进 [泰晓科技](https://space.bilibili.com/687228362) 账号的工房选购。**
 
-将择日上架到 [泰晓科技开源小店](https://shop155917374.taobao.com)，敬请期待：
+已上架到 [泰晓科技开源小店](https://shop155917374.taobao.com)，敬请期待：
 
 - PC 端可以直接访问 [泰晓科技开源小店](https://shop155917374.taobao.com/) 选购。
 
