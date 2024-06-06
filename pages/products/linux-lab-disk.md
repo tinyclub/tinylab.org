@@ -1,11 +1,11 @@
 ---
-title: 'Linux Lab Disk / Linux Lab 真盘 / 泰晓 Linux 实验盘 / 泰晓 Linux 系统盘 / 儿童益智版 Linux'
+title: '泰晓 Linux 实验盘 / 泰晓 Linux 系统盘 / 儿童 Linux 系统盘'
 tagline: '免安装即插即用的智能随身 Linux Lab 实验盘/系统盘，可选 512MB-4TB，可选 Mint, Ubuntu, Deepin, Manjaro, Kali, Fedora 系统'
 author: Wu Zhangjin
 layout: page
 top: true
 permalink: /linux-lab-disk/
-description: Linux Lab Disk 不同于普通随身 Linux 系统盘，业内开创了多项特性，包括智能启动、透明倍容、时区兼容、自动共享、零损编译、出厂回复、备份还原等，Linux Lab Disk 还集成了 Linux Lab, Linux 0.11 Lab, RISC-V Lab, ARM Lab 等实验环境，可用于编程语言、操作系统等计算机课程实验。
+description: Linux Lab Disk 不同于普通随身 Linux 系统盘，业内开创了多项特性，包括智能启动、透明倍容、时区兼容、自动共享、零损编译、出厂恢复、备份还原、内存启动等，Linux Lab Disk 还集成了 Linux Lab, Linux 0.11 Lab, RISC-V Lab, ARM Lab 等实验环境，可用于编程语言、操作系统等计算机课程实验。
 update: 2023-11-18
 categories:
   - 开源项目
@@ -47,11 +47,18 @@ Linux Lab Disk 是由泰晓科技 Linux Lab 开源项目组研发的一种智能
 
 Linux Lab Disk 又名 Linux Lab 真盘或泰晓 Linux 实验盘，除了独创的多项特性，还集成了自研的 [Linux Lab](/linux-lab), [Linux 0.11 Lab](/linux-0.11-lab) 等实验环境。
 
-在 Linux Lab Disk 的基础上，泰晓社区又推出了：
+泰晓社区推出的相关产品列表：
 
-- [儿童益智版 Linux 系统盘](https://gf.bilibili.com/item/detail/1106699021)，既可打字编程学习数理化，还能下棋研究数独提升智力，适合中小学生
-- [泰晓 Linux 系统盘](https://gf.bilibili.com/item/detail/1104824021)，不集成 Linux Lab 等实验环境，又名 Pocket Linux Disk
-- [泰晓 Linux 实验盘](https://gf.bilibili.com/item/detail/1105063021)，集成 Linux Lab，默认版内置 ARM/X86/RISC-V 开发环境
+- [泰晓 Linux 系统盘](https://gf.bilibili.com/item/detail/1104824021)
+    - 基于原生 Linux 发行版进行深度定制和优化的 Linux 系统，具备智能启动、透明倍容、自动共享、出厂恢复、备份还原、内存启动等多项特性
+    - 不集成 Linux Lab 等实验环境，又名 Pocket Linux Disk
+
+- [儿童 Linux 系统盘](https://gf.bilibili.com/item/detail/1106699021)
+    - 在泰晓 Linux 系统盘的基础上预装了数十款儿童教育类或益智游戏类开源软件
+    - 既可打字编程学习数理化，还能下棋研究数独提升智力，适合中小学生
+
+- [泰晓 Linux 实验盘](https://gf.bilibili.com/item/detail/1105063021)
+    - 在泰晓 Linux 系统盘的基础上，集成了 Linux Lab，默认版内置 ARM/X86/RISC-V 开发环境，又名 Linux Lab Disk
     - [泰晓 RISC-V 实验盘](https://gf.bilibili.com/item/detail/1103923021)，集成 RISC-V Lab 等便利 RISC-V 实验的环境
     - 泰晓 X86 实验盘，便利 X86 实验的环境
     - 泰晓 ARM 实验盘，集成 ARM Lab 等便利 ARM 实验的环境

@@ -1,5 +1,5 @@
 ---
-title: '泰晓 RISC-V 实验箱'
+title: '泰晓 RISC-V 实验箱，配套 30+ 讲嵌入式 Linux 系统开发公开课'
 tagline: '由泰晓社区开发与设计，可以配合泰晓 RISC-V 课程使用'
 top: true
 author: Wu Zhangjin
