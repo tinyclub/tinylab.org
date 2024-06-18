@@ -24,8 +24,8 @@ tags:
 该项目致力于快速构建一个基于 Qemu 的 Linux 内核开发环境。
 
   * 使用文档：[README_zh.md][2]
-      * [Linux Lab v1.2 中文手册](https://tinylab.org/pdfs/linux-lab-v1.2-manual-zh.pdf)
-      * [Linux Lab v1.2 英文手册](https://tinylab.org/pdfs/linux-lab-v1.2-manual-en.pdf)
+      * [Linux Lab v1.3 中文手册](https://tinylab.org/pdfs/linux-lab-v1.3-manual-zh.pdf)
+      * [Linux Lab v1.3 英文手册](https://tinylab.org/pdfs/linux-lab-v1.3-manual-en.pdf)
 
   * 视频教程
       * [Linux Lab 公开课](https://www.cctalk.com/m/group/88948325)
@@ -73,13 +73,13 @@ tags:
       * 支持在线调试和自动化测试框架。
       * 正在添加 树莓派raspi3 和 risc-v 支持。
 
-## Linux Lab 真盘
+## 泰晓 Linux 实验盘
 
-  Linux Lab v0.7 版开始支持 “Linux Lab 真盘”（又名 [Linux Lab Disk](/linux-lab-disk)），实现 Linux Lab 的即插即用，完全免安装，进一步提升 Linux Lab 使用体验，快速高效地开展 Linux 相关实验与开发。
+  Linux Lab v0.7 版开始支持 [泰晓 Linux 实验盘](/linux-lab-disk)），实现 Linux Lab 的即插即用，完全免安装，进一步提升 Linux Lab 使用体验，快速高效地开展 Linux 相关实验与开发。
 
-[![Linux Lab 真盘](/wp-content/uploads/2021/03/linux-lab-disk.png)](/linux-lab-disk)
+[![泰晓 Linux 实验盘](/wp-content/uploads/2021/03/linux-lab-disk.png)](/linux-lab-disk)
 
-  产品特性：
+  **产品特性**：
 
   * 智能启动，开创了三种全新的智能化 “傻瓜式” 使用方式，可自动检测后并行启动、可免关机直接来回切换、还可以智能记忆自动启动。
   * 相互套娃，多支 Linux Lab Disk 可相互启动或来回切换，因此，可根据喜好同时使用多个不同的 Linux 系统发行版。
@@ -91,26 +91,28 @@ tags:
   * 出厂恢复，全系 6 大 Linux 发行版已全部支持出厂恢复功能，在 "rm -rf /" 后都能启动并恢复出厂系统，同时支持自动备份和急救模式，用起来更安心！
 
 
-  购买地址：
+  **购买地址**：
 
   * [在某宝搜索 “泰晓 Linux” 即可选购](https://shop155917374.taobao.com/)
+  * [在 B 站 “泰晓科技” 的工房也可选购](https://gf.bilibili.com/item/detail/1105063021)
 
-## Linux Lab 真板
+## 泰晓 RISC-V 实验箱
 
-  Linux Lab v0.6 版支持 “Linux Lab 真板”，实现了对真实嵌入式开发板的完美支持，从此，不仅可以使用 Linux Lab 学习 Linux 内核，还可以用它来做 Linux 驱动开发。
+  Linux Lab v0.6 版开始实现了对真实嵌入式开发板的完美支持，从此，不仅可以使用 Linux Lab 学习 Linux 内核，还可以用它来做 Linux 驱动开发。
 
-![Linux Lab 真板](/wp-content/uploads/2021/01/linux-lab/ebf-imx6ull.png)
+![泰晓 RISC-V 实验箱 —— 箱内集成外设，仅作参考，以收到的实物为准](/images/box/tiny-riscv-box-devices.jpg)
 
-  使用文档：
+  **使用方法**:
 
-  * [Linux Lab 真板开发日志（1）：50 天开发纪要与上手初体验](/linux-lab-imx6ull-part1)
-  * [Linux Lab 真板开发日志（2）：macOS 和 Windows 环境之无串口开发](/linux-lab-imx6ull-part2)
-  * [Linux Lab 真板开发日志（3）：macOS 环境之 SD 卡、无线网卡、虚拟串口](/linux-lab-imx6ull-part3)
-  * [Linux Lab 真板开发日志（4）：上手全平台 GUI 库 GuiLite](/linux-lab-imx6ull-part4)
+  - [泰晓 RISC-V 实验箱照片以及演示小视频](https://www.bilibili.com/video/BV15N4y1W7ES/)
+  - [三分钟内快速上手体验泰晓 RISC-V 实验箱](https://www.bilibili.com/video/BV18c41187co/)
 
-  购买地址：
+  更多视频会连载到 [第 2 期 RISC-V Linux 系统开发公开课](https://space.bilibili.com/687228362/channel/collectiondetail?sid=2021659) 和 [泰晓 RISC-V 实验箱（合集，陆续更新）](https://space.bilibili.com/687228362/channel/collectiondetail?sid=2464425) 合集中，敬请期待……
+
+  **购买地址**：
 
   * [在某宝搜索 “泰晓 Linux” 即可选购](https://shop155917374.taobao.com/)
+  * [在 B 站 “泰晓科技” 的工房也可选购](https://gf.bilibili.com/item/detail/1105470021)
 
 ## 更多用法
 

@@ -25,7 +25,6 @@ tags:
 泰晓实验云台 项目致力于创建一套计算机课程的在线实验平台。
 
   * 使用文档：[README.md][2]
-  * 注册帐号：[泰晓开源小店][11]
   * 代码仓库：
       * [https://gitee.com/tinylab/cloud-lab.git][8]
       * [https://github.com/tinyclub/cloud-lab.git][3]
@@ -44,7 +43,6 @@ tags:
 
 ## 相关文章
 
-  * [桌面秀（Showdesk.io）— 轻松录制，即时分享][13]
   * [利用 Linux Lab 完成嵌入式系统开发全过程][7]
   * [基于 Docker/Qemu 快速构建 Linux 内核实验环境][6]
   * [基于 Docker 快速构建 Linux 0.11 实验环境][5]
@@ -217,12 +215,6 @@ Cloud Lab 提供了多种登陆方式：
 
 ![Linux Lab Demo](/wp-content/uploads/2016/06/docker-qemu-linux-lab.jpg)
 
-以及相应的演示视频，该视频由 Cloud Lab 自身录制：
-
-<iframe src="http://showdesk.io/7977891c1d24e38dffbea1b8550ffbb8/?f=1" width="100%" marginheight="0" marginwidth="0" frameborder="0" scrolling="no" border="0" allowfullscreen></iframe><br>
-
-更多实验演示效果请参考 [桌面秀 -- showdesk.io](http://showdesk.io)。
-
 ## 多人协同
 
 Cloud Lab 默认开启了多人共享模式，同一个 `Normal` 链接可以在多处登陆，登陆后，双方都可以操作，也可以看到对方的操作，当然，由于登陆的是同一个桌面，多人不能同时操作。
@@ -282,5 +274,4 @@ Cloud Lab 支持自动录制实验过程。登陆进去之前，进行如下设�
  [5]: /build-linux-0-11-lab-with-docker/
  [6]: https://tinylab.org/docker-qemu-linux-lab/
  [7]: https://tinylab.org/using-linux-lab-to-do-embedded-linux-development/
-[11]: http://weidian.com/?userid=335178200
-[13]: https://tinylab.org/showdesk-record-and-share-your-desktop/
+[11]: https://shop155917374.taobao.com/
