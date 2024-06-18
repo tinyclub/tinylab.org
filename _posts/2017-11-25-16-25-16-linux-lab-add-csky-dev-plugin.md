@@ -66,8 +66,6 @@ C-SKY CPU 体系结构由 [杭州中天微系统有限公司](http://www.c-sky.c
 4. 在 qemu-system-cskyv2 上运行新编译的内核并通过 nfs 挂载根文件系统
 5. 关闭系统退出 qemu
 
-上述动作也通过 Showterm 进行了录制，可通过 [这里](http://showterm.io/90d11debc3e51bb56d274) 查看。
-
 实际上，该插件也已经支持 qemu 编译。
 
 ### 详细用法

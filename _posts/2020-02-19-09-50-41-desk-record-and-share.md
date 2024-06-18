@@ -18,6 +18,8 @@ tags:
 > By Falcon of [TinyLab.org][1]
 > Aug 05, 2019
 
+**注意**：相关服务 showdesk.io 已经失效。
+
 继上次总结命令行记录和分享之后，又调研了一下桌面分享。
 
 下面依序来介绍：
@@ -45,7 +47,6 @@ tags:
 * [OBS Studio](https://obsproject.com/)：跨平台，还可以用来直播
 * [Peek](https://www.ghacks.net/2018/04/27/a-look-at-peek-screen-recorder-for-gnu-linux/)： 不支持声音，支持 gif，但是界面很直观
 * kazam：支持截图和录屏，格式比较丰富，PPA: `ppa:kazam-team/stable-series`
-* [Showdesk.io/pyvnc2swf](http://www.showdesk.io)：VNC 录屏和分享
 
 ## 视频格式转换
 

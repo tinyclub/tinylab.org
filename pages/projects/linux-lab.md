@@ -34,25 +34,6 @@ tags:
       * [《360° 剖析 Linux ELF》](https://www.cctalk.com/m/group/88089283)
           * 该课程全程采用 Linux Lab 开展实验，提供了上百个实验案例
 
-  * 在线演示
-      * 命令行
-          * [Linux 快速上手](http://showterm.io/6fb264246580281d372c6)
-          * [Uboot 快速上手](http://showterm.io/11f5ae44b211b56a5d267)
-          * [AT&T 汇编上手](http://showterm.io/0f0c2a6e754702a429269)
-          * [C 语言上手](http://showterm.io/a98435fb1b79b83954775)
-          * [C 语言编译过程](http://showterm.io/887b5ee77e3f377035d01)
-          * [Shell语言上手](http://showterm.io/445cbf5541c926b19d4af)
-      * 视频
-          * [Linux 基本用法](http://showdesk.io/7977891c1d24e38dffbea1b8550ffbb8)
-          * [Linux 进阶用法](https://v.qq.com/x/page/y0543o6zlh5.html)
-          * [Uboot 基本用法](https://v.qq.com/x/page/l0549rgi54e.html)
-      * 其他
-          * [Linux Lab v0.1-rc1 的所有板子启动测试结果](http://showterm.io/8cd2babf19e0e4f90897e)
-          * [在 arm/vexpress-a9 上运行 Ubuntu 18.04 LTS](http://showterm.io/c351abb6b1967859b7061)
-          * [使用 riscv32/virt 和 riscv64/virt 开发板](http://showterm.io/37ce75e5f067be2cc017f)
-          * [一条命令测试和体验某个内核特性](http://showterm.io/7edd2e51e291eeca59018)
-          * [一条命令配置、编译和测试内核模块](http://showterm.io/26b78172aa926a316668d)
-
   * 代码仓库
       * [https://gitee.com/tinylab/linux-lab.git][10]
       * [https://github.com/tinyclub/linux-lab.git][3]
@@ -221,10 +202,6 @@ tags:
 ### 实验效果图
 
 ![Linux Lab Demo](/wp-content/uploads/2016/06/docker-qemu-linux-lab.jpg)
-
-## 演示视频
-
-<iframe src="http://showdesk.io/7977891c1d24e38dffbea1b8550ffbb8/?f=1" width="100%" marginheight="0" marginwidth="0" frameborder="0" scrolling="no" border="0" allowfullscreen></iframe>
 
  [2]: https://gitee.com/tinylab/linux-lab/blob/master/README_zh.md
  [3]: https://github.com/tinyclub/linux-lab

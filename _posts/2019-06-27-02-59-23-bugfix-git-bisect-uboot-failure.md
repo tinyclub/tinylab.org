@@ -103,10 +103,6 @@ git 版本管理系统本身提供了二分法的工具：`git bisect`。这个�
     $ cp tools/git/bisect.sh ./
     $ ./bisect.sh efa5cf a61e84 ./boot-test.sh versatilepb
 
-详细执行过程请参考下面录制的命令行视频：
-
-<iframe src="http://showterm.io/6ef2e19278ed1fd183771" width="100%" height="600" marginheight="0" marginwidth="0" frameborder="0" scrolling="no" border="0" style="margin-top: 10px" allowfullscreen></iframe>
-
 在实际产品研发中，判断规则的自动化是一个蛮有挑战性的工作，得要有比较好的测试基础设施，比如说自动刷机，自动上电开机，然后死机了还要有超时检测，并且要有硬件串口数据抓取和关键词匹配等。
 
 如果想在实际产品中部署类似自动化体系，欢迎加笔者微信沟通交流，wechat: lzufalcon。

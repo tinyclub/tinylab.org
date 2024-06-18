@@ -42,8 +42,6 @@ tags:
 
 [Linux Lab][4]，用于快速构建一个基于 Docker 和 Qemu 的嵌入式 Linux 系统实验环境。它可用于学习 C、Shell、汇编、Uboot、Linux 内核以及嵌入式 Linux 系统。[Linux Lab][5] 也是一个遵循 GPL 协议的开源项目，由泰晓科技研发。
 
-另外，本次直播内容实操性非常强，建议提前 [参考文档][4] 搭建好 Linux Lab，或者直接从 [泰晓开源小店][6] 提前获取一个在线 Linux Lab 帐号。
-
 ## 致谢
 
 本次直播采用的直播平台和服务由 [三千氪][7] 赞助，本次直播采用的 [实验云台/Cloud Lab](/cloud-lab)。
@@ -53,6 +51,5 @@ tags:
 [3]: http://www.denx.de/wiki/U-Boot/
 [4]: https://tinylab.org/linux-lab/
 [5]: https://gitee.com/tinylab/linux-lab
-[6]: https://weidian.com/i/1937753839
 [7]: https://3qk.easyvaas.com/
 [9]: https://www.qingcloud.com/

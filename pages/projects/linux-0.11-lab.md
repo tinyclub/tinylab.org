@@ -24,12 +24,6 @@ tags:
   * 考古计划
       * [Linux 考古笔记](https://tinylab.org/lad-book)
 
-  * 在线演示
-      * 命令行
-          * [基本用法](http://showterm.io/ffb67385a07fd3fcec182)
-          * [添加一个新的系统调用](http://showterm.io/4b628301d2d45936a7f8a)
-      * [视频演示](http://showdesk.io/50bc346f53a19b4d1f813b428b0b7b49)
-
   * 代码仓库
       * [https://gitee.com/tinylab/linux-0.11-lab.git][17]
       * [https://github.com/tinyclub/linux-0.11-lab.git][3]
@@ -121,10 +115,6 @@ See:
 ### 演示图片
 
 ![Linux 0.11 Lab][7]
-
-## 视频演示
-
-<iframe src="http://showdesk.io/50bc346f53a19b4d1f813b428b0b7b49/?f=1" width="100%" marginheight="0" marginwidth="0" frameborder="0" scrolling="no" border="0" allowfullscreen></iframe>
 
  [1]: http://www.oldlinux.org/download/clk011c-3.0.pdf
  [2]: https://gitee.com/tinylab/linux-0.11-lab/blob/master/README.md

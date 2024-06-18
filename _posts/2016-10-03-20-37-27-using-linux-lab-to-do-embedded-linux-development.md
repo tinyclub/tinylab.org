@@ -89,7 +89,6 @@ tags:
 
 登进 Linux Lab 后，可在桌面看到三个快捷图标：
 
-* Demo Page：基于 showterm.io 录制的命令行操作：<http://showterm.io/6fb264246580281d372c6>
 * Help Page：直接链接到 Linux Lab 项目首页：<https://tinylab.org/linux-lab>
 * Linux Lab：点击后可快速启动控制台并进入到开发环境所在的目录。
 

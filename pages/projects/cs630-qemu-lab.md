@@ -26,11 +26,6 @@ tags:
 
 有了这些脚本，学生就可以很方便地在当前开发主机上实验，从而免去了不必要的重启，也避免了烧坏自己主机的风险。
 
-## 在线演示
-
-* [命令行视频](http://showterm.io/547ccaae139df14c3deec)
-* [桌面演示视频](http://showdesk.io/1f06d49dfff081e9b54792436590d9f9/)
-
 ## 实验代码
 
   * 用法：[README.md](https://gitee.com/tinylab/cs630-qemu-lab/blob/master/README.md)
@@ -133,11 +128,6 @@ tags:
 下面是 rtcdemo 在 Qemu 上运行时的截图:
 
 ![image][4]
-
-## 演示视频
-
-<iframe src="http://showdesk.io/1f06d49dfff081e9b54792436590d9f9/?f=1" width="100%" marginheight="0" marginwidth="0" frameborder="0" scrolling="no" border="0" allowfullscreen></iframe>
-
 
  [1]: http://www.cs.usfca.edu/~cruse/cs630f06/
  [2]: http://wiki.qemu.org/Main_Page

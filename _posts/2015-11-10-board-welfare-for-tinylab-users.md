@@ -36,14 +36,6 @@ tags:
 
 ## 福利清单
 
-### [pcDuino8 Uno](https://tinylab.org/introduction-of-pcduino8-Uno/)
-  * 简介：“pcDuino8 Uno 开启了 8 核开源硬件的新时代，它采用全志的 H8 SoC，CPU 基于台积电最新领先的 28 纳米制造工艺，采用 8 个 ARM Cortex-A7 内核，支持 8 核心同时 2.0GHz 高速运行。”
-  * 商品原价：299￥
-  * 泰晓福利价：**150￥**（2015 年双十一当天有效，仅适用如下购买地址）
-  * 购买地址：[泰晓开源小店（微信）](http://weidian.com/?userid=335178200)
-
-    <img src="/images/boards/pcduino/pcduino8_uno.jpg" title="NodeMCU" width="300">
-
 ### [NodeMCU](http://www.nodemcu.com)
   * 简介：“NodeMCU，超简单的物联网开发平台，它是一款开源快速硬件原型平台，包括固件和开发板，用几行简单的 Lua 脚本就能开发物联网应用，关键还内置 WIFI 模块。”
   * 商品原价：49￥

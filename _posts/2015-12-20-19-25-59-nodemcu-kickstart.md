@@ -64,16 +64,6 @@ NodeMCU 最新版为 1.0，如下图：
 
 在具体展开之前，大家可以从参考资料浏览下该平台的一些基本资源，在下文基本都会介绍到。
 
-## 购买 NodeMCU
-
-泰晓为 NodeMCU 的国内代理，购买地址为：[泰晓开源小店](http://weidian.com/?userid=335178200)。
-
-也可在手机端扫码进微店直接购买：
-
-<img src="/images/weidian/tinylab-shop.jpg" title="泰晓开源小店" width="300">
-
-如果需要周边配件，可以从 [NodeMCU 官方淘宝店](https://shop72165205.world.taobao.com/) 购买。
-
 ## 选择开发系统
 
 NodeMCU 目前支持的开发主机系统类型涵盖 Windows，Linux 和 Mac OS X，也支持通过 VMware 虚拟机搭建的 Linux 环境。

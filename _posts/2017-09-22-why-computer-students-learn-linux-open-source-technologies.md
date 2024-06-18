@@ -71,10 +71,7 @@ Linux 相关的开源技术对于学生来说，特别是计算机专业的学�
 * [Using QEMU for Embedded Systems Development, Part 3][3]
 * [利用 Qemu 模拟嵌入式系统制作全过程][4]
 
-而最近，更是可以通过 [Linux Lab](https://tinylab.org/linux-lab) 更便捷地做 Uboot 实验：
-
-* [命令行演示](http://showterm.io/11f5ae44b211b56a5d267)
-* [视频演示](https://v.qq.com/x/page/l0549rgi54e.html)
+而最近，更是可以通过 [Linux Lab](https://tinylab.org/linux-lab) 更便捷地做 Uboot 实验。
 
 也可以通过 [固件和引导程序介绍](https://tinylab.org/firmware-and-bootloaders/) 获取更多引导程序相关的信息。
 
@@ -103,16 +100,6 @@ Linux 本身绝大部分都是 Open 的，在学习操作系统课程的同时�
 
 * [Linux Lab 源代码](https://gitee.com/tinylab/linux-lab)
 * [利用 Linux Lab 完成嵌入式系统软件开发全过程](https://tinylab.org/using-linux-lab-to-do-embedded-linux-development/)
-
-关于 Linux 0.11 Lab 和 Linux Lab 的用法详见：
-
-* Linux 0.11 Lab 用法演示
-    * [基本用法](http://showdesk.io/50bc346f53a19b4d1f813b428b0b7b49)
-    * [添加一个新的系统调用](http://showterm.io/4b628301d2d45936a7f8a)
-
-* Linux Lab 用法演示
-    * [基本用法](http://showdesk.io/7977891c1d24e38dffbea1b8550ffbb8)
-    * [进阶用法（请切到高清观看）](https://v.qq.com/x/page/y0543o6zlh5.html)
 
 ### 汇编语言
 
@@ -147,13 +134,6 @@ Linux 本身绝大部分都是 Open 的，在学习操作系统课程的同时�
 * [MIPS / Linux 汇编语言编程实例](https://tinylab.org/practical-mips-assembly-language-programming-in-linux/)
 
 关于 CS630 Qemu Lab 以及 Linux Lab 中汇编语言例子的用法请参考：
-
-* CS630 Qemu Lab 用法演示
-    * [命令行演示](http://showterm.io/547ccaae139df14c3deec)
-    * [视频演示](http://showdesk.io/1f06d49dfff081e9b54792436590d9f9/)
-
-* Linux Lab 各架构汇编例子用法演示
-    * [命令行演示](http://showterm.io/0f0c2a6e754702a429269)
 
 ### C 语言
 
@@ -192,8 +172,6 @@ Linux 本身绝大部分都是 Open 的，在学习操作系统课程的同时�
 
 由于 [Linux Lab](https://tinylab.org/linux-lab) 提供了非常丰富的开发工具，因此也可以用 Linux Lab 来做 C 语言实验。
 
-* [Linux 下 C 语言演示](http://showterm.io/a98435fb1b79b83954775)
-
 ### 脚本语言
 
 学一两样脚本语言，对于平时的学习和工作会起到事半功倍的效果。
@@ -203,8 +181,6 @@ Linux 本身绝大部分都是 Open 的，在学习操作系统课程的同时�
 关于 Shell，笔者有写过一本开源书籍 [《 Shell 编程范例》][20]，这本书以“面向对象”的方式系统地介绍了日常工作中需要操作的各类数值、逻辑值、字符串、文件、进程、文件系统等，很适合随时检索。
 
 又比如，要做一些比较复杂的甚至带有图形的交互，这时可以用 Python，可以用一门非常漂亮的语言高效地实现一些案子，而且可以学习面向对象的思路。
-
-* [Linux 下 Shell 语言演示](http://showterm.io/445cbf5541c926b19d4af)
 
 ### 编译原理
 
@@ -222,15 +198,11 @@ Linux 本身绝大部分都是 Open 的，在学习操作系统课程的同时�
 
 对了，笔者同样有写一个相关的博客系列，即 [Linux 下 C 语言程序开发过程的视图](https://tinylab.org/the-c-programming-language-insight-publishing-version-0-01/)，后面有整理成开源书籍，即上面提到的[《C 语言编程透视》 ][19] 。
 
-* [Linux 下 C 语言编译过程演示](http://showterm.io/887b5ee77e3f377035d01)
-
 ### 数据库
 
 Mysql, PostgreSQL, SQLite? 在上学时，这些东西就很火，这么多年了，还是那么火。特别是那个小巧的 SQLite，Android 都在用了。而且她小巧，可以学习那些 SQL 语言背后具体是怎么实现的。
 
 也许说企业级的 Oracle, SQLServer 很好用啊，是的，她们是浓妆艳抹的贵妇，高高在上，在有钱人的圈子里打转，不会投怀送抱的，永远没有机会摸透她们的心思。
-
-* [Linux 下 SQL 演示](http://showterm.io/7766b67876c0b7615850e)
 
 ### 计算机网络
 
@@ -288,24 +260,13 @@ Linux Lab Disk 使用示例图：
 
 * [Linux Lab 免费视频公开课](https://www.cctalk.com/m/group/88948325)
 
-另外，也录制了几份课程的实验演示视频，欢迎自由观看（部分 showterm.io 链接可能已经失效）：
+另外，也录制了几份课程的实验演示视频，欢迎自由观看：
 
 * [CS630 Qemu Lab](https://tinylab.org/cs630-qemu-lab)：X86 Linux 汇编语言实验环境
-    * [CS630 Qemu Lab 基本用法](http://showdesk.io/2017-03-18-15-21-20-cs630-qemu-lab-usage-00-03-33/)
 
 * [Linux 0.11 Lab](https://tinylab.org/linux-0.11-lab)： Linux 0.11 内核实验环境
-    * [Linux 0.11 Lab 基本用法](http://showdesk.io/2017-03-18-17-54-23-linux-0.11-lab-usage-00-06-42/)
-    * [为 Linux 0.11 添加系统调用](http://showterm.io/4b628301d2d45936a7f8a)
 
 * [Linux Lab](https://tinylab.org/linux-lab)：Linux 内核和嵌入式 Linux 实验环境
-    * [Linux Lab 基本用法](http://showdesk.io/2017-03-11-14-16-15-linux-lab-usage-00-01-02/)
-    * [通过 Linux Lab 做 Uboot 实验](https://v.qq.com/x/page/l0549rgi54e.html)
-
-* 其他
-    * [C 语言](http://showterm.io/a98435fb1b79b83954775)
-    * [C 编译过程](http://showterm.io/887b5ee77e3f377035d01)
-    * [Shell 语言](http://showterm.io/445cbf5541c926b19d4af)
-    * [SQL 语言](http://showterm.io/7766b67876c0b7615850e)
 
 ## 小结
 

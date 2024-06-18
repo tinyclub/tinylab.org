@@ -43,7 +43,6 @@ tags:
 
 可任选一种方式报名：
 
-* 从 [开源小店][3] 购买一个月的 Linux 0.11 Lab 体验帐号
 * 扫描文末的二维码赞助我们
 
 报名后请添加笔者微信号 lzufalcon 申请加入直播专用微信群，申请时记得提供报名凭证。
@@ -77,8 +76,6 @@ Linux 0.11 Lab 的主要特性如下：
 * 支持 Docker 一键构建
 * 可通过 Web 直接访问
 
-另外，本次直播内容实操性非常强，建议提前 [参考文档][2] 搭建好 Linux 0.11 Lab，或者直接从 [泰晓开源小店][3] 提前获取一个在线 Linux 0.11 Lab 帐号。
-
 ## 致谢
 
 本次直播在原 [泰晓科技 Linux 直播频道](https://3qk.easyvaas.com/show/homepage/index?id=423) 的基础上，增加另外一种直播方式，那就是直接采用 [泰晓实验云台/Cloud Lab](/cloud-lab) + 微信语音。
@@ -86,5 +83,4 @@ Linux 0.11 Lab 的主要特性如下：
 
 [1]: https://tinylab.org
 [2]: https://tinylab.org/linux-0.11-lab
-[3]: https://weidian.com/i/1487448443
 [5]: https://www.qingcloud.com/
