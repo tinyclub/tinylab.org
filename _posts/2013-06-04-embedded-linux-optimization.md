@@ -30,6 +30,6 @@ categories:
 
 刚检查发现有些链接失效，已经修订，但是考虑到技术更新太快，需要的改动太多，所以技术部分就暂且如此，等后续我们在其他文章中逐步地讨论。
 
-在准备幻灯时，参考了 [Embedded Linux Wiki](http://elinux.org), [Embedded Linux Optimization](http://free-electrons.com/docs/optimizations/) 等资料。
+在准备幻灯时，参考了 [Embedded Linux Wiki](http://elinux.org), [Embedded Linux Optimization](https://bootlin.com/doc/training/embedded-linux/) 等资料。
 
 索取该幻灯片，请联系本文作者微信 tinylab。
