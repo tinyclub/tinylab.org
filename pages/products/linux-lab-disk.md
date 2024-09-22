@@ -360,7 +360,6 @@ sudo dpkg-reconfigure locales
     * 为了提升磁盘寿命，尽可能地使用内存，泰晓 Linux 实验盘默认未开启 swap 功能
     * 如需开启，新版本可以直接执行 `sudo tinyswapon` 临时开启，如需持久开启，可以使用 `sudo tinyswapauto`，老版本用户可以咨询售后
     * 在开启大型应用时，请按需开启 swap 功能
-    * 如果主机内存够大，建议按需配置 [zram swap](https://www.techrepublic.com/article/how-to-enable-the-zram-module-for-faster-swapping-on-linux/)，部分系统提供了 zram-tools, zram-generator 等自动化辅助配置工具。
 
 ### 数据安全
 
