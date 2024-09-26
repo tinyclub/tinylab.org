@@ -1,6 +1,6 @@
 ---
 layout: post
-author: 'falcon'
+author: 'Wu Zhangjin'
 title: 'RISC-V Non-MMU Linux (1): 从内核到应用跑通一遍'
 draft: false
 album: 'RISC-V Linux'

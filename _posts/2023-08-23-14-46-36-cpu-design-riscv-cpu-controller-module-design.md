@@ -1,6 +1,6 @@
 ---
 layout: post
-author: 'falcon'
+author: 'BossWangST'
 title: 'RISC-V CPU 设计（6）： RV64I CPU 控制器模块设计思路与实现'
 draft: false
 album: 'RISC-V Linux'

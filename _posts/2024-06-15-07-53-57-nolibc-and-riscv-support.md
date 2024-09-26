@@ -1,6 +1,6 @@
 ---
 layout: post
-author: 'Falcon'
+author: 'Wu Zhangjin'
 title: 'Linux 内核内置 C 库 nolibc 及其 RISC-V 架构支持分析'
 draft: false
 album: 'RISC-V Linux'

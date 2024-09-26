@@ -1,6 +1,6 @@
 ---
 layout: post
-author: 'falcon'
+author: 'Wu Zhangjin'
 title: 'RISC-V jump_label 详解，第 6 部分：分析 RVC 支持'
 draft: false
 album: 'RISC-V Linux'

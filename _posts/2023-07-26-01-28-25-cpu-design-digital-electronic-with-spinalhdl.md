@@ -1,6 +1,6 @@
 ---
 layout: post
-author: 'falcon'
+author: 'BossWangST'
 title: 'RISC-V CPU 设计（3）：数电基本知识与基于 Scala 的硬件设计框架 SpinalHDL'
 draft: false
 album: 'RISC-V Linux'
