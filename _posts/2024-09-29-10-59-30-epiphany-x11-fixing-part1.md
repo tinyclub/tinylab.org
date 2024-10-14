@@ -5,7 +5,7 @@ title: 'Epiphany 异常卡死问题分析 - Part1 锁定问题原因'
 draft: false
 album: 'RISC-V Linux'
 license: 'cc-by-nc-nd-4.0'
-permalink: /epiphany-x11-fixing/
+permalink: /epiphany-x11-fixing-part1/
 description: 'Epiphany 异常卡死问题分析 - Part1 锁定问题原因'
 category:
   - 开源项目
