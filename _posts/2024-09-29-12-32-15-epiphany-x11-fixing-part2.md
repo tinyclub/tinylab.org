@@ -18,11 +18,11 @@ tags:
   - Mesa
 ---
 
-> Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.2-rc2 - [codeblock urls refs pangu autocorrect]<br/>
-> Author:    Siqi Fan <fansq19@lzu.edu.cn><br/>
-> Date:      20240925<br/>
-> Revisor:   Falcon <falcon@tinylab.org><br/>
-> Project:   [RISC-V Linux 内核剖析](https://gitee.com/tinylab/riscv-linux)<br/>
+> Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.2-rc2 - [codeblock urls refs pangu autocorrect]
+> Author:    Siqi Fan <fansq19@lzu.edu.cn>
+> Date:      20240925
+> Revisor:   Falcon <falcon@tinylab.org>
+> Project:   [RISC-V Linux 内核剖析](https://gitee.com/tinylab/riscv-linux)
 > Sponsor:   PLCT Lab, ISCAS
 
 # epiphany 异常卡死问题分析 - Part2 编译 Mesa

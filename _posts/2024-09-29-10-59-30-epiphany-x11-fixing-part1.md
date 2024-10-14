@@ -18,11 +18,11 @@ tags:
   - SVGA3D
 ---
 
-> Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.2-rc2 - [spaces tables]<br/>
-> Author:    Siqi Fan <fansq19@lzu.edu.cn><br/>
-> Date:      20240830<br/>
-> Revisor:   Falcon <falcon@tinylab.org><br/>
-> Project:   [RISC-V Linux 内核剖析](https://gitee.com/tinylab/riscv-linux)<br/>
+> Corrector: [TinyCorrect](https://gitee.com/tinylab/tinycorrect) v0.2-rc2 - [spaces tables]
+> Author:    Siqi Fan <fansq19@lzu.edu.cn>
+> Date:      20240830
+> Revisor:   Falcon <falcon@tinylab.org>
+> Project:   [RISC-V Linux 内核剖析](https://gitee.com/tinylab/riscv-linux)
 > Sponsor:   PLCT Lab, ISCAS
 
 # Epiphany 异常卡死问题分析 - Part1 锁定问题原因
