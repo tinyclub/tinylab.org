@@ -43,8 +43,8 @@
 {% endif %}
 
 {% if rv_course_2 %}
-<a style="line-height: 150%" title="泰晓社区第二期 RISC-V Linux 系统开发公开课正在连载中，业内首个基于 RISC-V 真实硬件的嵌入式 Linux 系统开发公开课" href="https://www.bilibili.com/video/BV1Qa4y117zn/" target="_blank"><img src="/images/courses/riscv-linux-sys-course-v2.jpg" style="max-height:600px; max-width:90%" />
-<br/>全网首个嵌入式RISC-V Linux公开课火热连载中</a>
+<a style="line-height: 150%" title="泰晓社区第二期 RISC-V Linux 系统开发公开课已上线，业内首个基于 RISC-V 真实硬件的嵌入式 Linux 系统开发公开课" href="https://www.bilibili.com/video/BV1Qa4y117zn/" target="_blank"><img src="/images/courses/riscv-linux-sys-course-v2.jpg" style="max-height:600px; max-width:90%" />
+<br/>全网首个嵌入式RISC-V Linux公开课已上线</a>
 {% endif %}
 
 {% if disk_lab %}
