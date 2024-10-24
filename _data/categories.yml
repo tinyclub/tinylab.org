@@ -125,6 +125,14 @@
         - name: Ubuntu
         - name: 在线 Linux
         - name: Arch Linux
+        - name: Manjaro
+        - name: Deepin
+        - name: Kali
+        - name: Fedora
+        - name: RockyLinux
+        - name: Debian
+        - name: CentOS
+        - name: Redhat
     - name: LiteOS
 
 - name: Linux 开发
@@ -212,6 +220,7 @@
             - name: JTAG
             - name: Stacktrace
             - name: Tracepoint
+            - name: trace-cmd
     - name: 引导与启动
       categories:
         - name: Bootloaders
@@ -329,6 +338,7 @@
       categories:
         - name: Docker
         - name: libvirt
+        - name: virtio
     - name: 综合优化
 
 - name: 技术漫谈
