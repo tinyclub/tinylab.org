@@ -1,7 +1,7 @@
 ---
 layout: post
 author: 'Kele Zhang'
-title: '为 OpenSBI 增加 Section GC 功能'
+title: '为 RISC-V OpenSBI 增加 Section GC 功能'
 draft: false
 album: 'RISC-V Linux'
 license: 'cc-by-nc-nd-4.0'
