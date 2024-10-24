@@ -114,6 +114,38 @@ comments: false
 
                     {% endif %}
 
+                    <!-- gg -->
+                    {% if gg.categories %}
+
+                        {% for ggg in gg.categories %}
+
+                          {% assign name = ggg.name %}
+                          {% assign downcase_name = name | downcase %}
+                          {% if site.categories[name] %}
+                            {% assign ggg_categories = site.categories[name] %}
+                          {% elsif site.categories[downcase_name] %}
+                            {% assign ggg_categories = site.categories[downcase_name] %}
+                          {% else %}
+                            {% assign upcase_name = name | upcase %}
+                            {% assign ggg_categories = site.categories[upcase_name] %}
+                          {% endif %}
+                          {% assign size = ggg_categories.size %}
+                          <h6 id="{{ downcase_name | replace:" ","-" | replace:"/","-" }}-ref">{{ name }}{% if size %} <sup>({{ size }})</sup>{% endif %}</h6>
+
+                          {% if size %}
+                          {% assign p_ctg_list = p_ctg_list | append:"," | append:downcase_name %}
+                            <ul>
+                              {% assign pages_list = ggg_categories %}
+                              {% include JB/pages_list %}
+                            </ul>
+
+                          {% endif %}
+
+                        {% endfor %}
+                    <!-- child end -->
+                    {% endif %}
+
+
                   {% endfor %}
               <!-- child end -->
               {% endif %}
