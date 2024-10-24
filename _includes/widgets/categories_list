@@ -151,7 +151,7 @@
 
                     {% if gg.categories %}
                       <ul id="ctg-{{ forloop0.index }}-cld-{{ forloop1.index }}-cld-{{ forloop2.index }}-cld-{{ forloop.index }}-cld" class="nav">
-                        {% for ggg in g.categories %}
+                        {% for ggg in gg.categories %}
 
                           {% assign name = ggg.name %}
                           {% assign downcase_name = name | downcase %}

@@ -85,7 +85,6 @@
                 - name: procfs
                 - name: sysfs
                 - name: debugfs
-
             - name: 访问文件
             - name: 文件系统
               categories:
@@ -93,7 +92,6 @@
                 - name: ext4
                 - name: btrfs
                 - name: f2fs
-
             - name: 数据同步
         - name: 系统调用
         - name: 程序执行
