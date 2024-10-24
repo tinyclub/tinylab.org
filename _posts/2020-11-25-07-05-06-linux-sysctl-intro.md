@@ -9,7 +9,7 @@ permalink: /linux-sysctl-intro/
 description: ""
 category:
   - 调试和优化
-  - procfs
+  - 虚拟文件系统
 tags:
   - Linux
   - Sysctl
