@@ -9,7 +9,7 @@ permalink: /tinyemu-exception/
 description: '从零开始，徒手写一个 RISC-V 模拟器（4）——RISC-V 异常处理'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

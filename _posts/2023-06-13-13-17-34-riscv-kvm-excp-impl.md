@@ -10,7 +10,7 @@ permalink: /riscv-kvm-excp-impl/
 description: 'RISC-V 异常处理在 KVM 中的实现'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

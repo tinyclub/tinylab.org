@@ -9,7 +9,7 @@ permalink: /riscv-linux-startup/
 description: "本文在 Porting Linux to a new processor architecture 系列翻译工作的基础上，继续就 RISC-V 处理器架构进行启动流程的分析。"
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - RISC-V
   - Linux

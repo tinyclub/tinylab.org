@@ -10,7 +10,7 @@ permalink: /riscv-irq-pipeline-introduction/
 description: 'RISC-V 异常处理流程介绍'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

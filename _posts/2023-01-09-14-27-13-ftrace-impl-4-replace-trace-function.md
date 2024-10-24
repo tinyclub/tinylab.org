@@ -10,7 +10,7 @@ permalink: /ftrace-impl-4-replace-trace-function/
 description: 'RISC-V Ftrace 实现原理（4）- 替换跟踪函数'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

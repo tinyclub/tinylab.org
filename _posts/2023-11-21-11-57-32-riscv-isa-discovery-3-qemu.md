@@ -9,7 +9,7 @@ permalink: /riscv-isa-discovery-3-qemu/
 description: 'QEMU RISC-V ISA 扩展支持'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

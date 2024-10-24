@@ -10,7 +10,7 @@ permalink: /riscv-semihosting/
 description: 'RISC-V Semihosting 技术'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

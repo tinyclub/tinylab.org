@@ -10,7 +10,7 @@ permalink: /riscv-bitbake-oe-yocto-2-d1-nezha/
 description: '使用 Bitbake 和 OpenEmbedded 构建运行在 D1-H 哪吒开发板的软件'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

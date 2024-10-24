@@ -9,7 +9,7 @@ permalink: /riscv-task-implementation/
 description: '本文基于 RISC-V 架构，分析了 Linux 进程创建与执行的流程。'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

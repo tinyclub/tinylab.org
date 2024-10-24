@@ -9,7 +9,7 @@ permalink: /riscv-non-mmu-linux-part1/
 description: 'RISC-V Non-MMU Linux (1): 从内核到应用跑通一遍'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

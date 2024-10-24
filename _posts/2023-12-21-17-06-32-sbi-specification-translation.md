@@ -9,7 +9,7 @@ permalink: /sbi-specification-translation/
 description: 'RISC-V SBI 规范 2.0-rc1 中文翻译'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

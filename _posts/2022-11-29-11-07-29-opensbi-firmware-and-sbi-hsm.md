@@ -10,7 +10,7 @@ permalink: /opensbi-firmware-and-sbi-hsm/
 description: 'QEMU 启动方式分析（4）: OpenSBI 固件分析与 SBI 规范的 HSM 扩展'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

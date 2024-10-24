@@ -14,7 +14,7 @@ tags:
   - ARM
   - MIPS
   - X86
-  - Risc-V
+  - RISC-V
   - Bootlin
   - Linaro
   - Buildroot

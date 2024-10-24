@@ -9,7 +9,7 @@ permalink: /riscv-isa-extensions-discovery-2-gcc/
 description: 'GCC RISC-V ISA 扩展支持'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

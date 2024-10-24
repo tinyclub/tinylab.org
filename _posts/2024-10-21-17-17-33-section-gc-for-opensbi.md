@@ -9,7 +9,7 @@ permalink: /section-gc-for-opensbi/
 description: '为 OpenSBI 增加 Section GC 功能'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

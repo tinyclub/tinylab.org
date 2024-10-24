@@ -9,7 +9,7 @@ permalink: /riscv-jump-label-part3/
 description: '前两篇已经介绍了 Jump Label 的工作原理以及 nop 和 goto label(foo) 的指令编码，本节来介绍其中最为关键的 static_branch(foo) 的实现以及 Tracepoint 的用法。'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
   - Tracepoint
 tags:
   - Linux

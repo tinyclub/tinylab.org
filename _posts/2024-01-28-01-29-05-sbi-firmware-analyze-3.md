@@ -9,7 +9,7 @@ permalink: /sbi-firmware-analyze-3/
 description: 'OpenSBI 固件代码分析（三）: sbi_init.c'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

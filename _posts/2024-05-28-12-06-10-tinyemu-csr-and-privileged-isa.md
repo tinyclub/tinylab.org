@@ -9,7 +9,7 @@ permalink: /tinyemu-csr-and-privileged-isa/
 description: '从零开始，徒手写一个 RISC-V 模拟器（3）—— CSR 与特权级 ISA'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

@@ -10,7 +10,7 @@ permalink: /jump-label-part5/
 description: 'RISC-V jump_label 详解，第 5 部分：优化案例'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

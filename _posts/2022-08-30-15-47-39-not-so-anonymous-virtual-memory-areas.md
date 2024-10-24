@@ -10,7 +10,7 @@ permalink: /not-so-anonymous-virtual-memory-areas/
 description: 'LWN 867818: 将不再那么匿名的虚拟内存域'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

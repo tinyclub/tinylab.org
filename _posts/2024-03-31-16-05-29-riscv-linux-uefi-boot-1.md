@@ -9,7 +9,7 @@ permalink: /riscv-linux-uefi-boot-1/
 description: 'RISC-V Linux 内核 UEFI 启动过程分析（Part1）：构建、加载与启动内核'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

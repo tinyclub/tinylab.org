@@ -9,7 +9,7 @@ permalink: /cpu-design-module-board-test/
 description: 'RISC-V CPU 设计（5）：RISC-V CPU 设计模块软件行为仿真与下板实验调试'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

@@ -8,11 +8,9 @@ album: 'RISC-V Linux'
 permalink: /rv-link-debugger/
 description: "本文介绍了如何在 Linux 下，基于 Sipeed RV debugger plus JTAG+UART BL702 调试器，制作 rv-link 调试器"
 category:
-  - risc-v
+  - Linux
+  - RISC-V
   - sipeed
-  - longan-nano
-  - rv-link
-  - linux
 tags:
   - rv-link
   - longan-nano

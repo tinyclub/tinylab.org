@@ -9,7 +9,7 @@ permalink: /riscv-jump-label-part2/
 description: "本文是对 RISC-V jump_label 架构支持分析成果的第 2 部分，主要介绍如何参考指令手册编码 Jump Label 用到的几条指令。"
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
   - Tracepoint
 tags:
   - Linux

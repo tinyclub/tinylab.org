@@ -194,7 +194,7 @@ permalink: /$permalink/
 description: '$desc'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

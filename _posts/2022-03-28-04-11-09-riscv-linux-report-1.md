@@ -8,7 +8,7 @@ permalink: /riscv-linux-report-1/
 description: "本文简单总结了过去三周 RISC-V Linux 内核剖析第 1 阶段活动的进展。"
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
   - 技术动态
 tags:
   - RISC-V

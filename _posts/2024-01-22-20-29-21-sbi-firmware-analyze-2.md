@@ -9,7 +9,7 @@ permalink: /sbi-firmware-analyze-2/
 description: 'OpenSBI 固件代码分析（二）：fw_base.S 源码分析'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

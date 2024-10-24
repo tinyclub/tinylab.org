@@ -9,7 +9,7 @@ permalink: /riscv-linux-kfence/
 description: "本文详细分析了一种低开销的内存错误检测机制 Kfence。"
 category:
   - Linux 内核
-  - Risc-V
+  - RISC-V
 tags:
   - 内存管理
   - Kfence

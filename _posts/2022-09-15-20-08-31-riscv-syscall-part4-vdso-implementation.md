@@ -10,7 +10,7 @@ permalink: /riscv-syscall-part4-vdso-implementation/
 description: 'RISC-V Syscall 系列 4：vDSO 实现原理分析'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

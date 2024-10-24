@@ -10,7 +10,7 @@ permalink: /riscv-page-fault-part1/
 description: 'RISC-V 缺页异常处理程序分析（1）：do_page_fault() 和 handle_mm_fault()'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

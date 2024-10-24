@@ -9,7 +9,7 @@ permalink: /riscv-isa-discovery-4-opensbi/
 description: 'OpenSBI RISC-V ISA 扩展检测与支持方式分析'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

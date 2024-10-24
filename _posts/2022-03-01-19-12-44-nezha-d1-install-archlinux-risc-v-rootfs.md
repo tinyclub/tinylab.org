@@ -8,7 +8,7 @@ album: 'RISC-V Linux'
 permalink: /nezha-d1-archlinux/
 description: "本文详细介绍了如何为 哪吒 D1 开发板安装 ArchLinux RISC-V rootfs，并详细解答了如何修复相关的问题。大家也可以参考本文在 D1 上运行 Debian。"
 category:
-  - Risc-V
+  - RISC-V
   - Arch Linux
 tags:
   - NeZha

@@ -10,7 +10,7 @@ permalink: /ftrace-impl-5-fgraph/
 description: 'RISC-V Ftrace 实现原理（5）- 动态函数图跟踪'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

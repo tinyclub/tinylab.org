@@ -10,7 +10,7 @@ permalink: /riscv-irq-analysis-part4-interrupt-priority/
 description: 'RISC-V 中断子系统分析——中断优先级'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

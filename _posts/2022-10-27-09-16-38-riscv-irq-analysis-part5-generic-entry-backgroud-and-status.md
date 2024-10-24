@@ -10,7 +10,7 @@ permalink: /riscv-irq-analysis-part5-generic-entry-backgroud-and-status/
 description: 'Generic entry RISC-V 补丁分析'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

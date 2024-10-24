@@ -10,7 +10,7 @@ permalink: /ftrace-impl-6-ringbuffer/
 description: 'RISC-V Ftrace 实现原理（6）- trace ring buffer'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

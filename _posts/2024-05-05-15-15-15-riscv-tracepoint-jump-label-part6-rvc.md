@@ -9,7 +9,7 @@ permalink: /riscv-tracepoint-jump-label-part6-rvc/
 description: 'RISC-V jump_label 详解，第 6 部分：分析 RVC 支持'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

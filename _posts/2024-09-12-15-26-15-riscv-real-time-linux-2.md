@@ -9,7 +9,7 @@ permalink: /riscv-real-time-linux-2/
 description: 'The Real Time Linux 官方文档翻译'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

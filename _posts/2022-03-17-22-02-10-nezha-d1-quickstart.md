@@ -9,7 +9,7 @@ permalink: /nezha-d1-quickstart/
 description: "本文分享了 RISC-V 开发板 —— 哪吒 D1 开发入门，后续还有两篇。该成果由 RISC-V Linux 内核兴趣小组输出。"
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - RISC-V
   - 哪吒

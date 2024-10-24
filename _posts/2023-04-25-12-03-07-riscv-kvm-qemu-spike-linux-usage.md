@@ -10,7 +10,7 @@ permalink: /riscv-kvm-qemu-spike-linux-usage/
 description: '用 QEMU/Spike+KVM 运行 Host/Guest Linux'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

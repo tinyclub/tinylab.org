@@ -9,7 +9,7 @@ permalink: /riscv-timer/
 description: "本文详细分析了 RISC-V Linux Timer 相关技术原理与代码实现。"
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
   - 时钟系统
 tags:
   - Linux

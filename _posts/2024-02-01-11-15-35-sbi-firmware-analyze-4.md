@@ -9,7 +9,7 @@ permalink: /sbi-firmware-analyze-4/
 description: 'OpenSBI 固件代码分析（四）：coldboot'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

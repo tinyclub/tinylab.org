@@ -9,8 +9,8 @@ permalink: /riscv-stacktrace/
 description: "本文详细介绍了 RISC-V Linux 内核的 Stack Tracing 原理并分析了其代码实现。"
 category:
   - 开源项目
-  - Risc-V
-  - StackTrace
+  - RISC-V
+  - Stacktrace
 tags:
   - Linux
   - RISC-V

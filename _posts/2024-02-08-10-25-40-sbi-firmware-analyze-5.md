@@ -9,7 +9,7 @@ permalink: /sbi-firmware-analyze-5/
 description: 'OpenSBI 固件代码分析（五）：最终章'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

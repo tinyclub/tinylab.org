@@ -9,7 +9,7 @@ permalink: /riscv-linux-distros/
 description: "本文介绍了一种快速体验 RISC-V Linux 系统发行版的方法，即使你手头并没有任何的 RISC-V 开发板。"
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
   - Docker
 tags:
   - Linux

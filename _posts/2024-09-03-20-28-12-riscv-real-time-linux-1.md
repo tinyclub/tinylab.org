@@ -9,7 +9,7 @@ permalink: /riscv-real-time-linux-1/
 description: '在 QEMU 上运行 RISC-V Linux RealTime 补丁'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

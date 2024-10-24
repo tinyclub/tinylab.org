@@ -9,7 +9,7 @@ permalink: /riscv-isa-extensions-discovery-6-unified-discovery/
 description: 'Unified Discovery 简介及其软硬件协作现状'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

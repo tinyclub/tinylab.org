@@ -10,7 +10,7 @@ permalink: /riscv-irq-analysis-part2-interrupt-handling-plic/
 description: 'RISC-V 中断子系统分析——PLIC 中断处理'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

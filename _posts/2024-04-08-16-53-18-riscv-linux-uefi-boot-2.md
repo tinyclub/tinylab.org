@@ -9,7 +9,7 @@ permalink: /riscv-linux-uefi-boot-2/
 description: 'RISC-V Linux 内核 UEFI 启动过程分析（Part2）：内核侧 UEFI 支持'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

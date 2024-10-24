@@ -9,7 +9,7 @@ permalink: /section-gc-no-more-keep-part1/
 description: '解决 Linux 内核 Section GC 失败问题 - Part 1'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

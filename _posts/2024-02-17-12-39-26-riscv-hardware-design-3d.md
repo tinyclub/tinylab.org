@@ -9,7 +9,7 @@ permalink: /riscv-hardware-design-3d/
 description: 'RISV-V 硬件产品开发 - 外壳设计'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

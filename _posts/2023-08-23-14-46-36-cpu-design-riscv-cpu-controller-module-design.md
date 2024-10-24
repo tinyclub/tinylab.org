@@ -9,7 +9,7 @@ permalink: /cpu-design-riscv-cpu-controller-module-design/
 description: 'RISC-V CPU 设计（6）： RV64I CPU 控制器模块设计思路与实现'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

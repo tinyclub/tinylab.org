@@ -10,7 +10,7 @@ permalink: /introduction-to-qemu-and-riscv-upstream-boot-flow/
 description: 'QEMU 启动方式分析（1）：QEMU 及 RISC-V 启动流程简介'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

@@ -9,7 +9,7 @@ permalink: /porting-riscv-ukl-x86-build-process/
 description: 'x86 架构下 UnikernelLinux 构建过程与实践'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

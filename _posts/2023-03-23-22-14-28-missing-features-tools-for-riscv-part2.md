@@ -10,7 +10,7 @@ permalink: /missing-features-tools-for-riscv-part2/
 description: 'RISC-V 缺失的 Linux 内核功能-Part2'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

@@ -9,7 +9,7 @@ permalink: /riscv-linux-analyse/
 description: "社区近日成立了 RISC-V Linux 内核兴趣小组，短期目标是剖析 Linux 内核的 RISC-V 架构支持。"
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

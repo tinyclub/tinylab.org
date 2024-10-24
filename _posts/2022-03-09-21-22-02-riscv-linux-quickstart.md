@@ -9,7 +9,7 @@ permalink: /riscv-linux-quickstart/
 description: "RISC-V Linux 内核兴趣小组于近日建立，将首要聚焦 Linux 内核 RISC-V 架构部分的剖析，本文介绍如何分析 Linux 内核 RISC-V 架构相关源码，并介绍了相关工具，是参与人员必读篇。"
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - cscope
   - tree

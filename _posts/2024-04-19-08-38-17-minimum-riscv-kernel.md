@@ -9,7 +9,7 @@ permalink: /minimum-riscv-kernel/
 description: '最小配置的 RISC-V Linux 内核'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

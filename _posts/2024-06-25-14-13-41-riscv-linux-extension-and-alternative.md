@@ -9,7 +9,7 @@ permalink: /riscv-linux-extension-and-alternative/
 description: 'Linux 的 RISC-V 拓展支持与 alternative 运行时代码段修改'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

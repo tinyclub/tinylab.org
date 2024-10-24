@@ -9,7 +9,7 @@ permalink: /riscv-kvm-virt-trap/
 description: 'RISC-V 架构 H 扩展中的 Trap 处理'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

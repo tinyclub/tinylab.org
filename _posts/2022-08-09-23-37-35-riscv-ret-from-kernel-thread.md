@@ -9,7 +9,7 @@ permalink: /riscv-kthread-ret/
 description: '本文探究 RISC-V 架构下的内核线程返回函数。'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

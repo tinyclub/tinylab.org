@@ -9,7 +9,7 @@ permalink: /lwn-654783/
 description: "本文是 Porting Linux to a new processor architecture 系列翻译的第一部分，后续还有两篇。该成果由 RISC-V Linux 内核兴趣小组输出。"
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
   - 移植 Linux 内核
 tags:
   - 移植

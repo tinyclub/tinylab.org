@@ -10,7 +10,7 @@ permalink: /riscv-buildroot-nezha/
 description: '使用 buildroot 构建 QEMU 和哪吒开发板的系统镜像'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

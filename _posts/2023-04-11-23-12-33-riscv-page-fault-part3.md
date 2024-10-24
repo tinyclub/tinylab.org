@@ -10,7 +10,7 @@ permalink: /riscv-page-fault-part3/
 description: 'RISC-V 缺页异常处理程序分析（3）：文件映射缺页异常分析'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

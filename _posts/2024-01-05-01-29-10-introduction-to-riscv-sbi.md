@@ -9,7 +9,7 @@ permalink: /introduction-to-riscv-sbi/
 description: 'RISC-V SBI 概述'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

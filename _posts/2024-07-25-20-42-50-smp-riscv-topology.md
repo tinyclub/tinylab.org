@@ -9,7 +9,7 @@ permalink: /smp-riscv-topology/
 description: 'RISC-V CPU 拓扑'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

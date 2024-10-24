@@ -10,7 +10,7 @@ permalink: /riscv-irq-analysis/
 description: 'RISC-V 中断子系统分析——硬件及其初始化'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

@@ -10,7 +10,7 @@ permalink: /riscv-bitbake-oe-yocto-1-qemu/
 description: '使用 Bitbake 和 OpenEmbedded 构建运行在 RISC-V 的系统'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

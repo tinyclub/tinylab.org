@@ -10,7 +10,7 @@ permalink: /translation-multi-gen-lru-design-documentation/
 description: 'multi-gen lru 官方文档翻译'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

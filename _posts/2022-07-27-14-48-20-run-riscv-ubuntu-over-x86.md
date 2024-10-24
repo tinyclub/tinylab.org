@@ -9,7 +9,7 @@ permalink: /run-riscv-ubuntu-over-x86/
 description: "本文介绍并演示了如何在 X86_64 笔记本上运行 RISC-V 架构的 Ubuntu 22.04 + xfce4 桌面系统。"
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

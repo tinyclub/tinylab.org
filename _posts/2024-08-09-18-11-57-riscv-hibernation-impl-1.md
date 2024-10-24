@@ -9,7 +9,7 @@ permalink: /riscv-hibernation-impl-1/
 description: 'RISC-V 休眠实现分析 1 -- 休眠过程'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

@@ -10,7 +10,7 @@ permalink: /riscv-syscall-part3-vdso-overview/
 description: 'RISC-V Syscall 系列 3：什么是 vDSO？'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

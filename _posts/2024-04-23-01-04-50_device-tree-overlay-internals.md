@@ -9,7 +9,7 @@ permalink: /devicetree-overlay-internals/
 description: '设备树 overlay 机制深入拆解'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

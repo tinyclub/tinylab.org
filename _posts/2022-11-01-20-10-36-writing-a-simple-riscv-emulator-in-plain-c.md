@@ -10,7 +10,7 @@ permalink: /writing-a-simple-riscv-emulator-in-plain-c/
 description: '用纯 C 语言写一个简单的 RISC-V 模拟器（支持基础整数指令集，乘法指令集与 CSR 指令）'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

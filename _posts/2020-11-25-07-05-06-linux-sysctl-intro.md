@@ -8,8 +8,8 @@ license: "cc-by-nc-nd-4.0"
 permalink: /linux-sysctl-intro/
 description: ""
 category:
-  - Linux 内核接口
   - 调试和优化
+  - procfs
 tags:
   - Linux
   - Sysctl

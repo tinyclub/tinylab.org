@@ -10,7 +10,7 @@ permalink: /ftrace-impl-1-mcount/
 description: 'ftrace 实现原理（1）- 函数跟踪'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

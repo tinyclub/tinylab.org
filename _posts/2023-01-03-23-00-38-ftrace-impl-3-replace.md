@@ -10,7 +10,7 @@ permalink: /ftrace-impl-3-replace/
 description: 'RISC-V Ftrace 实现原理（3）- 替换函数入口'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

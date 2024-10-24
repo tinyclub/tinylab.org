@@ -9,7 +9,7 @@ permalink: /riscv-smp-in-boot-flow/
 description: 'RISC-V Linux SMP 技术调研与分析（1）：开机与引导流程中的 SMP'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

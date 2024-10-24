@@ -10,7 +10,7 @@ permalink: /riscv-page-fault-part2/
 description: 'RISC-V 缺页异常处理程序分析（2）：handle_pte_fault() 和 do_anonymous_page()'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

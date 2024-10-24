@@ -9,7 +9,7 @@ permalink: /riscv-hibernation-impl-2/
 description: 'RISC-V 休眠实现分析 2 -- 加载 swap 镜像'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

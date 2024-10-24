@@ -9,7 +9,7 @@ permalink: /gdb-and-qemu-gdbstub-debug/
 description: 'gdb 和 QEMU gdbstub 调试技巧'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

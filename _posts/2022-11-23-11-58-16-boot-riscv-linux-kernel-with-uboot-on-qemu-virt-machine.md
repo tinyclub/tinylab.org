@@ -10,7 +10,7 @@ permalink: /boot-riscv-linux-kernel-with-uboot-on-qemu-virt-machine/
 description: 'QEMU 启动方式分析（2）: QEMU virt 平台下通过 OpenSBI + U-Boot 引导 RISCV64 Linux Kernel'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

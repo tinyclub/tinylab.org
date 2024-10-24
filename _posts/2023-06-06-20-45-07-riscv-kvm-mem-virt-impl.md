@@ -10,7 +10,7 @@ permalink: /riscv-kvm-mem-virt-impl/
 description: 'RISC 内存虚拟化在 KVM 及 kvmtool 中的实现'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

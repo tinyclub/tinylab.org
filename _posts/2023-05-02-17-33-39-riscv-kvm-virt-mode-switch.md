@@ -10,7 +10,7 @@ permalink: /riscv-kvm-virt-mode-switch/
 description: 'RISC-V 虚拟化模式切换简析'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

@@ -9,7 +9,7 @@ permalink: /cpu-design-part1-riscv-instruction/
 description: 'RISC-V CPU 设计（1）：RISC-V 指令集'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

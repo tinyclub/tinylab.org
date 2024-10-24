@@ -10,7 +10,7 @@ permalink: /riscv-irq-analysis-part3-interrupt-handling-cpu/
 description: 'RISC-V 中断子系统分析——CPU 中断处理'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

@@ -81,8 +81,19 @@
         - name: 文件管理
           categories:
             - name: 虚拟文件系统
+              categories:
+                - name: procfs
+                - name: sysfs
+                - name: debugfs
+
             - name: 访问文件
             - name: 文件系统
+              categories:
+                - name: tmpfs
+                - name: ext4
+                - name: btrfs
+                - name: f2fs
+
             - name: 数据同步
         - name: 系统调用
         - name: 程序执行
@@ -122,6 +133,7 @@
             - name: 设备树
     - name: Linux 系统
       categories:
+        - name: Linux
         - name: Ubuntu
         - name: 在线 Linux
         - name: Arch Linux
@@ -138,6 +150,10 @@
 - name: Linux 开发
   categories:
     - name: Linux 综合知识
+    - name: 指令集
+      categories:
+        - name: ISA
+        - name: 特权指令
     - name: 硬件架构
       categories:
         - name: CPU
@@ -147,7 +163,7 @@
             - name: X86
             - name: PowerPC
             - name: Denver
-            - name: Risc-V
+            - name: RISC-V
         - name: GPU
           categories:
             - name: Mali
@@ -430,6 +446,7 @@
         - name: B9Creator
         - name: RVOS Lab
         - name: GUI Lab
+        - name: Microbench
     - name: 开源书籍
 
 - name: 招聘求职
@@ -473,3 +490,16 @@
     - name: 远程访问
       categories:
         - name: VNC
+
+- name: 业内厂家
+  categories:
+    - name: 芯片
+      categories:
+        - name: 龙芯
+        - name: 算能
+    - name: 开发板
+      categories:
+        - name: Sipeed
+        - name: 野火
+
+

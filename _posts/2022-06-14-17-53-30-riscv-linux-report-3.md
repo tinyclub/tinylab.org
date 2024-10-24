@@ -9,7 +9,7 @@ permalink: /riscv-linux-report-3/
 description: "本文简单介绍了 RISC-V Linux 内核剖析活动第 2 阶段的目标与计划，该阶段开始开放招募实习生和兼职工程师。"
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
   - 技术动态
 tags:
   - RISC-V

@@ -9,7 +9,7 @@ permalink: /porting-riscv-ukl-translate/
 description: '在通用式操作系统中集成 Unikernel 优化'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

@@ -9,7 +9,7 @@ permalink: /nolibc-and-riscv-support/
 description: 'Linux 内核内置 C 库 nolibc 及其 RISC-V 架构支持分析'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

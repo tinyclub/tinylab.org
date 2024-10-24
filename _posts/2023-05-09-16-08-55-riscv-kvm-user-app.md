@@ -10,7 +10,7 @@ permalink: /riscv-kvm-user-app/
 description: 'RISC-V KVM 虚拟化：用户态程序'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

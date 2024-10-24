@@ -9,7 +9,7 @@ permalink: /riscv-context-switch/
 description: "本文主要基于 Linux 5.17 版本代码，讨论在 RISC-V 架构中上下文切换的诸多细节。"
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - RISC-V
   - Linux

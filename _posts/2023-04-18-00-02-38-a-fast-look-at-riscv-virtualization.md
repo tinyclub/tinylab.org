@@ -10,7 +10,7 @@ permalink: /a-fast-look-at-riscv-virtualization/
 description: '从嵌入式系统视角初次展望 RISC-V 虚拟化（A First Look at RISC-V Virtualization from an Embedded Systems Perspective）'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

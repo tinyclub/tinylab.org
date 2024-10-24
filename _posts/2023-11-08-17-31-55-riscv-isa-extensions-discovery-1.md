@@ -9,7 +9,7 @@ permalink: /riscv-isa-extensions-discovery-1/
 description: 'RISC-V 当前指令集扩展类别与检测方式'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

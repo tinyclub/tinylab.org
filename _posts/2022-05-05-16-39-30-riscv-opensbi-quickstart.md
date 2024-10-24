@@ -9,7 +9,7 @@ permalink: /riscv-opensbi-quickstart/
 description: "本文介绍了 RISC-V OpenSBI 的基础用法以及 Linux 内核调用 OpenSBI 服务的方式。"
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
   - Bootloaders
 tags:
   - Linux

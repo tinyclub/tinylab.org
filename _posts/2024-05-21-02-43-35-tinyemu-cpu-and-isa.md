@@ -9,7 +9,7 @@ permalink: /tinyemu-cpu-and-isa/
 description: '从零开始，徒手写一个 RISC-V 模拟器（2）——RISC-V 指令集与 CPU'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

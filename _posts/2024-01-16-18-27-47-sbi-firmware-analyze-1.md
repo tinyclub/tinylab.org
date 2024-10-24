@@ -9,7 +9,7 @@ permalink: /sbi-firmware-analyze-1/
 description: 'OpenSBI 固件代码分析（一）：启动流程'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

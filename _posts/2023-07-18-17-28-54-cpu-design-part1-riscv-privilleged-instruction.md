@@ -9,7 +9,7 @@ permalink: /cpu-design-part1-riscv-privilleged-instruction/
 description: 'RISC-V CPU 设计（2）：RISC-V 特权指令架构'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

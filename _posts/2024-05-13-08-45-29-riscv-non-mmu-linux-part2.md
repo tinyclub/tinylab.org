@@ -9,7 +9,7 @@ permalink: /riscv-non-mmu-linux-part2/
 description: 'RISC-V Non-MMU Linux (2): 从 M/S/U 到 M/U 的层级转变'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

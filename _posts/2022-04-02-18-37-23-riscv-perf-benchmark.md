@@ -9,7 +9,7 @@ permalink: /riscv-perf-benchmark/
 description: "本文介绍了一款自研的 benchmark 工具，用于从指令层面评估处理器性能，并简单评测和对比了 x86_64 和 RISC-V 处理器架构的性能差异。"
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
   - 基准测试
 tags:
   - Linux

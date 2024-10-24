@@ -7,10 +7,10 @@ album: 'RISC-V Linux'
 license: "cc-by-nc-nd-4.0"
 permalink: /riscv-privileged/
 description: "本文介绍了 RISC-V 特权指令。"
-tags:
-  - 开源项目
-  - Risc-V
 categories:
+  - 开源项目
+  - RISC-V
+tags:
   - 特权指令
   - 机器模式
   - 监管者模式

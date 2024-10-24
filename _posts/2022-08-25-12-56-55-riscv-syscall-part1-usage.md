@@ -10,7 +10,7 @@ permalink: /riscv-syscall-part1-usage/
 description: 'RISC-V Syscall 系列1：什么是 Syscall ?'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

@@ -10,7 +10,7 @@ permalink: /cpu-design-analysis-and-main-module-implement/
 description: 'RISC-V CPU 设计（4）： RISC-V CPU 设计理论分析与主要模块的实现'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

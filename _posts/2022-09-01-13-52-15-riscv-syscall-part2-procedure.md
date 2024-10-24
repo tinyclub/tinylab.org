@@ -10,7 +10,7 @@ permalink: /riscv-syscall-part2-procedure/
 description: 'RISC-V Syscall 系列 2：Syscall 过程分析'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V

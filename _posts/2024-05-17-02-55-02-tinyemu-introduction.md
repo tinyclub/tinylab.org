@@ -9,7 +9,7 @@ permalink: /tinyemu-introduction/
 description: '从零开始，徒手写一个 RISC-V 模拟器（1）——简介与基本框架'
 category:
   - 开源项目
-  - Risc-V
+  - RISC-V
 tags:
   - Linux
   - RISC-V
