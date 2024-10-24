@@ -1,6 +1,6 @@
 ---
 layout: post
-author: 'Yuan Tan'
+author: 'Reset816'
 title: '解决 Linux 内核 Section GC 失败问题 - Part 2'
 draft: false
 album: 'RISC-V Linux'
