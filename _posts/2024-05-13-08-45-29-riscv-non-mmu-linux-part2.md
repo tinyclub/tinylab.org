@@ -1,6 +1,6 @@
 ---
 layout: post
-author: 'Zhangjin Wu'
+author: 'Wu Zhangjin'
 title: 'RISC-V Non-MMU Linux (2): 从 M/S/U 到 M/U 的层级转变'
 draft: false
 album: 'RISC-V Linux'
