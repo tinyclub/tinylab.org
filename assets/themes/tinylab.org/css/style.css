@@ -564,7 +564,8 @@ article section {
 article section h2,
 article section h3,
 article section h4,
-article section h5 {
+article section h5,
+article section h6 {
     margin-top: 1.2em;
     margin-bottom: 1em;
     color: #333;
@@ -589,6 +590,10 @@ article section h4 {
 article section h5 {
     color: #333;
     font-size: 105%
+}
+article section h6 {
+    color: #a3a;
+    font-size: 103%
 }
 section footer p,
 article section p {
@@ -1229,6 +1234,9 @@ short_prev_next {
     }
     article section h5 {
         font-size: 93%
+    }
+    article section h6 {
+        font-size: 91%
     }
     article header time {
         font-size: 60%;
