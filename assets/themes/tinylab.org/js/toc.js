@@ -37,8 +37,10 @@ function build_toc(h_cnt, hid, h_id, n, open, close, item_a, tocid_suffix, tocid
       return $("#" + hid[n-1]).append(nav_li_a);
     } else if (n == 3) {
       return $("#" + hid[n-2]).append($("#" + hid[n-1]).append(nav_li_a));
-    } else {
+    } else if (n == 4) {
       return $("#" + hid[n-3]).append($("#" + hid[n-2]).append($("#" + hid[n-1]).append(nav_li_a)));
+    } else {
+      return $("#" + hid[n-4]).append($("#" + hid[n-3]).append($("#" + hid[n-2]).append($("#" + hid[n-1]).append(nav_li_a))));
     }
 
     return null;
@@ -85,7 +87,7 @@ var Toc = {
             return false;
         }
 
-        var nodes = main_content_container.find("h1,h2,h3,h4,h5");
+        var nodes = main_content_container.find("h1,h2,h3,h4,h5,h6");
         var ultoc = toc_widget_content;
 
         var node_num = 0;
@@ -132,6 +134,8 @@ var Toc = {
                     break;
                 case "H4":
                     h1 = "H4";
+                case "H5":
+                    h1 = "H5";
                     break;
                 }
                 h1_n = parseInt(h1.replace("H", ""));
@@ -145,6 +149,7 @@ var Toc = {
             /* h3: layer 3: ul - ul - li - a */
             /* h4: layer 4: ul - ul - ul - li - a */
             /* h5: layer 5: ul - ul - ul - ul - li - a */
+            /* h6: layer 6: ul - ul - ul - ul - ul - li - a */
             h = $this.get(0).tagName;
             var n = parseInt(h.replace("H", "")) - h1_n;
 
