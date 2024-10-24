@@ -99,10 +99,18 @@
     font-weight: 100
 }
 
+#toc_widget_container .nav .nav .nav .nav .nav > li {
+    font-size: 91%;
+    padding-left: 30px;
+    font-style: normal;
+    font-weight: 80
+}
+
 #toc_widget_container .nav .active *,
 #toc_widget_container .nav .nav .active *,
 #toc_widget_container .nav .nav .nav .active *,
-#toc_widget_container .nav .nav .nav .nav .active * {
+#toc_widget_container .nav .nav .nav .nav .active *
+#toc_widget_container .nav .nav .nav .nav .nav .active * {
     font-weight: 700;
     color: red;
     background-color: transparent;
