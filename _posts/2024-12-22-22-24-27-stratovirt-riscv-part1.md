@@ -1,12 +1,12 @@
 ---
 layout: post
 author: '乖乖是干饭王'
-title: 'Stratovirt 的 RISC-V 支持（一）：环境配置'
+title: 'Stratovirt 的 RISC-V 虚拟化支持（一）：环境配置'
 draft: false
 album: 'RISC-V Linux'
 license: 'cc-by-nc-nd-4.0'
 permalink: /stratovirt-riscv-part1/
-description: 'Stratovirt 的 RISC-V 支持（一）：环境配置'
+description: 'Stratovirt 的 RISC-V 虚拟化支持（一）：环境配置'
 category:
   - 开源项目
   - RISC-V
