@@ -1,11 +1,11 @@
 ---
-title: '泰晓 Linux 实验盘 / 泰晓 Linux 系统盘 / 儿童 Linux 系统盘'
-tagline: '免安装即插即用的智能随身 Linux Lab 实验盘/系统盘，可选 512MB-4TB，可选 Mint, Ubuntu, Deepin, Manjaro, Kali, Fedora 系统'
+title: '泰晓 Linux 实验盘 / 泰晓 AI 实验盘 / 泰晓 Linux 系统盘 / 儿童 Linux 系统盘'
+tagline: '免安装即插即用的智能随身 Linux 实验盘/AI盘/系统盘/儿童盘，可选 512MB-4TB，可选 Mint, Ubuntu, Deepin, Manjaro, Kali, Fedora 系统'
 author: Wu Zhangjin
 layout: page
 top: true
 permalink: /linux-lab-disk/
-description: Linux Lab Disk 不同于普通随身 Linux 系统盘，业内开创了多项特性，包括智能启动、透明倍容、时区兼容、自动共享、零损编译、出厂恢复、备份还原、内存启动等，Linux Lab Disk 还集成了 Linux Lab, Linux 0.11 Lab, RISC-V Lab, ARM Lab 等实验环境，可用于编程语言、操作系统等计算机课程实验。
+description: Linux Lab Disk 不同于普通随身 Linux 系统盘，业内开创了多项特性，包括智能启动、透明倍容、时区兼容、自动共享、零损编译、出厂恢复、备份还原、内存启动等，Linux Lab Disk 还集成了 Linux Lab, Linux 0.11 Lab, RISC-V Lab, ARM Lab, AI 等实验环境，可用于编程语言、操作系统、AI 等计算机课程实验。
 update: 2023-11-18
 categories:
   - 开源项目
@@ -47,15 +47,9 @@ Linux Lab Disk 是由泰晓科技 Linux Lab 开源项目组研发的一种智能
 
 Linux Lab Disk 又名 Linux Lab 真盘或泰晓 Linux 实验盘，除了独创的多项特性，还集成了自研的 [Linux Lab](/linux-lab), [Linux 0.11 Lab](/linux-0.11-lab) 等实验环境。
 
+除了最初面向 Linux 内核开发的实验盘，我们也相继推出了普通系统盘、儿童系统盘以及 AI 实验盘等产品。
+
 泰晓社区推出的相关产品列表：
-
-- [泰晓 Linux 系统盘](https://gf.bilibili.com/item/detail/1104824021)
-    - 基于原生 Linux 发行版进行深度定制和优化的 Linux 系统，具备智能启动、透明倍容、自动共享、出厂恢复、备份还原、内存启动等多项特性
-    - 不集成 Linux Lab 等实验环境，又名 Pocket Linux Disk
-
-- [儿童 Linux 系统盘](https://gf.bilibili.com/item/detail/1106699021)
-    - 在泰晓 Linux 系统盘的基础上预装了数十款儿童教育类或益智游戏类开源软件
-    - 既可打字编程学习数理化，还能下棋研究数独提升智力，适合中小学生
 
 - [泰晓 Linux 实验盘](https://gf.bilibili.com/item/detail/1105063021)
     - 在泰晓 Linux 系统盘的基础上，集成了 Linux Lab，默认版内置 ARM/X86/RISC-V 开发环境，又名 Linux Lab Disk
@@ -63,6 +57,22 @@ Linux Lab Disk 又名 Linux Lab 真盘或泰晓 Linux 实验盘，除了独创�
     - 泰晓 X86 实验盘，便利 X86 实验的环境
     - 泰晓 ARM 实验盘，集成 ARM Lab 等便利 ARM 实验的环境
     - 泰晓 LoongArch 实验盘，便利国产龙芯 LoongArch 实验的环境
+    - 用法连载在 “泰晓科技” Bilibili [实验盘](https://space.bilibili.com/687228362/channel/collectiondetail?sid=558699) 专栏上
+
+- [泰晓 AI 实验盘](https://gf.bilibili.com/item/detail/1108253021)
+    - 即插即跑 AI，启动后能即刻通过主机的浏览器访问，从而获得类似 ChatGPT 的互动效果，也可以通过 API 访问用于开展 AI 辅助程序的开发。
+    - 在虚拟机下，默认配置能够较好地运行 0.5b 的大模型，在采用 Nvidia GPU 的 PC 上，则能更为顺畅地跑起来 1.5b 的大模型。如需运行再大的模型，则需要更好的 CPU、内存和 GPU 配置。
+    - 用法连载在 “泰晓科技” Bilibili [口袋 AI](https://space.bilibili.com/687228362/channel/collectiondetail?sid=4277928) 专栏上
+
+- [泰晓 Linux 系统盘](https://gf.bilibili.com/item/detail/1104824021)
+    - 基于原生 Linux 发行版进行深度定制和优化的 Linux 系统，具备智能启动、透明倍容、自动共享、出厂恢复、备份还原、内存启动等多项特性
+    - 不集成 Linux Lab 等实验环境，又名 Pocket Linux Disk
+    - 用法连载在 “泰晓科技” Bilibili [系统盘](https://space.bilibili.com/687228362/channel/collectiondetail?sid=2464084) 专栏上
+
+- [儿童 Linux 系统盘](https://gf.bilibili.com/item/detail/1106699021)
+    - 在泰晓 Linux 系统盘的基础上预装了数十款儿童教育类或益智游戏类开源软件
+    - 既可打字编程学习数理化，还能下棋研究数独提升智力，适合中小学生
+    - 用法连载在 “泰晓科技” Bilibili [儿童盘](https://space.bilibili.com/687228362/channel/collectiondetail?sid=2985529) 专栏 和 [公众号](https://mp.weixin.qq.com/s/NXH8TQTRjgLfFlMF4GeHXA?token=1085319346&lang=zh_CN) 上
 
 在原有高速 U 盘和固态 U 盘版本的基础上，泰晓社区相继推出了移动硬盘版本和固态硬盘（含 NVME / SATA）版本，覆盖了各种用户的需求，支持的容量已覆盖 512MB - 4TB。
 
