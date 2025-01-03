@@ -1,12 +1,12 @@
 ---
 layout: post
 author: '乖乖是干饭王'
-title: 'Stratovirt 的 RISC-V 支持（二）：库的 RISC-V 适配'
+title: 'Stratovirt 的 RISC-V 虚拟化支持（二）：库的 RISC-V 适配'
 draft: false
 album: 'RISC-V Linux'
 license: 'cc-by-nc-nd-4.0'
 permalink: /stratovirt-riscv-part2/
-description: 'Stratovirt 的 RISC-V 支持（二）：库的 RISC-V 适配'
+description: 'Stratovirt 的 RISC-V 虚拟化支持（二）：库的 RISC-V 适配'
 category:
   - 开源项目
   - RISC-V
